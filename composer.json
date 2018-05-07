@@ -1,0 +1,16 @@
+{
+    "name": "fh-lamodiere/web-app-conciergerie",
+    "description": "Projet conciergerie de la Maison du Web.",
+    "authors": [
+        {
+            "name": "FH Lamodiere",
+            "email": "fh.lamodiere@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4" :{
+            "Project\\" : "./src/"
+        }
+    },
+    "require": {}
+}
