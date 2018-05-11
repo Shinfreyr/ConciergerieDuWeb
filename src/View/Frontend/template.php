@@ -59,7 +59,7 @@
                                         echo 'Déconnexion';
                                     }
                                     else {
-                                        echo 'Connexion/Inscription';
+                                        echo 'Accès Membre';
                                     }
                                 ?>
                             </a>
