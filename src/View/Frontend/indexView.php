@@ -12,70 +12,52 @@
 
 <!-- Service Card ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <div class="card-deck">
-    <div class="card">
-        <img class="card-img-top" src="src/Public/images/test.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-        <div class="card-footer">
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card">
-        <img class="card-img-top" src="src/Public/images/test.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-        </div>
-        <div class="card-footer">
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card">
-        <img class="card-img-top" src="src/Public/images/test.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-        </div>
-        <div class="card-footer">
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-</div>
-<div class="card-deck">
-    <div class="card">
-        <img class="card-img-top" src="src/Public/images/test.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-        <div class="card-footer">
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card">
-        <img class="card-img-top" src="src/Public/images/test.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-        </div>
-        <div class="card-footer">
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card">
-        <img class="card-img-top" src="src/Public/images/test.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-        </div>
-        <div class="card-footer">
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
+    <?php
+        while ($db1 = $request->fetch()) {
+            echo                
+                '<div class="card">
+                    <img class="card-img-top" src="src/Public/images/'.htmlspecialchars($db1['imageArticle']).'" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">'.htmlspecialchars($db1['nomArticle']).'</h5>
+                        <p class="card-text">'.htmlspecialchars($db1['descriptionArticle']).'</p>
+                        <hr>
+                        <p class="card-text">Réduction: '.htmlspecialchars($db1['reductionArticle']).'%</p>
+                        <p class="card-text">Prix original: '.htmlspecialchars($db1['originalPriceArticle']).'&euro;</p>
+                        <h3>Prix avec réduction: '.htmlspecialchars($db1['reductionPriceArticle']).'&euro;</h3>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Voir l\'article</a>
+                        <p>*fin de la promotion : '.htmlspecialchars($db1['endDateArticle']).'</p>
+                    </div>
+                </div>';
+        }
+
+    ?>
 </div>
 
+<div class="card-deck">
+    <?php
+        while ($db2 = $secondRequest->fetch()) {
+            echo                
+                '<div class="card">
+                    <img class="card-img-top" src="src/Public/images/'.htmlspecialchars($db2['imageArticle']).'" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">'.htmlspecialchars($db2['nomArticle']).'</h5>
+                        <p class="card-text">'.htmlspecialchars($db2['descriptionArticle']).'</p>
+                        <hr>
+                        <p class="card-text">Réduction: '.htmlspecialchars($db2['reductionArticle']).'%</p>
+                        <p class="card-text">Prix original: '.htmlspecialchars($db2['originalPriceArticle']).'&euro;</p>
+                        <h3>Prix avec réduction: '.htmlspecialchars($db2['reductionPriceArticle']).'&euro;</h3>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Voir l\'article</a>
+                        <p>*fin de la promotion : '.htmlspecialchars($db2['endDateArticle']).'</p>
+                    </div>
+                </div>';
+        }
+
+    ?>
+</div>
 
 
 <?php

@@ -7,6 +7,10 @@
         
         //Index View ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function index() {
+            $articleManager = new \Project\Model\ArticleManager();
+            $request = $articleManager->articleOnLight();
+            $secondRequest = $articleManager->articleOnLightSecond();
+            
             require('src/view/frontend/indexView.php');
         }
 
