@@ -35,15 +35,37 @@
 
         //Category View +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function category() {
-            $category = htmlspecialchars($_GET['page']);
-            $nuberPage = 6;
+            $category = htmlspecialchars($_GET['type']);
+            $numberArticlePage = 6;
 
             $categoryManager = new \Project\Model\CategoryManager();
             $thirdRequest = $categoryManager->categoryRequest();            
             
+            //Count Article Category Target +++++++++++++++++++++++++++++++++++++++++++++
             $articleManager = new \Project\Model\ArticleManager();
             $request = $articleManager->articleCategoryCount($category);
+
+            $result = $request->fetch();
+            $numberArticle = htmlspecialchars($result[0]);
+            $numberPage = ceil($numberArticle / $numberArticlePage); 
             
+            
+            if (isset($_GET['page'])) {
+                $page = htmlspecialchars($_GET['page']);
+            }
+
+            else {
+                $page = 1;
+            }
+
+            //Limit Article ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            $firstMessage = ($page - 1) * $numberArticlePage;
+            $first = (int)$firstMessage;
+            $second = (int)$numberArticlePage;            
+
+            $articleManager = new \Project\Model\ArticleManager();
+            $firstRequest = $articleManager->articleCategoryRequest($category,$first,$second);
+
             require('src/view/frontend/categoryView.php');
         }
 

@@ -11,8 +11,19 @@
         $allUserController = new \Project\Controller\AllUserController();
         $userConnectController = new \Project\Controller\UserConnectController();
         
+        //Control GET action, GET Type and GET page 
+        if(isset($_GET['action']) && isset($_GET['type']) && isset($_GET['page'])) {
+#AllUser    //Category View "Les Services" ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            if($_GET['action'] === 'category' && $_GET['type'] !== '' && $_GET['page']) {
+                $allUserController->category();
+            }
+            //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            else {
+                throw new Exception('Variable inattendu');    
+            }
+        }
         //Control GET action and GET db +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        if(isset($_GET['action']) && isset($_GET['db'])) {
+        elseif(isset($_GET['action']) && isset($_GET['db'])) {
 #AllUser    //Inscription Data Base +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             if($_GET['action'] === 'inscription' && $_GET['db'] === 'ok') {
                 if(isset($_POST['enterpriseCode']) && isset($_POST['lastName']) && isset($_POST['firstName']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['passwordComp']) && isset($_POST['birthDay']) && isset($_POST['birthMonth']) && isset($_POST['birthYear'])) {
@@ -166,16 +177,6 @@
 #UserCo     //Déconnection Session ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             if($_GET['action'] === 'deconnection' && $_GET['session'] === "ok") {
                 $userConnectController->deconnectionSession();
-            }
-            //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-            else {
-                throw new Exception('Variable inattendu');    
-            }
-        }
-        elseif(isset($_GET['action']) && isset($_GET['page'])) {
-#AllUser    //Category View "Les Services" ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-            if($_GET['action'] === 'category' && $_GET['page'] !== '') {
-                $allUserController->category();
             }
             //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             else {

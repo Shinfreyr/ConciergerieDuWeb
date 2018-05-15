@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  mar. 15 mai 2018 à 11:22
+-- Généré le :  mar. 15 mai 2018 à 17:03
 -- Version du serveur :  10.1.31-MariaDB
 -- Version de PHP :  7.2.4
 
@@ -81,7 +81,11 @@ INSERT INTO `articles` (`idArticle`, `nomArticle`, `descriptionArticle`, `origin
 (5, 'Article mis en valeur 3', 'ertzgregr ergth sth s ths t h', 10, 50, 5, 'defaut.jpg', '2018-05-11', '2018-09-11', 'light', 1, 1),
 (6, 'Test Article en valeur', 'fgmjsfzeiufeiou ehzfe khf kuzeh uhzefh ez', 10, 50, 5, 'defaut.jpg', '2018-05-11', '2018-11-20', 'light', 1, 1),
 (7, 'test d\'article mis en valeur', 'greqrgregq  th zthq eth eth t', 10, 50, 5, 'defaut.jpg', '2018-05-11', '2018-11-12', 'light', 1, 1),
-(8, 'test article mis en valeur', '!d:jazlke hkh kjqflk hfkj nklqh lqbjjn klqhk ', 10, 50, 5, 'defaut.jpg', '2018-05-11', '2019-06-19', 'light', 1, 1);
+(8, 'test article mis en valeur', '!d:jazlke hkh kjqflk hfkj nklqh lqbjjn klqhk ', 10, 50, 5, 'defaut.jpg', '2018-05-11', '2019-06-19', 'light', 1, 1),
+(9, 'Test brouillon', 'Ceci est un brouillon', 10, 50, 5, 'defaut.jpg', '2018-05-15', '2018-09-07', 'rough', 1, 1),
+(10, 'fdfzerer', 'gr\"gregzrr\'r\"r', 10, 50, 5, 'defaut.jpg', '2018-05-15', '2018-10-10', 'publish', 1, 1),
+(11, 'edgezrérérfezfezff', 'fezfezzfezf', 10, 50, 5, 'defaut.jpg', '2018-05-15', '2019-01-11', 'publish', 1, 2),
+(12, 'grh(\'h(\"(g\"', 'grr\"fzefezfzref', 10, 50, 5, 'defaut.jpg\r\n', '2018-05-15', '2019-01-29', 'publish', 1, 3);
 
 -- --------------------------------------------------------
 
@@ -263,7 +267,7 @@ ALTER TABLE `accounts`
 -- AUTO_INCREMENT pour la table `articles`
 --
 ALTER TABLE `articles`
-  MODIFY `idArticle` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `idArticle` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT pour la table `categories`

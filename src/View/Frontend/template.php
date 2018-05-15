@@ -50,7 +50,7 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <?php
                                     while ($db3 = $thirdRequest->fetch()) {
-                                        echo '<a class="dropdown-item" href="index.php?action=category&page='.htmlspecialchars($db3['nameCategory']).'">' . htmlspecialchars($db3['nameCategory']) . '</a>';
+                                        echo '<a class="dropdown-item" href="index.php?action=category&type='.htmlspecialchars($db3['nameCategory']).'&page=1">' . htmlspecialchars($db3['nameCategory']) . '</a>';
                                     }
                                 ?>
                             </div>
