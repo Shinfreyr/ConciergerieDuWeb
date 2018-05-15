@@ -162,10 +162,20 @@
             }
         }
         //Control GET Action & Session
-        elseif(isset($_GET['action']) && isset($_GET['session'])){
+        elseif(isset($_GET['action']) && isset($_GET['session'])) {
 #UserCo     //Déconnection Session ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             if($_GET['action'] === 'deconnection' && $_GET['session'] === "ok") {
                 $userConnectController->deconnectionSession();
+            }
+            //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            else {
+                throw new Exception('Variable inattendu');    
+            }
+        }
+        elseif(isset($_GET['action']) && isset($_GET['page'])) {
+#AllUser    //Category View "Les Services" ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            if($_GET['action'] === 'category' && $_GET['page'] !== '') {
+                $allUserController->category();
             }
             //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             else {

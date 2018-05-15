@@ -26,4 +26,15 @@
 
             return $secondRequest;
         }
+
+        //Article Category Count ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function articleCategoryCount() {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article recuperation 
+            $secondRequest = $db->prepare('SELECT * FROM articles WHERE statutArticle!=? ORDER BY idArticle DESC LIMIT 3,6');
+            $secondRequest -> execute(array("rough"));
+
+            return $secondRequest;
+        }
     }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php $title = "La Conciergerie du Web, Accueil !"; ?>
+<?php $title = "La Conciergerie du Web, Inscription !"; ?>
 <?php ob_start(); ?>
 
 <!-- Welcome message +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

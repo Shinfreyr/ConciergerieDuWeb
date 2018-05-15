@@ -19,12 +19,32 @@
 
         //Inscription View ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function inscription() {
+            $categoryManager = new \Project\Model\CategoryManager();
+            $thirdRequest = $categoryManager->categoryRequest();
+            
             require('src/view/frontend/inscriptionView.php');
         }
 
-        //Inscription View ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        //Connection View +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function connection() {
+            $categoryManager = new \Project\Model\CategoryManager();
+            $thirdRequest = $categoryManager->categoryRequest();
+            
             require('src/view/frontend/connectionView.php');
+        }
+
+        //Category View +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function category() {
+            $category = htmlspecialchars($_GET['page']);
+            $nuberPage = 6;
+
+            $categoryManager = new \Project\Model\CategoryManager();
+            $thirdRequest = $categoryManager->categoryRequest();            
+            
+            $articleManager = new \Project\Model\ArticleManager();
+            $request = $articleManager->articleCategoryCount($category);
+            
+            require('src/view/frontend/categoryView.php');
         }
 
         //Inscription Data Base +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -147,7 +167,6 @@
                     $allUserController->connection();
                 }
             }
-        }
-        
+        }        
 
     }
