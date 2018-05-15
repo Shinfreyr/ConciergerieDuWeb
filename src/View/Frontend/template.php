@@ -48,8 +48,11 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Les Services</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Service 1</a>
-                                <a class="dropdown-item" href="#">Service 2</a>
+                                <?php
+                                    while ($db3 = $thirdRequest->fetch()) {
+                                        echo '<a class="dropdown-item" href="#">' . htmlspecialchars($db3['nameCategory']) . '</a>';
+                                    }
+                                ?>
                             </div>
                         </li>
                         <li class="nav-item dropdown">

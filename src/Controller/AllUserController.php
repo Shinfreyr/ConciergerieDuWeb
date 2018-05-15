@@ -10,6 +10,9 @@
             $articleManager = new \Project\Model\ArticleManager();
             $request = $articleManager->articleOnLight();
             $secondRequest = $articleManager->articleOnLightSecond();
+
+            $categoryManager = new \Project\Model\CategoryManager();
+            $thirdRequest = $categoryManager->categoryRequest();
             
             require('src/view/frontend/indexView.php');
         }
