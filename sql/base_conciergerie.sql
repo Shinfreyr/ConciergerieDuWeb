@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  ven. 11 mai 2018 à 16:33
+-- Généré le :  mar. 15 mai 2018 à 11:22
 -- Version du serveur :  10.1.31-MariaDB
 -- Version de PHP :  7.2.4
 
@@ -99,7 +99,9 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`idCategory`, `nameCategory`) VALUES
-(1, 'Truc');
+(1, 'Truc'),
+(2, 'Bidule'),
+(3, 'Test');
 
 -- --------------------------------------------------------
 
@@ -267,7 +269,7 @@ ALTER TABLE `articles`
 -- AUTO_INCREMENT pour la table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `idCategory` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idCategory` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT pour la table `enterprises`
