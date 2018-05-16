@@ -38,6 +38,17 @@
             return $request;
         }
 
+        //Article Category Count ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function articleAllCategoryCount() {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article recuperation 
+            $request = $db->prepare('SELECT COUNT(*) FROM articles WHERE articles.statutArticle!=? ORDER BY articles.nomArticle');
+            $request -> execute(array("rough"));
+
+            return $request;
+        }
+
         //Article Category Request first three +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function articleCategoryRequest($category,$first,$second) {
             // Data Base Connection
@@ -56,6 +67,28 @@
             // Article recuperation 
             $firstRequest = $db->prepare('SELECT * FROM articles INNER JOIN categories ON articles.idCategory=categories.idCategory WHERE articles.statutArticle!=?  AND categories.nameCategory=? ORDER BY articles.idArticle LIMIT '.$third.','.$fourth);
             $firstRequest -> execute(array("rough",$category));
+
+            return $firstRequest;
+        }
+
+        //Article All Category Request first three +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function articleAllCategoryRequest($first,$second) {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article recuperation 
+            $firstRequest = $db->prepare('SELECT * FROM articles WHERE articles.statutArticle!=? ORDER BY articles.idArticle LIMIT '.$first.','.$second);
+            $firstRequest -> execute(array("rough"));
+
+            return $firstRequest;
+        }
+
+        //Article Category Request last three ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function articleAllCategoryRequestSecond($third,$fourth) {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article recuperation 
+            $firstRequest = $db->prepare('SELECT * FROM articles WHERE articles.statutArticle!=? ORDER BY articles.idArticle LIMIT '.$third.','.$fourth);
+            $firstRequest -> execute(array("rough"));
 
             return $firstRequest;
         }

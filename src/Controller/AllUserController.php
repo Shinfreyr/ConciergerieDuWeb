@@ -43,7 +43,12 @@
             
             //Count Article Category Target +++++++++++++++++++++++++++++++++++++++++++++
             $articleManager = new \Project\Model\ArticleManager();
-            $request = $articleManager->articleCategoryCount($category);
+            if($category=='all') {
+                $request = $articleManager->articleAllCategoryCount();
+            }
+            else {
+                $request = $articleManager->articleCategoryCount($category);
+            }            
 
             $result = $request->fetch();
             $numberArticle = htmlspecialchars($result[0]);
@@ -66,8 +71,14 @@
             $fourth = (int)$numberArticlePage-3;            
 
             $articleManager = new \Project\Model\ArticleManager();
-            $firstRequest = $articleManager->articleCategoryRequest($category,$first,$second);
-            $secondRequest = $articleManager->articleCategoryRequestSecond($category,$third,$fourth);
+            if($category=='all') {
+                $firstRequest = $articleManager->articleAllCategoryRequest($first,$second);
+                $secondRequest = $articleManager->articleAllCategoryRequestSecond($third,$fourth);
+            }
+            else {
+                $firstRequest = $articleManager->articleCategoryRequest($category,$first,$second);
+                $secondRequest = $articleManager->articleCategoryRequestSecond($category,$third,$fourth);
+            }
 
             require('src/view/frontend/categoryView.php');
         }
