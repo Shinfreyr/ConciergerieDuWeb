@@ -51,13 +51,19 @@
 <!-- Pagination ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <nav aria-label="Page navigation example">
     <ul class="pagination">
-        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
         <?php    
+            if($_GET['page']!=1) {
+                echo '<li class="page-item"><a class="page-link" href="index.php?action=category&type='.htmlspecialchars($category).'&page='.htmlspecialchars($_GET['page']-1).'">Previous</a></li>';
+            }
+            
             for ($i = 1 ; $i <= $numberPage ; $i++) {
                 echo '<li class="page-item"><a class="page-link" href="index.php?action=category&type='.htmlspecialchars($category).'&page='.htmlspecialchars($i).'">' . htmlspecialchars($i) . '</a></li>';
             }
-        ?>
-        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+
+            if($_GET['page']!=$numberPage) {
+                echo '<li class="page-item"><a class="page-link" href="index.php?action=category&type='.htmlspecialchars($category).'&page='.htmlspecialchars($_GET['page']+1).'">Next</a></li>';
+            }
+        ?>        
     </ul>
 </nav>
 
