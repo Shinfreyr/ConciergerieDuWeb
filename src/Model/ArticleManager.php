@@ -38,12 +38,23 @@
             return $request;
         }
 
-        //Article Category Request +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        //Article Category Request first three +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function articleCategoryRequest($category,$first,$second) {
             // Data Base Connection
             $db=$this->dbConnect();
             // Article recuperation 
-            $firstRequest = $db->prepare('SELECT articles.nomArticle FROM articles INNER JOIN categories ON articles.idCategory=categories.idCategory WHERE articles.statutArticle!=?  AND categories.nameCategory=? ORDER BY articles.nomArticle LIMIT '.$first.','.$second);
+            $firstRequest = $db->prepare('SELECT * FROM articles INNER JOIN categories ON articles.idCategory=categories.idCategory WHERE articles.statutArticle!=?  AND categories.nameCategory=? ORDER BY articles.idArticle LIMIT '.$first.','.$second);
+            $firstRequest -> execute(array("rough",$category));
+
+            return $firstRequest;
+        }
+
+        //Article Category Request last three ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function articleCategoryRequestSecond($category,$third,$fourth) {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article recuperation 
+            $firstRequest = $db->prepare('SELECT * FROM articles INNER JOIN categories ON articles.idCategory=categories.idCategory WHERE articles.statutArticle!=?  AND categories.nameCategory=? ORDER BY articles.idArticle LIMIT '.$third.','.$fourth);
             $firstRequest -> execute(array("rough",$category));
 
             return $firstRequest;

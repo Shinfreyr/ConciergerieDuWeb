@@ -6,8 +6,7 @@
 <div class="card-deck">
     <?php
         while ($db1 = $firstRequest->fetch()) {            
-            echo htmlspecialchars($db1['nomArticle']);
-            /*echo                
+            echo                
                 '<div class="card">
                     <img class="card-img-top" src="src/Public/images/'.htmlspecialchars($db1['imageArticle']).'" alt="Card image cap">
                     <div class="card-body">
@@ -22,9 +21,30 @@
                         <a href="#" class="btn btn-primary">Voir l\'article</a>
                         <p>*fin de la promotion : '.htmlspecialchars($db1['endDateArticle']).'</p>
                     </div>
-                </div>';*/
+                </div>';
         }
-
+    ?>
+</div>
+<div class="card-deck">
+    <?php
+        while ($db2 = $secondRequest->fetch()) {            
+            echo                
+                '<div class="card">
+                    <img class="card-img-top" src="src/Public/images/'.htmlspecialchars($db2['imageArticle']).'" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">'.htmlspecialchars($db2['nomArticle']).'</h5>
+                        <p class="card-text">'.htmlspecialchars($db2['descriptionArticle']).'</p>
+                        <hr>
+                        <p class="card-text">Réduction: '.htmlspecialchars($db2['reductionArticle']).'%</p>
+                        <p class="card-text">Prix original: '.htmlspecialchars($db2['originalPriceArticle']).'&euro;</p>
+                        <h3>Prix avec réduction: '.htmlspecialchars($db2['reductionPriceArticle']).'&euro;</h3>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Voir l\'article</a>
+                        <p>*fin de la promotion : '.htmlspecialchars($db2['endDateArticle']).'</p>
+                    </div>
+                </div>';
+        }
     ?>
 </div>
 

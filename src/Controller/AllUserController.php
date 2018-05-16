@@ -61,10 +61,13 @@
             //Limit Article ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             $firstMessage = ($page - 1) * $numberArticlePage;
             $first = (int)$firstMessage;
-            $second = (int)$numberArticlePage;            
+            $second = (int)$numberArticlePage-3;
+            $third = (int)$firstMessage+3;
+            $fourth = (int)$numberArticlePage-3;            
 
             $articleManager = new \Project\Model\ArticleManager();
             $firstRequest = $articleManager->articleCategoryRequest($category,$first,$second);
+            $secondRequest = $articleManager->articleCategoryRequestSecond($category,$third,$fourth);
 
             require('src/view/frontend/categoryView.php');
         }
