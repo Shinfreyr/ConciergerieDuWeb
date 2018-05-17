@@ -9,8 +9,56 @@
     margin-left: 15px;
 }
 
+/*body +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 body {
     background-color: #1c1918;
     color:white;
     font-family: "Roboto", sans-serif;
+}
+
+/*polygon footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+polygon-footer {
+    background-color: #fff799;
+    color:#1c1918; 
+    -webkit-clip-path: polygon(0 86%, 100% 60%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 86%, 100% 60%, 100% 100%, 0% 100%);
+}
+
+/*triangle en forme d'aile de libellule en dessous des titres ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+#triangle-code-chip{
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-radius: 10%;
+    border-right : 150px solid #fff799;
+    border-bottom : 50px solid transparent;
+   }
+   
+   
+/*lien sur nav bar ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* Animation du lien */
+.header-nav a:after {
+	content: "";
+	position: absolute;
+	bottom: 0; right: 20px; left: 20px;
+	height: 10px;
+	background-color: #fff799;
+
+/* Préparation de notre animation */
+	opacity: 0;
+	transform: translateY(5px);
+	transition: all .4s;
+}
+/* Le trait va remonter et apparaitre */
+.header-nav a:hover:after,
+.header-nav a:focus:after {
+	opacity: .6;
+	transform: translateY(0);
+}
+/* Je vire outline car juste au-dessus je définis un style :focus */
+.header-nav a:focus {
+	outline: none;
 }
