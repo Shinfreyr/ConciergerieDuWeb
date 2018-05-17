@@ -36,9 +36,6 @@ polygon-footer {
    
    
 /*lien sur nav bar ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-
-
 /* Animation du lien */
 .header-nav a:after {
 	content: "";
