@@ -32,7 +32,7 @@
     <!-- Template Content ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <body class="bodyFront container-fluid row">
                 
-        <header class="sticky-top">
+        <header class="sticky-top col-12">
             <!-- Navbar ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="index.php">La Conciergerie du Web</a>
