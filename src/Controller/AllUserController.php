@@ -85,7 +85,15 @@
 
         //Article Target View +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function articleTarget() {
-            echo 'coucou';
+            $idArticle = htmlspecialchars($_GET['idOffre']);
+
+            $categoryManager = new \Project\Model\CategoryManager();
+            $thirdRequest = $categoryManager->categoryRequest();
+
+            $articleManager = new \Project\Model\ArticleManager();
+            $request = $articleManager->articleTargetRequest($idArticle);
+
+            require('src/view/frontend/articleTargetView.php');
         }
 
         //Inscription Data Base +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

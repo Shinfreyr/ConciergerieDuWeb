@@ -18,7 +18,7 @@
                         <h3>Prix avec réduction: '.htmlspecialchars($db1['reductionPriceArticle']).'&euro;</h3>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Voir l\'article</a>
+                        <a href="index.php?action=offre&idOffre='.htmlspecialchars($db1['idArticle']).'" class="btn btn-primary">Voir l\'article</a>
                         <p>*fin de la promotion : '.htmlspecialchars($db1['endDateArticle']).'</p>
                     </div>
                 </div>';
@@ -40,7 +40,7 @@
                         <h3>Prix avec réduction: '.htmlspecialchars($db2['reductionPriceArticle']).'&euro;</h3>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Voir l\'article</a>
+                        <a href="index.php?action=offre&idOffre='.htmlspecialchars($db2['idArticle']).'" class="btn btn-primary">Voir l\'article</a>
                         <p>*fin de la promotion : '.htmlspecialchars($db2['endDateArticle']).'</p>
                     </div>
                 </div>';
@@ -49,7 +49,7 @@
 </div>
 
 <!-- Pagination ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<nav aria-label="Page navigation example">
+<nav aria-label="Page navigation example col-12">
     <ul class="pagination">
         <?php    
             if($_GET['page']!=1) {
