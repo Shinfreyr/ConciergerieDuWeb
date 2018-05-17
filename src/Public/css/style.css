@@ -36,7 +36,7 @@ polygon-footer {
    
 /*lien sur nav bar ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Animation du lien */
-.header-nav a:after {
+.header-nav:after {
 	content: "";
 	position: absolute;
 	bottom: 0; right: 20px; left: 20px;
@@ -49,12 +49,12 @@ polygon-footer {
 	transition: all .4s;
 }
 /* Le trait va remonter et apparaitre */
-.header-nav a:hover:after,
-.header-nav a:focus:after {
+.header-nav:hover:after,
+.header-nav:focus:after {
 	opacity: .6;
 	transform: translateY(0);
 }
 /* Je vire outline car juste au-dessus je définis un style :focus */
-.header-nav a:focus {
+.header-nav:focus {
 	outline: none;
 }

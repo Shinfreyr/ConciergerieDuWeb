@@ -42,8 +42,8 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto header-nav">
-                        <li class="nav-item active">
+                    <ul class="navbar-nav mr-auto ">
+                        <li class="nav-item active header-nav">
                             <a class="nav-link" href="index.php">Accueil <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
