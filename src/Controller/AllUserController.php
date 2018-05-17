@@ -93,6 +93,8 @@
             $articleManager = new \Project\Model\ArticleManager();
             $request = $articleManager->articleTargetRequest($idArticle);
 
+            $result = $request->fetch();
+
             require('src/view/frontend/articleTargetView.php');
         }
 
