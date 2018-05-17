@@ -76,19 +76,30 @@
             // Data Base Connection
             $db=$this->dbConnect();
             // Article recuperation 
-            $firstRequest = $db->prepare('SELECT * FROM articles WHERE articles.statutArticle!=? ORDER BY articles.idArticle LIMIT '.$first.','.$second);
+            $firstRequest = $db->prepare('SELECT * FROM articles WHERE statutArticle!=? ORDER BY idArticle LIMIT '.$first.','.$second);
             $firstRequest -> execute(array("rough"));
 
             return $firstRequest;
         }
 
-        //Article Category Request last three ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        //Article Category Request last three ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function articleAllCategoryRequestSecond($third,$fourth) {
             // Data Base Connection
             $db=$this->dbConnect();
             // Article recuperation 
-            $firstRequest = $db->prepare('SELECT * FROM articles WHERE articles.statutArticle!=? ORDER BY articles.idArticle LIMIT '.$third.','.$fourth);
+            $firstRequest = $db->prepare('SELECT * FROM articles WHERE statutArticle!=? ORDER BY idArticle LIMIT '.$third.','.$fourth);
             $firstRequest -> execute(array("rough"));
+
+            return $firstRequest;
+        }
+
+        //Article Target Request +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function articleTargetRequest($idArticle) {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article recuperation 
+            $firstRequest = $db->prepare('SELECT * FROM articles INNER JOIN sellers ON articles.idSeller=sellers.idSeller WHERE articles.idArticle=? ORDER BY idArticle');
+            $firstRequest -> execute(array($idArticle));
 
             return $firstRequest;
         }

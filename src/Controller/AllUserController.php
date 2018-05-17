@@ -83,6 +83,21 @@
             require('src/view/frontend/categoryView.php');
         }
 
+        //Article Target View +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function articleTarget() {
+            $idArticle = htmlspecialchars($_GET['idOffre']);
+
+            $categoryManager = new \Project\Model\CategoryManager();
+            $thirdRequest = $categoryManager->categoryRequest();
+
+            $articleManager = new \Project\Model\ArticleManager();
+            $request = $articleManager->articleTargetRequest($idArticle);
+
+            $result = $request->fetch();
+
+            require('src/view/frontend/articleTargetView.php');
+        }
+
         //Inscription Data Base +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function inscriptionDb() {
             $enterpriseCode = htmlspecialchars($_POST['enterpriseCode']);

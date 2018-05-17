@@ -3,7 +3,7 @@
 <?php ob_start(); ?>
 
 <!-- Welcome message +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<div class="alert welcome" id="up" role="alert">
+<div class="alert welcome col-12" id="up" role="alert">
     <h1 class="alert-heading">Gestion de compte</h1>
     <p class="mb-0">Modifiez et vérifier vos informations enregistrer !</p>
     <hr>
@@ -11,7 +11,7 @@
 </div>
 
 <!-- Account info ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
-<div class="card text-center">
+<div class="card text-center col-12">
     <div class="card-header">
         <?= '<h2> Nom: ' . htmlspecialchars($result['lastNameAccount']) . ' ' . htmlspecialchars($result['firstNameAccount']) . '</h2>' ?>
     </div>
