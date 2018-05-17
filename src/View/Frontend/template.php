@@ -30,7 +30,7 @@
 
         
     <!-- Template Content ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-    <body class="bodyFront container-fluid raw">
+    <body class="bodyFront container-fluid row">
                 
         <header class="sticky-top">
             <!-- Navbar ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -100,7 +100,7 @@
         <?= $content ?>
 
         <!-- Footer ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-        <footer>
+        <footer class="col-12">
             <div class="card text-center">
                 <div class="card-header">
                     <ul class="nav nav-tabs card-header-tabs">

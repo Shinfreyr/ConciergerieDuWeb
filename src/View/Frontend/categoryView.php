@@ -3,7 +3,7 @@
 <?php ob_start(); ?>
 
 <!-- Service Card ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<div class="card-deck">
+<div class="card-deck col-12">
     <?php
         while ($db1 = $firstRequest->fetch()) {            
             echo                
@@ -25,7 +25,7 @@
         }
     ?>
 </div>
-<div class="card-deck">
+<div class="card-deck col-12">
     <?php
         while ($db2 = $secondRequest->fetch()) {            
             echo                

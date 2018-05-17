@@ -11,7 +11,7 @@
 </div>
 
 <!-- Service Card ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<div class="card-deck">
+<div class="card-deck col-12">
     <?php
         while ($db1 = $request->fetch()) {
             echo                
@@ -26,7 +26,7 @@
                         <h3>Prix avec réduction: '.htmlspecialchars($db1['reductionPriceArticle']).'&euro;</h3>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Voir l\'article</a>
+                        <a href="index.php?action=offre&idOffre='.htmlspecialchars($db1['idArticle']).'" class="btn btn-primary">Voir l\'article</a>
                         <p>*fin de la promotion : '.htmlspecialchars($db1['endDateArticle']).'</p>
                     </div>
                 </div>';
@@ -35,7 +35,7 @@
     ?>
 </div>
 
-<div class="card-deck">
+<div class="card-deck col-12">
     <?php
         while ($db2 = $secondRequest->fetch()) {
             echo                
@@ -50,7 +50,7 @@
                         <h3>Prix avec réduction: '.htmlspecialchars($db2['reductionPriceArticle']).'&euro;</h3>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Voir l\'article</a>
+                        <a href="index.php?action=offre&idOffre='.htmlspecialchars($db2['idArticle']).'" class="btn btn-primary">Voir l\'article</a>
                         <p>*fin de la promotion : '.htmlspecialchars($db2['endDateArticle']).'</p>
                     </div>
                 </div>';
