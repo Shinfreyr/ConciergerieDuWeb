@@ -3,7 +3,7 @@
 <?php ob_start(); ?>
 
 <!-- Welcome message +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<div class="alert welcome" id="up" role="alert">
+<div class="alert welcome col-12" id="up" role="alert">
     <h1 class="alert-heading">Inscription</h1>
     <p class="mb-0">Dans le cadre de la nouvelle Réglementation Générale sur la Protection des Données, nous vous informons que toutes vos informations enregistrées sur notre site, resteront confidentielles et pouront être supprimées à tout moment par vos soins. </p>
     <hr>
@@ -11,7 +11,7 @@
 </div>
 
 <!-- Inscription Forms ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<form action="index.php?action=inscription&db=ok" id="inscriptionForm" method="post">
+<form action="index.php?action=inscription&db=ok" id="inscriptionForm" method="post" class="col-12">
     <div class="form-group">
         <label for="enterpriseCode">Code Entreprise*</label>
         <input type="text" class="form-control" name="enterpriseCode" id="enterpriseCode" placeholder="Code de votre entreprise">

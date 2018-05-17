@@ -83,6 +83,11 @@
             require('src/view/frontend/categoryView.php');
         }
 
+        //Article Target View +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function articleTarget() {
+            echo 'coucou';
+        }
+
         //Inscription Data Base +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function inscriptionDb() {
             $enterpriseCode = htmlspecialchars($_POST['enterpriseCode']);

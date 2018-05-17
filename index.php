@@ -187,7 +187,11 @@
         elseif(isset($_GET['action']) && isset($_GET['idOffre'])) {
 #AllUser    //Page Article Target View ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             if($_GET['action'] === 'offre' && $_GET['idOffre'] !== '') {
-                echo 'coucou';
+                $allUserController->articleTarget();
+            }
+            //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            else {
+                throw new Exception('Variable inattendu');    
             }          
         }
         //Control GET Action ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
