@@ -9,3 +9,8 @@
     margin-left: 15px;
 }
 
+body {
+    background-color: #1c1918;
+    color:white;
+    font-family: "Roboto", sans-serif;
+}
