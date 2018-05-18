@@ -38,13 +38,24 @@
             return $request;
         }
 
-        //Article Category Count ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        //Article All Category Count ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function articleAllCategoryCount() {
             // Data Base Connection
             $db=$this->dbConnect();
             // Article recuperation 
             $request = $db->prepare('SELECT COUNT(*) FROM articles WHERE articles.statutArticle!=? ORDER BY articles.nomArticle');
             $request -> execute(array("rough"));
+
+            return $request;
+        }
+
+        //Article Seller Count +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function articleSellerCount($idSeller) {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article recuperation 
+            $request = $db->prepare('SELECT COUNT(*) FROM articles INNER JOIN sellers ON articles.idSeller=Sellers.idSeller WHERE articles.statutArticle!=?  AND sellers.idSeller=? ORDER BY articles.nomArticle');
+            $request -> execute(array("rough","$idSeller"));
 
             return $request;
         }
@@ -65,10 +76,10 @@
             // Data Base Connection
             $db=$this->dbConnect();
             // Article recuperation 
-            $firstRequest = $db->prepare('SELECT * FROM articles INNER JOIN categories ON articles.idCategory=categories.idCategory WHERE articles.statutArticle!=?  AND categories.nameCategory=? ORDER BY articles.idArticle LIMIT '.$third.','.$fourth);
-            $firstRequest -> execute(array("rough",$category));
+            $secondRequest = $db->prepare('SELECT * FROM articles INNER JOIN categories ON articles.idCategory=categories.idCategory WHERE articles.statutArticle!=?  AND categories.nameCategory=? ORDER BY articles.idArticle LIMIT '.$third.','.$fourth);
+            $secondRequest -> execute(array("rough",$category));
 
-            return $firstRequest;
+            return $secondRequest;
         }
 
         //Article All Category Request first three +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -87,10 +98,10 @@
             // Data Base Connection
             $db=$this->dbConnect();
             // Article recuperation 
-            $firstRequest = $db->prepare('SELECT * FROM articles WHERE statutArticle!=? ORDER BY idArticle LIMIT '.$third.','.$fourth);
-            $firstRequest -> execute(array("rough"));
+            $secondRequest = $db->prepare('SELECT * FROM articles WHERE statutArticle!=? ORDER BY idArticle LIMIT '.$third.','.$fourth);
+            $secondRequest -> execute(array("rough"));
 
-            return $firstRequest;
+            return $secondRequest;
         }
 
         //Article Target Request +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -102,5 +113,27 @@
             $firstRequest -> execute(array($idArticle));
 
             return $firstRequest;
+        }
+
+        //Article Seller Request first three +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function articleSellerRequest($idSeller,$first,$second) {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article recuperation 
+            $firstRequest = $db->prepare('SELECT * FROM articles INNER JOIN sellers ON articles.idSeller=sellers.idSeller WHERE articles.statutArticle!=?  AND sellers.idSeller=? ORDER BY articles.idArticle LIMIT '.$first.','.$second);
+            $firstRequest -> execute(array("rough",$idSeller));
+
+            return $firstRequest;
+        }
+
+        //Article Seller Request last three ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function articleSellerRequestSecond($idSeller,$third,$fourth) {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article recuperation 
+            $secondRequest = $db->prepare('SELECT * FROM articles INNER JOIN sellers ON articles.idSeller=sellers.idSeller WHERE articles.statutArticle!=?  AND sellers.idSeller=? ORDER BY articles.idArticle LIMIT '.$third.','.$fourth);
+            $secondRequest -> execute(array("rough",$idSeller));
+
+            return $secondRequest;
         }
     }

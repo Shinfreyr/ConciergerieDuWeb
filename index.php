@@ -14,7 +14,17 @@
         //Control GET action, GET Type and GET page 
         if(isset($_GET['action']) && isset($_GET['type']) && isset($_GET['page'])) {
 #AllUser    //Category View "Les Services" ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-            if($_GET['action'] === 'category' && $_GET['type'] !== '' && $_GET['page']) {
+            if($_GET['action'] === 'category' && $_GET['type'] !== '' && $_GET['page'] !== '') {
+                $allUserController->category();
+            }
+            //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            else {
+                throw new Exception('Variable inattendu');    
+            }
+        }
+        //Control GET action, GET seller and GET page +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        elseif(isset($_GET['action']) && isset($_GET['idSeller']) && isset($_GET['page'])) {
+            if($_GET['action'] === 'magazin' && $_GET['idSeller'] !== '' && $_GET['page'] !== '') {
                 $allUserController->category();
             }
             //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

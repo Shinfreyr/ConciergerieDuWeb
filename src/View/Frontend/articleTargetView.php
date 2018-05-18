@@ -21,8 +21,9 @@
     <h1 class="display-4"><?= htmlspecialchars($result['societyNameSeller']) ?></h1>
     <p class="lead"><?= htmlspecialchars($result['descriptionSeller']) ?></p>
     <hr class="my-4">
+    <p>Numéro de tel : <?= htmlspecialchars($result['staticPhoneSeller']) ?></p>
     <h3>Adresse : <?= htmlspecialchars($result['adressSeller']) ?> <?= htmlspecialchars($result['postalCodeSeller']) ?> <?= htmlspecialchars($result['citySeller']) ?></h3>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Voir toutes les offres du magazin</a>
+    <a class="btn btn-primary btn-lg" href="index.php?action=magazin&idSeller=<?= htmlspecialchars($result['idSeller']) ?>&page=1" role="button">Voir toutes les offres du magazin</a>
 </div>
 
 

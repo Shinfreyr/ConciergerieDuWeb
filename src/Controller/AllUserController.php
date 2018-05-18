@@ -35,7 +35,12 @@
 
         //Category View +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function category() {
-            $category = htmlspecialchars($_GET['type']);
+            if(isset($_GET['idSeller'])) {
+                $idSeller = htmlspecialchars($_GET['idSeller']);
+            }
+            else {
+                $category = htmlspecialchars($_GET['type']);
+            }
             $numberArticlePage = 6;
 
             $categoryManager = new \Project\Model\CategoryManager();
@@ -43,7 +48,10 @@
             
             //Count Article Category Target +++++++++++++++++++++++++++++++++++++++++++++
             $articleManager = new \Project\Model\ArticleManager();
-            if($category=='all') {
+            if(isset($_GET['idSeller'])) {
+                $request = $articleManager->articleSellerCount($idSeller);
+            }
+            elseif($category=='all') {
                 $request = $articleManager->articleAllCategoryCount();
             }
             else {
@@ -71,7 +79,11 @@
             $fourth = (int)$numberArticlePage-3;            
 
             $articleManager = new \Project\Model\ArticleManager();
-            if($category=='all') {
+            if(isset($_GET['idSeller'])) {
+                $firstRequest = $articleManager->articleSellerRequest($idSeller,$first,$second);
+                $secondRequest = $articleManager->articleSellerRequestSecond($idSeller,$third,$fourth);
+            }
+            elseif($category=='all') {
                 $firstRequest = $articleManager->articleAllCategoryRequest($first,$second);
                 $secondRequest = $articleManager->articleAllCategoryRequestSecond($third,$fourth);
             }

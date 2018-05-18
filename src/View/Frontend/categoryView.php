@@ -52,16 +52,31 @@
 <nav aria-label="Page navigation example col-12">
     <ul class="pagination">
         <?php    
-            if($_GET['page']!=1) {
-                echo '<li class="page-item"><a class="page-link" href="index.php?action=category&type='.htmlspecialchars($category).'&page='.htmlspecialchars($_GET['page']-1).'">Previous</a></li>';
-            }
-            
-            for ($i = 1 ; $i <= $numberPage ; $i++) {
-                echo '<li class="page-item"><a class="page-link" href="index.php?action=category&type='.htmlspecialchars($category).'&page='.htmlspecialchars($i).'">' . htmlspecialchars($i) . '</a></li>';
-            }
+            if(isset($_GET['idSeller'])) {
+                if($_GET['page']!=1) {
+                    echo '<li class="page-item"><a class="page-link" href="index.php?action=magazin&idSeller='.htmlspecialchars($idSeller).'&page='.htmlspecialchars($_GET['page']-1).'">Previous</a></li>';
+                }
+                
+                for ($i = 1 ; $i <= $numberPage ; $i++) {
+                    echo '<li class="page-item"><a class="page-link" href="index.php?action=magazin&idSeller='.htmlspecialchars($idSeller).'&page='.htmlspecialchars($i).'">' . htmlspecialchars($i) . '</a></li>';
+                }
 
-            if($_GET['page']!=$numberPage) {
-                echo '<li class="page-item"><a class="page-link" href="index.php?action=category&type='.htmlspecialchars($category).'&page='.htmlspecialchars($_GET['page']+1).'">Next</a></li>';
+                if($_GET['page']!=$numberPage) {
+                    echo '<li class="page-item"><a class="page-link" href="index.php?action=magazin&idSeller='.htmlspecialchars($idSeller).'&page='.htmlspecialchars($_GET['page']+1).'">Next</a></li>';
+                } 
+            }
+            else {    
+                if($_GET['page']!=1) {
+                    echo '<li class="page-item"><a class="page-link" href="index.php?action=category&type='.htmlspecialchars($category).'&page='.htmlspecialchars($_GET['page']-1).'">Previous</a></li>';
+                }
+                
+                for ($i = 1 ; $i <= $numberPage ; $i++) {
+                    echo '<li class="page-item"><a class="page-link" href="index.php?action=category&type='.htmlspecialchars($category).'&page='.htmlspecialchars($i).'">' . htmlspecialchars($i) . '</a></li>';
+                }
+
+                if($_GET['page']!=$numberPage) {
+                    echo '<li class="page-item"><a class="page-link" href="index.php?action=category&type='.htmlspecialchars($category).'&page='.htmlspecialchars($_GET['page']+1).'">Next</a></li>';
+                }
             }
         ?>        
     </ul>
