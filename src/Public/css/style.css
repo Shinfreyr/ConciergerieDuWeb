@@ -8,53 +8,110 @@
 .birthForm {
     margin-left: 15px;
 }
-
+@media (min-width: 769px) {
 /*body +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 body {
     background-color: #1c1918;
-    color:white;
+    color:grey;
     font-family: "Roboto", sans-serif;
+    height:3000px;
 }
 
 /*polygon footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-polygon-footer {
-    background-color: #fff799;
+.polygon-footer {
+    background-color: #FFFFE0;
     color:#1c1918; 
-    -webkit-clip-path: polygon(0 86%, 100% 60%, 100% 100%, 0% 100%);
-    clip-path: polygon(0 86%, 100% 60%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 43%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 43%, 100% 0, 100% 100%, 0% 100%);
+}
+
+/*polygon body +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.polygon-body {
+    background-image: linear-gradient(#0c4c8c,black);
+    color:#d1dfed; 
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
 }
 
 /*triangle en forme d'aile de libellule en dessous des titres ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-#triangle-code-chip{
+.triangle-code-chip{
     display : inline-block;
     height : 0;
     width : 0;
-    border-radius: 10%;
-    border-right : 150px solid #fff799;
+    border-radius: 3%;
+    border-right : 150px solid #FFFFE0;
     border-bottom : 50px solid transparent;
    }
    
-/*lien sur nav bar ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* Animation du lien */
-.header-nav:after {
-	content: "";
-	position: absolute;
-	bottom: 0; right: 20px; left: 20px;
-	height: 10px;
-	background-color: #fff799;
+/*lien sous les intitules de la  nav bar ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-/* Préparation de notre animation */
-	opacity: 0;
-	transform: translateY(5px);
-	transition: all .4s;
+.header-nav a {
+    text-decoration: none;
+    }
+    a:hover {
+    text-decoration: underline;
+    border-bottom: 3px solid #8fa5af;
+    }
+
+    /*couleur de fond de la nav bar ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ .bg-navbar {
+    background-color: #1c1918;
+   }
+
+
+/*couleur des fonts de la nav bar ++++++++++++++++++++++++++ */
+.navbar-light .navbar-brand {
+    color: white;
 }
-/* Le trait va remonter et apparaitre */
-.header-nav:hover:after,
-.header-nav:focus:after {
-	opacity: .6;
-	transform: translateY(0);
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: white;
 }
-/* Je vire outline car juste au-dessus je définis un style :focus */
-.header-nav:focus {
-	outline: none;
+
+  /*couleur de fond de al search form ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ 
+.form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    background-color:#8fa5af;
+}
+/*couleur de fond du bouton de la recherche ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ 
+.btn-outline-success {
+    color: #fff;
+    background-color: #8fa5af;
+    border-color: white;
+}
+ 
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #0c4c8c;
+    border-color: white;
+}
+h1 {
+    text-align: center;
+}
+#search{
+    margin-left:5%;
+    margin-right: 10%;
+}
+.card{
+    margin :10%;
+    }
+}
+@media screen and (max-width:768px) {
+	body{
+	background-color:#fff;
+	color:#ccc;	
+    height:auto;
+	
+}
+/*polygon footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.polygon-footer {
+    background-color: #FFFFE0;
+    color:#1c1918; 
+    -webkit-clip-path: polygon(0 43%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 43%, 100% 0, 100% 100%, 0% 100%);
+}
+
 }

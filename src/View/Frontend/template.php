@@ -34,22 +34,44 @@
     <body class="bodyFront container-fluid row">
                 
         <header class="sticky-top col-12">
-            <!-- Navbar ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-                <a class="navbar-brand" href="index.php">La Conciergerie du Web</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Nos coordonnées  ++++++++++++ -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-navbar header-nav text-center">
+                <div class="text-center">
+                    Nos coordonnées : 
+                    Abonnement /
+                    Production /
+                    Presse : 06 37 69 34 21
+                    Contact : contact@tywebservices.fr
+                </div>
+                <?php
+                        if(isset($_SESSION['conciergerieDuWebId'])) {
+                            echo '<a class="navbar-brand" href="index.php?action=accountManagement">Bienvenue '.htmlspecialchars($_SESSION['conciergerieDuWebFirstName']).' '.htmlspecialchars($_SESSION['conciergerieDUWebLastName']).'</a>';
+                        }
+                    ?>
+            </nav>
+        
+            <!-- Navbar avec fond noir brillant avec classe bg-navbar  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-navbar header-nav">
+
+
+            
+               <h1><a class="navbar-brand" href="index.php">La Conciergerie du Web</a></h1>
+                <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto ">
-                        <li class="nav-item active header-nav">
-                            <a class="nav-link" href="index.php">Accueil <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Tyweb Services <span class="sr-only">(current)</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Les Services</a>
+                        <li class="nav-item active ">
+                            <a class="nav-link" href="index.php">OFFRES DU JOUR <span class="sr-only"></a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catégories</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="index.php?action=category&type=all&page=1">Toutes les catégories</a>
+                                <a class="dropdown-item" href="index.php?action=category&type=all&page=1">Toutes </a>
                                 <?php
                                     while ($db3 = $thirdRequest->fetch()) {
                                         echo '<a class="dropdown-item" href="index.php?action=category&type='.htmlspecialchars($db3['nameCategory']).'&page=1">' . htmlspecialchars($db3['nameCategory']) . '</a>';
@@ -57,6 +79,12 @@
                                 ?>
                             </div>
                         </li>
+                        <div class="">
+                    <form class="form-inline my-2 my-lg-0" id="search">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Saisissez un mot clé" aria-label="Search" >
+                        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Recherche</button>
+                    </form>
+                    </div>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <?php
@@ -64,7 +92,7 @@
                                         echo 'Déconnexion';
                                     }
                                     else {
-                                        echo 'Accès Membre';
+                                        echo 'Espace Membre';
                                     }
                                 ?>
                             </a>
@@ -89,19 +117,16 @@
                             echo '<a class="navbar-brand" href="index.php?action=accountManagement">Bienvenue '.htmlspecialchars($_SESSION['conciergerieDuWebFirstName']).' '.htmlspecialchars($_SESSION['conciergerieDUWebLastName']).'</a>';
                         }
                     ?>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+                    
                 </div>            
             </nav>
         </header>
-
+                        
         <!-- Content View ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <?= $content ?>
 
         <!-- Footer ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-        <footer class="col-12">
+        <footer class="col-12 polygon-footer">
             <div class="card text-center polygon-footer">
                 <div class="card-header">
                     <ul class="nav nav-tabs card-header-tabs">
