@@ -14,7 +14,7 @@
             $categoryManager = new \Project\Model\CategoryManager();
             $thirdRequest = $categoryManager->categoryRequest();
             
-            require('src/view/frontend/indexView.php');
+            require('src/View/frontend/indexView.php');
         }
 
         //Inscription View ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -22,7 +22,7 @@
             $categoryManager = new \Project\Model\CategoryManager();
             $thirdRequest = $categoryManager->categoryRequest();
             
-            require('src/view/frontend/inscriptionView.php');
+            require('src/View/frontend/inscriptionView.php');
         }
 
         //Connection View +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -30,7 +30,7 @@
             $categoryManager = new \Project\Model\CategoryManager();
             $thirdRequest = $categoryManager->categoryRequest();
             
-            require('src/view/frontend/connectionView.php');
+            require('src/View/frontend/connectionView.php');
         }
 
         //Category View +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -92,7 +92,7 @@
                 $secondRequest = $articleManager->articleCategoryRequestSecond($category,$third,$fourth);
             }
 
-            require('src/view/frontend/categoryView.php');
+            require('src/View/frontend/categoryView.php');
         }
 
         //Article Target View +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -107,7 +107,7 @@
 
             $result = $request->fetch();
 
-            require('src/view/frontend/articleTargetView.php');
+            require('src/View/frontend/articleTargetView.php');
         }
 
         //Inscription Data Base +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
