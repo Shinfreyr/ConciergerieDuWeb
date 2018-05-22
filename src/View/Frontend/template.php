@@ -43,11 +43,6 @@
                     Presse : 06 37 69 34 21
                     Contact : contact@tywebservices.fr
                 </div>
-                <?php
-                        if(isset($_SESSION['conciergerieDuWebId'])) {
-                            echo '<a class="navbar-brand" href="index.php?action=accountManagement">Bienvenue '.htmlspecialchars($_SESSION['conciergerieDuWebFirstName']).' '.htmlspecialchars($_SESSION['conciergerieDUWebLastName']).'</a>';
-                        }
-                    ?>
             </nav>
         
             <!-- Navbar avec fond noir brillant avec classe bg-navbar  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -86,10 +81,15 @@
                     </form>
                     </div>
                         <li class="nav-item dropdown">
+                            <?php
+                                if(isset($_SESSION['conciergerieDuWebId'])) {
+                                    echo '<a class="navbar-brand" href="index.php?action=accountManagement">Bienvenue '.htmlspecialchars($_SESSION['conciergerieDuWebFirstName']).' '.htmlspecialchars($_SESSION['conciergerieDUWebLastName']).'</a>';
+                                }
+                            ?>                    
                             <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <?php
                                     if(isset($_SESSION['conciergerieDuWebId'])) {
-                                        echo 'Déconnexion';
+                                        echo 'Compte';
                                     }
                                     else {
                                         echo 'Espace Membre';
@@ -112,11 +112,6 @@
                             </div>
                         </li>
                     </ul>
-                    <?php
-                        if(isset($_SESSION['conciergerieDuWebId'])) {
-                            echo '<a class="navbar-brand" href="index.php?action=accountManagement">Bienvenue '.htmlspecialchars($_SESSION['conciergerieDuWebFirstName']).' '.htmlspecialchars($_SESSION['conciergerieDUWebLastName']).'</a>';
-                        }
-                    ?>
                     
                 </div>            
             </nav>

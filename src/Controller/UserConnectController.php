@@ -120,6 +120,15 @@
             }
         }
 
+        //Unique Voucher Creation +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function voucherTarget() {
+            $categoryManager = new \Project\Model\CategoryManager();
+            $thirdRequest = $categoryManager->categoryRequest();
+            
+            
+            require('src/View/frontend/voucherView.php');
+        }
+
         //Deconnection Session ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function deconnectionSession() {
             session_destroy();

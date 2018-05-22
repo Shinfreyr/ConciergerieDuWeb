@@ -204,6 +204,17 @@
                 throw new Exception('Variable inattendu');    
             }          
         }
+        //Control GET Action & IdArticle
+        elseif(isset($_GET['action']) && isset($_GET['idArticle'])) {
+#UserCo     //Page Voucher View +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            if($_GET['action'] === 'voucher' && $_GET['idArticle']) {
+                $userConnectController->voucherTarget();
+            }
+            //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            else {
+                throw new Exception('Variable inattendu');    
+            }
+        }
         //Control GET Action ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         elseif(isset($_GET['action'])) {
 #AllUser    //Inscription View ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++            
