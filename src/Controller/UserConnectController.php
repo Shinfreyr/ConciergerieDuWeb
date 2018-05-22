@@ -122,8 +122,16 @@
 
         //Unique Voucher Creation +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function voucherTarget() {
+            $idAccount = htmlspecialchars($_SESSION['conciergerieDuWebId']);
+            $idArticle = htmlspecialchars($_GET['idArticle']);
+            $codeVoucher = password_hash($idArticle,PASSWORD_DEFAULT);
+            $endDate = htmlspecialchars($_GET['endDate']);
+            
             $categoryManager = new \Project\Model\CategoryManager();
             $thirdRequest = $categoryManager->categoryRequest();
+
+            $voucherManager = new \Project\Model\VoucherManager();
+            $voucherManager->voucherCreation($idAccount,$idArticle,$codeVoucher,$endDate);
             
             
             require('src/View/frontend/voucherView.php');
