@@ -17,7 +17,7 @@
             $categoryManager = new \Project\Model\CategoryManager();
             $thirdRequest = $categoryManager->categoryRequest();
 
-            require('src/view/frontend/accountManagementView.php');
+            require('src/View/frontend/accountManagementView.php');
         }
 
         //Mail Management Data Base +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
