@@ -122,11 +122,36 @@
 
         //Unique Voucher Creation +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function voucherTarget() {
+            $idAccount = htmlspecialchars($_SESSION['conciergerieDuWebId']);
+            $idArticle = htmlspecialchars($_GET['idArticle']);
+            $codeVoucher = password_hash($idArticle,PASSWORD_DEFAULT);
+            $endDate = htmlspecialchars($_GET['endDate']);
+            
             $categoryManager = new \Project\Model\CategoryManager();
             $thirdRequest = $categoryManager->categoryRequest();
+
+            $voucherManager = new \Project\Model\VoucherManager();
+            $voucherManager->voucherCreation($idAccount,$idArticle,$codeVoucher,$endDate);
+
+            // Control Voucher Creation ++++++++++++++++++++++++++++++++
+            $voucherManager = new \Project\Model\VoucherManager();
+            $request = $voucherManager->voucherCreationControl($idAccount,$idArticle,$codeVoucher,$endDate);
+
+            $result = $request->fetch();
             
-            
-            require('src/View/frontend/voucherView.php');
+            if($result['codeVoucher'] == '') {
+                echo '<h3 class="error">Erreur : La création du Bon d\'achat à rencontrer un problème. Veuillez réessayer plus tard! </h3>';
+                $allUserController = new \Project\Controller\AllUserController();
+                $allUserController->index();
+            }
+            else {            
+                $articleManager = new \Project\Model\ArticleManager();
+                $request = $articleManager->articleVoucherRequest($idArticle);
+
+                $result = $request->fetch();
+                
+                require('src/View/frontend/voucherView.php');
+            }
         }
 
         //Deconnection Session ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

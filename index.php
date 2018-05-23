@@ -24,8 +24,20 @@
         }
         //Control GET action, GET seller and GET page +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         elseif(isset($_GET['action']) && isset($_GET['idSeller']) && isset($_GET['page'])) {
+#AllUser    //Magazin View ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++            
             if($_GET['action'] === 'magazin' && $_GET['idSeller'] !== '' && $_GET['page'] !== '') {
                 $allUserController->category();
+            }
+            //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            else {
+                throw new Exception('Variable inattendu');    
+            }
+        }
+        //Control GET Action & IdArticle
+        elseif(isset($_GET['action']) && isset($_GET['idArticle']) && isset($_GET['endDate'])) {
+#UserCo     //Page Voucher View +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            if($_GET['action'] === 'voucher' && $_GET['idArticle'] !== '' && $_GET['endDate'] !== '') {
+                $userConnectController->voucherTarget();
             }
             //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             else {
@@ -203,17 +215,6 @@
             else {
                 throw new Exception('Variable inattendu');    
             }          
-        }
-        //Control GET Action & IdArticle
-        elseif(isset($_GET['action']) && isset($_GET['idArticle'])) {
-#UserCo     //Page Voucher View +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-            if($_GET['action'] === 'voucher' && $_GET['idArticle']) {
-                $userConnectController->voucherTarget();
-            }
-            //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-            else {
-                throw new Exception('Variable inattendu');    
-            }
         }
         //Control GET Action ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         elseif(isset($_GET['action'])) {
