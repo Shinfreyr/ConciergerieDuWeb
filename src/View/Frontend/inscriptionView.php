@@ -11,7 +11,7 @@
 </div>
 
 <!-- Inscription Forms ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<form action="index.php?action=inscription&db=ok" id="inscriptionForm" method="post" class="col-12  polygon-body ">
+<form action="index.php?action=inscription&db=ok" id="inscriptionForm" method="post" class="col-12  ">
     <div class="form-group">
         <label for="enterpriseCode">Code Entreprise*</label>
         <input type="text" class="form-control" name="enterpriseCode" id="enterpriseCode" placeholder="Code de votre entreprise">
