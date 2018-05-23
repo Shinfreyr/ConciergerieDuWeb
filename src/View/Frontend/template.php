@@ -33,9 +33,9 @@
         
     <!-- Template Content ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <body>
-      <div class="bodyFront container-fluid">   <!-- debut container ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-        <div class="row"> <!-- debut row ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-        <header class="sticky-top col-12 text-center-xs text-center-lg">
+      <div class="bodyFront container-fluid sticky-top ">   <!-- debut container ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <div class="row "> <!-- debut row ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <header class=" col-12 text-center-xs text-center-lg">
         <!-- Nos coordonnées et reseaux sociaux  ++++++++++++ -->
             <nav class="navbar navbar-expand-lg navbar-light colortop">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent2">
