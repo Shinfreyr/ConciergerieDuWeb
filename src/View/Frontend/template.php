@@ -32,8 +32,9 @@
 
         
     <!-- Template Content ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-    <body class="bodyFront container-fluid row">
-                
+    <body>
+      <div class="bodyFront container-fluid">   <!-- debut container ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <div class="row"> <!-- debut row ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <header class="sticky-top col-12 text-center-xs text-center-lg">
         <!-- Nos coordonnées et reseaux sociaux  ++++++++++++ -->
             <nav class="navbar navbar-expand-lg navbar-light colortop">
@@ -114,8 +115,6 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <?php    
                                     if(isset($_SESSION['conciergerieDuWebId'])) {
-                                        echo '<a class="dropdown-item" href="index.php?action=accountManagement">Gérer mon compte</a>';
-                                        echo '<hr>';
                                         echo '<a class="dropdown-item" href="index.php?action=deconnection&session=ok">Déconnexion</a>';
                                     }
                                     else {
@@ -139,6 +138,8 @@
                      </ul>
                 </div>            
             </nav>
+           </div><!-- fin de la row ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+          </div>  <!-- fin du container ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         </header>
                         
         <!-- Content View ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -169,5 +170,5 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="src/Public/js/script.js" /></script>                           
+          <script src="src/Public/js/script.js" /></script>                           
     </body>
