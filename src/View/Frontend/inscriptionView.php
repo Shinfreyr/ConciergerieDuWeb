@@ -4,14 +4,14 @@
 
 <!-- Welcome message +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <div class="alert welcome col-12" id="up" role="alert">
-    <h1 class="alert-heading">Inscription</h1>
+    <h1 class="alert-heading triangle-code-chip">Inscription</h1>
     <p class="mb-0">Dans le cadre de la nouvelle Réglementation Générale sur la Protection des Données, nous vous informons que toutes vos informations enregistrées sur notre site, resteront confidentielles et pouront être supprimées à tout moment par vos soins. </p>
     <hr>
     <p class="mb-0">Attention ! Vous devez être en possession d'un code Entreprise pour vous inscrire.</p>
 </div>
 
 <!-- Inscription Forms ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<form action="index.php?action=inscription&db=ok" id="inscriptionForm" method="post" class="col-12">
+<form action="index.php?action=inscription&db=ok" id="inscriptionForm" method="post" class="col-12  polygon-body ">
     <div class="form-group">
         <label for="enterpriseCode">Code Entreprise*</label>
         <input type="text" class="form-control" name="enterpriseCode" id="enterpriseCode" placeholder="Code de votre entreprise">

@@ -8,14 +8,26 @@
 .birthForm {
     margin-left: 15px;
 }
+
+
+
 @media (min-width: 769px) {
 /*body +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 body {
     background-color: #1c1918;
     color:grey;
     font-family: "Roboto", sans-serif;
-    
+    height:auto;
 }
+
+.colortop{
+    background-color:#8fa5af;
+}
+li {
+    display : inline;
+}
+
+
 
 /*polygon footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .polygon-footer {
@@ -29,8 +41,9 @@ body {
 .polygon-body {
     background-image: linear-gradient(#0c4c8c,black);
     color:#d1dfed; 
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
+    padding:auto;
 }
 
 /*triangle en forme d'aile de libellule en dessous des titres ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -45,10 +58,25 @@ body {
    
 /*lien sous les intitules de la  nav bar ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-.header-nav a {
+.header-nav a, .accueillogo a {
     text-decoration: none;
     }
-    a:hover {
+
+
+    nav ul li
+    {
+     margin:0 10px; 
+    }
+
+ .marge{
+     
+     padding-right:80px;
+ }
+/*#imagevip{
+    margin-top:150px;
+}*/
+
+a:hover {
     text-decoration: underline;
     border-bottom: 3px solid #8fa5af;
     }
@@ -58,7 +86,7 @@ body {
     background-color: #1c1918;
    }
 
-
+  
 /*couleur des fonts de la nav bar ++++++++++++++++++++++++++ */
 .navbar-light .navbar-brand {
     color: white;
@@ -98,11 +126,11 @@ h1 {
 .card{
     margin :10%;
     }
-}
+}  
 @media screen and (max-width:768px) {
 	body{
 	background-color:#fff;
-	color:#ccc;	
+	color:#0c4c8c;	
     height:auto;
 	
 }

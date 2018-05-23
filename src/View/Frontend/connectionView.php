@@ -7,7 +7,7 @@
     <h1 class="alert-heading">Connection</h1>
     <p class="mb-0">Connectez vous ici !</p>
     <hr>
-    <p class="mb-0">Proffitez de nos offres en vous connectant !</p>
+    <p class="mb-0">Profitez de nos offres en vous connectant !</p>
 </div>
 
 <!-- Connection Forms ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
