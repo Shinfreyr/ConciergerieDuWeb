@@ -9,7 +9,7 @@
     <div class="card-body">
         <h5 class="card-title">Carte VIP</h5>
         <h6>La conciergerie du Web</h6>
-        <p class="card-text">Nom Entreprise</p>
+        <p class="card-text"><?= htmlspecialchars($result['societyNameSeller']) ?></p>
         <hr>
         <h5>Prénom Nom</h5>
         <h6>Article</h6>

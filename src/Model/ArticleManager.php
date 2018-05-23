@@ -136,4 +136,15 @@
 
             return $secondRequest;
         }
+
+        //Article Voucher Request +++++++++ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function articleVoucherRequest($idArticle) {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article recuperation 
+            $request = $db->prepare('SELECT * FROM articles INNER JOIN sellers ON articles.idSeller=sellers.idSeller WHERE articles.idArticle=?');
+            $request -> execute(array($idArticle));
+
+            return $request;
+        }
     }

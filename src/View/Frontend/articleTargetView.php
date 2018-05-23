@@ -11,7 +11,14 @@
     <p class="card-text"><?= htmlspecialchars($result['reductionArticle']) ?>%</p>
     <p class="card-text">Prix original: <?= htmlspecialchars($result['originalPriceArticle']) ?>&euro;</p>
     <h3>Prix avec réduction: <?= htmlspecialchars($result['reductionPriceArticle']) ?>&euro;</h3>
-    <a class="btn btn-primary btn-lg" href="index.php?action=voucher&idArticle=<?= htmlspecialchars($result['idArticle']) ?>&endDate=<?= htmlspecialchars($result['endDateArticle']) ?>" role="button">Editer mon Bon de réduction</a>
+    <?php
+        if(isset($_SESSION['conciergerieDuWebId'])) {
+            echo '<a class="btn btn-primary btn-lg" href="index.php?action=voucher&idArticle='.htmlspecialchars($result['idArticle']).'&endDate='.htmlspecialchars($result['endDateArticle']).'" role="button">Editer mon Bon de réduction</a>';
+        }
+        else {
+            echo '<a class="btn btn-primary btn-lg" href="#" role="button">Connectez vous pour générer votre bon</a>';
+        }        
+    ?>
     <p>*fin de la promotion : <?= htmlspecialchars($result['endDateArticle']) ?></p>
 </div>
 

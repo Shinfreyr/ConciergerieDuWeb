@@ -99,6 +99,8 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <?php    
                                     if(isset($_SESSION['conciergerieDuWebId'])) {
+                                        echo '<a class="dropdown-item" href="index.php?action=accountManagement">Gérer mon compte</a>';
+                                        echo '<hr>';
                                         echo '<a class="dropdown-item" href="index.php?action=deconnection&session=ok">Déconnexion</a>';
                                     }
                                     else {
