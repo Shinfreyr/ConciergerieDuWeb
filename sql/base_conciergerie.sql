@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  mar. 15 mai 2018 à 17:03
+-- Généré le :  jeu. 24 mai 2018 à 11:48
 -- Version du serveur :  10.1.31-MariaDB
 -- Version de PHP :  7.2.4
 
@@ -196,10 +196,48 @@ INSERT INTO `sellers` (`idSeller`, `societyNameSeller`, `sirenSeller`, `activity
 CREATE TABLE `vouchers` (
   `idVoucher` int(11) NOT NULL,
   `codeVoucher` varchar(60) NOT NULL,
-  `dateVoucher` date NOT NULL,
+  `dateEditionVoucher` datetime NOT NULL COMMENT 'Date d&#039;édition',
+  `dateVoucher` date NOT NULL COMMENT 'Date de fin de validité',
   `idArticle` int(11) NOT NULL,
   `idAccount` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `vouchers`
+--
+
+INSERT INTO `vouchers` (`idVoucher`, `codeVoucher`, `dateEditionVoucher`, `dateVoucher`, `idArticle`, `idAccount`) VALUES
+(1, '$2y$10$6t7JNyZv1yltxbZiMrThwe3TESB7Gdy/.TVBh8ggAFDsXZAUgLmrS', '0000-00-00 00:00:00', '2019-06-19', 8, 13),
+(2, '$2y$10$byfJiDMhhTjS9jSV2p83Dem..NhCfd5EFAUbRlRFgO5wmr5u8Z3n2', '0000-00-00 00:00:00', '2019-06-19', 8, 13),
+(3, '$2y$10$cC5eHZjdakWxizsFer7eZutfn98aZsd6ThBhkw6pIseWa1oclbOP2', '0000-00-00 00:00:00', '2019-06-19', 8, 13),
+(4, '$2y$10$mTOdjaZb4QJ0ozWMECl.kevEvXXgEjYeagVgr1ZkOeaqfLx2w9G82', '2018-05-23 00:00:00', '2019-06-19', 8, 13),
+(5, '$2y$10$L7mvB51kjxGeOHoOekx53OH8BsVrSP6KJB7Lsv9Xv8H4PzzUQA1Mq', '2018-05-23 00:00:00', '2019-06-19', 8, 13),
+(6, '$2y$10$LbNCSb7EBkv7cqIgn7HUtu36EANBU37d19bqTFtKftIgPhnxYdhCq', '2018-05-23 00:00:00', '2019-06-19', 8, 13),
+(7, '$2y$10$z8ezwRRdh8Zgg.SEiqWRa.7VU56ztESHN8WF.XV3sZ043g4MeES.e', '2018-05-23 11:31:26', '2019-06-19', 8, 13),
+(8, '$2y$10$MGkjhlbUMaD0qropUFj8/.Uq0B7E.dsKZjHrP9FoK3abc15oYQsMK', '2018-05-23 11:32:47', '2019-06-19', 8, 13),
+(9, '$2y$10$tpGyM2Ve5tVZuo4GPQ0YlOJ8MTZRHuROoFpC9TloKQRTHVCWFZczq', '2018-05-23 11:34:30', '2019-06-19', 8, 13),
+(10, '$2y$10$BHfsCeejQruFKsNWJUfVyOrtgdEFqgS2zOPFOP0FDPDU/xd.zuZxe', '2018-05-23 11:37:18', '2019-06-19', 8, 13),
+(11, '$2y$10$n9T.zhzVR8RlpXFe7tZlLezScBaIn8hA8Q7UdDRUNXZ3G665Nyd.C', '2018-05-23 11:37:31', '2019-06-19', 8, 13),
+(12, '$2y$10$wg4wyazdG15PWWzvhXLSTuDf9hWZ8eL3JILdnNp0dBMU9hoTb46i.', '2018-05-23 11:38:48', '2019-06-19', 8, 13),
+(13, '$2y$10$DXLsOswfPGTEoAvteve81.dIFGuOvthL9Vk/EQ0DL0G9clZ0BpFHq', '2018-05-23 11:39:02', '2019-06-19', 8, 13),
+(14, '$2y$10$kJlxSwT/HdX2Jtp2/sLGZOQckerb/emKcp.ddJ5ydF0deFgoWvD5C', '2018-05-23 11:40:48', '2019-06-19', 8, 13),
+(15, '$2y$10$fZYJ4CiipfpAQL32RaYHN...rtUYFmh.t3Q0C5ss/8MU1Cf4n1uiS', '2018-05-23 11:41:49', '2019-06-19', 8, 13),
+(16, '$2y$10$uIwbILGoOVVOLsa9WH4S7O3RdfLHqUW/JmMtBZmEU1mv/T3t0DaXK', '2018-05-23 11:45:52', '2019-06-19', 8, 13),
+(17, '$2y$10$gnCTNCBT5iT55ZmoyswkvOgvE0ZW0rij.TDBZ9xEDcaFCkG1Q/NBi', '2018-05-23 11:46:06', '2019-06-19', 8, 13),
+(18, '$2y$10$i877KeIwlpH4Na.K3jTNbOCtuYBeMjh0Mi4JY4.vwbcSQi2lM4O0i', '2018-05-23 11:47:53', '2019-06-19', 8, 13),
+(19, '$2y$10$F.EVXRTMRjf/XCGSpfq2v.QtBAAg/.mEDkxsc5kVFZf1vsG9mi7wq', '2018-05-23 11:47:59', '2019-06-19', 8, 13),
+(20, '$2y$10$C0aV9s.gJuWRzXJwhJHeGeqhr7UojD2Jp9HOMwfYveav5K5g4z30C', '2018-05-23 11:48:24', '2019-06-19', 8, 13),
+(21, '$2y$10$.toVWyLOKDpC8DTwqbTIkeBBdKPoTNteskHkdTe2Xmh2YMOFuEDOy', '2018-05-23 12:09:24', '2019-06-19', 8, 13),
+(22, '$2y$10$DDgmqTX5v./M8c1xLD2zfujc6t9e0K5375970WKRJ8xyL5FZx0ogG', '2018-05-23 12:09:28', '2019-06-19', 8, 13),
+(23, '$2y$10$bEZ5/6ILFboy3g4mogJrJ.XU7Vnxjf3gLKECjx5/pcJkB/bY2MrLq', '2018-05-23 12:11:01', '2019-06-19', 8, 13),
+(24, '$2y$10$sCkBk.57dzu3nJ5UJ7R99OlQqwJwtg3RkOh.bEhZt8ECIPsYEYdAG', '2018-05-23 12:12:17', '2019-06-19', 8, 13),
+(25, '$2y$10$ssz4eSHQhe2lTjXGIar3IeNvcTqCPglf7JMjX96LSI50mkv4/0D4W', '2018-05-24 11:30:49', '2019-06-19', 8, 13),
+(26, '$2y$10$U7qBS7q/nHMy5knLolk.EuMMPJX7upK8baOMkcelbTVgGuzkh0uCa', '2018-05-24 11:31:16', '2019-06-19', 8, 13),
+(27, '$2y$10$id0oUkIl0sOgtA02idL8Ye7pPqlBsJ3nYQCFsaPJktGqsX9xSs1O6', '2018-05-24 11:32:18', '2019-06-19', 8, 13),
+(28, '$2y$10$VEyr3m7T8ZVgLQsmI1KsCuXVlA/vNJqfSyklAo0qeXV404Cafidhe', '2018-05-24 11:32:24', '2019-06-19', 8, 13),
+(29, '$2y$10$Xn2be.P.gqLp3tyDDfBBte.QvSH6RObqnjcnCLuPprwPqeO4f0i0S', '2018-05-24 11:43:50', '2019-06-19', 8, 13),
+(30, '$2y$10$hF530.1WcG52MDzzrIFn2uQ7VhCSO2YNfp/fPo/SOcyyI4T0.YKc.', '2018-05-24 11:44:40', '2019-06-19', 8, 13),
+(31, '$2y$10$7mvO0I5bADimkyryplLqI.eSQDfXG5MRCPALU0jFTAuTsldxL9JvW', '2018-05-24 11:45:43', '2019-06-19', 8, 13);
 
 --
 -- Index pour les tables déchargées
@@ -291,7 +329,7 @@ ALTER TABLE `sellers`
 -- AUTO_INCREMENT pour la table `vouchers`
 --
 ALTER TABLE `vouchers`
-  MODIFY `idVoucher` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idVoucher` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- Contraintes pour les tables déchargées
