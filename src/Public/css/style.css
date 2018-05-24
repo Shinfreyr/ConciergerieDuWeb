@@ -173,5 +173,31 @@ h1 {
 }
 
 
+nav ul li
+{
+ margin:0 2px; 
+ font-size: 13px;
+ display: inline-block;
+}
+nav ul li a
+{
+ margin:0 2px; 
+ font-size: 13px;
+ display: inline-block;
+ line-height: 13px;
+}
+
+.taille13{
+font-size: 13px;
+display: inline-block;
+}
+form{
+white-space: nowrap;
+}
+.marge{
+ 
+ padding-right:40px;
+
+}
 
 }
