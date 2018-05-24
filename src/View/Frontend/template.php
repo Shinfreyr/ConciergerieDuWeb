@@ -47,13 +47,13 @@
                     <a href="mailto:contact@tywebservices.fr" class="nav-link disabled">contact@tywebservices.fr</a>
                     </li>
                     <li class="nav-item">
-                    <a href="#" class="nav-link disabled"><i class=" fa fa-facebook-official"></i></a>
+                    <a href="#" class="nav-link disabled"><i class="fa fa-facebook-official"></i></a>
                     </li>
                     <li class="nav-item">
-                    <a href="#" class="nav-link disabled"><i class=" 	fa fa-twitter"></i></a>
+                    <a href="#" class="nav-link disabled"><i class="fa fa-twitter"></i></a>
                     </li>
                     <li class="nav-item">
-                    <a href="#" class="nav-link disabled"><i class=" 	fa fa-google-plus"></i></a>
+                    <a href="#" class="nav-link disabled"><i class="fa fa-google-plus"></i></a>
                     </li>
                     </ul>
                 </div>
@@ -62,7 +62,7 @@
             <!-- Navbar avec fond noir brillant avec classe bg-navbar  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
             <nav class="navbar navbar-expand-lg navbar-light bg-navbar header-nav justify-content-center"> 
                <a class="navbar-brand" href="index.php">
-                   <img src="src/Public/images/Logo_TyWeb-300x300conciergerien&b.jpg" alt="Accueil" class="img-fluid" alt="Responsive image" style="height:100px; width:100px;" ></a>
+                   <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="img-fluid" alt="Responsive image" style="height:100px; width:100px;" ></a>
                 <button class="navbar-toggler bg-light " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon "></span>
                 </button>
