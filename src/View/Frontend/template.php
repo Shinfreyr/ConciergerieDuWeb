@@ -62,7 +62,7 @@
             <!-- Navbar avec fond noir brillant avec classe bg-navbar  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
             <nav class="navbar navbar-expand-lg navbar-light bg-navbar header-nav justify-content-center"> 
                <a class="navbar-brand" href="index.php">
-                   <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="img-fluid" alt="Responsive image" style="height:100px; width:100px;" ></a>
+                   <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-block" style="height:100px; width:100px;"id="logo"></a>
                 <button class="navbar-toggler bg-light " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon "></span>
                 </button>
@@ -88,9 +88,9 @@
                         </li>
                         
                         <div class="marge">
-                    <form class="form-inline my-2 my-lg-0" id="search">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Saisissez un mot clé" aria-label="Search" >
-                        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Recherche</button>
+                    <form class="form-inline my-2 my-lg-0 taille13" id="search">
+                        <input class="form-control mr-sm-2 taille13" type="search" placeholder="Saisissez un mot clé" aria-label="Search" >
+                        <button class="btn btn-outline-secondary my-2 my-sm-0 taille13" type="submit">Recherche</button>
                     </form></div>
                 
                         <li class="nav-item">
@@ -129,7 +129,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-fluid" alt="Responsive image" style="height:200px; width:100px;" id="imagevip" >
+                            <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="rounded mx-auto d-block" alt="Responsive image" style="height:200px; width:100px;" id="imagevip" >
                         </li>
                 
 
