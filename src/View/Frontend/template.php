@@ -115,6 +115,8 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <?php    
                                     if(isset($_SESSION['conciergerieDuWebId'])) {
+                                        echo '<a class="dropdown-item" href="index.php?action=accountManagement">Modifier le compte</a>';
+                                        echo '<hr>';
                                         echo '<a class="dropdown-item" href="index.php?action=deconnection&session=ok">Déconnexion</a>';
                                     }
                                     else {
@@ -124,10 +126,6 @@
                                         ';
                                     }
                                 ?>
-                              <?php
-                                        echo '<a class="dropdown-item" href="index.php?action=accountManagement">Modifier le compte</a>';
-                                
-                            ?> 
                             </div>
                         </li>
                         <li class="nav-item">
