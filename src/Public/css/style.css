@@ -18,24 +18,42 @@ body {
     font-family: "Roboto", sans-serif;
     height:auto;
 }
-
+/*couleur de fond de saisissez un mot cle++++++++++++++++++++++*/
 .colortop{
     background-color:#8fa5af;
 }
+/*les li sur une seule ligne++++++++++++++++++++++*/
+
 li {
     display : inline;
 }
-
+/*les ul sur une seule ligne++++++++++++++++++++++*/
 ul {
     display : inline;
+}
+/*taille de l'image dans la view indexview+++++++++++++++++++++++++++++*/
+.someClass { 
+    background: url(src/Public/images/mains.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width:100%;
+    opacity:0.50;
+  }
+/*taille de alert welcome+++++++++++++++++++++++++++++*/
+.hauteurclass{
+    height:100%;
 }
 
 /*polygon footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .polygon-footer {
     background-color: #FFFFE0;
     color:#1c1918; 
-    -webkit-clip-path: polygon(0 43%, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 43%, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+    padding:auto;
 }
 
 /*polygon body +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -58,56 +76,121 @@ ul {
    }
    
 /*lien sous les intitules de la  nav bar ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
+/*pas de surligne sous le logo++++++++++++++++++++++*/
 .header-nav a, .accueillogo a {
     text-decoration: none;
     }
-
+/*place de la nav bar++++++++++++++++++++++*/
     nav ul li
     {
      margin:0 2px; 
-     font-size: 13px;
+     font-size: 0.9375em;
      display: inline-block;
     }
     nav ul li a
     {
      margin:0 2px; 
-     font-size: 13px;
+     font-size: 0.9375em;
      display: inline-block;
      line-height: 13px;
     }
-
+/*taille des caracteres++++++++++++++++++++++*/
 .taille13{
-    font-size: 13px;
+    font-size: 0.9375em;
     display: inline-block;
     }
+/* le formualire de recherche sur une seule ligne++++++++++++++++++++++*/
 form{
     white-space: nowrap;
 }
+/*marge de droite pour la recherche++++++++++++++++++++++*/
 .marge{
-     
-     padding-right:40px;
-
+    padding-right:40px;
  }
-
+/*position de la navbar ++++++++++++++++++++++*/
  navbar{
     position: relative;
     z-index: 1;
     height:100px;
 }
+/*position de image vip ++++++++++++++++++++++*/
 #imagevip{
       position: absolute;
       z-index: 2;
-}
+      top: 1em;
+    }
+/*position image logo ++++++++++++++++++++++*/
 #logo{
     position: relative;
     z-index: 3;
-    top: 1em;
+    /* top: 2em;*/
     }
+/*barre bleue au survol ++++++++++++++++++++++*/
 a:hover {
     text-decoration: underline;
     border-bottom: 3px solid #8fa5af;
     }
+/*menu du bas +++++++++++++++ */
+
+/*les 3 navbar +++++++++++++ */
+
+.navbarfooter, .navbarfooter2, .navbarfooter3{
+    margin:5px;
+  padding-top:10px;
+}
+/*1ernavbar +++++++++++++ */
+.navbarfooter ul li a{
+    display: inline;
+    text-decoration: none;
+    color: #8fa5af;
+    font-size: 0.9375em;
+    margin:0 2px;
+    padding:0 2px;
+}
+.navbarfooter ul li a:hover{
+    display: inline;
+    text-decoration: none;
+    border-bottom: 3px solid #8fa5af;
+    font-size: 0.9375em;
+}
+
+/*2ndenavbar +++++++++++++ */
+.navbarfooter2 ul li a{
+    display: inline;
+    text-decoration: none;
+    color: #8fa5af;
+    font-size: 0.9375em;
+    margin:0 2px;
+    padding:0 2px;
+}
+.navbarfooter2 ul li{
+    display: inline;
+    margin: 0 5px;
+    padding: 0 5px;
+    border-left: 1px solid #1c1918;
+    font-size: 0.9375em;
+}
+
+.navbarfooter2 ul li:first-child{
+    border:none;
+    font-size: 0.9375em;
+}
+
+
+/*3emenavbar +++++++++++++ */
+.navbarfooter3 ul li a{
+    display: inline;
+    text-decoration: none;
+    color: #8fa5af;
+    font-size: 0.9375em;
+    margin:0 2px;
+    padding:0 2px;
+}
+.navbarfooter3 ul li a:hover{
+    display: inline;
+    text-decoration: none;
+    font-size: 0.9375em;
+}
 
     /*couleur de fond de la nav bar ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .bg-navbar {
@@ -142,28 +225,36 @@ a:hover {
 }
  
 .btn-outline-success:hover {
-    color: #fff;
+    color: rgb(148, 69, 69);
     background-color: #0c4c8c;
     border-color: white;
 }
 h1 {
     text-align: center;
 }
+ /*marge autour de la barre de recherche ++++++++++++++++++++++*/
 #search{
     margin-left:5%;
     margin-right: 10%;
 }
+ /*marge entres les card ++++++++++++++++++++++*/
 .card{
     margin :10%;
+  
     }
+
+
 }  
+
 @media screen and (max-width:768px) {
 	body{
-	background-color:#fff;
-	color:#0c4c8c;	
+	background-color:#1c1918;
+	color:#fff;	
     height:auto;
 	
 }
+*/
+
 /*polygon footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .polygon-footer {
     background-color: #FFFFE0;
@@ -176,19 +267,22 @@ h1 {
 nav ul li
 {
  margin:0 2px; 
- font-size: 13px;
+ font-size: 0.9375em;
  display: inline-block;
+ 
 }
 nav ul li a
 {
  margin:0 2px; 
- font-size: 13px;
+ font-size: 0.9375em;
  display: inline-block;
  line-height: 13px;
+ 
+ 
 }
 
 .taille13{
-font-size: 13px;
+font-size: 0.9375em;
 display: inline-block;
 }
 form{

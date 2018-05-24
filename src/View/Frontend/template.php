@@ -129,13 +129,13 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="rounded mx-auto d-block" alt="Responsive image" style="height:200px; width:100px;" id="imagevip" >
+                            <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="rounded mx-auto d-block" alt="Responsive image" style="height:100px; width:50px;" id="imagevip" >
                         </li>
                 
 
                      </ul>
                 </div>            
-            </nav>
+            </nav><!-- fin de la nav menu +++++++++++-->
            </div><!-- fin de la row ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
           </div>  <!-- fin du container ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         </header>
@@ -144,25 +144,80 @@
         <?= $content ?>
 
         <!-- Footer ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-        <footer class="col-12 polygon-footer">
-            <div class="card text-center polygon-footer">
-                <div class="card-header">
-                    <ul class="nav nav-tabs card-header-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Mentions légales</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#up">&uarr; Up</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Maison du Web</h5>
-                    <p class="card-text">&copy; 2018</p>
-                    <a href="#" class="btn btn-info">Plus d'infos</a>
-                </div>
+        <footer class="row polygon-footer ">
+            
+            <div class="card-text text-center col">
+                    <div class="row justify-content-center">
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                    <div class="collapse navbar-collapse col text-center  navbarfooter" id="navbarSupportedContent3">
+                    
+                        <ul class="nav nav-tabs card-header-tabs ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ACCUEIL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">LA SOCIETE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SERVICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONCIERGERIE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">OFFRES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">NEWSROOM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">NOUS CONTACTER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#up">&uarr; Haut de page</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </nav>
+                    </div>
+                    <div class="row justify-content-center">
+                        <nav class="navbar navbar-expand-lg navbar-light ">
+                            <div class="collapse navbar-collapse col  navbarfooter2" id="navbarSupportedContent4">
+                                <ul class="nav nav-tabs card-header-tabs ">
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="#">Plan du site</a> 
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="#">Mentions Légales </a>  
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="#"> Politique de confidentialité</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="#">Conditions Générales d’Utilisation </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="row justify-content-center">
+                        <nav class="navbar navbar-expand-lg navbar-light ">
+                            <div class="collapse navbar-collapse col navbarfooter3" id="navbarSupportedContent5">
+                                <ul class="nav nav-tabs card-header-tabs ">
+                                    <li class="nav-item">
+                                   Copyright &copy; 2018  <h5 class="card-title taille13">TyWebServices.</h5>Tous droits réservés.
+                                    </li>
+                                    <li class="nav-item">
+                                    <a href="#" class="btn btn-outline-secondary my-2 my-sm-0 taille13">Plus d'infos</a> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
             </div>
-        </footer>
+        </footer>  
+                             
+                           
 
         <!-- Script Bootstrap V4 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
