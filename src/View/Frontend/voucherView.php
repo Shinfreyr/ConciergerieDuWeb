@@ -11,15 +11,15 @@
         <h6>La conciergerie du Web</h6>
         <p class="card-text"><?= htmlspecialchars($result['societyNameSeller']) ?></p>
         <hr>
-        <h5>Prénom Nom</h5>
-        <h6>Article</h6>
-        <p>Prix Promo (prix sans promo)</p>
-        <p>Date de validité</p>
+        <h5><?= htmlspecialchars($_SESSION['conciergerieDuWebFirstName']).' '.htmlspecialchars($_SESSION['conciergerieDUWebLastName']) ?></h5>
+        <h6><?= htmlspecialchars($secondResult['nomArticle']) ?></h6>
+        <p>Prix Client= <?= htmlspecialchars($secondResult['reductionPriceArticle']) ?> &euro; (prix original <?= htmlspecialchars($secondResult['originalPriceArticle']) ?>&euro;)</p>
+        <p>Validité jusqu'au : <?= htmlspecialchars($secondResult['endDateArticle']) ?></p>
         
         <a href="#" class="btn btn-primary">envoyer le bon sur ma boite mail</a>
     </div>
     <div class="card-footer text-muted">
-        <p>Numéro de bon</p>
+        <p>N° de Bon : <?= htmlspecialchars($secondResult['codeVoucher']) ?></p>
     </div>
 </div>
 

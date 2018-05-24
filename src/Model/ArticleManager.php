@@ -137,8 +137,8 @@
             return $secondRequest;
         }
 
-        //Article Voucher Request +++++++++ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        function articleVoucherRequest($idArticle) {
+        //Article Voucher First Request ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function firstArticleVoucherRequest($idArticle) {
             // Data Base Connection
             $db=$this->dbConnect();
             // Article recuperation 
@@ -147,4 +147,16 @@
 
             return $request;
         }
+
+        //Article Voucher Second Request ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        Function secondArticleVoucherRequest($idArticle,$codeVoucher) {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article recuperation 
+            $request = $db->prepare('SELECT * FROM articles INNER JOIN vouchers ON articles.idArticle=vouchers.idArticle WHERE articles.idArticle=? AND vouchers.codeVoucher=?');
+            $request -> execute(array($idArticle,$codeVoucher));
+
+            return $request;
+        }
+
     }

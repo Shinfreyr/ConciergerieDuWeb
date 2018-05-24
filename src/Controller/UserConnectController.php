@@ -146,9 +146,11 @@
             }
             else {            
                 $articleManager = new \Project\Model\ArticleManager();
-                $request = $articleManager->articleVoucherRequest($idArticle);
+                $request = $articleManager->firstArticleVoucherRequest($idArticle);
+                $secondRequest = $articleManager->secondArticleVoucherRequest($idArticle,$codeVoucher);
 
                 $result = $request->fetch();
+                $secondResult = $secondRequest->fetch();
                 
                 require('src/View/frontend/voucherView.php');
             }
