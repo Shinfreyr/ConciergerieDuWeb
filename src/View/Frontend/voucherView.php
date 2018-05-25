@@ -16,7 +16,7 @@
         <p>Prix Client= <?= htmlspecialchars($secondResult['reductionPriceArticle']) ?> &euro; (prix original <?= htmlspecialchars($secondResult['originalPriceArticle']) ?>&euro;)</p>
         <p>Validité jusqu'au : <?= htmlspecialchars($secondResult['endDateArticle']) ?></p>
         
-        <a href="#" class="btn btn-primary">envoyer le bon sur ma boite mail</a>
+        <a href="index.php?action=mailVoucher&session=ok" class="btn btn-primary">envoyer le bon sur ma boite mail</a>
     </div>
     <div class="card-footer text-muted">
         <p>N° de Bon : <?= htmlspecialchars($secondResult['codeVoucher']) ?></p>

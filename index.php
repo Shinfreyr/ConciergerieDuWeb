@@ -197,8 +197,12 @@
         //Control GET Action & Session
         elseif(isset($_GET['action']) && isset($_GET['session'])) {
 #UserCo     //Déconnection Session ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-            if($_GET['action'] === 'deconnection' && $_GET['session'] === "ok") {
+            if($_GET['action'] === 'deconnection' && $_GET['session'] === 'ok') {
                 $userConnectController->deconnectionSession();
+            }
+#UserCo     //Voucher Mailling ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            elseif($_GET['action'] === 'mailVoucher' && $_GET['session'] === 'ok') {
+                $userConnectController->mailVoucher();
             }
             //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             else {

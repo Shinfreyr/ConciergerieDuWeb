@@ -156,6 +156,17 @@
             }
         }
 
+        //Voucher Mailling ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function mailVoucher() {
+            echo 'coucou'; 
+            
+
+            $im = imagegrabscreen();
+            imagepng($im, "myscreenshot.png");
+            imagedestroy($im);
+
+   
+        }
         //Deconnection Session ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function deconnectionSession() {
             session_destroy();

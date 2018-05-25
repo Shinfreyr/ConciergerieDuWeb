@@ -220,6 +220,7 @@
                     $_SESSION['conciergerieDUWebLastName'] = $result['lastNameAccount'];
                     $_SESSION['conciergerieDuWebFirstName'] = $result['firstNameAccount'];
                     $_SESSION['conciergerieDuWebStatus'] = $result['statusAccount'];
+                    $_SESSION['conciergerieDuWebMail'] = $result['mailAccount'];
 
                     header("Refresh:0; index.php");
                 }
