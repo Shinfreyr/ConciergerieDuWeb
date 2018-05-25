@@ -4,6 +4,21 @@
     padding: 0;
 }
 
+/*Header +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.modNavbar{
+    width: 100%;
+}
+
+.flexNavbar{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbarCenter{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /*Inscription Form +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .birthForm {
     margin-left: 15px;
