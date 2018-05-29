@@ -111,7 +111,7 @@
                <div class="form-group">
                     <label for="telephone" class="col-sm-2 control-label alignement">T&eacute;l&eacute;phone :</label>
                       <div class="col-sm-11">
-                          <input type="text" class="form-control" placeholder="Ex: 02.97.66.00.00" name="tel" id="tel">
+                          <input type="text" class="form-control" placeholder="Ex: 02.97.66.00.00" name="tel" id="tel" size="20" minlength="9" maxlength="14" >
                       </div>
                </div>
                <div class="form-group">
@@ -127,7 +127,7 @@
                       </div>
                </div>
                 <div class="form-group">
-                     <label for="form_message" class="col-sm-2 control-label alignement">Message</label>
+                     <label for="message" class="col-sm-2 control-label alignement">Message</label>
                      <div class="col-sm-11">
                             <textarea id="form_message" name="message" class="form-control" placeholder="Laissez votre message" rows="4" required="required"
                                 data-error="Laissez votre message"></textarea>
@@ -143,7 +143,7 @@
                     </div>
                 <div class="form-group">
                             <div class="checkbox col-sm-11 alignement">
-                                <label  for="form_message">
+                                <label  for="RGPD">
                                     <input type="checkbox" name="agree" value="agree" required /> J'accepte les termes et les conditions*
                                 </label>
                             </div>
@@ -163,7 +163,7 @@
          
           <div class="col-xs-12  col-sm-12 col-md-3 col-lg-4 offset-lg-1 someClassdroite"><!--+++++++++++++++++++++++++++++++++++++debut du formulaire de contact form partie droite-->
             <div class="col-lg-12">
-                <div class="titleprghp text-centers">
+                <div class="titleprghp text-center">
                     <span class="prg">Nos coordonnées</span> 
                 </div>
             </div>
