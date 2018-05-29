@@ -24,9 +24,8 @@
     margin-left: 15px;
 }
 
-
-@media (min-width: 769px) {
-/*body +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*@media (min-width: 769px) {
+body +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 body {
     background-color: #1c1918;
     color:grey;
@@ -37,6 +36,7 @@ body {
 .colortop{
     background-color:#8fa5af;
 }
+
 /*les li sur une seule ligne++++++++++++++++++++++*/
 
 li {
@@ -46,9 +46,9 @@ li {
 ul {
     display : inline;
 }
-/*taille de l'image dans la view indexview+++++++++++++++++++++++++++++*/
+/*taille de l'image arriere plan dans la view indexview+++++++++++++++++++++++++++++*/
 .someClass { 
-    background: url(src/Public/images/mains.jpg) no-repeat center center fixed; 
+    background: url(src/Public/images/mains.jpg) no-repeat center center /*fixed*/; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -56,7 +56,9 @@ ul {
     height: 100%;
     width:100%;
     opacity:0.50;
+    filter:alpha(opacity=20);
   }
+ 
 /*taille de alert welcome+++++++++++++++++++++++++++++*/
 .hauteurclass{
     height:100%;
@@ -129,11 +131,11 @@ form{
     height:100px;
 }
 /*position de image vip ++++++++++++++++++++++*/
-#imagevip{
+/*#imagevip{
       position: absolute;
       z-index: 2;
       top: 1em;
-    }
+    }*/
 /*position image logo ++++++++++++++++++++++*/
 #logo{
     position: relative;
@@ -149,7 +151,7 @@ a:hover {
 
 /*les 3 navbar +++++++++++++ */
 
-.navbarfooter, .navbarfooter2, .navbarfooter3{
+.navbarfooter, .navbarfooter2 {
     margin:5px;
   padding-top:10px;
 }
@@ -191,23 +193,7 @@ a:hover {
     font-size: 0.9375em;
 }
 
-
-/*3emenavbar +++++++++++++ */
-.navbarfooter3 ul li a{
-    display: inline;
-    text-decoration: none;
-    color: #8fa5af;
-    font-size: 0.9375em;
-    margin:0 2px;
-    padding:0 2px;
-}
-.navbarfooter3 ul li a:hover{
-    display: inline;
-    text-decoration: none;
-    font-size: 0.9375em;
-}
-
-    /*couleur de fond de la nav bar ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*couleur de fond de la nav bar ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .bg-navbar {
     background-color: #1c1918;
    }
@@ -256,57 +242,113 @@ h1 {
 .card{
     margin :10%;
   
-    }
-
-
-}  
-
-@media screen and (max-width:768px) {
-	body{
-	background-color:#1c1918;
-	color:#fff;	
-    height:auto;
-	
-}
-*/
-
-/*polygon footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-.polygon-footer {
-    background-color: #FFFFE0;
-    color:#1c1918; 
-    -webkit-clip-path: polygon(0 43%, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 43%, 100% 0, 100% 100%, 0% 100%);
 }
 
 
-nav ul li
+ /* indexview +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+ /*intro indexview haut de page +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ .MgHtBs{
+    margin-top:5%;
+    margin-bottom:5%;
+} 
+
+ /*alignement image vip et texte +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ 
+#contImgTxt
 {
- margin:0 2px; 
- font-size: 0.9375em;
- display: inline-block;
- 
+    margin-top:10%;
+    display: flex;
+    justify-content: space-between;
+   
 }
-nav ul li a
-{
- margin:0 2px; 
- font-size: 0.9375em;
- display: inline-block;
- line-height: 13px;
- 
- 
+.element:nth-child(1)
+
+{   order: 1;
+    flex: 2;
+    margin-right:5%;
+
 }
 
-.taille13{
-font-size: 0.9375em;
+.element:nth-child(2)
+{
+    order: 2;
+    flex: 1;
+    margin-left:5%;
+
+}
+/*alignement des cards +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+ /*formulaire de contact +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ 
+
+.checkbox{width:50px}
+.inline {
 display: inline-block;
 }
-form{
-white-space: nowrap;
+label {
+min-width: 120px;
 }
-.marge{
- 
- padding-right:40px;
+.titleprghp {
+background:#555;
+height: 46px;
+color: fff;
+font-size: 23px;
+height: 46px;
+line-height: 40px;
+padding: 0 0 0 20px;
+margin: 20px 0 20px;
+}
 
+ /*marges bas de page+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.margeshautetbas{
+    margin-top:10%;
+    margin-bottom:10%;
+}
+.alignement{
+    display:inline;
+    font-size:12px;
 }
 
+ /*taille de l'image arriere plan dans la view indexview+++++++++++++++++++++++++++++*/
+ .someClassvannes { 
+    background: url(src/Public/images/test.jpg) no-repeat center center ; 
+    /*opacity:0.80;*/
+  }
+
+  .someClassgauche, .someClassdroite{
+background-color: #FFFFE0;
 }
+.element{
+    opacity:1;
+}
+
+/*validation formulaire de contact indexview+++++++++++++++++++++++++++++*/
+input:invalid {
+    border: 2px dashed goldenrod;
+  }
+  input:valid {
+    border: 1px solid black;
+  }
+
+
+
+
+
+
+
+
+
+
+
+ @media screen and (max-width:768px) {
+    body {
+        background-color: #1c1918;
+        color:grey;
+        font-family: "Roboto", sans-serif;
+        height:auto;
+        font-size: 0.938em;
+        
+ }
+ }

@@ -27,7 +27,9 @@
         <link href="src/Public/css/style.css" rel="stylesheet" /> 
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       
+        <!-- jquery pour indexview ++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="src/Public/js/script.js"></script>
     </head>
 
         
@@ -96,6 +98,7 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Nous contacter <span class="sr-only">(current)</a>
                         </li>
+                        <ul>
                         <li class="nav-item dropdown">
                             <?php
                                 if(isset($_SESSION['conciergerieDuWebId'])) {
@@ -128,6 +131,7 @@
                                 ?>
                             </div>
                         </li>
+                        </ul>
                         <!--<li class="nav-item">
                             <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="rounded mx-auto d-block" alt="Responsive image" style="height:100px; width:50px;" id="imagevip" >
                         </li>-->
@@ -149,6 +153,7 @@
             <div class="card-text text-center col">
                     <div class="row justify-content-center">
                     <nav class="navbar navbar-expand-lg navbar-light ">
+                    <span class="navbar-text" data-toggle="collapse" data-target="#navbarSupportedContent3" aria-controls="navbarSupportedContent3" aria-expanded="false" aria-label="Toggle navigation" >MENU</span>
                     <div class="collapse navbar-collapse col text-center  navbarfooter" id="navbarSupportedContent3">
                     
                         <ul class="nav nav-tabs card-header-tabs ">
@@ -182,7 +187,8 @@
                     </div>
                     <div class="row justify-content-center">
                         <nav class="navbar navbar-expand-lg navbar-light ">
-                            <div class="collapse navbar-collapse col  navbarfooter2" id="navbarSupportedContent4">
+                            <span class="navbar-text" data-toggle="collapse" data-target="#navbarSupportedContent4" aria-controls="navbarSupportedContent4" aria-expanded="false" aria-label="Toggle navigation">Les INFOS LEGALES</span>
+                      <div class="collapse navbar-collapse col  navbarfooter2" id="navbarSupportedContent4">
                                 <ul class="nav nav-tabs card-header-tabs ">
                                     <li class="nav-item">
                                     <a class="nav-link" href="#">Plan du site</a> 
@@ -201,19 +207,13 @@
                         </nav>
                     </div>
                     <div class="row justify-content-center">
-                        <nav class="navbar navbar-expand-lg navbar-light ">
-                            <div class="collapse navbar-collapse col navbarfooter3" id="navbarSupportedContent5">
-                                <ul class="nav nav-tabs card-header-tabs ">
-                                    <li class="nav-item">
-                                   Copyright &copy; 2018  <h5 class="card-title taille13">TyWebServices.</h5>Tous droits réservés.
-                                    </li>
-                                    <li class="nav-item">
-                                    <a href="#" class="btn btn-outline-secondary my-2 my-sm-0 taille13">Plus d'infos</a> 
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
+                    <span class="taille13">
+                        <pre></pre>
+                     Copyright &copy; 2018  <h5 class="card-title taille13">TyWebServices.</h5>Tous droits réservés.
+                     </span>
                     </div>
+
+
             </div>
         </footer>  
                              
