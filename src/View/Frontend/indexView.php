@@ -6,21 +6,22 @@
 
 <!-- Welcome message +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <div  style=" background-image: linear-gradient(to right bottom, #1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);">
-<div class="alert welcome hauteurclass col-12 someClass" id="up" role="alert"  style="background-image: url('src/Public/images/mains.jpg');">
-        <h1 class="alert-heading MgHtBs">La Conciergerie du Web</h1>
-          <p class="mb-0 text-justify">Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.
-           </p>
+<div class="alert welcome hauteurclass col-12 someClass parallax" id="up" role="alert"  style="background-image: url('src/Public/images/mains.jpg');">
+        <h1 class=" MgHtBs blanc">La Conciergerie du Web</h1>
         <div id="contImgTxt">
-            <div class="element">
-                <p class="text-justify" >Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.
+            <div class="element offset-xl-1">
+                <p class="text-justify blanc" >Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.
                 Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.
                 Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.
                 </p>
             </div>
             <div class="element">
-                <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="rounded mx-auto d-block" alt="Responsive image"  >
-            </div>      
-        </div>
+                <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-thumbnail rounded mx-auto d-block" alt="Responsive image">
+            </div>     
+            </div>
+            <div class="element1">
+                <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-thumbnail rounded mx-auto d-block" alt="Responsive image">
+            </div>     
 </div>
 
 <!-- Service Card ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -78,12 +79,12 @@
                                                        
 <!-- formulaire de contact et nos coordonnées ++++++++++++++++++++++++++++ -->            
 <div class="row someClassvannes margeshautetbas" style="background-image: url('src/Public/test.jpg');" >
-          <div class="col-xs-12 col-sm-12 col-lg-5 offset-md-1 someClassgauche">
+          <div class="col-xs-12 col-sm-6 col-lg-5 offset-md-1 someClassgauche">
                                              
 <!-- tite formulaire de contact ++++++++++++++++++++++++++++ -->   
             <div class="col-lg-12">
                  <div class="titleprghp text-center">
-                  <span class="prg">Comment pouvons-nous vous aider ?</span> 
+                  <span class="prg"><h5>Comment pouvons-nous vous aider ?</h5></span> 
                  </div>
            </div>
            <!-- debut du formulaire de contact form partie gauche ++++++++++++++++++++++++++++ -->  
@@ -91,15 +92,19 @@
                *Mentions oblligatoires
             <!--<form class="form-horizontal" role="form">-->
                 <div class="form-group">
+                <label for="nom" class="col-sm-2 control-label alignement">Société :</label>
+                        <div class="col-sm-11">
+                           <input type="text" class="form-control" placeholder="Ex: Action56" name="societe" id="societe">
+                        </div>
                     <label for="nom" class="col-sm-2 control-label alignement">Nom* :</label>
                         <div class="col-sm-11">
                            <input type="text" class="form-control" placeholder="Ex: Dupont" name="name" id="name" required>
                         </div>
                 </div>
                 <div class="form-group" >
-                    <label for="prenom" class="col-sm-2 control-label alignement">Prenom :</label>
+                    <label for="prenom" class="col-sm-2 control-label alignement">Prenom* :</label>
                         <div class="col-sm-11">
-                            <input type="text" class="form-control" placeholder="Ex: Anne" name="prenom" id="prenom">
+                            <input type="text" class="form-control" placeholder="Ex: Anne" name="prenom" id="prenom" required>
                         </div>
                </div>                                  
                <div class="form-group">
@@ -109,9 +114,9 @@
                       </div>
                </div>
                <div class="form-group">
-                    <label for="telephone" class="col-sm-2 control-label alignement">T&eacute;l&eacute;phone :</label>
+                    <label for="telephone" class="col-sm-2 control-label alignement">T&eacute;l&eacute;phone* :</label>
                       <div class="col-sm-11">
-                          <input type="text" class="form-control" placeholder="Ex: 02.97.66.00.00" name="tel" id="tel" size="20" minlength="9" maxlength="14" >
+                          <input type="text" class="form-control" placeholder="Ex: 02.97.66.00.00" name="tel" id="tel" size="20" minlength="9" maxlength="14" required >
                       </div>
                </div>
                <div class="form-group">
@@ -160,11 +165,11 @@
 
              </div> <!--+++++++++++++++++++++++++++++++++++++</form> </div du formulaire de contact form-->
           </div> <!--+++++++++++++++++++++++++++++++++++++ fin du formulaire de contact form partie gauche-->
-         
-          <div class="col-xs-12  col-sm-12 col-md-3 col-lg-4 offset-lg-1 someClassdroite"><!--+++++++++++++++++++++++++++++++++++++debut du formulaire de contact form partie droite-->
+         <div class="col-xs-12"><br> </div>
+          <div class="col-xs-12 col-sm-5 offset-sm-1 col-md-3  offset-md-1 col-lg-4 offset-lg-1 someClassdroite"><!--+++++++++++++++++++++++++++++++++++++debut du formulaire de contact form partie droite-->
             <div class="col-lg-12">
                 <div class="titleprghp text-center">
-                    <span class="prg">Nos coordonnées</span> 
+                    <span class="prg"><h5>Nos coordonnées</h5></span> 
                 </div>
             </div>
             <!--<div class="blochp_contact">-->
@@ -172,10 +177,10 @@
                
                 <div class="form-group text-center margeshautetbas">
                     <br><h1>Tyweb services</h1> 
-                    <br><h4>16 rue victor Schoelcher
-                    <br>56890 Saint avé
-                    <br>France-Tél : + 33 6 37 69 34 21 
-                    <br>contact@tywebservices.fr /</h4>
+                   <!-- <br><h4>16 rue victor Schoelcher -->
+                    <br><h4>56890 Saint avé
+                    <br>France-Tél : + 33 6 37 69 34 21
+                    <br>contact@tywebservices.fr</h4>
                </div>          
                <!-- la map et coordonnées <form class="form-horizontal" role="form">-->
                <div class="form-group">

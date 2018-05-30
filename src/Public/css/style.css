@@ -1,7 +1,7 @@
 /*Reset ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .card {
-    margin: 0;
-    padding: 0;
+    margin:0 0;
+    padding:0 0;
 }
 
 /*Header +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -24,11 +24,12 @@
     margin-left: 15px;
 }
 
+
 /*@media (min-width: 769px) {
 body +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 body {
     background-color: #1c1918;
-    color:grey;
+    color:#1c1918;
     font-family: "Roboto", sans-serif;
     height:auto;
 }
@@ -36,6 +37,27 @@ body {
 .colortop{
     background-color:#8fa5af;
 }
+.couleursousmenu{
+    background-color: #1c1918;
+}
+/*couleur de texte blanc+++++++++++++++++++++++++++++++++++++++++++++++*/
+.blanc{
+    color:#fff;
+    font-family: "Roboto", sans-serif;
+    height:auto;
+    opacity:1;
+}
+/*couleur des liens gris+++++++++++++++++++++++++++++++++++++++++++++++*/ 
+a:link{color: rgba(0,0,0,.5);}
+a:link:visited{color:  #fff;}
+a:link:active{color:  #fff;}
+a:link:hover{color:  #fff;}
+
+/*marge de presentation++++++++++++++++++++++*/
+.petitemarge{
+    padding-right:5px;
+    padding-left:5px;
+ }
 
 /*les li sur une seule ligne++++++++++++++++++++++*/
 
@@ -124,6 +146,10 @@ form{
 .marge{
     padding-right:40px;
  }
+.pasmarge{
+     margin:0 0;
+     padding: 0 0;
+ }
 /*position de la navbar ++++++++++++++++++++++*/
  navbar{
     position: relative;
@@ -142,6 +168,9 @@ form{
     z-index: 3;
     /* top: 2em;*/
     }
+#alogo{
+    text-decoration:none;
+}    
 /*barre bleue au survol ++++++++++++++++++++++*/
 a:hover {
     text-decoration: underline;
@@ -233,17 +262,39 @@ a:hover {
 h1 {
     text-align: center;
 }
+
  /*marge autour de la barre de recherche ++++++++++++++++++++++*/
 #search{
     margin-left:5%;
     margin-right: 10%;
 }
+
+/*contact et votre compte décalé à droite ++++++++++++++++++++++*/
+
+
+
+/*systeme de parallax ++++++++++++++++++++++*/
+
+.parallax {
+    /* The image used */
+    /*background-image: url("img_parallax.jpg");*/
+
+    /* Set a specific height */
+    height: auto;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
  /*marge entres les card ++++++++++++++++++++++*/
 .card{
     margin :10%;
   
 }
-
 
  /* indexview +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -267,7 +318,6 @@ h1 {
 {   order: 1;
     flex: 2;
     margin-right:5%;
-
 }
 
 .element:nth-child(2)
@@ -275,8 +325,11 @@ h1 {
     order: 2;
     flex: 1;
     margin-left:5%;
-
 }
+.element1{
+    display:none;
+}
+
 /*alignement des cards +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 
@@ -311,13 +364,13 @@ margin: 20px 0 20px;
     font-size:14px;
 }
 
- /*taille de l'image arriere plan dans la view indexview+++++++++++++++++++++++++++++*/
- .someClassvannes { 
+/*taille de l'image arriere plan dans la view indexview+++++++++++++++++++++++++++++*/
+.someClassvannes { 
     background: url(src/Public/images/test.jpg) no-repeat center center ; 
     /*opacity:0.80;*/
   }
 
-  .someClassgauche, .someClassdroite{
+.someClassgauche, .someClassdroite{
 background-color: #FFFFE0;
 }
 .element{
@@ -331,24 +384,68 @@ input:invalid {
   input:valid {
     border: 1px solid black;
   }
+.alogoPt{
+    display:none;
+}
+
+/*@media (min-width: 769px) {
+body ++++++++++++++++++++++++++ */
+@media (min-width: 769px) and (max-width: 1300px) {
+#margemenu{
+    display:block;
+}
+}
+@media (min-width: 769px) and (max-width: 996px) {
+    #margemenu{
+        display:block;
+    }
+    .alogoPt{
+        display:block;
+    }
+    .Imglogo{
+        display:none;
+    }
+    }
 
 
 
+/* @media screen and (max-width:768px)+++++++++++++++++++++++++++++*/
 
-
-
-
-
-
-
-
- @media screen and (max-width:768px) {
-    body {
+/* @media screen and (max-width:768px)+++++++++++++++++++++++++++++*/
+/* debut de @media screen and (max-width:768px)+++++++++++++++++++++++++++++*/
+@media screen and (max-width:768px) {
+body {
         background-color: #1c1918;
         color:grey;
         font-family: "Roboto", sans-serif;
         height:auto;
-        font-size: 0.938em;
+        font-size: 1.063em;
         
  }
- }
+h4{
+    font-size:1em;
+    }
+h3{
+font-size:0.929em;
+}
+h1{
+    font-size:1.375em;   
+}
+/* carte vip et texte +++++++++++++++++++++++++++++*/
+.element1
+{
+    display:block;
+}
+.element:nth-child(2)
+{
+    display:none;
+}
+
+.Imglogo{
+    display:none;
+}
+.alogoPt{
+    display:block;
+}
+
+}/* fin de  @media screen and (max-width:768px)+++++++++++++++++++++++++++++*/
