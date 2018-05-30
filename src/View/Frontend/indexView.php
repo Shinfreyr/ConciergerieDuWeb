@@ -28,12 +28,12 @@
 <div class="row justify-content-center"><h1 class="alert-heading ">Nos offres du jour</h1></div>
 <div row>
 
-<div class="card-deck col-sm-12 col-md-10 col-lg-10 col-xl-10 text-center" >
+<div class="card-deck col-sm-12 text-center" >
 
     <?php
         while ($db1 = $request->fetch()) {
             echo                
-                '<div class="card">
+                '<div class="card col-10">
                     <img class="card-img-top" src="src/Public/images/'.htmlspecialchars($db1['imageArticle']).'" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">'.htmlspecialchars($db1['nomArticle']).'</h5>
@@ -53,11 +53,11 @@
     ?>
 </div>
 
-<div class="card-deck col-10 text-center" >
+<div class="card-deck col-sm-12 text-center" >
     <?php
         while ($db2 = $secondRequest->fetch()) {
             echo                
-                '<div class="card">
+                '<div class="card col-10">
                     <img class="card-img-top" src="src/Public/images/'.htmlspecialchars($db2['imageArticle']).'" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">'.htmlspecialchars($db2['nomArticle']).'</h5>
