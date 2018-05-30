@@ -1,7 +1,7 @@
 /*Reset ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .card {
-    margin:0 0;
-    padding:0 0;
+    margin: 0;
+    padding: 0;
 }
 
 /*Header +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -394,20 +394,41 @@ body ++++++++++++++++++++++++++ */
 #margemenu{
     display:block;
 }
+h4{
+    font-size:1em;
+    }
+h3{
+font-size:0.929em;
+}
+h1{
+    font-size:1.375em;   
+}
 }
 @media (min-width: 769px) and (max-width: 996px) {
-    #margemenu{
-        display:block;
+#margemenu{
+display:block;
+}
+.alogoPt{
+ display:block;
+}
+.Imglogo{
+display:none;
+}
+ }
+.card {  
+ flex: 1;
+ margin-left:10%;
+}
+    
+h4{
+    font-size:1em;
     }
-    .alogoPt{
-        display:block;
-    }
-    .Imglogo{
-        display:none;
-    }
-    }
-
-
+h3{
+font-size:0.929em;
+}
+h1{
+    font-size:1.375em;   
+}
 
 /* @media screen and (max-width:768px)+++++++++++++++++++++++++++++*/
 
@@ -447,5 +468,8 @@ h1{
 .alogoPt{
     display:block;
 }
+
+
+
 
 }/* fin de  @media screen and (max-width:768px)+++++++++++++++++++++++++++++*/

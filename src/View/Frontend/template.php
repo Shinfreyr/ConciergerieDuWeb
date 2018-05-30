@@ -65,8 +65,8 @@
             <!-- Navbar avec fond noir brillant avec classe bg-navbar  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
             <nav class="navbar navbar-expand-lg navbar-light bg-navbar header-nav navbarcenter "> 
             <div class="row">   
-                <div class="col-xs-12 MgHtBsGeDe">   
-                    <div class="col-xs-6 offset-xs-1"> 
+                <div class="col-12 MgHtBsGeDe">   
+                    <div class="col-6 offset-sm-1"> 
                     <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon "></span>
                         <span>MENU</span>
@@ -81,9 +81,9 @@
                 </div>  
             </div>  
               <!-- affichage logo petit +++++++++++++++++++++++++++++++ -->
-                    <div class="alogoPt">
+                    <div class="alogoPt"" id="tt"">
                     <a class="navbar-brand taille13 " href="index.php">
-                    <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-block" style="height:100px; width:100px;" id="logo"></a>
+                    <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-block" style="height:80px; width:80px;" id="logo"></a>
                     </div>
 
                <!-- navbar grand modele  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -107,13 +107,13 @@
                             </div>
                         </li>
                    
-                        <div class=" col-lg-5 col-xl-5 pasmarge float-left" style="max-width: 39%;">
+                        <div class=" col-lg-5 col-xl-5 pasmarge" style="max-width: 39%;">
                         <form class="form-inline my-2 my-lg-0 taille13" id="search">
                             <input class="form-control mr-sm-2 taille13" type="search" placeholder="Saisissez un mot clé" aria-label="Search" >
                             <button class="btn btn-outline-secondary my-2 my-sm-0 taille13" type="submit">Recherche</button>
                         </form></div>
                      
-                        <li class="nav-item float-right">
+                        <li class="nav-item">
                             <a class="nav-link active" href="#">Contact <span class="sr-only">(current)</a>
                         </li>
                        

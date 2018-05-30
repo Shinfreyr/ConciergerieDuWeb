@@ -9,7 +9,7 @@
 <div class="alert welcome hauteurclass col-12 someClass parallax" id="up" role="alert"  style="background-image: url('src/Public/images/mains.jpg');">
         <h1 class=" MgHtBs blanc">La Conciergerie du Web</h1>
         <div id="contImgTxt">
-            <div class="element offset-xl-1">
+            <div class="element col-xl-11 offset-xl-1">
                 <p class="text-justify blanc" >Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.
                 Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.
                 Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.
@@ -26,8 +26,9 @@
 
 <!-- Service Card ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <div class="row justify-content-center"><h1 class="alert-heading ">Nos offres du jour</h1></div>
-<div col-12>
-<div class="card-deck col-10 text-center" >
+<div row>
+
+<div class="card-deck col-sm-12 col-md-10 col-lg-10 col-xl-10 text-center" >
 
     <?php
         while ($db1 = $request->fetch()) {
@@ -79,10 +80,10 @@
                                                        
 <!-- formulaire de contact et nos coordonnées ++++++++++++++++++++++++++++ -->            
 <div class="row someClassvannes margeshautetbas" style="background-image: url('src/Public/test.jpg');" >
-          <div class="col-xs-12 col-sm-6 col-lg-5 offset-md-1 someClassgauche">
+          <div class="col-sm-6 col-md-6 offset-md-1  col-lg-5 someClassgauche">
                                              
 <!-- tite formulaire de contact ++++++++++++++++++++++++++++ -->   
-            <div class="col-lg-12">
+            <div class="col-12">
                  <div class="titleprghp text-center">
                   <span class="prg"><h5>Comment pouvons-nous vous aider ?</h5></span> 
                  </div>
@@ -154,7 +155,7 @@
                             </div>
                     </div>
                 <div class="form-group">
-                       <div class="boutton col-lg-12 col-md-12 col-xs-12">
+                       <div class="boutton col-lg-12 col-md-12 col-12">
                             <div class="text-center">
                                 <button name="submit" id="cancel" type="reset" value="reset" class="btn btn-outline-secondary my-2 my-sm-0 taille13">Annuler</button>
                         
@@ -165,8 +166,8 @@
 
              </div> <!--+++++++++++++++++++++++++++++++++++++</form> </div du formulaire de contact form-->
           </div> <!--+++++++++++++++++++++++++++++++++++++ fin du formulaire de contact form partie gauche-->
-         <div class="col-xs-12"><br> </div>
-          <div class="col-xs-12 col-sm-5 offset-sm-1 col-md-3  offset-md-1 col-lg-4 offset-lg-1 someClassdroite"><!--+++++++++++++++++++++++++++++++++++++debut du formulaire de contact form partie droite-->
+         <div class="col-1"><br> </div>
+          <div class="col-sm-5 col-md-3 col-lg-3 col-xl-4 someClassdroite"><!--+++++++++++++++++++++++++++++++++++++debut du formulaire de contact form partie droite-->
             <div class="col-lg-12">
                 <div class="titleprghp text-center">
                     <span class="prg"><h5>Nos coordonnées</h5></span> 
