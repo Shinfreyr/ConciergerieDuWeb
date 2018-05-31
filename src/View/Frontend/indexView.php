@@ -5,7 +5,7 @@
 <!-- <script src="src/Public/js/script.js"></script> -->
 
 <!-- Welcome message +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<div  style=" background-image: linear-gradient(to right bottom, #1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);">
+<div style="background-image: linear-gradient(to right bottom, #1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);">
 <div class="alert welcome hauteurclass col-12 someClass parallax" id="up" role="alert"  style="background-image: url('src/Public/images/mains.jpg');">
         <h1 class=" MgHtBs blanc">La Conciergerie du Web</h1>
         <div id="contImgTxt">
@@ -28,7 +28,7 @@
 <div class="row justify-content-center"><h1 class="alert-heading ">Nos offres du jour</h1></div>
 <div row>
 
-<div class="card-deck col-sm-12 text-center" >
+<div class="card-deck col-sm-11 text-center" >
 
     <?php
         while ($db1 = $request->fetch()) {
@@ -53,7 +53,7 @@
     ?>
 </div>
 
-<div class="card-deck col-sm-12 text-center" >
+<div class="card-deck col-sm-11 text-center" >
     <?php
         while ($db2 = $secondRequest->fetch()) {
             echo                

@@ -2,6 +2,7 @@
 <?php $title = "La Conciergerie du Web, Les services !"; ?>
 <?php ob_start(); ?>
 
+<div style="background-image: linear-gradient(to right bottom, #1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);">
 <!-- Service Card ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <div class="card-deck col-12">
     <?php
@@ -86,3 +87,4 @@
     $content = ob_get_clean();
     require('template.php');    
 ?>
+</div>

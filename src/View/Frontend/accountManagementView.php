@@ -2,6 +2,7 @@
 <?php $title = "La Conciergerie du Web, Gestion de Compte !"; ?>
 <?php ob_start(); ?>
 
+<div style="background-image: linear-gradient(to right bottom, #1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);">
 <!-- Welcome message +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <div class="alert welcome col-12" id="up" role="alert">
     <h1 class="alert-heading">Gestion de compte</h1>
@@ -102,3 +103,4 @@
     $content = ob_get_clean();
     require('template.php');    
 ?>
+</div>

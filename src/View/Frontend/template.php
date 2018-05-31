@@ -60,35 +60,41 @@
                     </div>
                 </div>
          </div>
-<div class="col-12 couleursousmenu">        
-         <div class="offset-xl-1">
+         <div class="col-12 couleursousmenu">        
+         <div class="offset-xl-1">      <!-- <div> -->
             <!-- Navbar avec fond noir brillant avec classe bg-navbar  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-navbar header-nav navbarcenter "> 
+            <nav class="navbar navbar-expand-lg navbar-light bg-navbar header-nav navbarcenter ghost"> <!-- nav-justified  -->
             <div class="row">   
                 <div class="col-12 MgHtBsGeDe">   
                     <div class="col-6 offset-sm-1"> 
                     <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon "></span>
-                        <span>MENU</span>
+                       <!--   <span>MENU</span> +++++++++++++++++++++++++++++++ -->
                     </button>
                     </div>
               <!-- affichage logo grand +++++++++++++++++++++++++++++++ -->
-            
                     <div class="Imglogo text-center"> 
-                    <a class="navbar-brand taille13 " href="index.php" id="alogo">
-                    <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-block" style="height:100px; width:100px;" id="logo"></a>
+                            <a class="navbar-brand taille13 noghost " href="index.php" id="alogo">
+                            <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-block" style="height:100px; width:100px;" id="logo"></a>
                     </div>
                 </div>  
             </div>  
-              <!-- affichage logo petit +++++++++++++++++++++++++++++++ -->
-                    <div class="alogoPt"" id="tt"">
-                    <a class="navbar-brand taille13 " href="index.php">
-                    <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-block" style="height:80px; width:80px;" id="logo"></a>
-                    </div>
-
-               <!-- navbar grand modele  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- navbar grand modele  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
                 <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+                <div class="Imglogo text-center"> 
+                            <a class="navbar-brand taille13 noghost " href="index.php" id="alogo">
+                            <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-block" style="height:100px; width:100px;" id="logo"></a>
+                    </div>
                     <ul class="navbar-nav mr-auto modNavbar flexNavbar">
+                         <!-- affichage logo petit +++++++++++++++++++++++++++++++ -->
+                    <div class="alogoPt"" id="tt"">
+                            <a class="navbar-brand taille13 ghost" href="index.php">
+                            <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-block" style="height:80px; width:80px;" id="logo"></a>
+                    </div> 
+                    <div class="Imglogo text-center"> 
+                            <a class="navbar-brand taille13 " href="index.php" id="alogo">
+                            <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-block" style="height:100px; width:100px;" id="logo"></a>
+                    </div>
                         <li class="nav-item">
                             <a class="nav-link active" href="#" >Société <span class="sr-only">(current)</a>
                         </li>
@@ -105,12 +111,12 @@
                                     }
                                 ?>
                             </div>
-                        </li>
-                   
+                         </li>
                         <div class=" col-lg-5 col-xl-5 pasmarge" style="max-width: 39%;">
                         <form class="form-inline my-2 my-lg-0 taille13" id="search">
                             <input class="form-control mr-sm-2 taille13" type="search" placeholder="Saisissez un mot clé" aria-label="Search" >
-                            <button class="btn btn-outline-secondary my-2 my-sm-0 taille13" type="submit">Recherche</button>
+                            <button class="btn btn-outline-secondary my-2 my-sm-0 taille13" type="submit"><i class="fa fa-search"></i></button>
+                           <!-- <button class="btn btn-outline-secondary my-2 my-sm-0 taille13" type="submit">Recherche</button> -->
                         </form></div>
                      
                         <li class="nav-item">
@@ -150,11 +156,92 @@
                             </div>
                         </li>
                    </ul>
-                </div>            
-            </nav><!-- fin de la nav menu +++++++++++-->
-            </div><!-- fin de   <div class=" offset-xl-1">+++++++++++++++++++++++++++++++ -->
-           </div> <!-- fin de <div class="col-12 couleursousmenu">+++++++++++++++++++++ -->
-           </div><!-- fin de la row ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                </div><!-- fin de la navbar grand modele  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->            
+         </nav><!-- fin de la nav menu grand modele +++++++++++-->
+ <!-- debut de la navbar petit modele  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->   
+        <nav class="navbar navbar-expand-lg navbar-light bg-navbar header-nav navbarcenter nav-justified noghost"> 
+            <div class="row">   
+                    <div class="col-12 MgHtBsGeDe">   
+                        <div class="col-12 contImgmenulogo">    
+                             <div class="alogoPt" id="tt">
+                                    
+                                      <button class="navbar-toggler bg-light elementptmenu" style="height:70px; width:70px;" type="button" data-toggle="collapse" data-target="#navbarSupportedContentpt" aria-controls="navbarSupportedContentpt" aria-expanded="false" aria-label="Toggle navigation">
+                                      <span class="navbar-toggler-icon"></span>
+                               
+                                         <!--   <span>MENU</span> +++++++++++++++++++++++++++++++ -->
+                                      </button>                        
+              <!-- affichage logo petit +++++++++++++++++++++++++++++++ -->
+                                        <a class="navbar-brand taille13 elementptmenu" href="index.php"><img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-block" style="height:70px; width:70px;" id="logo"></a>
+                                  
+                            </div>
+
+                        </div>
+                    <div class="collapse navbar-collapse clearfix" id="navbarSupportedContentpt">
+                    <ul class="navbar-nav mr-auto modNavbar flexNavbar">
+                    <li class="nav-item dropdown colortop">
+                            <?php
+                                if(isset($_SESSION['conciergerieDuWebId'])) {
+                                    echo '<a class="navbar-brand taille13" href="index.php?action=accountManagement">Bienvenue '.htmlspecialchars($_SESSION['conciergerieDuWebFirstName']).' '.htmlspecialchars($_SESSION['conciergerieDUWebLastName']).'</a>';
+                                }
+                            ?>                    
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <?php
+                                    if(isset($_SESSION['conciergerieDuWebId'])) {
+                                        echo 'Votre Compte';
+                                    }
+                                    else {
+                                        echo 'Bonjour, Identifiez-vous <pre></pre> Votre Compte';
+                                    }
+                                ?>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <?php    
+                                    if(isset($_SESSION['conciergerieDuWebId'])) {
+                                        echo '<a class="dropdown-item" href="index.php?action=accountManagement">Modifier le compte</a>';
+                                        echo '<hr>';
+                                        echo '<a class="dropdown-item" href="index.php?action=deconnection&session=ok">Déconnexion</a>';
+                                    }
+                                    else {
+                                        echo '
+                                            <a class="dropdown-item" href="index.php?action=connection">Connexion</a>
+                                            <a class="dropdown-item" href="index.php?action=inscription">Nouveau Membre? Commencez ici</a>
+                                        ';
+                                    }
+                                ?>
+                            </div>
+                        </li>
+                        <li class="nav-item active ">
+                            <a class="nav-link" href="index.php">Offres <span class="sr-only"></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catégories</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="index.php?action=category&type=all&page=1">Toutes </a>
+                                <?php
+                                    while ($db3 = $thirdRequest->fetch()) {
+                                        echo '<a class="dropdown-item" href="index.php?action=category&type='.htmlspecialchars($db3['nameCategory']).'&page=1">' . htmlspecialchars($db3['nameCategory']) . '</a>';
+                                    }
+                                ?>
+                            </div>
+                        </li>
+                        <div class=" col-lg-5 col-xl-5 pasmarge" style="max-width: 39%;">
+                        <form class="form-inline my-2 my-lg-0 taille13" id="search">
+                            <input class="form-control mr-sm-2 taille13" type="search" placeholder="Saisissez un mot clé" aria-label="Search" >
+                            <button class="btn btn-outline-secondary my-2 my-sm-0 taille13" type="submit"><i class="fa fa-search"></i></button> 
+                        </form></div>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Contact <span class="sr-only">(current)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" >Société<span class="sr-only">(current)</a>
+                        </li>
+                        
+                   </ul> 
+    </div><!-- fin de la navbar petit modele  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
+ </nav><!-- fin de la nav menu petit modele +++++++++++-->
+             </div><!-- fin de   <div class=" offset-xl-1">+++++++++++++++++++++++++++++++ -->
+             </div> <!-- fin de <div class="col-12 couleursousmenu">+++++++++++++++++++++ -->
+             </div><!-- fin de la row ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
           </div>  <!-- fin du container ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         </header>
                         
@@ -172,25 +259,25 @@
                     
                         <ul class="nav nav-tabs card-header-tabs ">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">ACCUEIL</a>
+                                <a class="nav-link" href="#"><span id="icone" class="fa fa-file"></span> ACCUEIL</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">LA SOCIETE</a>
+                                <a class="nav-link" href="#"><span id="icone" class="fa fa-folder-o"></span> LA SOCIETE</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">SERVICES</a>
+                                <a class="nav-link" href="#"><span class="fa fa-pencil"></span> SERVICES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">CONCIERGERIE</a>
+                                <a class="nav-link" href="#"><span class="fa fa-pencil"></span> CONCIERGERIE</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">OFFRES</a>
+                                <a class="nav-link" href="#"><span class="fa fa-newspaper-o"></span> OFFRES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">NEWSROOM</a>
+                                <a class="nav-link" href="#"><span class="fa fa-commenting"></span> NEWSROOM</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">NOUS CONTACTER</a>
+                                <a class="nav-link" href="#up"><span class="fa fa-file"></span> NOUS CONTACTER</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link disabled" href="#up">&uarr; Haut de page</a>
