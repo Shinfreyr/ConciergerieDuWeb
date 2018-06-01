@@ -26,7 +26,12 @@ body {
     color:#1c1918;
     font-family: "Roboto", sans-serif;
     height:auto;
+    margin:0; 
+    padding:0;
+   
 }
+
+  
 /*couleur de fond de saisissez un mot cle++++++++++++++++++++++*/
 .colortop{
     background-color:#8fa5af;
@@ -111,19 +116,19 @@ ul {
     nav ul li
     {
      margin:0 2px; 
-     font-size: 0.9375em;
+     font-size: 1em;
      display: inline-block;
     }
     nav ul li a
     {
      margin:0 2px; 
-     font-size: 0.9375em;
+     font-size: 1em;
      display: inline-block;
      line-height: 13px;
     }
 /*taille des caracteres++++++++++++++++++++++*/
 .taille13{
-    font-size: 0.9375em;
+    font-size: 1em;
     display: inline-block;
     }
 /* le formualire de recherche sur une seule ligne++++++++++++++++++++++*/
@@ -164,7 +169,13 @@ a:hover {
 
 .navbarfooter, .navbarfooter2 {
     margin:5px;
-  padding-top:10px;
+    padding-top:10px;
+    display: inline-block;
+    text-align: center;
+    position: inherit;
+    vertical-align: top;
+    list-style: none;
+  
 }
 /*1ernavbar +++++++++++++ */
 .navbarfooter ul li a{
@@ -174,12 +185,14 @@ a:hover {
     font-size: 0.9375em;
     margin:0 2px;
     padding:0 2px;
+    
 }
 .navbarfooter ul li a:hover{
     display: inline;
     text-decoration: none;
     border-bottom: 3px solid #8fa5af;
     font-size: 0.9375em;
+   
 }
 
 /*2ndenavbar +++++++++++++ */
@@ -190,6 +203,7 @@ a:hover {
     font-size: 0.9375em;
     margin:0 2px;
     padding:0 2px;
+    text-align: center; /* centrer le texte */
 }
 .navbarfooter2 ul li{
     display: inline;
@@ -197,13 +211,19 @@ a:hover {
     padding: 0 5px;
     border-left: 1px solid #1c1918;
     font-size: 0.9375em;
+    
 }
 
 .navbarfooter2 ul li:first-child{
     border:none;
     font-size: 0.9375em;
+  
 }
-
+.navbarfooter2 ul li:nth-child(2){
+    border:none;
+    font-size: 0.9375em;
+  
+}
 /*couleur de fond de la nav bar ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .bg-navbar {
     background-color: #1c1918;
@@ -355,33 +375,9 @@ font-size:0.762em;
 font-size:1.000em;
 }
 
-
 /*debut de mon test ++++++++++++++++++++++++++++++++++++++++++*/
-.navbar-nav {
-    float: left;
-    margin: 0;
-    margin-left: 0%;
- }
- 
- .navbar-nav.navbar-right:last-child {
-    margin-right: -15px;
-    margin-left: 0;
- }
-.test1{
-    background-color: red;
-    display: inline-flex;
-}
-.test2{
-    background-color: green;
-}
-.test3{
-    background-color: yellow;
-    display: flex;
-}
-.test4{
-    background-color: pink;
-    display: flex;
-}
+
+
 /*fin de mon test ++++++++++++++++++++++++++++++++++++++++++*/
 
 
@@ -405,7 +401,7 @@ body ++++++++++++++++++++++++++ */
         color:grey;
         font-family: "Roboto", sans-serif;
         height:auto;
-        font-size: 1.00em;
+        font-size: 1em;
  }
 #margemenu{
     display:block;
@@ -552,7 +548,6 @@ h1{
 {
     order: 2;
     flex: 1;
-    margin-left:50%;
 }
 #tt{
     display: inline-flex;
@@ -650,4 +645,8 @@ h1{
     display: inline-flex;
 }
 
+
+#footer{
+    font-size:0.7em;
+}
 }/* fin de  @media screen and (max-width:768px)+++++++++++++++++++++++++++++*/

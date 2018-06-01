@@ -34,13 +34,13 @@
 
         
     <!-- Template Content ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-    <body>
+    <body style="background-image: linear-gradient(to right bottom, #1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);">
       <div class="container-fluid sticky-top ">   <!-- debut container ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <div class="row"> <!-- debut row ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-        <header class="text-center-xs text-center-lg modNavbar">
+        <header class="text-center-xs col text-center-lg modNavbar">
              <!-- Nos coordonnées et reseaux sociaux  ++++++++++++ -->
-         <div class="colortop col-12">
-                <div>
+         <div class="colortop row">
+                <div class="col">
                     <div class="blanc">
                     <span class="petitemarge" alt="Numéro de téléphone Tyweb Services">
                     06.37.69.34.21
@@ -60,10 +60,10 @@
                     </div>
                 </div>
          </div>
-         <div class="col-12 couleursousmenu">        
-         <div class="offset-xl-1">      <!-- <div> -->
+         <div class="row couleursousmenu">        
+          <div class="col">     <!-- <div class="offset-xl-1" -->
             <!-- Navbar avec fond noir brillant avec classe bg-navbar  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-navbar header-nav navbarcenter ghost"> <!-- nav-justified  -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-navbar nav-justified header-nav navbarcenter ghost"> <!-- nav-justified  -->
             <div class="row">   
                 <div class="col-12 MgHtBsGeDe">   
                     <div class="col-6 offset-sm-1"> 
@@ -161,9 +161,9 @@
  <!-- debut de la navbar petit modele  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->   
         <nav class="navbar navbar-expand-lg navbar-light bg-navbar header-nav navbarcenter nav-justified noghost"> 
             <div class="row">   
-                    <div class="col-12 MgHtBsGeDe">   
-                        <div class="col-12 contImgmenulogo">    
-                             <div class="alogoPt" id="tt">
+                    <div class="col MgHtBsGeDe">   
+                        <div class="col contImgmenulogo">    
+                             <div class="col alogoPt" id="tt">
                                     
                                       <button class="navbar-toggler bg-light elementptmenu" style="height:70px; width:70px;" type="button" data-toggle="collapse" data-target="#navbarSupportedContentpt" aria-controls="navbarSupportedContentpt" aria-expanded="false" aria-label="Toggle navigation">
                                       <span class="navbar-toggler-icon"></span>
@@ -247,78 +247,80 @@
                         
         <!-- Content View ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <?= $content ?>
-
+                               
         <!-- Footer ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-        <footer class="row polygon-footer ">
-            
-            <div class="card-text text-center col">
+        </div>      
+        <footer class="row polygon-footer" id="footer">
+            <div class="card-text text-center row">
                     <div class="row justify-content-center">
-                    <nav class="navbar navbar-expand-lg navbar-light ">
-                    <span class="navbar-text" data-toggle="collapse" data-target="#navbarSupportedContent3" aria-controls="navbarSupportedContent3" aria-expanded="false" aria-label="Toggle navigation" >MENU</span>
-                    <div class="collapse navbar-collapse col text-center  navbarfooter" id="navbarSupportedContent3">
-                    
-                        <ul class="nav nav-tabs card-header-tabs ">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><span id="icone" class="fa fa-file"></span> ACCUEIL</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><span id="icone" class="fa fa-folder-o"></span> LA SOCIETE</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><span class="fa fa-pencil"></span> SERVICES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><span class="fa fa-pencil"></span> CONCIERGERIE</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><span class="fa fa-newspaper-o"></span> OFFRES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><span class="fa fa-commenting"></span> NEWSROOM</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#up"><span class="fa fa-file"></span> NOUS CONTACTER</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#up">&uarr; Haut de page</a>
-                            </li>
-                        </ul>
-                        </div>
-                    </nav>
-                    </div>
-                    <div class="row justify-content-center">
-                        <nav class="navbar navbar-expand-lg navbar-light ">
-                            <span class="navbar-text" data-toggle="collapse" data-target="#navbarSupportedContent4" aria-controls="navbarSupportedContent4" aria-expanded="false" aria-label="Toggle navigation">Les INFOS LEGALES</span>
-                      <div class="collapse navbar-collapse col  navbarfooter2" id="navbarSupportedContent4">
-                                <ul class="nav nav-tabs card-header-tabs ">
-                                    <li class="nav-item">
-                                    <a class="nav-link" href="#">Plan du site</a> 
-                                    </li>
-                                    <li class="nav-item">
-                                    <a class="nav-link" href="#">Mentions Légales </a>  
-                                    </li>
-                                    <li class="nav-item">
-                                    <a class="nav-link" href="#"> Politique de confidentialité</a>
-                                    </li>
-                                    <li class="nav-item">
-                                    <a class="nav-link" href="#">Conditions Générales d’Utilisation </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                    <div class="row justify-content-center">
-                    <span class="taille13">
-                        <pre></pre>
-                     Copyright &copy; 2018  <h5 class="card-title taille13">TyWebServices.</h5>Tous droits réservés.
-                     </span>
-                    </div>
-
-
-            </div>
-        </footer>  
+                            <div class="col-12">
+                                <nav class="navbar navbar-expand-lg navbar-light">
+                                       <div class="collapse navbar-collapse text-center navbarcenter navbarfooter clearfix " id="navbarSupportedContent3">
+                                          <ul class="nav nav-tabs card-header-tabs col nav-justified">
+                                                <li class="nav-item col-sm-4">
+                                                    <a class="nav-link disabled" href="#up"><span class="fa fa-arrow-circle-up"></span></a>
+                                                </li>
+                                                <div>
+                                                <li class="nav-item ">
+                                                    <a class="nav-link" href="#"><span class="fa fa-pencil">Société</a>
+                                                </li>
+                                                <li class="nav-item 2">
+                                                    <a class="nav-link" href="#"><span class="fa fa-pencil"></span> Services</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#"><span class="fa fa-pencil"></span> Conciergerie</a>
+                                                </li>
+                                                <li class="nav-item ">
+                                                    <a class="nav-link" href="#"><span class="fa fa-pencil"></span>Offres</a>
+                                                </li>
+                                                <li class="nav-item ">
+                                                    <a class="nav-link" href="#"><span class="fa fa-commenting"></span>Newsroom</a>
+                                                </li>
+                                                <li class="nav-item  ">
+                                                    <a class="nav-link" href="#up"><span class="fa fa-commenting">Contact</a>
+                                                </li> 
+                                                </div>
+                                            </ul>
+                                          </div>
+                                 </nav>
+                                </div>
+                                <div class="col-12">
+                                    <nav class="navbar navbar-expand-lg navbar-light">
+                                                     <div class="collapse navbar-collapse text-center navbarcenter navbarfooter2  clearfix" id="navbarSupportedContent4">
+                                                            <ul class="nav nav-tabs card-header-tabs col nav-justified">
+                                                            <li class="nav-item col-sm-3">
+                                                            </li>
+                                                            <div>
+                                                                <li class="nav-item">
+                                                                <a class="nav-link" href="#">Plan du site</a> 
+                                                                </li>
+                                                                <li class="nav-item ">
+                                                                <a class="nav-link" href="#">Mentions Légales </a>  
+                                                                </li>
+                                                                <li class="nav-item  ">
+                                                                <a class="nav-link" href="#"> Politique de confidentialité</a>
+                                                                </li>
+                                                                <li class="nav-item ">
+                                                                <a class="nav-link" href="#">Conditions Générales d’Utilisation </a>
+                                                                </li>
+                                                            </div>   
+                                                            </ul>
+                                                    </div>
+                                    </nav>
+                                </div>
+                                <div class="col justify-content-center copyright">
+                                        <span class="taille13">
+                                            <pre></pre>
+                                        Copyright &copy; 2018  <h5 class="card-title taille13">TyWebServices.</h5>Tous droits réservés.
+                                        </span>
+                                </div>
+                     </div><!-- fin de div class="row justify-content-center"+++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            </div><!-- fin card-text text-center row ++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        </footer>  <!-- fin footer class="row polygon-footer ++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                            
                              
                            
+
 
         <!-- Script Bootstrap V4 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
