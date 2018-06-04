@@ -39,6 +39,11 @@ body {
 .couleursousmenu{
     background-color: #1c1918;
 }
+
+/*couleur de police foncee++++++++++++++++++++++*/
+.colorfontD{
+    color:#1c1918;
+}
 /*couleur de texte blanc+++++++++++++++++++++++++++++++++++++++++++++++*/
 .blanc{
     color:#fff;

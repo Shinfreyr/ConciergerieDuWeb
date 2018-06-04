@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <?php $title = "La Conciergerie du Web, Inscription !"; ?>
 <?php ob_start(); ?>
+<div class="row" >
+<div class="alert welcome hauteurclass col-12 someClass parallax" id="up" role="alert"  style="background-image: url('src/Public/images/mains.jpg');">
+<div class="row justify-content-center">
+
+<div class="card-deck col-sm-9 text-justify  MgHtBs blanc" style="background-image: linear-gradient(to right bottom, #1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);">
 
 <!-- Welcome message +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<div class="alert welcome col-12" id="up" role="alert">
-    <h1 class="alert-heading triangle-code-chip">Inscription</h1>
+<div class="alert welcome col-12 text-justify MgHtBs" id="up" role="alert">
+    <h1 class="alert-heading ">Inscription à la Conciergerie du WEB</h1>
     <p class="mb-0">Dans le cadre de la nouvelle Réglementation Générale sur la Protection des Données, nous vous informons que toutes vos informations enregistrées sur notre site, resteront confidentielles et pouront être supprimées à tout moment par vos soins. </p>
-    <hr>
+  
     <p class="mb-0">Attention ! Vous devez être en possession d'un code Entreprise pour vous inscrire.</p>
+    <p class="mb-0">
+                <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-thumbnail rounded mx-auto d-block" alt="Responsive image">
+    </p>    
 </div>
 
 <!-- Inscription Forms ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<form action="index.php?action=inscription&db=ok" id="inscriptionForm" method="post" class="col-12  ">
+<form action="index.php?action=inscription&db=ok" id="inscriptionForm" method="post" class="col-12 MgHtBs">
     <div class="form-group">
         <label for="enterpriseCode">Code Entreprise*</label>
         <input type="text" class="form-control" name="enterpriseCode" id="enterpriseCode" placeholder="Code de votre entreprise">
@@ -54,7 +62,10 @@
     </div>
     <button type="submit" class="btn btn-info btn-validation col-12">Envoyer</button>
 </form>
-
+</div>
+</div>
+</div>
+</div>
 <?php
     $content = ob_get_clean();
     require('template.php');    

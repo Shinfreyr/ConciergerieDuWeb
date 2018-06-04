@@ -76,6 +76,10 @@ $(document).ready(function() {
 
 
 
+
+
+
+
 var email = document.getElementById("email");
 
 email.addEventListener("keyup", function (event) {
@@ -85,6 +89,9 @@ email.addEventListener("keyup", function (event) {
     email.setCustomValidity("");
   }
 });
+
+
+
 
 
 });

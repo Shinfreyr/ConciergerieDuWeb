@@ -18,7 +18,7 @@
             <div class="element">
                 <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-thumbnail rounded mx-auto d-block" alt="Responsive image">
             </div>     
-            </div>
+        </div>
             <div class="element1">
                 <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-thumbnail rounded mx-auto d-block" alt="Responsive image">
             </div>     

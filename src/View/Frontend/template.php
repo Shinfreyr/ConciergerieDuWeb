@@ -159,7 +159,7 @@
                 </div><!-- fin de la navbar grand modele  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->            
          </nav><!-- fin de la nav menu grand modele +++++++++++-->
  <!-- debut de la navbar petit modele  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->   
-        <nav class="navbar navbar-expand-lg navbar-light bg-navbar header-nav navbarcenter nav-justified noghost"> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-navbar header-nav noghost"> 
             <div class="row">   
                     <div class="col MgHtBsGeDe">   
                         <div class="col contImgmenulogo">    
