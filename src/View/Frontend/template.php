@@ -34,10 +34,10 @@
 
         
     <!-- Template Content ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-    <body style="background-image: linear-gradient(to right bottom, #1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);">
-      <div class="container-fluid sticky-top ">   <!-- debut container ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <body style="width:auto; background-image: linear-gradient(to right bottom, #1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);">
+      <div class="container-fluid sticky-top">   <!-- debut container ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <div class="row"> <!-- debut row ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-        <header class="text-center-xs col text-center-lg modNavbar">
+        <header class="text-center-xs col- text-center-lg modNavbar">
              <!-- Nos coordonnées et reseaux sociaux  ++++++++++++ -->
          <div class="colortop row">
                 <div class="col">

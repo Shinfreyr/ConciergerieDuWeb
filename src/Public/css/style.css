@@ -27,11 +27,18 @@ body {
     font-family: "Roboto", sans-serif;
     height:auto;
     margin:0; 
-    padding:0;
-   
+    padding:0; 
 }
-
-  
+.row {
+    flex-wrap:wrap;
+    margin-left:0;
+    margin-right:0;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
 /*couleur de fond de saisissez un mot cle++++++++++++++++++++++*/
 .colortop{
     background-color:#8fa5af;
