@@ -25,10 +25,12 @@
 </div>
 
 <!-- Service Card ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<div class="row justify-content-center"><h1 class="alert-heading ">Nos offres du jour</h1></div>
-    <div class="col">
+<div class="col-12 justify-content-center">
+    <h1 class="alert-heading blanc">Nos offres du jour</h1>
+</div>
+    <div class="row justify-content-center">
 
-        <div class="card-deck col-sm-10 " >
+        <div class="card-deck col-sm-12 col-lg-10" >
 
             <?php
                 while ($db1 = $request->fetch()) {
@@ -53,7 +55,7 @@
             ?>
         </div>
 
-        <div class="card-deck col-sm-10" >
+        <div class="card-deck col-sm-12 col-lg-10" >
             <?php
                 while ($db2 = $secondRequest->fetch()) {
                     echo                
@@ -80,8 +82,8 @@
 </div>                                                      
 <!-- formulaire de contact et nos coordonnées ++++++++++++++++++++++++++++ -->     
 <div class="row someClassvannes justify-content-center"  style="background-image: url('src/Public/test.jpg');">       
-    <div class="row margeshautetbas" >
-          <div class="col-6 someClassgauche">  <!-- bloc de gauche ++++++++++++++++++++++++++++ -->                         
+    <div class="row margeshautetbas justify-content-center" >
+          <div class="col-sm-10 col-lg-6 someClassgauche">  <!-- bloc de gauche ++++++++++++++++++++++++++++ -->                         
                         <div ><!-- tite formulaire de contact ++++++++++++++++++++++++++++ -->   
                                 <div class="titleprghp text-center">
                                     <span class="prg"><h5>Comment pouvons-nous vous aider ?</h5></span> 
@@ -191,7 +193,7 @@
          
         <div class="col-1"><br> </div>  <!-- bloc de 1 colonne separation ++++++++++++++++++++++++++++ -->   
 
-          <div class="col-5 someClassdroite"><!-- bloc de droite ++++++++++++++++++++++++++++ -->     
+          <div class="col-sm-10 col-lg-5 someClassdroite"><!-- bloc de droite ++++++++++++++++++++++++++++ -->     
                     <div class="col"><!--+++++++++++++++++++++++++++++++++++++debut du formulaire de contact form partie droite-->
                         <div class="titleprghp text-center">
                             <span class="prg"><h5>Nos coordonnées</h5></span> 
