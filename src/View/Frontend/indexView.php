@@ -191,9 +191,9 @@
                         </div> <!-- fin de  <div class="col-lg-12">+++++++++++++++-->   
                    </div><!-- fin de <div class="offset-sm-1 col-5 someClassgauche"> bloc de gauche+++++++++++++++++++++++++++++++++++++++ -->
          
-        <div class="col-1"><br> </div>  <!-- bloc de 1 colonne separation ++++++++++++++++++++++++++++ -->   
+        <!-- <div class="col-1"><br> </div>  bloc de 1 colonne separation ++++++++++++++++++++++++++++ -->   
 
-          <div class="col-sm-10 col-lg-5 someClassdroite"><!-- bloc de droite ++++++++++++++++++++++++++++ -->     
+          <div class="col-sm-10 col-lg-5 someClassdroite" id="coordonnees"><!-- bloc de droite ++++++++++++++++++++++++++++ -->     
                     <div class="col"><!--+++++++++++++++++++++++++++++++++++++debut du formulaire de contact form partie droite-->
                         <div class="titleprghp text-center">
                             <span class="prg"><h5>Nos coordonnées</h5></span> 

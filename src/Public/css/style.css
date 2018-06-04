@@ -389,7 +389,10 @@ font-size:1.000em;
 
 /*debut de mon test ++++++++++++++++++++++++++++++++++++++++++*/
 
-
+#coordonnees{
+    border-left: 1px dotted black;
+    border-top: 1px dotted black;
+}
 /*fin de mon test ++++++++++++++++++++++++++++++++++++++++++*/
 
 
@@ -408,13 +411,25 @@ font-size:1.000em;
 /*@media (min-width: 1046px) and (max-width: 1300px) {
 body ++++++++++++++++++++++++++ */
 @media (min-width: 1046px) and (max-width: 1300px) {
-    body {
+body {
         background-color: #1c1918;
         color:grey;
         font-family: "Roboto", sans-serif;
         height:auto;
         font-size: 1em;
+        margin:0;
+        margin:0;
  }
+.row {
+    flex-wrap:wrap;
+    margin-left:0;
+    margin-right:0;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
 #margemenu{
     display:block;
 }
@@ -433,6 +448,10 @@ h1{
 .ghost{
     display:block;
 }
+#coordonnees{
+    border-left: 1px dotted black;
+    border-top: 1px dotted black;
+}
 }
 
 /* fin de @media (min-width: 1046px) and (max-width: 1300px)+++++++++++++++++++++++++++++*/
@@ -446,13 +465,25 @@ h1{
 /*@media (min-width: 992px) and (max-width: 1046px)+++++++++ */
 /*affichage ecran @media (min-width: 992px) and (max-width: 1046px)+++++++++++++++++++++++++++++ */
 @media (min-width: 992px) and (max-width: 1046px) {
-    body {
+body {
         background-color: #1c1918;
         color:grey;
         font-family: "Roboto", sans-serif;
         height:auto;
         font-size: 0.938em;
+        margin:0;
+        margin:0;
  }
+.row {
+    flex-wrap:wrap;
+    margin-left:0;
+    margin-right:0;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
     #margemenu{
     display:none;
     }
@@ -477,7 +508,10 @@ h1{
     h1{
         font-size:1.375em;   
     }
-
+    #coordonnees{
+        border-left: 1px dotted black;
+        border-top: 1px dotted black;
+    }
     /*affichage du menu petit modele petit toggle++++++++++++++++++++++++++++++++++++++++++*/
 
 .noghost{
@@ -503,13 +537,26 @@ h1{
 /* @media (min-width: 769px) and (max-width: 991px)+++++++++ */
 /*affichage ecran @media (min-width: 769px) and (max-width: 991px)+++++++++++++++++++++++++++++ */
 @media (min-width: 769px) and (max-width: 991px) {
-    body {
+body {
         background-color: #1c1918;
         color:grey;
         font-family: "Roboto", sans-serif;
         height:auto;
         font-size: 1.063em;
+        width:100vh;
+        margin:0;
+        margin:0;
  }
+.row {
+    flex-wrap:wrap;
+    margin-left:0;
+    margin-right:0;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
 h4{
     font-size:1em;
     }
@@ -564,6 +611,10 @@ h1{
 #tt{
     display: inline-flex;
 }
+#coordonnees{
+    border-left: 1px dotted black;
+    border-top: 1px dotted black;
+}
 
 }/* fin de  @media (min-width: 769px) and (max-width: 991px)+++++++++++++++++++++++++++++*/
 
@@ -600,8 +651,10 @@ body {
         font-family: "Roboto", sans-serif;
         height:auto;
         font-size: 1.063em;
+        margin:0; 
+        padding:0; 
  }
- .row {
+.row {
     flex-wrap:wrap;
     margin-left:0;
     margin-right:0;
@@ -671,4 +724,124 @@ h1{
 #footer{
     font-size:0.7em;
 }
+
+a:hover {
+    border-bottom: 0;
+    background-color: #8fa5af;
+    }
+
+
+
+
+
+
+/*mestests ++++++++++++++++++++++++++++++++++++++*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }/* fin de  @media screen and (max-width:768px)+++++++++++++++++++++++++++++*/
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+body {
+        background-color: #1c1918;
+        color:grey;
+        font-family: "Roboto", sans-serif;
+        height:auto;
+        font-size: 1.063em;
+        margin:0; 
+        padding:0; 
+ }
+.row {
+    flex-wrap:wrap;
+    margin-left:0;
+    margin-right:0;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+h4{
+    font-size:1em;
+    }
+h3{
+font-size:0.929em;
+}
+h1{
+    font-size:1.375em;   
+}
+/*affichage des elements du menu petit modele toggle++++++++++++++++++++++++++++++++++++++++++*/
+/* carte vip et texte +++++++++++++++++++++++++++++*/
+.element1
+{
+    display:block;
+}
+.element:nth-child(2)
+{
+    display:none;
+}
+/*affichage des logos du menu petit modele toggle++++++++++++++++++++++++++++++++++++++++++*/
+.Imglogo{
+    display:none;
+}
+.alogoPt{
+    display:block;
+}
+/*affichage du menu petit modele petit toggle++++++++++++++++++++++++++++++++++++++++++*/
+
+.noghost{
+    display:block;
+}
+.ghost{
+    display:none;
+}
+/* mise en place menu + logo+++++++++++++++++++++++++++++*/
+ /*alignement image vip et texte +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ #contImgmenulogo
+ {   margin-top:10%;
+     display: flex;
+     justify-content: space-between; 
+ }
+.elementptmenu:nth-child(1)
+{   order: 1;
+    flex: 2;
+    margin-right:5%;
+}
+.elementptmenu:nth-child(2)
+{
+    order: 2;
+    flex: 1;
+    margin-left:50%;
+}
+#tt{
+    display: inline-flex;
+}
+#footer{
+    font-size:0.7em;
+}
+a:hover {
+    border-bottom: 0;
+    background-color: #8fa5af;
+    }
+}

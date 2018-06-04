@@ -14,7 +14,7 @@
   
     <p class="mb-0">Attention ! Vous devez être en possession d'un code Entreprise pour vous inscrire.</p>
     <p class="mb-0">
-                <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-thumbnail rounded mx-auto d-block" alt="Responsive image">
+                <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-thumbnail rounded mx-auto d-block MgHtBs" alt="Responsive image">
     </p>    
 </div>
 
