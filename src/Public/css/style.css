@@ -155,6 +155,7 @@ form{
      margin:0 0;
      padding: 0 0;
  }
+
 /*position de la navbar ++++++++++++++++++++++*/
  navbar{
     position: relative;
@@ -166,6 +167,7 @@ form{
     position: relative;
     z-index: 2;
     /* top: 2em;*/
+
     }
 #alogo{
     text-decoration:none;
@@ -243,6 +245,13 @@ a:hover {
 
   navbar{
       height: 100px;
+  }
+  /*marges haut menu ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  .MgHt{
+    margin-top:60px;
+  }
+  .MgHt8{
+    margin-top:12px;
   }
 /*couleur des fonts de la nav bar ++++++++++++++++++++++++++ */
 .navbar-light .navbar-brand {
@@ -406,7 +415,6 @@ font-size:1.000em;
 
 
 
-
 /*affichage ecran@media (min-width: 1046px) and (max-width: 1300px) ++++++++++++++++++++++++++++*/
 /*@media (min-width: 1046px) and (max-width: 1300px) {
 body ++++++++++++++++++++++++++ */
@@ -430,6 +438,13 @@ body {
     padding-right: 0px;
     padding-left: 0px;
 }
+  /*marges haut menu ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  .MgHt{
+    margin-top:50px;
+  }
+  .MgHt8{
+    margin-top:1px;
+  }
 #margemenu{
     display:block;
 }
@@ -484,6 +499,13 @@ body {
     padding-right: 0px;
     padding-left: 0px;
 }
+  /*marges haut menu ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  .MgHt{
+    margin-top:5%;
+  }
+  .MgHt8{
+    margin-top:0%;
+  }
     #margemenu{
     display:none;
     }
@@ -730,7 +752,9 @@ a:hover {
     background-color: #8fa5af;
     }
 
-
+.MgGe{
+    padding-left: 0;
+}
 
 
 

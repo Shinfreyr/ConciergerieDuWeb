@@ -95,38 +95,38 @@
                             <a class="navbar-brand taille13 "style="border-bottom:none;text-decoration:none;" href="index.php" id="alogo">
                             <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-block" style="height:100px; width:100px;" id="logo"></a>
                     </div>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#" >Société <span class="sr-only">(current)</a>
+                        <li class="nav-item MgHt">
+                         <a class="nav-link active" href="#" title="Qui sommes nous?">Société <span class="sr-only">(current)</a>
                         </li>
-                        <li class="nav-item active ">
-                            <a class="nav-link" href="index.php">Offres <span class="sr-only"></a>
+                        <li class="nav-item active MgHt">
+                            <a class="nav-link" href="index.php" title="Offres du Jour">Offres <span class="sr-only"></a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catégories</a>
+                        <li class="nav-item dropdown MgHt" style="min-width: 10%;">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Rechercher dans toutes nos catégories">Catégories</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="index.php?action=category&type=all&page=1">Toutes </a>
                                 <?php
                                     while ($db3 = $thirdRequest->fetch()) {
-                                        echo '<a class="dropdown-item" href="index.php?action=category&type='.htmlspecialchars($db3['nameCategory']).'&page=1">' . htmlspecialchars($db3['nameCategory']) . '</a>';
+                                        echo '<h3><a class="dropdown-item" href="index.php?action=category&type='.htmlspecialchars($db3['nameCategory']).'&page=1">' . htmlspecialchars($db3['nameCategory']) . '</a></h3>';
                                     }
                                 ?>
                             </div>
                          </li>
-                        <div class=" col-lg-5 col-xl-5 pasmarge" style="max-width: 39%;">
+                        <div class=" col-lg-5 col-xl-5 pasmarge MgHt" style="max-width: 35%;">
                         <form class="form-inline my-2 my-lg-0 taille13" id="search">
-                            <input class="form-control mr-sm-2 taille13" type="search" placeholder="Saisissez un mot clé" aria-label="Search" >
+                            <input class="form-control mr-sm-2 taille13" type="search" placeholder="Recherche par mot clé" aria-label="Search" title="Saisissez les mots clés">
                             <button class="btn btn-outline-secondary my-2 my-sm-0 taille13" type="submit"><i class="fa fa-search"></i></button>
                            <!-- <button class="btn btn-outline-secondary my-2 my-sm-0 taille13" type="submit">Recherche</button> -->
                         </form></div>
                      
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Contact <span class="sr-only">(current)</a>
+                        <li class="nav-item MgHt">
+                            <a class="nav-link active" href="#" title="Contactez-nous">Contact <span class="sr-only">(current)</a>
                         </li>
                        
-                        <li class="nav-item dropdown ">
+                        <li class="nav-item dropdown MgHt8 "style="min-width: 13%;">
                             <?php
                                 if(isset($_SESSION['conciergerieDuWebId'])) {
-                                    echo '<a class="navbar-brand taille13" href="index.php?action=accountManagement">Bienvenue '.htmlspecialchars($_SESSION['conciergerieDuWebFirstName']).' '.htmlspecialchars($_SESSION['conciergerieDUWebLastName']).'</a>';
+                                    echo '<h3><a class="navbar-brand taille13" href="index.php?action=accountManagement">Bienvenue '.htmlspecialchars($_SESSION['conciergerieDuWebFirstName']).' '.htmlspecialchars($_SESSION['conciergerieDUWebLastName']).'</a></h3>';
                                 }
                             ?>                    
                             <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -135,21 +135,21 @@
                                         echo 'Votre Compte';
                                     }
                                     else {
-                                        echo 'Bonjour, Identifiez-vous <pre></pre> Votre Compte';
+                                        echo '<h3>Bonjour, Identifiez-vous <pre></pre></h3> Votre Compte';
                                     }
                                 ?>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <?php    
                                     if(isset($_SESSION['conciergerieDuWebId'])) {
-                                        echo '<a class="dropdown-item" href="index.php?action=accountManagement">Modifier le compte</a>';
+                                        echo '<h3><a class="dropdown-item" href="index.php?action=accountManagement">Modifier le compte</a></h3>';
                                         echo '<hr>';
-                                        echo '<a class="dropdown-item" href="index.php?action=deconnection&session=ok">Déconnexion</a>';
+                                        echo '<h3><a class="dropdown-item" href="index.php?action=deconnection&session=ok">Déconnexion</a></h3>';
                                     }
                                     else {
                                         echo '
-                                            <a class="dropdown-item" href="index.php?action=connection">Connexion</a>
-                                            <a class="dropdown-item" href="index.php?action=inscription">Nouveau Membre? Commencez ici</a>
+                                        <h3><a class="dropdown-item" href="index.php?action=connection">Connexion</a></h3>
+                                        <h3><a class="dropdown-item" href="index.php?action=inscription">Nouveau Membre? <pre></pre> Commencez ici</a></h3>
                                         ';
                                     }
                                 ?>
@@ -162,27 +162,26 @@
             </div>
             
             <div class="row couleursousmenu">        
-            <div class="col"> 
+            <div class="row justify-content-center"> 
             <!-- debut de la navbar petit modele  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->   
-            <nav class="navbar navbar-light bg-navbar header-nav noghost"> 
-                        <div class="row">   
-                                <div class="col MgHtBsGeDe">   
-                                    <div class="col contImgmenulogo">    
-                                        <div class="col alogoPt" id="tt">
-                                                <button class="navbar-toggler bg-light elementptmenu" style="height:70px; width:70px;" type="button" data-toggle="collapse" data-target="#navbarSupportedContentpt" aria-controls="navbarSupportedContentpt" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="col-10 navbar navbar-light bg-navbar header-nav noghost"> 
+                        <div class="col">   
+                                <div class="col MgHtBs">   
+                                    <div class="col contImgmenulogo pasmarge">    
+                                        <div class="col alogoPt pasmarge" id="tt">
+                                                <button class="elementptmenu"  type="button" data-toggle="collapse" data-target="#navbarSupportedContentpt" aria-controls="navbarSupportedContentpt" aria-expanded="false" aria-label="Toggle navigation">
                                                 <span class="navbar-toggler-icon"></span>
                                                     <!--   <span>MENU</span> +++++++++++++++++++++++++++++++ -->
                                                 </button>                        
-                        <!-- affichage logo petit +++++++++++++++++++++++++++++++ -->
-                                                    <a class="navbar-brand taille13 elementptmenu" href="index.php" style="border-bottom:none;text-decoration:none;"><img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-block" style="height:70px; width:70px;" id="logo"></a>      
-                                        </div>
+                                                </div>
                                     </div>
-                <div class="collapse navbar-collapse clearfix" id="navbarSupportedContentpt">
+                                </div>
+                            <div class="collapse navbar-collapse clearfix" id="navbarSupportedContentpt">
                                 <ul class="navbar-nav mr-auto modNavbar flexNavbar" >
                                 <li class="nav-item dropdown ">
                                         <?php
                                             if(isset($_SESSION['conciergerieDuWebId'])) {
-                                                echo '<a class="navbar-brand taille13" href="index.php?action=accountManagement">Bienvenue '.htmlspecialchars($_SESSION['conciergerieDuWebFirstName']).' '.htmlspecialchars($_SESSION['conciergerieDUWebLastName']).'</a>';
+                                                echo '<h3><a class="navbar-brand taille13" href="index.php?action=accountManagement">Bienvenue '.htmlspecialchars($_SESSION['conciergerieDuWebFirstName']).' '.htmlspecialchars($_SESSION['conciergerieDUWebLastName']).'</a></h3>';
                                             }
                                         ?>                    
                                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -191,21 +190,21 @@
                                                     echo 'Votre Compte';
                                                 }
                                                 else {
-                                                    echo 'Bonjour, Identifiez-vous <pre></pre> Votre Compte';
+                                                    echo '<h3>Bonjour, Identifiez-vous <pre></pre> </h3>Votre Compte';
                                                 }
                                             ?>
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <?php    
                                                 if(isset($_SESSION['conciergerieDuWebId'])) {
-                                                    echo '<a class="dropdown-item" href="index.php?action=accountManagement">Modifier le compte</a>';
+                                                    echo '<h3><a class="dropdown-item" href="index.php?action=accountManagement">Modifier le compte</a></h3>';
                                                     echo '<hr>';
-                                                    echo '<a class="dropdown-item" href="index.php?action=deconnection&session=ok">Déconnexion</a>';
+                                                    echo '<h3><a class="dropdown-item" href="index.php?action=deconnection&session=ok">Déconnexion</a></h3>';
                                                 }
                                                 else {
                                                     echo '
-                                                        <a class="dropdown-item" href="index.php?action=connection">Connexion</a>
-                                                        <a class="dropdown-item" href="index.php?action=inscription">Nouveau Membre? Commencez ici</a>
+                                                    <h3><a class="dropdown-item" href="index.php?action=connection">Connexion</a></h3>
+                                                    <h3><a class="dropdown-item" href="index.php?action=inscription">Nouveau Membre? Commencez ici</a></h3>
                                                     ';
                                                 }
                                             ?>
@@ -215,43 +214,47 @@
                                     <li class="nav-item active ">
                                         <a class="nav-link" href="index.php">Offres <span class="sr-only"></a>
                                     </li>
-                                    <div class="dropdown-divider"></div>
+                                    <div class="dropdown-divider" ></div>
+                               
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catégories</a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                          
-                                    <div class=" col-lg-5 col-xl-5 pasmarge" style="max-width: 39%;">
-                                    <form class="form-inline my-2 my-lg-0 taille13" id="search">
-                                        <input class="form-control mr-sm-2 taille13" type="search" placeholder="Saisissez un mot clé" aria-label="Search" >
-                                        <button class="btn btn-outline-secondary my-2 my-sm-0 taille13" type="submit"><i class="fa fa-search"></i></button> 
-                                    </form></div>   
-                                    
                                     <a class="dropdown-item" href="index.php?action=category&type=all&page=1">Toutes </a>
                                             <?php
                                                 while ($db3 = $thirdRequest->fetch()) {
-                                                    echo '<a class="dropdown-item" href="index.php?action=category&type='.htmlspecialchars($db3['nameCategory']).'&page=1">' . htmlspecialchars($db3['nameCategory']) . '</a>';
+                                                    echo '<h3><a class="dropdown-item" href="index.php?action=category&type='.htmlspecialchars($db3['nameCategory']).'&page=1">' . htmlspecialchars($db3['nameCategory']) . '</a></h3>';
                                                 }
                                             ?>
-                                   
-                                    </div>
-                                    </li>            
+                                    </div>   
+                                    </li> 
+                                    <div class="dropdown-divider" ></div>
+                                    <div class=" col-lg-5 col-xl-5 pasmarge" style="max-width: 39%;">
+                                    <form class="form-inline my-0 my-lg-0 taille13" id="search">
+                                        <input class="form-control mr-sm-2 taille13" type="search" placeholder="Recherche par mot clé" aria-label="Search" >
+                                        <button class="btn btn-outline-secondary my-2 my-sm-0 taille13" type="submit"><i class="fa fa-search"></i></button> 
+                                    </form></div>            
                                     <div class="dropdown-divider"></div>
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="#">Contact <span class="sr-only">(current)</a>
+                                        <a class="nav-link active" href="#" >Contact <span class="sr-only">(current)</a>
                                     </li>
+                                    <div class="dropdown-divider"></div>
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="#" >Société<span class="sr-only">(current)</a>
+                                        <a class="nav-link active" href="#">Société<span class="sr-only">(current)</a>
                                     </li>
                                     
                             </ul> 
                 </div><!-- fin de la navbar petit modele  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
-         </nav><!-- fin de la nav menu petit modele +++++++++++-->
+         </nav>
+         <div class="col-2">
+            <!-- affichage logo petit +++++++++++++++++++++++++++++++ -->
+            <a class="navbar-brand taille13 elementptmenu noghost" href="index.php" style="border-bottom:none;text-decoration:none;"><img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-block" style="height:70px; width:70px;" id="logo"></a>      
+         </div>  
+         <!-- fin de la nav menu petit modele +++++++++++-->
              </div><!-- fin de   <div class=" offset-xl-1">+++++++++++++++++++++++++++++++ -->
              </div> <!-- fin de <div class="col-12 couleursousmenu">+++++++++++++++++++++ -->
              </div><!-- fin de la row ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
           </div>  <!-- fin du container ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         </header>
-                        
         <!-- Content View ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <?= $content ?>
                                

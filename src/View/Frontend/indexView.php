@@ -5,9 +5,9 @@
 <!-- <script src="src/Public/js/script.js"></script> -->
 
 <!-- Welcome message +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<div class="row" style="background-image: linear-gradient(to right bottom, #1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);">
+<div class="row" >
 <div class="alert welcome hauteurclass col-12 someClass parallax" id="up" role="alert"  style="background-image: url('src/Public/images/mains.jpg');">
-        <h1 class=" MgHtBs blanc">La Conciergerie du Web</h1>
+<h1 class=" MgHtBs blanc">La Conciergerie du Web</h1>
         <div id="contImgTxt">
             <div class="element col-xl-11 offset-xl-1">
                 <p class="text-justify blanc" >Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.
@@ -81,7 +81,7 @@
     </div>
 </div>                                                      
 <!-- formulaire de contact et nos coordonnées ++++++++++++++++++++++++++++ -->     
-<div class="row someClassvannes justify-content-center"  style="background-image: url('src/Public/test.jpg');">       
+<div class="row someClassvannes justify-content-center"  >       
     <div class="row margeshautetbas justify-content-center" >
           <div class="col-sm-10 col-lg-6 someClassgauche">  <!-- bloc de gauche ++++++++++++++++++++++++++++ -->                         
                         <div ><!-- tite formulaire de contact ++++++++++++++++++++++++++++ -->   
