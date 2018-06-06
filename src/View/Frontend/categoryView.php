@@ -4,7 +4,16 @@
 
 
 <!-- Service Card ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<h1 class="alert-heading blanc MgHtBs"><?=htmlspecialchars($_GET['type'])?></h1>
+<h1 class="alert-heading blanc MgHtBs">
+    <?php
+        if(isset($_GET['idSeller'])) {
+            echo htmlspecialchars($resultSeller['societyNameSeller']);
+        }
+        else {
+            echo htmlspecialchars($_GET['type']);
+        }
+    ?>
+</h1>
     <div class="dropdown-divider Pttraitb" ></div> 
         <div class="row justify-content-center">
             <div class="card-deck col-sm-12 col-lg-10">

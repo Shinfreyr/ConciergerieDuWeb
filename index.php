@@ -200,7 +200,7 @@
             if($_GET['action'] === 'deconnection' && $_GET['session'] === 'ok') {
                 $userConnectController->deconnectionSession();
             }
-#UserCo     //Voucher Mailling ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#UserCo     //Voucher Downloading +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             elseif($_GET['action'] === 'dlVoucher' && $_GET['session'] === 'ok') {
                 $userConnectController->dlVoucher();
             }

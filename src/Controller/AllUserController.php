@@ -37,6 +37,11 @@
         function category() {
             if(isset($_GET['idSeller'])) {
                 $idSeller = htmlspecialchars($_GET['idSeller']);
+
+                $sellerManager = new \Project\Model\SellerManager();
+                $requestSeller = $sellerManager->sellerRequest($idSeller);
+
+                $resultSeller = $requestSeller->fetch();
             }
             else {
                 $category = htmlspecialchars($_GET['type']);
