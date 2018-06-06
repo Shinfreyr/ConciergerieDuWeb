@@ -34,7 +34,7 @@
 
         
     <!-- Template Content ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-    <body style="width:auto; background-image: linear-gradient(to right bottom, #1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);">
+    <body style="width:auto; background-image: linear-gradient(to left bottom, #1c1918, #1c1918, #1c1918, #37669f, #37669f, #37669f, #37669f, #0c4c8c);">
       <div class="container-fluid sticky-top">   <!-- debut container ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <div class="row"> <!-- debut row ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <header class="text-justify col- text-center-lg modNavbar">
@@ -120,7 +120,7 @@
                         </form></div>
                      
                         <li class="nav-item MgHt">
-                            <a class="nav-link active" href="#" title="Contactez-nous">Contact <span class="sr-only">(current)</a>
+                            <a class="nav-link active" href="#contact" title="Contactez-nous">Contact <span class="sr-only">(current)</a>
                         </li>
                        
                         <li class="nav-item dropdown MgHt8 "style="min-width: 13%;">
@@ -161,7 +161,7 @@
             </div>
             </div>
             
-            <div class="row couleursousmenu">        
+            <div class="row couleursousmenu" id="contact">        
             <div class="row justify-content-center"> 
             <!-- debut de la navbar petit modele  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->   
             <nav class="col-10 navbar navbar-light bg-navbar header-nav noghost"> 
@@ -235,7 +235,7 @@
                                     </form></div>            
                                     <div class="dropdown-divider"></div>
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="#" >Contact <span class="sr-only">(current)</a>
+                                        <a class="nav-link active" href="#contact" >Contact <span class="sr-only">(current)</a>
                                     </li>
                                     <div class="dropdown-divider"></div>
                                     <li class="nav-item">
@@ -272,9 +272,9 @@
                                                 </li>
                                                 <div>
                                                 <li class="nav-item ">
-                                                    <a class="nav-link" href="#"><span class="fa fa-pencil">Société</a>
+                                                    <a class="nav-link" href="#"><span class="fa fa-pencil"> Société</a>
                                                 </li>
-                                                <li class="nav-item 2">
+                                                <li class="nav-item ">
                                                     <a class="nav-link" href="#"><span class="fa fa-pencil"></span> Services</a>
                                                 </li>
                                                 <li class="nav-item">
@@ -287,7 +287,7 @@
                                                     <a class="nav-link" href="#"><span class="fa fa-commenting"></span>Newsroom</a>
                                                 </li>
                                                 <li class="nav-item  ">
-                                                    <a class="nav-link" href="#up"><span class="fa fa-commenting">Contact</a>
+                                                    <a class="nav-link" href="#contact"><span class="fa fa-commenting">Contact</a>
                                                 </li> 
                                                 </div>
                                             </ul>
@@ -318,10 +318,10 @@
                                                     </div>
                                     </nav>
                                 </div>
-                                <div class="col justify-content-center copyright">
-                                        <span class="taille13">
+                                <div class="col-9 justify-content-center">
+                                        <span>
                                             <pre></pre>
-                                        Copyright &copy; 2018  <h5 class="card-title taille13">TyWebServices.</h5>Tous droits réservés.
+                                        <h4 class="taille12">Copyright &copy; 2018  TyWebServices. Tous droits réservés.</h4>
                                         </span>
                                 </div>
                      </div><!-- fin de div class="row justify-content-center"+++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

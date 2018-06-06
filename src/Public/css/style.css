@@ -142,7 +142,23 @@ ul {
 .taille13{
     font-size: 1em;
     display: inline-block;
-    }
+    }  
+.taille12{
+        font-size: 0.75em;
+        display: inline-block;
+}    
+h5{
+    color:#fff;
+}
+h1 {
+    text-align: center;
+    font-size: 1.875em;
+}
+/* cadres border sur les formulaires ++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.bord-form{
+border: 3px dotted #8fa5af;
+}
+
 /* le formualire de recherche sur une seule ligne++++++++++++++++++++++*/
 form{
     white-space: nowrap;
@@ -281,9 +297,6 @@ a:hover {
     color: rgb(148, 69, 69);
     background-color: #0c4c8c;
     border-color: white;
-}
-h1 {
-    text-align: center;
 }
  /*marge autour de la barre de recherche ++++++++++++++++++++++*/
 #search{
@@ -454,9 +467,6 @@ h4{
 h3{
 font-size:0.929em;
 }
-h1{
-    font-size:1.375em;   
-}
 .noghost{
     display:none;
 }
@@ -527,9 +537,7 @@ body {
     h3{
     font-size:0.929em;
     }
-    h1{
-        font-size:1.375em;   
-    }
+  
     #coordonnees{
         border-left: 1px dotted black;
         border-top: 1px dotted black;
@@ -585,9 +593,7 @@ h4{
 h3{
 font-size:0.929em;
 }
-h1{
-    font-size:1.375em;   
-}
+
 /*affichage des elements du menu petit modele toggle++++++++++++++++++++++++++++++++++++++++++*/
 /* carte vip et texte +++++++++++++++++++++++++++++*/
 .element1
@@ -692,9 +698,7 @@ h4{
 h3{
 font-size:0.929em;
 }
-h1{
-    font-size:1.375em;   
-}
+
 /*affichage des elements du menu petit modele toggle++++++++++++++++++++++++++++++++++++++++++*/
 /* carte vip et texte +++++++++++++++++++++++++++++*/
 .element1
@@ -811,9 +815,6 @@ h4{
     }
 h3{
 font-size:0.929em;
-}
-h1{
-    font-size:1.375em;   
 }
 /*affichage des elements du menu petit modele toggle++++++++++++++++++++++++++++++++++++++++++*/
 /* carte vip et texte +++++++++++++++++++++++++++++*/

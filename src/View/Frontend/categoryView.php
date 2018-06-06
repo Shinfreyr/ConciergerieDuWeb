@@ -4,11 +4,16 @@
 
 <div style="background-image: linear-gradient(to right bottom, #1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);">
 <!-- Service Card ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<div class="card-deck col-12">
+
+    <div class="row justify-content-center">
+    <h1 class="alert-heading blanc">Toutes les Catégories</h1>
+        <div class="card-deck col-sm-12 col-lg-10" >
+        
     <?php
         while ($db1 = $firstRequest->fetch()) {            
             echo                
-                '<div class="card">
+                '<div class="card col-10">
+                  <h1>Article :</h1><h5 class="card-title">'.htmlspecialchars($db1['nomArticle']).'</h5>
                     <img class="card-img-top" src="src/Public/images/'.htmlspecialchars($db1['imageArticle']).'" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">'.htmlspecialchars($db1['nomArticle']).'</h5>
@@ -26,11 +31,12 @@
         }
     ?>
 </div>
-<div class="card-deck col-12">
-    <?php
+<div class="card-deck col-sm-12 col-lg-10" >
+         <?php
         while ($db2 = $secondRequest->fetch()) {            
             echo                
-                '<div class="card">
+                '<div class="card col-10">
+                <h1>Article :</h1><h5 class="card-title">'.htmlspecialchars($db1['nomArticle']).'</h5>
                     <img class="card-img-top" src="src/Public/images/'.htmlspecialchars($db2['imageArticle']).'" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">'.htmlspecialchars($db2['nomArticle']).'</h5>
@@ -47,8 +53,9 @@
                 </div>';
         }
     ?>
+        </div>
+    </div>
 </div>
-
 <!-- Pagination ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <nav aria-label="Page navigation example col-12">
     <ul class="pagination">
@@ -82,9 +89,8 @@
         ?>        
     </ul>
 </nav>
-
+</div>
 <?php
     $content = ob_get_clean();
     require('template.php');    
 ?>
-</div>
