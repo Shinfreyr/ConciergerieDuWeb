@@ -322,7 +322,7 @@
                     <div class="col-9 justify-content-center">
                             <span>
                                 <pre></pre>
-                            <h4 class="taille12">Copyright &copy; 2018  TyWebServices. Tous droits réservés.</h4>
+                                <h4 class="taille12">Copyright &copy; 2018  TyWebServices. Tous droits réservés.</h4>
                             </span>
                     </div>
                 </div><!-- fin de div class="row justify-content-center"+++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

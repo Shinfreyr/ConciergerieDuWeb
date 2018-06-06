@@ -6,7 +6,7 @@
 <!-- Service Card ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
     <div class="row justify-content-center">
-    <h1 class="alert-heading blanc">Toutes les Catégories</h1>
+    <h1 class="alert-heading blanc"><?=htmlspecialchars($_GET['type'])?></h1>
         <div class="card-deck col-sm-12 col-lg-10" >
         
     <?php
