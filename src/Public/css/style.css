@@ -149,12 +149,33 @@ ul {
         font-size: 0.75em;
         display: inline-block;
 }    
-h5{
-    color:#fff;
-}
+
 h1 {
     text-align: center;
     font-size: 1.875em;
+}
+/* petit trait souos titre +++++++++++++++++++++++++++++++++++++++++++*/
+.Pttrait{
+    width:30%;
+    border-color:#000000;
+    border-top-width:1px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0;
+    margin-bottom:20px;
+    width:100%;
+    max-width:170px;
+}
+.Pttraitb{
+    width:30%;
+    border-color:#fff;
+    border-top-width:1px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0;
+    margin-bottom:20px;
+    width:100%;
+    max-width:170px;
 }
 /* cadres border sur les formulaires ++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .bord-form{
@@ -436,7 +457,6 @@ body ++++++++++++++++++++++++++ */
 @media (min-width: 1046px) and (max-width: 1300px) {
 body {
         background-color: #1c1918;
-        color:grey;
         font-family: "Roboto", sans-serif;
         height:auto;
         font-size: 1em;
@@ -494,7 +514,6 @@ font-size:0.929em;
 @media (min-width: 992px) and (max-width: 1046px) {
 body {
         background-color: #1c1918;
-        color:grey;
         font-family: "Roboto", sans-serif;
         height:auto;
         font-size: 0.938em;
@@ -571,7 +590,6 @@ body {
 @media (min-width: 769px) and (max-width: 991px) {
 body {
         background-color: #1c1918;
-        color:grey;
         font-family: "Roboto", sans-serif;
         height:auto;
         font-size: 1.063em;
@@ -677,7 +695,6 @@ font-size:0.929em;
 @media screen and (max-width:991px) {
 body {
         background-color: #1c1918;
-        color:grey;
         font-family: "Roboto", sans-serif;
         height:auto;
         font-size: 1.063em;
@@ -795,7 +812,6 @@ a:hover {
 @media screen and (max-width:768px){
 body {
         background-color: #1c1918;
-        color:grey;
         font-family: "Roboto", sans-serif;
         height:auto;
         font-size: 1.063em;

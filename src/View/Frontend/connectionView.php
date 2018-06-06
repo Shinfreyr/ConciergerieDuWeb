@@ -11,7 +11,8 @@
 
 <!-- Welcome message +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <div class="alert welcome col-12 text-center" id="up" role="alert">
-    <h1 class="alert-heading">Connection</h1>
+    <h1 class="alert-headin MgHtBsg">Connection</h1>
+    <div class="dropdown-divider Pttraitb" ></div>
     <p class="mb-0">Connectez vous ici !</p>
     <hr>
     <p class="mb-0">Profitez de nos offres en vous connectant !</p>

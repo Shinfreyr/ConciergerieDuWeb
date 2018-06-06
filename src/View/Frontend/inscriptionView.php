@@ -11,6 +11,7 @@
                     <div class="col" >
                             <div class="alert welcome hauteurclass someClass parallax blanc" role="alert" >
                                 <h1 class=" MgHtBs">Inscription à la Conciergerie du WEB</h1>
+                                <div class="dropdown-divider Pttraitb" ></div>
                                     <div id="contImgTxt">
                                         <div class="element col-xl-11 offset-xl-1">
                                         <p class="mb-0">Dans le cadre de la nouvelle Réglementation Générale sur la Protection des Données, nous vous informons que toutes vos informations enregistrées sur notre site, resteront confidentielles et pouront être supprimées à tout moment par vos soins. </p>
