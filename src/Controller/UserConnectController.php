@@ -157,15 +157,8 @@
         }
 
         //Voucher Mailling ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        function mailVoucher() {
-            echo 'coucou'; 
-            
-
-            $im = imagegrabscreen();
-            imagepng($im, "myscreenshot.png");
-            imagedestroy($im);
-
-   
+        function dlVoucher() {
+            require('src/View/frontend/voucherDL.php');
         }
         //Deconnection Session ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function deconnectionSession() {

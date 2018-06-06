@@ -201,8 +201,8 @@
                 $userConnectController->deconnectionSession();
             }
 #UserCo     //Voucher Mailling ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-            elseif($_GET['action'] === 'mailVoucher' && $_GET['session'] === 'ok') {
-                $userConnectController->mailVoucher();
+            elseif($_GET['action'] === 'dlVoucher' && $_GET['session'] === 'ok') {
+                $userConnectController->dlVoucher();
             }
             //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             else {
