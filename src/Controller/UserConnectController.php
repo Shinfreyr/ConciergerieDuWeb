@@ -156,8 +156,19 @@
             }
         }
 
-        //Voucher Mailling ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        //Voucher Downloading ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function dlVoucher() {
+            $idArticle = htmlspecialchars($_GET['idArticle']);
+            $codeVoucher = htmlspecialchars($_GET['codeVoucher']);
+            
+            $categoryManager = new \Project\Model\CategoryManager();
+            $thirdRequest = $categoryManager->categoryRequest();
+
+            $articleManager = new \Project\Model\ArticleManager();
+            $request = $articleManager->firstArticleVoucherRequest($idArticle);
+
+            $result = $request->fetch();
+
             require('src/View/frontend/voucherDL.php');
         }
         //Deconnection Session ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
