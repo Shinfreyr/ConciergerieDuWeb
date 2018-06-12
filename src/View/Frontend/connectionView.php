@@ -3,15 +3,15 @@
 <?php ob_start(); ?>
 
 
-<div class="row" >
-<div class="alert welcome hauteurclass col-12 someClass parallax" id="up" role="alert"  style="background-image: url('src/Public/images/mains.jpg');">
+<div class="row parallax" style="background-image: url('src/Public/images/mains.jpg');">
+<div class="alert welcome hauteurclass col-12 someClass" id="up" role="alert">
 <div class="row justify-content-center">
 
 <div class="card-deck col-sm-6 text-justify  MgHtBs blanc" style="background-image: linear-gradient(to right bottom, #1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);">
 
 <!-- Welcome message +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <div class="alert welcome col-12 text-center" id="up" role="alert">
-    <h1 class="alert-headin MgHtBsg">Connection</h1>
+    <h1 class="alert-heading blanc MgHtBs">Connection</h1>
     <div class="dropdown-divider Pttraitb" ></div>
     <p class="mb-0">Connectez vous ici !</p>
     <hr>
@@ -28,7 +28,7 @@
         <label for="password">Mot de Passe*</label>
         <input type="password" class="form-control" name="password" id="password" placeholder="Votre Mot de Passe">
     </div>
-    <button type="submit" class="btn btn-info btn-validation col-12">Connection</button>
+    <button type="submit" class="btn btn-TywebButton btn-lg btn-block btn-validation col-12">Connection</button>
 </form>
 </div>
 </div>

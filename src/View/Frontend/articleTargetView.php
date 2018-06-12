@@ -5,7 +5,8 @@
 <!-- Jumbotron Article +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <div class="row justify-content-center"  >    
 <div class="col-12 justify-content-center">
-    <h1 class="alert-heading blanc">Votre Offre Sélectionnée</h1>
+    <h1 class="alert-heading blanc MgHtBs">Votre Offre Sélectionnée</h1>
+    <div class="dropdown-divider Pttraitb" ></div> 
 </div>   
     <div class="row margeshautetbas justify-content-center" >
           <div class="col-sm-10 col-lg-6"> 

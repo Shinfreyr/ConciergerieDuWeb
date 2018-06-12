@@ -28,9 +28,9 @@
                                         </div>     
                             </div>
                 <!-- Inscription Forms ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-                <div><h1 class=" MgHtBs blanc">Formulaire</h1></div>
-                             <div class="card-deck  MgHtBs justify-content-center blanc bord-form">
-                                <form action="index.php?action=inscription&db=ok" id="inscriptionForm" method="post">
+                <div><h1 class=" MgHtBs blanc"></h1></div>
+                             <div class="card-deck justify-content-center blanc bord-form">
+                                <form action="index.php?action=inscription&db=ok" id="inscriptionForm" method="post" class="MgHtBs">
                                     <div class="form-group">
                                         <label for="enterpriseCode">Code Entreprise*</label>
                                         <input type="text" class="form-control" name="enterpriseCode" id="enterpriseCode" placeholder="Code de votre entreprise">
@@ -50,9 +50,9 @@
                                                 <input type="text" class="form-control col-2 birthForm" name="birthDay" id="birthDay" placeholder="Jours de naissance" maxlength="02">
                                                 <input type="text" class="form-control col-2" name="birthMonth" id="birthMonth" placeholder="Mois de naissance" maxlength="02">
                                                 <input type="text" class="form-control col-2" name="birthYear" id="birthYear" placeholder="Année de naissance" maxlength="04">
+                                                <small id="Date_naissance" class="form-text text-muted">Par exemple si vous êtes né le premier jours du mois d'Avril 1984, écrivez 01 puis 04 et enfin 1984.</small>
                                             </div>        
-                                        <small id="Date_naissance" class="form-text text-muted">Par exemple si vous êtes né le premier jours du mois d'Avril 1984, écrivez 01 puis 04 et enfin 1984.</small>
-                                    </div>       
+                                         </div>       
                                     <div class="form-group">
                                         <label for="email">Email*</label>
                                         <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Votre Email">
@@ -72,7 +72,7 @@
                                         <label class="form-check-label" for="checkHuman">Je ne suis pas un robot</label>
                                     </div>
                                     <div class="row justify-content-center">
-                                        <button type="submit" class="btn btn-info btn-validation center-block col-4">Envoyer</button>
+                                        <button type="submit" class="btn btn-TywebButton btn-lg btn-block btn-validation center-block col-4">Envoyer</button>
                                     </div>  
                                 </form>
                             </div>

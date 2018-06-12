@@ -8,11 +8,12 @@
 <div class="alert welcome hauteurclass col-12 someClass parallax" id="up" role="alert"  style="background-image: url('src/Public/images/mains.jpg');">
 <div class="row justify-content-center">
 
-<div class="card-deck col-sm-9 text-justify  MgHtBs blanc" style="background-image: linear-gradient(to right bottom, #1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);">
+<div class="card-deck col-sm-9 text-justify MgHtBs" style="background-image: linear-gradient(to right bottom, #1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);">
 
 <!-- Welcome message +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<div class="alert welcome col-12 text-justify MgHtBs" id="up" role="alert">
-    <h1 class="alert-heading ">Gestion de compte</h1>
+<div class="alert welcome col-12 text-justify blanc" id="up" role="alert">
+    <h1 class="alert-heading MgHtBs">Gestion de compte</h1>
+    <div class="dropdown-divider Pttraitb" ></div> 
     <p class="mb-0">Modifiez et vérifier vos informations enregistrer !</p>
     <hr>
     <p class="mb-0">Attention en cas de demande de supression de compte, il sera nécessaire d'en créer un nouveau !</p>

@@ -3,22 +3,27 @@
     margin: 0;
     padding: 0;
 }
+
 /*Header +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-.modNavbar{
+.modNavbar {
     width: 100%;
 }
-.flexNavbar{
+
+.flexNavbar {
     display: flex;
     flex-wrap: wrap;
 }
-.navbarCenter{
+
+.navbarCenter {
     display: flex;
     flex-wrap: wrap;
 }
+
 /*Inscription Form +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .birthForm {
     margin-left: 15px;
 }
+
 /*@media (min-width: 769px) {
 body +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 body {
@@ -29,57 +34,65 @@ body {
     margin:0; 
     padding:0; 
 }
+
 .row {
     flex-wrap:wrap;
     margin-left:0;
     margin-right:0;
 }
+
 .container-fluid {
     width: 100%;
     padding-right: 0px;
     padding-left: 0px;
 }
+
 /*couleur de fond de saisissez un mot cle++++++++++++++++++++++*/
-.colortop{
-    background-color:#8fa5af;
+.colortop {
+    background-color:#0c4c8c;
     width: 100%;
 }
-.couleursousmenu{
+
+.couleursousmenu {
     background-color: #1c1918;
     width: 100%;
 }
 
 /*couleur de police foncee++++++++++++++++++++++*/
-.colorfontD{
+.colorfontD {
     color:#1c1918;
 }
+
 /*couleur de texte blanc+++++++++++++++++++++++++++++++++++++++++++++++*/
-.blanc{
+.blanc {
     color:#fff;
     font-family: "Roboto", sans-serif;
     height:auto;
-    opacity:1;
 }
+
 /*couleur des liens gris+++++++++++++++++++++++++++++++++++++++++++++++*/ 
-a:link{color: rgba(0,0,0,.5);}
+/*a:link{color: rgba(0,0,0,.5);}
 a:link:visited{color:  #fff;}
 a:link:active{color:  #fff;}
 a:link:hover{color:  #fff;}
+*/
 
 /*marge de presentation++++++++++++++++++++++*/
-.petitemarge{
+.petitemarge {
     padding-right:5px;
     padding-left:5px;
  }
-/*les li sur une seule ligne++++++++++++++++++++++*/
 
+/*les li sur une seule ligne++++++++++++++++++++++*/
 li {
     display : inline;
 }
+
 /*les ul sur une seule ligne++++++++++++++++++++++*/
 ul {
     display : inline;
 }
+
 /*taille de l'image arriere plan dans la view indexview+++++++++++++++++++++++++++++*/
 .someClass { 
     background: url(src/Public/images/mains.jpg) no-repeat center center /*fixed*/; 
@@ -89,13 +102,15 @@ ul {
     background-size: cover;
     height: 100%;
     width:100%;
-    opacity:0.50;
-    filter:alpha(opacity=20);
-  }
+  /* opacity:0.50;
+    filter:alpha(opacity=20);*/
+}
+
 /*taille de alert welcome+++++++++++++++++++++++++++++*/
-.hauteurclass{
+.hauteurclass {
     height:100%;
 }
+
 /*polygon footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .polygon-footer {
     background-color: #FFFFE0;
@@ -104,6 +119,7 @@ ul {
     clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
     padding:auto;
 }
+
 /*polygon body +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .polygon-body {
     background-image: linear-gradient(#0c4c8c,black);
@@ -112,50 +128,59 @@ ul {
     clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
     padding:auto;
 }
+
 /*triangle en forme d'aile de libellule en dessous des titres ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-.triangle-code-chip{
+.triangle-code-chip {
     display : inline-block;
     height : 0;
     width : 0;
     border-radius: 3%;
     border-right : 150px solid #FFFFE0;
     border-bottom : 50px solid transparent;
-   }   
+}
+
 /*lien sous les intitules de la  nav bar ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*pas de surligne sous le logo++++++++++++++++++++++*/
 .header-nav a, .accueillogo a {
     text-decoration: none;
-    }
+}
+
 /*place de la nav bar++++++++++++++++++++++*/
-    nav ul li
-    {
+nav ul li {
      margin:0 2px; 
      font-size: 1em;
      display: inline-block;
-    }
-    nav ul li a
-    {
+}
+
+nav ul li a {
      margin:0 2px; 
      font-size: 1em;
      display: inline-block;
      line-height: 13px;
-    }
+}
+
 /*taille des caracteres++++++++++++++++++++++*/
-.taille13{
+.taille13 {
     font-size: 1em;
     display: inline-block;
-    }  
-.taille12{
-        font-size: 0.75em;
-        display: inline-block;
+}  
+
+.taille12 {
+    font-size: 0.75em;
+    display: inline-block;
 }    
+
+.taille10 {
+    font-size:0.625em;
+}
 
 h1 {
     text-align: center;
     font-size: 1.875em;
 }
+
 /* petit trait souos titre +++++++++++++++++++++++++++++++++++++++++++*/
-.Pttrait{
+.Pttrait {
     width:30%;
     border-color:#000000;
     border-top-width:1px;
@@ -166,7 +191,8 @@ h1 {
     width:100%;
     max-width:170px;
 }
-.Pttraitb{
+
+.Pttraitb {
     width:30%;
     border-color:#fff;
     border-top-width:1px;
@@ -177,45 +203,57 @@ h1 {
     width:100%;
     max-width:170px;
 }
+
 /* cadres border sur les formulaires ++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-.bord-form{
-border: 3px dotted #8fa5af;
+.bord-form {
+/*border: 3px dotted #8fa5af;*/
+    border: 3px dotted #0c4c8c;
 }
 
 /* le formualire de recherche sur une seule ligne++++++++++++++++++++++*/
-form{
+form {
     white-space: nowrap;
 }
+
 /*marge de droite pour la recherche++++++++++++++++++++++*/
-.marge{
+.marge {
     padding-right:40px;
  }
-.pasmarge{
+
+.pasmarge {
      margin:0 0;
      padding: 0 0;
  }
 
 /*position de la navbar ++++++++++++++++++++++*/
- navbar{
+ navbar {
     position: relative;
     z-index: 1;
     height:100px;
 }
+
 /*position image logo ++++++++++++++++++++++*/
-#logo{
+#gdlogo {
     position: relative;
     z-index: 2;
-    /* top: 2em;*/
-
-    }
-#alogo{
+    height:100px; 
+    width:100px;
     text-decoration:none;
+    /* top: 2em;*/
+}
+.alogo {
+    text-decoration:none;
+    border-bottom:none;
+    margin:0;
+    padding:0;
 }    
+
 /*barre bleue au survol ++++++++++++++++++++++*/
 a:hover {
     text-decoration: underline;
-    border-bottom: 3px solid #8fa5af;
-    }
+    border-bottom: 3px solid #0c4c8c;
+}
+
 /*menu du bas +++++++++++++++ */
 
 /*les 3 navbar +++++++++++++ */
@@ -230,17 +268,18 @@ a:hover {
     list-style: none;
   
 }
+
 /*1ernavbar +++++++++++++ */
-.navbarfooter ul li a{
+.navbarfooter ul li a {
     display: inline;
     text-decoration: none;
     color: #8fa5af;
     font-size: 0.9375em;
     margin:0 2px;
-    padding:0 2px;
-    
+    padding:0 2px;  
 }
-.navbarfooter ul li a:hover{
+
+.navbarfooter ul li a:hover {
     display: inline;
     text-decoration: none;
     border-bottom: 3px solid #8fa5af;
@@ -249,7 +288,7 @@ a:hover {
 }
 
 /*2ndenavbar +++++++++++++ */
-.navbarfooter2 ul li a{
+.navbarfooter2 ul li a {
     display: inline;
     text-decoration: none;
     color: #8fa5af;
@@ -258,56 +297,61 @@ a:hover {
     padding:0 2px;
     text-align: center; /* centrer le texte */
 }
-.navbarfooter2 ul li{
+
+.navbarfooter2 ul li {
     display: inline;
     margin: 0 5px;
     padding: 0 5px;
     border-left: 1px solid #1c1918;
     font-size: 0.9375em;
-    
 }
 
-.navbarfooter2 ul li:first-child{
+.navbarfooter2 ul li:first-child {
     border:none;
     font-size: 0.9375em;
-  
 }
-.navbarfooter2 ul li:nth-child(2){
+
+.navbarfooter2 ul li:nth-child(2) {
     border:none;
     font-size: 0.9375em;
-  
 }
+
 /*couleur de fond de la nav bar ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .bg-navbar {
     background-color: #1c1918;
-   }
+}
 
-  navbar{
-      height: 100px;
-  }
+navbar {
+    height: 100px;
+}
+
   /*marges haut menu ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-  .MgHt{
+.MgHt {
     margin-top:60px;
-  }
-  .MgHt8{
+}
+
+.MgHt8 {
     margin-top:12px;
-  }
+}
+
 /*couleur des fonts de la nav bar ++++++++++++++++++++++++++ */
 .navbar-light .navbar-brand {
     color: white;
-   }
+}
+
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
     color: white;
 }
 
-  /*couleur de fond de al search form ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*couleur de fond de al search form ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
  
 .form-inline .form-control {
     display: inline-block;
     width: auto;
     vertical-align: middle;
-    background-color:#8fa5af;
+   /*background-color:#8fa5af;*/
 }
+
 /*couleur de fond du bouton de la recherche ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
  
 .btn-outline-success {
@@ -321,11 +365,19 @@ a:hover {
     background-color: #0c4c8c;
     border-color: white;
 }
+
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #0c4c8c;
+    border-color: #0c4c8c;
+}
+
  /*marge autour de la barre de recherche ++++++++++++++++++++++*/
 #search{
     margin-left:5%;
     margin-right: 10%;
 }
+
 /*contact et votre compte décalé à droite ++++++++++++++++++++++*/
 /*systeme de parallax ++++++++++++++++++++++*/
 .parallax {
@@ -341,120 +393,164 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
  /*marge entres les card ++++++++++++++++++++++*/
-.card{
+.card {
     margin :10%;  
 }
  /* indexview +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
  /*intro indexview haut de page +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
- .MgHtBs{
+ .MgHtBs {
     margin-top:5%;
     margin-bottom:5%;
 } 
  /*alignement image vip et texte +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-#contImgTxt
-{   margin-top:10%;
+#contImgTxt {   
+    margin-top:10%;
     display: flex;
     justify-content: space-between; 
 }
-.element:nth-child(1)
-{   order: 1;
+
+.element:nth-child(1) {   
+    order: 1;
     flex: 2;
     margin-right:5%;
 }
-.element:nth-child(2)
-{
+
+.element:nth-child(2) {
     order: 2;
     flex: 1;
     margin-left:5%;
 }
-.element1{
+
+.element1 {
     display:none;
 }
+
+/*effets sur la carte vip++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 /*alignement des cards +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*formulaire de contact +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-.checkbox{width:50px}
+.checkbox {
+    width:50px 
+}
+
 .inline {
-display: inline-block;
+    display: inline-block;
 }
+
 label {
-min-width: 120px;
+    min-width: 120px;
 }
+
 .titleprghp {
-background:#555;
-height: 46px;
-color: fff;
-font-size: 23px;
-height: 46px;
-line-height: 40px;
-padding: 0 0 0 20px;
-margin: 20px 0 20px;
+    background:#555;
+    height: 46px;
+    color: fff;
+    font-size: 23px;
+    height: 46px;
+    line-height: 40px;
+    padding: 0 0 0 20px;
+    margin: 20px 0 20px;
 }
 
  /*marges bas de page+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-.margeshautetbas{
+.margeshautetbas {
     margin-top:10%;
     margin-bottom:10%;
 }
-.alignement{
+
+.alignement {
     display:inline;
     font-size:14px;
 }
+
 /*taille de l'image arriere plan dans la view indexview+++++++++++++++++++++++++++++*/
 .someClassvannes { 
     background: url(src/Public/images/test.jpg) no-repeat center center ; 
     /*opacity:0.80;*/
-  }
-.someClassgauche, .someClassdroite{
-background-color: #FFFFE0;
 }
-.element{
+
+.someClassgauche, .someClassdroite {
+    background-color: #FFFFE0;
+}
+
+.element {
     opacity:1;
 }
+
 /*validation formulaire de contact indexview+++++++++++++++++++++++++++++*/
 input:invalid {
     border: 2px dashed goldenrod;
 }
+
 input:valid {
     border: 1px solid black;
 }
+
 /*le non affichage du logo petit modele++++++++++++++++++++++++++++++++++++++++++*/
-.alogoPt{
+.alogoPt {
     display:none;
 }
+
 /*le non affichage du menu petit modele mobile +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-/*debut mon test de sidebar toggle++++++++++++++++++++++++++++++++++++++++++*/
-.Ptpolice{
-font-size:0.762em;
+/* polices ++++++++++++++++++++++++++++++++++++++++++*/
+.Ptpolice {
+    font-size:0.762em;
 }
-.NmPolice{
-font-size:1.000em;
+
+.NmPolice {
+    font-size:1.000em;
 }
 
 /*debut de mon test ++++++++++++++++++++++++++++++++++++++++++*/
 
-#coordonnees{
+#coordonnees {
     border-left: 1px dotted black;
     border-top: 1px dotted black;
 }
+
+/*bouton personnalise ++++++++++++++++++++++++++++++++++++++++++*/
+
+.btn-TywebButton {
+    background-color:#0c4c8c;
+    color:white;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.btn-TywebButton:hover {
+    background-color: #0c4c8c;
+    color: white;
+}
+
+.btn-TywebButtonW {
+    background-color:goldenrod;
+    color:white;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.btn-TywebButtonW:hover {
+    background-color: red;
+    color: white;
+}
+
+.pasvu{
+    display:none;
+}
+
 /*fin de mon test ++++++++++++++++++++++++++++++++++++++++++*/
 
 
 
 
 
-
-
-
-
-
-
-
-/*affichage ecran@media (min-width: 1046px) and (max-width: 1300px) ++++++++++++++++++++++++++++*/
-/*@media (min-width: 1046px) and (max-width: 1300px) {
+/*affichage ecran@media (min-width: 1046px) ++++++++++++++++++++++++++++*/
+/*@media (min-width: 1046px) {
 body ++++++++++++++++++++++++++ */
-@media (min-width: 1046px) and (max-width: 1300px) {
+@media (min-width: 1046px) {
 body {
         background-color: #1c1918;
         font-family: "Roboto", sans-serif;
@@ -462,49 +558,54 @@ body {
         font-size: 1em;
         margin:0;
         margin:0;
- }
+}
+
 .row {
     flex-wrap:wrap;
     margin-left:0;
     margin-right:0;
 }
+
 .container-fluid {
     width: 100%;
     padding-right: 0px;
     padding-left: 0px;
 }
+
   /*marges haut menu ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-  .MgHt{
+.MgHt {
     margin-top:50px;
-  }
-  .MgHt8{
-    margin-top:1px;
-  }
-#margemenu{
+}
+
+.MgHt8 {
+    margin-top:15px;
+}
+
+#margemenu {
     display:block;
 }
-h4{
+
+h4 {
     font-size:1em;
-    }
-h3{
-font-size:0.929em;
 }
-.noghost{
+
+h3 {
+    font-size:0.929em;
+}
+
+.noghost {
     display:none;
 }
-.ghost{
+
+.ghost {
     display:block;
 }
-#coordonnees{
+
+#coordonnees {
     border-left: 1px dotted black;
     border-top: 1px dotted black;
 }
-}
-
-/* fin de @media (min-width: 1046px) and (max-width: 1300px)+++++++++++++++++++++++++++++*/
-
-
-
+}/* fin de @media (min-width: 1046px) and (max-width: 1300px)+++++++++++++++++++++++++++++*/
 
 
 
@@ -519,67 +620,138 @@ body {
         font-size: 0.938em;
         margin:0;
         margin:0;
- }
+}
+
 .row {
     flex-wrap:wrap;
     margin-left:0;
     margin-right:0;
 }
+
 .container-fluid {
     width: 100%;
     padding-right: 0px;
     padding-left: 0px;
 }
-  /*marges haut menu ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-  .MgHt{
-    margin-top:5%;
-  }
-  .MgHt8{
-    margin-top:0%;
-  }
-    #margemenu{
-    display:none;
-    }
-    .alogoPt{
-     display:block;
-    }
-    .Imglogo{
-    display:none;
-    }
-     }
-    .card {  
-     flex: 1;
-     margin-left:10%;
-    }
-        
-    h4{
-        font-size:1em;
-        }
-    h3{
-    font-size:0.929em;
-    }
-  
-    #coordonnees{
-        border-left: 1px dotted black;
-        border-top: 1px dotted black;
-    }
-    /*affichage du menu petit modele petit toggle++++++++++++++++++++++++++++++++++++++++++*/
+.navbar{
+    display:inline-block;
+}
 
-.noghost{
+/*affichage menu ++++++++++++++++++++++++++++++++++++*/
+/*navbar flex ++++++++++++++++++++++++++++*/
+#Navflex{
+    display: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }  
+
+/*logo ++++++++++++++++++++++++++++*/
+#moylogo {
+    display:block;
+    height:80px;
+    width:80px;
+}
+
+/*affichage du menu petit modele petit toggle++++++++++++++++++++++++++++++++++++++++++*/
+
+.noghost {
     display:none;
 }
+
 .ghost{
     display:block;
 }
 
-/* fin de @media (min-width: 992px) and (max-width: 1046px)+++++++++++++++++++++++++++++*/
+.alogoPt {
+    display:block;
+}
+
+.Imglogo {
+   display:none;
+}
 
 
+  /*marges haut menu ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.MgHt {
+    margin-top:5%;
+}
 
+.MgHt8 {
+    margin-top:12px;
+}
 
+#margemenu {
+    display:none;
+}
 
+/*affichage des cartes++++++++++++++++++++++++++++++++++++++++++*/
+.card {  
+     flex: 1;
+     margin-left:10%;
+}
+        
+h4{
+    font-size:1em;
+}
 
+h3{
+    font-size:0.929em;
+}
+  
+#coordonnees {
+    border-left: 1px dotted black;
+    border-top: 1px dotted black;
+}
 
+/*contact +++++++++++++++++++++++*/
+#MnCont {
+    margin-top:0;
+    margin-bottom:0;
+    order:6;
+    text-align: justify;
+}
+
+/*recherche +++++++++++++++++++++++*/
+#Mnrech {
+    margin-top:0;
+    margin-bottom:0;
+    order:4;
+    text-align: justify;
+}
+
+/*categories +++++++++++++++++++++++*/
+#Mncat {
+    margin-top:0;
+    margin-bottom:0;
+    order:3;
+    text-align: justify;
+}
+
+/*offres +++++++++++++++++++++++*/
+#Mnoffre {
+    margin-top:0;
+    margin-bottom:0;
+    order:2;
+    text-align: justify;
+}
+
+/*société +++++++++++++++++++++++*/
+#MnSte {
+    margin-top:0;
+    margin-bottom:0;
+    order:5;
+    text-align: justify;
+}
+
+/*connexion +++++++++++++++++++++++*/
+#Mnconne {
+    margin-top:0;
+    margin-bottom:0;
+    order:1;
+    text-align: justify;
+}
+
+}/* fin de @media (min-width: 992px) and (max-width: 1046px)+++++++++++++++++++++++++++++*/
 
 
 
@@ -589,79 +761,134 @@ body {
 /*affichage ecran @media (min-width: 769px) and (max-width: 991px)+++++++++++++++++++++++++++++ */
 @media (min-width: 769px) and (max-width: 991px) {
 body {
-        background-color: #1c1918;
-        font-family: "Roboto", sans-serif;
-        height:auto;
-        font-size: 1.063em;
-        width:100vh;
-        margin:0;
-        margin:0;
- }
+    background-color: #1c1918;
+    font-family: "Roboto", sans-serif;
+    height:auto;
+    font-size: 1.063em;
+    width:100vh;
+    margin:0;
+    margin:0;
+}
+
 .row {
     flex-wrap:wrap;
     margin-left:0;
     margin-right:0;
 }
+
 .container-fluid {
     width: 100%;
     padding-right: 0px;
     padding-left: 0px;
 }
-h4{
+
+h4 {
     font-size:1em;
-    }
-h3{
-font-size:0.929em;
+}
+
+h3 {
+    font-size:0.929em;
 }
 
 /*affichage des elements du menu petit modele toggle++++++++++++++++++++++++++++++++++++++++++*/
 /* carte vip et texte +++++++++++++++++++++++++++++*/
-.element1
-{
+.element1 {
     display:block;
 }
-.element:nth-child(2)
-{
-    display:none;
-}
-/*affichage des logos du menu petit modele toggle++++++++++++++++++++++++++++++++++++++++++*/
-.Imglogo{
-    display:none;
-}
-.alogoPt{
-    display:block;
-}
-/*affichage du menu petit modele petit toggle++++++++++++++++++++++++++++++++++++++++++*/
 
-.noghost{
-    display:block;
-}
-.ghost{
+.element:nth-child(2) {
     display:none;
 }
+
+/*affichage des logos du menu petit modele toggle++++++++++++++++++++++++++++++++++++++++++*/
+
+/*logo ++++++++++++++++++++++++++++*/
+#tt, .Imglogo {
+    display:none;
+}
+
+#ptlogo {
+    height:50px; 
+    width:50px;
+}
+
+
 /* mise en place menu + logo+++++++++++++++++++++++++++++*/
  /*alignement image vip et texte +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
- #contImgmenulogo
- {   margin-top:10%;
+ #contImgmenulogo {   
+     margin-top:10%;
      display: flex;
      justify-content: space-between; 
- }
-.elementptmenu:nth-child(1)
-{   order: 1;
+}
+
+.elementptmenu:nth-child(1) {   
+    order: 1;
     flex: 2;
     margin-right:5%;
 }
-.elementptmenu:nth-child(2)
-{
+
+.elementptmenu:nth-child(2) {
     order: 2;
     flex: 1;
 }
-#tt{
-    display: inline-flex;
-}
-#coordonnees{
+#coordonnees {
     border-left: 1px dotted black;
     border-top: 1px dotted black;
+}
+
+/*affichage menu ++++++++++++++++++++++++++++++++++++*/
+/*navbar flex ++++++++++++++++++++++++++++*/
+#Navflex{
+    display: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }  
+/*contact +++++++++++++++++++++++*/
+#MnCont {
+    margin-top:0;
+    margin-bottom:0;
+    order:6;
+    text-align: justify;
+}
+
+/*recherche +++++++++++++++++++++++*/
+#Mnrech {
+    margin-top:0;
+    margin-bottom:0;
+    order:4;
+    text-align: justify;
+}
+
+/*categories +++++++++++++++++++++++*/
+#Mncat {
+    margin-top:0;
+    margin-bottom:0;
+    order:3;
+    text-align: justify;
+}
+
+/*offres +++++++++++++++++++++++*/
+#Mnoffre {
+    margin-top:0;
+    margin-bottom:0;
+    order:2;
+    text-align: justify;
+}
+
+/*société +++++++++++++++++++++++*/
+#MnSte {
+    margin-top:0;
+    margin-bottom:0;
+    order:5;
+    text-align: justify;
+}
+
+/*connexion +++++++++++++++++++++++*/
+#Mnconne {
+    margin-top:0;
+    margin-bottom:0;
+    order:1;
+    text-align: justify;
 }
 
 }/* fin de  @media (min-width: 769px) and (max-width: 991px)+++++++++++++++++++++++++++++*/
@@ -670,141 +897,154 @@ font-size:0.929em;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*affichage ecran mobile @media screen and (max-width:768px)+++++++++++++++++++++++++++++*/
-/* debut de @media screen and (max-width:768px)+++++++++++++++++++++++++++++*/
+/*affichage ecran mobile@media screen and (max-width:991px)+++++++++++++++++++++++++++++*/
+/* debut de @media screen and (max-width:991px)+++++++++++++++++++++++++++++*/
 @media screen and (max-width:991px) {
 body {
-        background-color: #1c1918;
-        font-family: "Roboto", sans-serif;
-        height:auto;
-        font-size: 1.063em;
-        margin:0; 
-        padding:0; 
- }
+    background-color: #1c1918;
+    font-family: "Roboto", sans-serif;
+    height:auto;
+    font-size: 1.063em;
+    margin:0; 
+    padding:0; 
+}
+
 .row {
     flex-wrap:wrap;
     margin-left:0;
     margin-right:0;
 }
+
 .container-fluid {
     width: 100%;
     padding-right: 0px;
     padding-left: 0px;
 }
-h4{
+
+h4 {
     font-size:1em;
-    }
-h3{
-font-size:0.929em;
+}
+
+h3 {
+    font-size:0.929em;
 }
 
 /*affichage des elements du menu petit modele toggle++++++++++++++++++++++++++++++++++++++++++*/
 /* carte vip et texte +++++++++++++++++++++++++++++*/
-.element1
-{
+.element1 {
     display:block;
 }
-.element:nth-child(2)
-{
-    display:none;
-}
-/*affichage des logos du menu petit modele toggle++++++++++++++++++++++++++++++++++++++++++*/
-.Imglogo{
-    display:none;
-}
-.alogoPt{
-    display:block;
-}
-/*affichage du menu petit modele petit toggle++++++++++++++++++++++++++++++++++++++++++*/
 
-.noghost{
-    display:block;
-}
-.ghost{
+.element:nth-child(2) {
     display:none;
 }
+
+/*affichage des logos du menu petit modele toggle++++++++++++++++++++++++++++++++++++++++++*/
+
+/*logo ++++++++++++++++++++++++++++*/
+#tt, .Imglogo {
+    display:none;
+}
+
+#ptlogo {
+    height:50px; 
+    width:50px;
+}
+
 /* mise en place menu + logo+++++++++++++++++++++++++++++*/
  /*alignement image vip et texte +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
- #contImgmenulogo
- {   margin-top:10%;
+ #contImgmenulogo {   
+     margin-top:10%;
      display: flex;
      justify-content: space-between; 
- }
-.elementptmenu:nth-child(1)
-{   order: 1;
+}
+
+.elementptmenu:nth-child(1) {   
+    order: 1;
     flex: 2;
     margin-right:5%;
 }
-.elementptmenu:nth-child(2)
-{
+
+.elementptmenu:nth-child(2) {
     order: 2;
     flex: 1;
     margin-left:50%;
 }
-#tt{
-    display: inline-flex;
-}
 
-
-#footer{
+#footer {
     font-size:0.7em;
 }
 
 a:hover {
     border-bottom: 0;
-    background-color: #8fa5af;
-    }
+    background-color: #0c4c8c;
+}
 
-.MgGe{
+.MgGe {
     padding-left: 0;
 }
 
+/*affichage menu ++++++++++++++++++++++++++++++++++++*/
+/*navbar flex ++++++++++++++++++++++++++++*/
+#Navflex{
+    display: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }  
+
+/*contact +++++++++++++++++++++++*/
+#MnCont {
+    margin-top:0;
+    margin-bottom:0;
+    order:6;
+    text-align: justify;
+}
+
+/*recherche +++++++++++++++++++++++*/
+#Mnrech {
+    margin-top:0;
+    margin-bottom:0;
+    order:4;
+    text-align: justify;
+}
+
+/*categories +++++++++++++++++++++++*/
+#Mncat {
+    margin-top:0;
+    margin-bottom:0;
+    order:3;
+    text-align: justify;
+}
+
+/*offres +++++++++++++++++++++++*/
+#Mnoffre {
+    margin-top:0;
+    margin-bottom:0;
+    order:2;
+    text-align: justify;
+}
+
+/*société +++++++++++++++++++++++*/
+#MnSte {
+    margin-top:0;
+    margin-bottom:0;
+    order:5;
+    text-align: justify;
+}
+
+/*connexion +++++++++++++++++++++++*/
+#Mnconne {
+    margin-top:0;
+    margin-bottom:0;
+    order:1;
+    text-align: justify;
+}
 
 
-
-/*mestests ++++++++++++++++++++++++++++++++++++++*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}/* fin de  @media screen and (max-width:768px)+++++++++++++++++++++++++++++*/
-
-
-
-
-
-
+.pasvu{
+    display:block;
+}
+}/* fin de @media screen and (max-width:991px)+++++++++++++++++++++++++++++*/
 
 
 
@@ -817,74 +1057,152 @@ body {
         font-size: 1.063em;
         margin:0; 
         padding:0; 
- }
+}
+
 .row {
     flex-wrap:wrap;
     margin-left:0;
     margin-right:0;
 }
+
 .container-fluid {
     width: 100%;
     padding-right: 0px;
     padding-left: 0px;
 }
-h4{
+
+h4 {
     font-size:1em;
-    }
-h3{
+}
+
+h3 {
 font-size:0.929em;
 }
+
 /*affichage des elements du menu petit modele toggle++++++++++++++++++++++++++++++++++++++++++*/
 /* carte vip et texte +++++++++++++++++++++++++++++*/
-.element1
-{
+.element1 {
     display:block;
 }
-.element:nth-child(2)
-{
-    display:none;
-}
-/*affichage des logos du menu petit modele toggle++++++++++++++++++++++++++++++++++++++++++*/
-.Imglogo{
-    display:none;
-}
-.alogoPt{
-    display:block;
-}
-/*affichage du menu petit modele petit toggle++++++++++++++++++++++++++++++++++++++++++*/
 
-.noghost{
-    display:block;
-}
-.ghost{
+.element:nth-child(2) {
     display:none;
 }
+
 /* mise en place menu + logo+++++++++++++++++++++++++++++*/
  /*alignement image vip et texte +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
- #contImgmenulogo
- {   margin-top:10%;
+ #contImgmenulogo {   
+     margin-top:10%;
      display: flex;
      justify-content: space-between; 
- }
-.elementptmenu:nth-child(1)
-{   order: 1;
+}
+
+.elementptmenu:nth-child(1) {   
+    order: 1;
     flex: 2;
     margin-right:5%;
 }
-.elementptmenu:nth-child(2)
-{
+
+.elementptmenu:nth-child(2) {
     order: 2;
     flex: 1;
     margin-left:50%;
 }
-#tt{
-    display: inline-flex;
-}
-#footer{
+
+#footer {
     font-size:0.7em;
 }
+
 a:hover {
     border-bottom: 0;
-    background-color: #8fa5af;
-    }
+    background-color: #0c4c8c;
+    text-decoration: underline;
+    border-bottom: 3px solid #0c4c8c;
 }
+
+/*affichage menu ++++++++++++++++++++++++++++++++++++*/
+/*navbar flex ++++++++++++++++++++++++++++*/
+#Navflex{
+    display: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display:inline-block;
+    }  
+
+/*logo ++++++++++++++++++++++++++++*/
+#tt, .Imglogo {
+    display:none;
+}
+
+#ptlogo {
+    height:50px; 
+    width:50px;
+}
+
+/*contact +++++++++++++++++++++++*/
+#MnCont {
+    margin-top:0;
+    margin-bottom:0;
+    order:6;
+    text-align: justify;
+}
+
+/*recherche +++++++++++++++++++++++*/
+#Mnrech {
+    margin-top:0;
+    margin-bottom:0;
+    order:4;
+    text-align: justify;
+}
+
+/*categories +++++++++++++++++++++++*/
+#Mncat {
+    margin-top:0;
+    margin-bottom:0;
+    order:3;
+    text-align: justify;
+}
+
+/*offres +++++++++++++++++++++++*/
+#Mnoffre {
+    margin-top:0;
+    margin-bottom:0;
+    order:2;
+    text-align: justify;
+}
+
+/*société +++++++++++++++++++++++*/
+#MnSte {
+    margin-top:0;
+    margin-bottom:0;
+    order:5;
+    text-align: justify;
+}
+
+/*connexion +++++++++++++++++++++++*/
+#Mnconne {
+    margin-top:0;
+    margin-bottom:0;
+    order:1;
+    text-align: justify;
+}
+
+/*affichage des traits entres les items du menu +++++++++++++++++++++++*/
+.pasvu{
+    display:block;
+}
+
+/* Dans indexview affichage ordre des boutons+++++++++++++++++++++*/
+#validation_contact{
+    display: flex-start;
+    flex-wrap: wrap;
+    display:inline-block;
+}
+#submit{
+    order:1;
+}
+#cancel{
+    order:2;
+}
+
+}/* fin de  @media screen and (max-width:768px)+++++++++++++++++++++++++++++*/
