@@ -27,6 +27,8 @@
         <link href="src/Public/css/style.css" rel="stylesheet" /> 
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css"/>
+        <link rel="stylesheet" href="../dist/css/bootstrapValidator.css"/>
     </head>
 
         
@@ -59,7 +61,7 @@
                         <div class="col MgHtBsGeDe">    
                             <!-- Navbar avec fond noir brillant avec classe bg-navbar  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
                             <nav class="navbar navbar-expand-lg navbar-light bg-navbar nav-justified header-nav navbarcenter ghost"> <!-- nav-justified  -->
-                                <div class="d-flex align-items-start">
+                                <div id="menumini">
                                 <button class="navbar-toggler bg-light ml-auto p-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon "></span>
                                 <!--   <span>MENU</span> +++++++++++++++++++++++++++++++ -->
@@ -126,7 +128,7 @@
                                                         echo 'Votre Compte';
                                                     }
                                                     else {
-                                                        echo '<h3>Bonjour, Identifiez-vous <pre></pre></h3> Votre Compte';
+                                                        echo '<h3>Bonjour, Identifiez-vous <pre></pre></h3> <h4> Votre Compte </h4>';
                                                     }
                                                 ?>
                                             </a>
@@ -157,15 +159,14 @@
         <?= $content ?>
                                
         <!-- Footer ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->      
-        <footer class="row align-items-center justify-content-center polygon-footer" id="footer">
-                    <div class="col-12">
-                        <nav class="navbar navbar-expand-lg navbar-light">
+        <footer class="row align-items-center justify-content-center polygon-footer flexcontainer" id="footer">
+                        <nav class="navbar navbar-expand-lg navbar-light"> <!-- 1ere ligne footer ++++++++++++++++-->
                             <div class="collapse navbar-collapse text-center navbarcenter navbarfooter clearfix " id="navbarSupportedContent3">
                                 <ul class="nav nav-tabs card-header-tabs col nav-justified">
-                                    <li class="nav-item col-sm-4">
+                                    <li class="nav-item">
                                         <a class="nav-link disabled" href="#up"><span class="fa fa-arrow-circle-up"></span></a>
                                     </li>
-                                    <div>
+                                    <div> <!-- pour regrouper les li ++++++++++++++++-->
                                         <li class="nav-item ">
                                             <a class="nav-link" href="#"><span class="fa fa-pencil"> Société</a>
                                         </li>
@@ -176,48 +177,44 @@
                                             <a class="nav-link" href="#"><span class="fa fa-pencil"></span> Conciergerie</a>
                                         </li>
                                         <li class="nav-item ">
-                                            <a class="nav-link" href="#"><span class="fa fa-pencil"></span>Offres</a>
+                                            <a class="nav-link" href="#"><span class="fa fa-pencil"></span> Offres</a>
                                         </li>
                                         <li class="nav-item ">
-                                            <a class="nav-link" href="#"><span class="fa fa-commenting"></span>Newsroom</a>
+                                            <a class="nav-link" href="#"><span class="fa fa-commenting"></span> Newsroom</a>
                                         </li>
                                         <li class="nav-item  ">
-                                            <a class="nav-link" href="#contact"><span class="fa fa-commenting">Contact</a>
+                                            <a class="nav-link" href="#contact"><span class="fa fa-commenting"> Contact</a>
                                         </li> 
                                     </div>
                                 </ul>
                             </div>
                         </nav>
-                    </div>
-                    <div class="col-12">
-                        <nav class="navbar navbar-expand-lg navbar-light">
+                        <nav class="navbar navbar-expand-lg navbar-light"> <!-- 2eme ligne footer2 ++++++++++++++++-->
                             <div class="collapse navbar-collapse text-center navbarcenter navbarfooter2  clearfix" id="navbarSupportedContent4">
                                 <ul class="nav nav-tabs card-header-tabs col nav-justified">
-                                    <li class="nav-item col-sm-4"></li>
-                                    <div>
+                                    <li class="nav-item col-sm-3"></li>
+                                    <div> <!-- pour regrouper les li ++++++++++++++++-->
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">Plan du site</a> 
                                         </li>
-                                        <li class="nav-item ">
+                                        <li class="nav-item">
                                             <a class="nav-link" href="#">Mentions Légales </a>  
                                         </li>
-                                        <li class="nav-item  ">
+                                        <li class="nav-item">
                                             <a class="nav-link" href="#"> Politique de confidentialité</a>
                                         </li>
                                         <li class="nav-item ">
-                                            <a class="nav-link" href="#">C G U </a>
+                                            <a class="nav-link" href="#">C. G. U. </a>
                                         </li>
                                     </div>   
                                 </ul>
                             </div>
                         </nav>
-                    </div>
-                    <div class=" offset-sm-3 col-sm-6 offset-sm-3 ">
-                            <span>
+                            <span> <!-- 3eme ligne du footer ++++++++++++++++-->
                                 <pre></pre>
                                 <h4 class="taille12">Copyright &copy; 2018  TyWebServices. Tous droits réservés.</h4>
                             </span>
-                    </div>
+                  
         </footer>  <!-- fin footer class="row polygon-footer ++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
                             
                              
@@ -231,6 +228,7 @@
         <script src="src/Public/js/script.js" /></script>         
         <!-- jquery pour indexview ++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-               
+        <script type="text/javascript" src="../vendor/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="../dist/js/bootstrapValidator.js"></script>       
 
     </body>

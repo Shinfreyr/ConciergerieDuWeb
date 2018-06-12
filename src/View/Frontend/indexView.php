@@ -89,7 +89,7 @@
           <div class="col-sm-10 col-lg-6 someClassgauche">  <!-- bloc de gauche ++++++++++++++++++++++++++++ -->                         
                 <div ><!-- tite formulaire de contact ++++++++++++++++++++++++++++ -->   
                       <div class="titleprghp text-center">
-                            <span class="prg"><h5>Comment pouvons-nous vous aider ?</h5></span> 
+                            <span class="blanc"><h5>Comment pouvons-nous vous aider ?</h5></span> 
                        </div>
                 </div>
                 <!-- debut du formulaire de contact form partie gauche ++++++++++++++++++++++++++++ -->  
@@ -97,37 +97,40 @@
                        *Mentions obligatoires
                 <!--<form class="form-horizontal" role="form">-->
                       <div class="form-group col">
-                            <label for="nom" class="col-sm-2 control-label alignement">Société :</label>
+                            <label for="societe" class="col-sm-2 control-label alignement">Société :</label>
                                   <div class="col-sm-11">
                                        <input type="text" class="form-control" placeholder="Ex: Action56" name="societe" id="societe">
                                   </div>
                             <label for="nom" class="col-sm-2 control-label alignement">Nom* :</label>
                                    <div class="col-sm-11">
                                       <input type="text" class="form-control" placeholder="Ex: Dupont" name="name" id="name" required>
-                                   </div>
+                                      <span class=" alignement">Validation de votre saisie</span>
+                                    </div>
                      </div>
                      <div class="form-group col" >
                            <label for="prenom" class="col-sm-2 control-label alignement">Prenom* :</label>
                                  <div class="col-sm-11">
                                       <input type="text" class="form-control" placeholder="Ex: Anne" name="prenom" id="prenom" required>
+                                      <span class=" alignement">Validation de votre saisie</span>
                                  </div>
                      </div>                                  
                      <div class="form-group col">
-                           <label for="mail" class="col-sm-2 control-label alignement">Email* :</label>
+                           <label for="email" class="col-sm-2 control-label alignement">Email* :</label>
                                  <div class="col-sm-11  has-success">
                                       <input type="email" class="form-control" placeholder="Ex: a.dupont@gmail.com" name="email" id="email" required />
+                                      <span class=" alignement">Validation de votre saisie</span>
                                  </div>
                      </div>
                      <div class="form-group col">
-                           <label for="telephone" class="col-sm-2 control-label alignement">T&eacute;l&eacute;phone* :</label>
+                           <label for="telephone" class="col-sm-2 control-label alignement">T&eacute;l&eacute;phone :</label>
                                  <div class="col-sm-11">
                                        <input type="text" class="form-control" placeholder="Ex: 02.97.66.00.00" name="tel" id="tel" size="20" minlength="9" maxlength="14">
                                  </div>
                      </div>
                      <div class="form-group col">
-                           <label for="services" class="col-sm-2 control-label alignement">Sélectionnez le thème de votre demande :</label>
+                           <label for="services" class="col-sm-2 control-label alignement">Sélectionnez le thème de votre demandes* :</label>
                                  <div class="col-sm-11">
-                                    <select class="form-control" required>
+                                    <select class="form-control" required />
                                          <option value="" disabled selected>Choix</option>
                                          <option>Services Web</option>
                                          <option>Services Conciergerie</option>
@@ -140,10 +143,9 @@
                     <div class="form-group col">
                          <label for="message" class="col-sm-2 control-label alignement">Message</label>
                               <div class="col-sm-11">
-                                    <textarea id="form_message" name="message" class="form-control" placeholder="Laissez votre message" rows="4" required="required" data-error="Laissez votre message"></textarea>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Laissez votre message" rows="4" required="required" data-error="Laissez votre message"></textarea>
                               </div>
-                              <div class="help-block with-errors">
-                              </div>
+                              <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group col">
                          <label class="Ptpolice">Confirmez nous que vous n'êtes pas un robot svp *</label>
@@ -182,8 +184,8 @@
                         </div><!-- fin de <div class="checkbox col-sm-11 alignement"> +++++++++++++++++++++++++++++++++++ -->
                     </div> <!-- fin de <div class="form-group col"> +++++++++++++++++++++++++++++++++++ -->
                     <div class="form-group text-center" id="validation_contact">
-                        <button name="annuler" id="cancel" type="reset" value="reset" class="btn btn-TywebButtonW btn-xs">Annuler</button>
-                        <button name="envoyer" id="submit" type="submit" value="submit" class="btn btn-TywebButton btn-xs">Envoyez votre demande</button>
+                        <button name="annuler" id="resetBtn" type="reset" value="reset" class="btn btn-TywebButtonW btn-xs">Annuler</button>
+                        <button name="envoyer" id="validateBtn" type="submit" value="submit" class="btn btn-TywebButton btn-xs">Envoyez votre demande</button>
                     </div><!-- fin de <div class="form-group"> +++++++++++++++++++++++++++++++++ -->
                  </div> <!-- fin de  <div class="col-lg-12">+++++++++++++++-->   
             </div><!-- fin de <div class="offset-sm-1 col-5 someClassgauche"> bloc de gauche+++++++++++++++++++++++++++++++++++++++ -->
@@ -191,7 +193,7 @@
             <div class="col-sm-10 col-lg-5 someClassdroite" id="coordonnees"><!-- bloc de droite ++++++++++++++++++++++++++++ -->     
                 <div class="col"><!--+++++++++++++++++++++++++++++++++++++debut du formulaire de contact form partie droite-->
                     <div class="titleprghp text-center">
-                        <span class="prg"><h5>Nos coordonnées</h5></span> 
+                        <span class="blanc"><h5>Nos coordonnées</h5></span> 
                     </div>
                 </div>
                 <!--<div class="blochp_contact">-->
@@ -199,7 +201,9 @@
                     <div class="form-group text-center margeshautetbas">
                         <br><h1>Tyweb services</h1> 
                     <!-- <br><h4>16 rue victor Schoelcher -->
-                        <br><h4>56890 Saint avé
+                        <h4>
+                        <br>BP
+                        <br>56890 Saint avé
                         <br>
                         <br>France-Tél : + 33 6 37 69 34 21
                         <br>

@@ -206,8 +206,8 @@ h1 {
 
 /* cadres border sur les formulaires ++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .bord-form {
-/*border: 3px dotted #8fa5af;*/
     border: 3px dotted #0c4c8c;
+    padding:20px;
 }
 
 /* le formualire de recherche sur une seule ligne++++++++++++++++++++++*/
@@ -264,12 +264,12 @@ a:hover {
 .navbarfooter, .navbarfooter2 {
     margin:5px;
     padding-top:10px;
-    display: inline-block;
     text-align: center;
     position: inherit;
     vertical-align: top;
     list-style: none;
-  
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*1ernavbar +++++++++++++ */
@@ -314,11 +314,15 @@ a:hover {
     font-size: 0.9375em;
 }
 
-.navbarfooter2 ul li:nth-child(2) {
+.navbarfooter2 ul li:nth-child(5) {
     border:none;
     font-size: 0.9375em;
 }
-
+.flexcontainer {
+    flex-direction: column;
+    justify-content: flex-start;
+ }
+       
 /*couleur de fond de la nav bar ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .bg-navbar {
     background-color: #1c1918;
@@ -330,7 +334,7 @@ navbar {
 
   /*marges haut menu ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .MgHt {
-    margin-top:60px;
+    margin-top:50px;
 }
 
 .MgHt8 {
@@ -482,15 +486,23 @@ label {
     opacity:1;
 }
 
+ /* validation des champs du formulaire +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*validation formulaire de contact indexview+++++++++++++++++++++++++++++*/
 input:invalid {
     border: 2px dashed goldenrod;
+}
+input:invalid+span:before {
+    content: '✖';
+    padding-left: 5px;
 }
 
 input:valid {
     border: 1px solid black;
 }
-
+input:valid+span:after {
+    content: '✓';
+    padding-left: 5px;
+  }
 /*le non affichage du logo petit modele++++++++++++++++++++++++++++++++++++++++++*/
 .alogoPt {
     display:none;
@@ -517,7 +529,7 @@ input:valid {
 /*bouton personnalise ++++++++++++++++++++++++++++++++++++++++++*/
 
 .btn-TywebButton {
-    background-color:#0c4c8c;
+    background-color:#8fa5af;
     color:white;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
@@ -581,7 +593,7 @@ body {
 }
 
 .MgHt8 {
-    margin-top:15px;
+    margin-top:2px;
 }
 
 #margemenu {
@@ -676,11 +688,11 @@ body {
 
   /*marges haut menu ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .MgHt {
-    margin-top:5%;
+    margin-top:50px;
 }
 
 .MgHt8 {
-    margin-top:12px;
+    margin-top:2px;
 }
 
 #margemenu {
@@ -708,15 +720,15 @@ h3{
 
 /*contact +++++++++++++++++++++++*/
 #MnCont {
-    margin-top:0;
+  
     margin-bottom:0;
-    order:6;
+    order:5;
     text-align: justify;
 }
 
 /*recherche +++++++++++++++++++++++*/
 #Mnrech {
-    margin-top:0;
+  
     margin-bottom:0;
     order:4;
     text-align: justify;
@@ -724,7 +736,7 @@ h3{
 
 /*categories +++++++++++++++++++++++*/
 #Mncat {
-    margin-top:0;
+  
     margin-bottom:0;
     order:3;
     text-align: justify;
@@ -732,7 +744,7 @@ h3{
 
 /*offres +++++++++++++++++++++++*/
 #Mnoffre {
-    margin-top:0;
+   
     margin-bottom:0;
     order:2;
     text-align: justify;
@@ -740,17 +752,17 @@ h3{
 
 /*société +++++++++++++++++++++++*/
 #MnSte {
-    margin-top:0;
+  
     margin-bottom:0;
-    order:5;
+    order:1;
     text-align: justify;
 }
 
 /*connexion +++++++++++++++++++++++*/
 #Mnconne {
-    margin-top:0;
+ 
     margin-bottom:0;
-    order:1;
+    order:6;
     text-align: justify;
 }
 
@@ -954,6 +966,17 @@ h3 {
     width:50px;
 }
 
+
+/* aligner le toggle et le logo petit ++++++++++++++++++++++++++++*/
+#lienptlogo {
+    float:right;
+}
+#menumini {
+    display: wrap;
+    justify-content: space-between; 
+    width:100%;
+}
+
 /* mise en place menu + logo+++++++++++++++++++++++++++++*/
  /*alignement image vip et texte +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
  #contImgmenulogo {   
@@ -1140,6 +1163,16 @@ a:hover {
 #ptlogo {
     height:50px; 
     width:50px;
+}
+
+/* aligner le toggle et le logo petit ++++++++++++++++++++++++++++*/
+#lienptlogo {
+    float:right;
+}
+#menumini {
+    display: wrap;
+    justify-content: space-between; 
+    width:100%;
 }
 
 /*contact +++++++++++++++++++++++*/

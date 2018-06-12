@@ -12,6 +12,14 @@ $(document).ready(function() {
             validating: 'glyphicon glyphicon-refresh'
         },
         fields: {
+            societe: {
+                row: '.col-sm-4',
+                validators: {
+                    notEmpty: {
+                        message: 'Vous devez saisir le nom de la svp'
+                    }
+                }
+            },
             nom: {
                 row: '.col-sm-4',
                 validators: {
@@ -27,7 +35,6 @@ $(document).ready(function() {
                         message: 'Vous devez saisir un prénom svp'
                     }
                 }
-           
             },
             email: {
                 validators: {
@@ -57,40 +64,31 @@ $(document).ready(function() {
                 validators: {
                     callback: {
                         message: 'Wrong answer',
-                        callback: function(value, validator, $field) {
+                        callback: function(value, validator) {
                             var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
                             return value == sum;
                         }
                     }
                 }
             },
-            agree: {
+            RGPD:   {
                 validators: {
                     notEmpty: {
-                        message: 'Vous devez acceptr les conditions générales'
+                        message: 'Vous devez accepter les termes et les conditions svp'
                     }
                 }
-            }
+            },
+            
         }
+
     });
-
-
-
-
-
-
-
-var email = document.getElementById("email");
-
-email.addEventListener("keyup", function (event) {
-  if(email.validity.typeMismatch) {
-    email.setCustomValidity("Saisissez un email valide svp!.");
-  } else {
-    email.setCustomValidity("");
-  }
+ // Validate the form manually
+ $('#validateBtn').click(function() {
+    $('#defaultForm').bootstrapValidator('validate');
 });
-
-
+$('#resetBtn').click(function() {
+    $('#defaultForm').data('bootstrapValidator').resetForm(true);
+});
 
 
 
