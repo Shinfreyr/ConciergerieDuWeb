@@ -241,13 +241,16 @@ form {
     text-decoration:none;
     /* top: 2em;*/
 }
+
 .alogo {
     text-decoration:none;
     border-bottom:none;
     margin:0;
     padding:0;
 }    
-
+#lienptlogo:hover, #lienmoylogo:hover, #liengdlogo:hover {
+    border-bottom: none;
+}
 /*barre bleue au survol ++++++++++++++++++++++*/
 a:hover {
     text-decoration: underline;

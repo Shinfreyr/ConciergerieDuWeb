@@ -65,21 +65,22 @@
                                 <!--   <span>MENU</span> +++++++++++++++++++++++++++++++ -->
                                 </button>
                                 
-                                <!-- affichage logo grand +++++++++++++++++++++++++++++++ -->
-                                    <a class="navbar-brand noghost alogo" href="index.php">
+                                <!-- affichage petit logo +++++++++++++++++++++++++++++++ -->
+                                    <a class="navbar-brand noghost alogo" href="index.php" id="lienptlogo">
                                     <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-flex align-items-end" id="ptlogo"></a>
                                 </div>
-                                <!-- navbar grand modele  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                                <!-- navbar ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
                                 <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                                     <ul class="navbar-nav mr-auto modNavbar flexNavbar" id="NAvflex">
-                                        <!-- affichage logo petit +++++++++++++++++++++++++++++++ -->
+                                        <!-- affichage logo moyen logo +++++++++++++++++++++++++++++++ -->
                                         <div class="alogoPt" id="tt">
-                                            <a class="navbar-brand taille13 ghost" href="index.php">
+                                            <a class="navbar-brand taille13 ghost" href="index.php" id="lienmoylogo">
                                             <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-block" id="moylogo"></a>
-                                        </div> 
+                                        </div>      
+                                        <!-- affichage logo grand logo +++++++++++++++++++++++++++++++ -->
                                         <div class="Imglogo text-center"> 
                                             <div class="dropdown-divider pasvu" ></div>
-                                            <a class="navbar-brand taille13 alogo" href="index.php">
+                                            <a class="navbar-brand taille13 alogo" href="index.php" id="liengdlogo">
                                             <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-block" id="gdlogo"></a>
                                         </div>
                                         <li class="nav-item MgHt" id="MnSte">
@@ -156,9 +157,7 @@
         <?= $content ?>
                                
         <!-- Footer ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->      
-        <footer class="row polygon-footer" id="footer">
-            <div class="card-text text-center row">
-                <div class="row justify-content-center">
+        <footer class="row align-items-center justify-content-center polygon-footer" id="footer">
                     <div class="col-12">
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <div class="collapse navbar-collapse text-center navbarcenter navbarfooter clearfix " id="navbarSupportedContent3">
@@ -194,7 +193,7 @@
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <div class="collapse navbar-collapse text-center navbarcenter navbarfooter2  clearfix" id="navbarSupportedContent4">
                                 <ul class="nav nav-tabs card-header-tabs col nav-justified">
-                                    <li class="nav-item col-sm-3"></li>
+                                    <li class="nav-item col-sm-4"></li>
                                     <div>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">Plan du site</a> 
@@ -213,14 +212,12 @@
                             </div>
                         </nav>
                     </div>
-                    <div class="col-9 justify-content-center">
+                    <div class=" offset-sm-3 col-sm-6 offset-sm-3 ">
                             <span>
                                 <pre></pre>
                                 <h4 class="taille12">Copyright &copy; 2018  TyWebServices. Tous droits réservés.</h4>
                             </span>
                     </div>
-                </div><!-- fin de div class="row justify-content-center"+++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-            </div><!-- fin card-text text-center row ++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         </footer>  <!-- fin footer class="row polygon-footer ++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
                             
                              
@@ -235,4 +232,5 @@
         <!-- jquery pour indexview ++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
                
+
     </body>

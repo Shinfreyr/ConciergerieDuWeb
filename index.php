@@ -44,6 +44,17 @@
                 throw new Exception('Variable inattendu');    
             }
         }
+        //Control GET Action & IdArticle ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        elseif(isset($_GET['action']) && isset($_GET['idArticle']) && isset($_GET['codeVoucher'])) {
+#UserCo     //Voucher Downloading +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            if($_GET['action'] === 'dlVoucher' && $_GET['idArticle'] != '' && $_GET['codeVoucher'] != '') {
+                $userConnectController->dlVoucher();
+            } 
+            //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            else {
+                throw new Exception('Variable inattendu');    
+            }          
+        }
         //Control GET action and GET db +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         elseif(isset($_GET['action']) && isset($_GET['db'])) {
 #AllUser    //Inscription Data Base +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -199,10 +210,6 @@
 #UserCo     //Déconnection Session ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             if($_GET['action'] === 'deconnection' && $_GET['session'] === 'ok') {
                 $userConnectController->deconnectionSession();
-            }
-#UserCo     //Voucher Downloading +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-            elseif($_GET['action'] === 'dlVoucher' && $_GET['session'] === 'ok') {
-                $userConnectController->dlVoucher();
             }
             //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             else {
