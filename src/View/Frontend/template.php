@@ -33,7 +33,7 @@
 
         
     <!-- Template Content ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-    <body style="width:auto; background-image: linear-gradient(to left bottom, #1c1918, #1c1918, #1c1918, #37669f, #37669f, #37669f, #37669f, #0c4c8c);">
+    <body style="width:auto; background-image: linear-gradient(to left bottom, #1c1918, #1c1918, #1c1918, #37669f, #37669f, #37669f, #37669f, #0c4c8c, #1c1918, #1c1918);">
         <!-- Header +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <header class="text-justify col- text-center-lg modNavbar  sticky-top">
             <div class="container-fluid">   <!-- debut container ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

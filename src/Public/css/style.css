@@ -62,7 +62,10 @@ body {
 .colorfontD {
     color:#1c1918;
 }
-
+.colorbgrdtitre{
+    background-color: #ffffe0;
+    text-align: center;
+}
 /*couleur de texte blanc+++++++++++++++++++++++++++++++++++++++++++++++*/
 .blanc {
     color:#fff;
@@ -193,23 +196,41 @@ h1 {
 }
 
 .Pttraitb {
-    width:30%;
+    width:50%;
     border-color:#fff;
     border-top-width:1px;
     margin-left: auto;
     margin-right: auto;
     margin-top:0;
     margin-bottom:20px;
-    width:100%;
     max-width:170px;
 }
 
+.Gdtraitb {
+    border-color:goldenrod;
+    border-top-width:1px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0;
+    margin-bottom:20px;
+    width:80%;
+}
 /* cadres border sur les formulaires ++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .bord-form {
-    border: 3px dotted #0c4c8c;
+    border: 3px dotted goldenrod;
     padding:20px;
+    color:white;
 }
-
+#minivip{
+    width:45px;
+    height:90px;
+}
+.fdcartevip{
+    background-image: linear-gradient(to left bottom,goldenrod, goldenrod ,#1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);
+}
+.borddt{
+    border-top-right-radius: 25%;
+}
 /* le formualire de recherche sur une seule ligne++++++++++++++++++++++*/
 form {
     white-space: nowrap;
@@ -336,7 +357,9 @@ navbar {
 .MgHt {
     margin-top:50px;
 }
-
+.MgBs {
+    margin-bottom:50px;
+}
 .MgHt8 {
     margin-top:12px;
 }
@@ -438,6 +461,11 @@ navbar {
 
 /*alignement des cards +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*formulaire de contact +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.fdforminscri{
+    background-color: #FFFFE0;
+    color:#1c1918;        
+}
+
 .checkbox {
     width:50px 
 }
@@ -502,7 +530,9 @@ input:valid {
 input:valid+span:after {
     content: '✓';
     padding-left: 5px;
-  }
+}
+
+
 /*le non affichage du logo petit modele++++++++++++++++++++++++++++++++++++++++++*/
 .alogoPt {
     display:none;
