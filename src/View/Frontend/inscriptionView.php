@@ -28,51 +28,55 @@
 
 <div class="row parallax justify-content-center" style="background-image: url('src/Public/images/mains.jpg');">
     <div class="card-deck col-sm-10 text-justify MgHtBs blanc fdcartevip borddt">
-      <h1>VIP CLUB</h1> <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" id="minivip" alt="Responsive image">
+        <h1>VIP CLUB</h1> <br />
+      <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" id="minivip" alt="Responsive image">
         <form action="index.php?action=inscription&db=ok" id="inscriptionForm" method="post" class="MgHtBs bord-form">
             <legend>Entreprise</legend>
             <div class="dropdown-divider Gdtraitb"></div>
             <div class="form-group offset-sm-1">
-                <label for="enterpriseCode">Code Entreprise*</label>
+                <label for="enterpriseCode">Code Entreprise <small>(1)</small></label>
                 <input type="text" class="form-control col-7" name="enterpriseCode" id="enterpriseCode" placeholder="Code de votre entreprise">
-                <small id="password" class="form-text text-muted">Ce code vous est fournie par votre entreprise.</small>
+                <small id="password" class="form-text text-muted"><small>(1)</small> Ce code vous est fourni par votre entreprise.</small>
             </div>    
             <legend>Compte</legend>
             <div class="dropdown-divider Gdtraitb" ></div>
             <div class="form-group offset-sm-1">
-                <label for="lastName">Nom*</label>
+                <label for="lastName">Nom </label>
                 <input type="text" class="form-control col-7" name="lastName" id="lastName" placeholder="Votre Nom">
     
-                <label for="firstName">Prénom*</label>
+                <label for="firstName">Prénom </label>
                 <input type="text" class="form-control col-7" name="firstName" id="firstName" placeholder="Votre Prénom">
       
-                <label for="Date_naissance">Date de Naissance*</label>
+                <label for="Date_naissance">Date de Naissance <small>(2)</small></label>
                 <p class="d-flex flex-nowrap">
-                <input type="text" class="form-control birthForm col-3" name="birthDay" id="birthDay" placeholder="Jour" maxlength="02">
-                <input type="text" class="form-control col-3" name="birthMonth" id="birthMonth" placeholder="Mois" maxlength="02">
-                <input type="text" class="form-control col-3" name="birthYear" id="birthYear" placeholder="Année" maxlength="04">
+                <input type="text" class="form-control birthForm col-3" name="birthDay" id="birthDay" placeholder="Jour, ex : 01" maxlength="02">
+                <input type="text" class="form-control col-3" name="birthMonth" id="birthMonth" placeholder="Mois, ex : 04" maxlength="02">
+                <input type="text" class="form-control col-3" name="birthYear" id="birthYear" placeholder="Année, ex : 1984" maxlength="04">
                 </p>
-                <small id="Date_naissance" class="form-text text-muted">Par exemple si vous êtes né le premier jours du mois d'Avril 1984, écrivez 01 puis 04 et enfin 1984.</small>       
-   
-                <label for="email">Email*</label>
+                <small id="Date_naissance" class="form-text text-muted">(2) Exemple si vous êtes né(e) le premier jours du mois d'Avril 1984, écrivez 01 puis 04 et enfin 1984.</small>       
+                <label for="email">Email <small>(3)</small></label>
                 <input type="email" class="form-control col-8" name="email" id="email" aria-describedby="emailHelp" placeholder="Votre Email">
-                <small id="email" class="form-text text-muted">Votre email restera confidentiel</small>
+                <small id="email" class="form-text text-muted">(3) Votre email restera confidentiel</small>
             </div>
             <legend>Sécurité </legend>
             <div class="dropdown-divider Gdtraitb" ></div>
             <div class="form-group offset-sm-1">
-                <label for="password">Mot de Passe*</label>
+                <label for="password">Mot de Passe <small>(4)</small></label>
                 <input type="password" class="form-control col-8" name="password" id="password" placeholder="Votre Mot de Passe">
-                <small id="password" class="form-text text-muted">Votre mot de passe doit comporter au minimum: 8 charactères, 1 chiffre, 1 minuscule, 1 majuscule</small>
+                <small id="password" class="form-text text-muted">(4) Votre mot de passe doit comporter au minimum: 8 charactères, 1 chiffre, 1 minuscule, 1 majuscule</small>
            
-                <label for="passwordComp">Retapez votre Mot de Passe*</label>
+                <label for="passwordComp">Confirmez votre Mot de Passe</label>
                 <input type="password" class="form-control col-8" name="passwordComp" id="passwordComp" placeholder="Retapez Votre Mot de Passe">
             </div>
             <div class="form-check offset-sm-1" id="checkBot" >
                 <input type="checkbox" class="form-check-input" name="checkHuman" id="checkHuman" value="ok">
                 <label class="form-check-label" for="checkHuman">Je ne suis pas un robot</label>
-            </div>
-            <div class="row justify-content-center">
+            </div>               
+            <div class="form-check offset-sm-1" id="checkBot" >
+                <input type="checkbox" class="form-check-input" name="checkHuman" id="checkHuman" value="ok">
+                <label class="form-check-label" for="checkHuman">J'accepte les <a ref="#exampleModalLong" data-toggle="modal">Conditions et Modalités</a> de La Conciergerie du web</label>
+            </div>     
+            <div class="row justify-content-center MgHt">
                 <button type="submit" class="btn btn-TywebButton btn-lg btn-block btn-validation center-block col-6">Souscrire</button>
             </div>  
         </form>

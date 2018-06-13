@@ -119,8 +119,9 @@
                                         <li class="nav-item dropdown MgHt8 "style="min-width: 13%;" id="Mnconne">
                                             <?php
                                                 if(isset($_SESSION['conciergerieDuWebId'])) {
-                                                    echo '<h3><a class="navbar-brand taille13" href="index.php?action=accountManagement">Bienvenue '.htmlspecialchars($_SESSION['conciergerieDuWebFirstName']).' '.htmlspecialchars($_SESSION['conciergerieDUWebLastName']).'</a></h3>';
-                                                }
+                                              /*      echo '<h3><a class="navbar-brand taille13" href="index.php?action=accountManagement">Bienvenue '.htmlspecialchars($_SESSION['conciergerieDuWebFirstName']).' '.htmlspecialchars($_SESSION['conciergerieDUWebLastName']).'</a></h3>';*/
+                                              echo '<h3 class="navbar-brand taille13" id="bienvpol">Bienvenue '.htmlspecialchars($_SESSION['conciergerieDuWebFirstName']).' '.htmlspecialchars($_SESSION['conciergerieDUWebLastName']).'</h3>';
+                                                    }
                                             ?>                    
                                             <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <?php

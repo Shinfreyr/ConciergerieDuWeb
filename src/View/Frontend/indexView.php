@@ -49,7 +49,7 @@
                                 <h3>Prix avec réduction: '.htmlspecialchars($db1['reductionPriceArticle']).'&euro;</h3>
                             </div>
                             <div class="card-footer">
-                                <a href="index.php?action=offre&idOffre='.htmlspecialchars($db1['idArticle']).'" class="btn btn-TywebButton btn-lg btn-block">Voir l\'article</a>
+                                <a href="index.php?action=offre&idOffre='.htmlspecialchars($db1['idArticle']).'" class="btn btn-TywebButton btn-lg btn-block">Voir l\'article <i class="fa fa-search vuebutton"></i></a>
                                 <p>*fin de la promotion : '.htmlspecialchars($db1['endDateArticle']).'</p>
                             </div>
                         </div>';
@@ -73,7 +73,7 @@
                                 <h3>Prix avec réduction: '.htmlspecialchars($db2['reductionPriceArticle']).'&euro;</h3>
                             </div>
                             <div class="card-footer">
-                                <a href="index.php?action=offre&idOffre='.htmlspecialchars($db2['idArticle']).'" class="btn btn-TywebButton btn-lg btn-block">Voir l\'article</a>
+                                <a href="index.php?action=offre&idOffre='.htmlspecialchars($db2['idArticle']).'" class="btn btn-TywebButton btn-lg btn-block">Voir l\'article <i class="fa fa-search vuebutton"></i></a>
                                 <p>*fin de la promotion : '.htmlspecialchars($db2['endDateArticle']).'</p>
                             </div>
                         </div>';
@@ -84,9 +84,9 @@
     </div>
 </div>                                                      
 <!-- formulaire de contact et nos coordonnées ++++++++++++++++++++++++++++ -->     
-<div class="row someClassvannes justify-content-center"  >       
+<div class="row someClasscont justify-content-center parallax MgHt" style="background-image: url('src/Public/images/bateaux.jpg');">       
     <div class="row margeshautetbas justify-content-center" >
-          <div class="col-sm-10 col-lg-6 someClassgauche">  <!-- bloc de gauche ++++++++++++++++++++++++++++ -->                         
+          <div class="col-sm-10 col-xl-7 someClassgauche">  <!-- bloc de gauche ++++++++++++++++++++++++++++ -->                         
                 <div ><!-- tite formulaire de contact ++++++++++++++++++++++++++++ -->   
                       <div class="titleprghp text-center">
                             <span class="blanc"><h5>Comment pouvons-nous vous aider ?</h5></span> 
@@ -190,7 +190,7 @@
                  </div> <!-- fin de  <div class="col-lg-12">+++++++++++++++-->   
             </div><!-- fin de <div class="offset-sm-1 col-5 someClassgauche"> bloc de gauche+++++++++++++++++++++++++++++++++++++++ -->
             <!-- <div class="col-1"><br> </div>  bloc de 1 colonne separation ++++++++++++++++++++++++++++ -->   
-            <div class="col-sm-10 col-lg-5 someClassdroite" id="coordonnees"><!-- bloc de droite ++++++++++++++++++++++++++++ -->     
+            <div class="col-sm-10 col-xl-5 someClassdroite" id="coordonnees"><!-- bloc de droite ++++++++++++++++++++++++++++ -->     
                 <div class="col"><!--+++++++++++++++++++++++++++++++++++++debut du formulaire de contact form partie droite-->
                     <div class="titleprghp text-center">
                         <span class="blanc"><h5>Nos coordonnées</h5></span> 

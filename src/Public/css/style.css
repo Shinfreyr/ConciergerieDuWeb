@@ -95,10 +95,27 @@ li {
 ul {
     display : inline;
 }
+/* police de bienvenue test test+++++++++++++++++++++++++++++++++++++*/
+#bienvpol{
+    color:goldenrod;
+}
 
 /*taille de l'image arriere plan dans la view indexview+++++++++++++++++++++++++++++*/
 .someClass { 
     background: url(src/Public/images/mains.jpg) no-repeat center center /*fixed*/; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width:100%;
+  /* opacity:0.50;
+    filter:alpha(opacity=20);*/
+}
+
+/*taille de l'image arriere plan dans la view indexview+++++++++++++++++++++++++++++*/
+.someClasscont { 
+    background: url(src/Public/images/bateaux.jpg) no-repeat center center /*fixed*/; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -226,10 +243,13 @@ h1 {
     height:90px;
 }
 .fdcartevip{
-    background-image: linear-gradient(to left bottom,goldenrod, goldenrod ,#1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);
+    background-image: linear-gradient(to left bottom, #37669f,#37669f,#1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);
 }
 .borddt{
     border-top-right-radius: 25%;
+}
+.borddtgd{
+    border-top-right-radius: 15%;
 }
 /* le formualire de recherche sur une seule ligne++++++++++++++++++++++*/
 form {
@@ -461,7 +481,7 @@ navbar {
 
 /*alignement des cards +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*formulaire de contact +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-.fdforminscri{
+.fdforminscri {
     background-color: #FFFFE0;
     color:#1c1918;        
 }
@@ -500,14 +520,9 @@ label {
     font-size:14px;
 }
 
-/*taille de l'image arriere plan dans la view indexview+++++++++++++++++++++++++++++*/
-.someClassvannes { 
-    background: url(src/Public/images/test.jpg) no-repeat center center ; 
-    /*opacity:0.80;*/
-}
-
 .someClassgauche, .someClassdroite {
     background-color: #FFFFE0;
+   opacity:0.87;
 }
 
 .element {
@@ -519,8 +534,10 @@ label {
 input:invalid {
     border: 2px dashed goldenrod;
 }
+
 input:invalid+span:before {
     content: '✖';
+    color:red;
     padding-left: 5px;
 }
 
@@ -529,6 +546,7 @@ input:valid {
 }
 input:valid+span:after {
     content: '✓';
+    color: green;
     padding-left: 5px;
 }
 
@@ -580,6 +598,14 @@ input:valid+span:after {
 .btn-TywebButtonW:hover {
     background-color: red;
     color: white;
+}
+
+.editbutton {
+    font-size:24px;
+}
+
+.vuebutton {
+    font-size:16px;
 }
 
 .pasvu{
@@ -1034,6 +1060,8 @@ h3 {
 a:hover {
     border-bottom: 0;
     background-color: #0c4c8c;
+    text-decoration: underline;
+    border-bottom: 3px solid #0c4c8c;
 }
 
 .MgGe {

@@ -11,8 +11,8 @@
             <img src="src/Public/images/cartevip.png" class="MgBs" alt="Accès membre VIP la conciergerie du web" id="minivip" alt="Responsive image">
             <div class="dropdown-divider Pttraitb" ></div>
             
-            <p class="mb-0">Profitez de nos offres !</p>
-            <p class="mb-0">Connectez vous ici !</p>
+            <p class="mb-0"><h2>Profitez de nos offres !</h2></p>
+            <p class="mb-0"><h5>Connectez vous ici !</h5></p>
         </div>
 
         <!-- Connection Forms ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
