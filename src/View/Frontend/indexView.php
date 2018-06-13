@@ -28,7 +28,7 @@
 
 <!-- Service Card ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <div class="col-12 justify-content-center">
-        <h1 class="alert-heading blanc MgHtBs">Nos offres du jour</h1>
+        <h1 class="alert-heading blanc MgHtBs"><i class="fa fa fa-quote-left vuebutton"></i>    Nos offres du jour    <i class="fa fa fa fa-quote-right vuebutton"></i></h1>
     </div>
     <div class="dropdown-divider Pttraitb" ></div>  
     <div class="row justify-content-center">

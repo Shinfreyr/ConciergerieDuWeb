@@ -20,18 +20,17 @@
                     <h3>Prix avec réduction: <?= htmlspecialchars($result['reductionPriceArticle']) ?>&euro;</h3>
                     <?php
                         if(isset($_SESSION['conciergerieDuWebId'])) {
-                            echo '<a class="btn btn-TywebButton btn-lg" href="index.php?action=voucher&idArticle='.htmlspecialchars($result['idArticle']).'&endDate='.htmlspecialchars($result['endDateArticle']).'" role="button">Editer mon Bon de réduction <i class="fa fa-print editbutton"></i></a>';
+                            echo '<p class="mx-auto text-center"><a class="btn btn-TywebButton" href="index.php?action=voucher&idArticle='.htmlspecialchars($result['idArticle']).'&endDate='.htmlspecialchars($result['endDateArticle']).'" role="button">Editer mon Bon de réduction <i class="fa fa-print editbutton"></i></a></p>';
                         }
                         else {
-                            echo '<a class="btn btn-TywebButton btn-lg" href="#" role="button">Connectez vous pour générer votre bon</a>';
+                            echo '<p class="mx-auto text-center"><a class="btn btn-TywebButton" href="#" role="button">Connectez vous pour générer votre bon <i class="fa fa-eye-slash vuebutton"></i> 	<i class="fa fa-user-times vuebutton"></i></a></p>';
                         }        
                     ?>
                     <p>*fin de la promotion : <?= htmlspecialchars($result['endDateArticle']) ?></p>
                 </div>
             </div>                
-<!-- Jumbotron Seller +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- Jumbotron Seller +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<i class="fa fa fa-quote-left vuebutton"></i><i class="fa fa fa fa-quote-right vuebutton"></i> -->
             <div class="col-sm-5 col-xl-5 "><!-- bloc de droite ++++++++++++++++++++++++++++ -->     
-                    <div class="col">
                 <div class="jumbotron">
                     <h1 class="display-5"><?= htmlspecialchars($result['societyNameSeller']) ?></h1>
                     <img class="card-img-top" src="src/Public/images/<?= htmlspecialchars($result['imageSeller']) ?>" alt="Card image cap">
@@ -39,7 +38,7 @@
                     <hr class="my-4">
                     <p>Numéro de tel : <?= htmlspecialchars($result['staticPhoneSeller']) ?></p>
                     <h3>Adresse : <?= htmlspecialchars($result['adressSeller']) ?> <?= htmlspecialchars($result['postalCodeSeller']) ?> <?= htmlspecialchars($result['citySeller']) ?></h3>
-                    <a class="btn btn-TywebButton btn-sm" href="index.php?action=magazin&idSeller=<?= htmlspecialchars($result['idSeller']) ?>&page=1" role="button">Voir toutes les offres du magasin <i class="fa fa-search vuebutton"></i></a>
+                    <p class="mx-auto text-center"><a class="btn btn-TywebButton" href="index.php?action=magazin&idSeller=<?= htmlspecialchars($result['idSeller']) ?>&page=1" role="button">Voir toutes les offres du magasin <i class="fa fa-search vuebutton"></i></a></p>
                 </div>
             </div>
         </div>

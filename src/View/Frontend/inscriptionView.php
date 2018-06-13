@@ -72,10 +72,10 @@
                 <input type="checkbox" class="form-check-input" name="checkHuman" id="checkHuman" value="ok">
                 <label class="form-check-label" for="checkHuman">Je ne suis pas un robot</label>
             </div>               
-            <div class="form-check offset-sm-1" id="checkBot" >
+        <!--<div class="form-check offset-sm-1" id="checkBot" >
                 <input type="checkbox" class="form-check-input" name="checkHuman" id="checkHuman" value="ok">
                 <label class="form-check-label" for="checkHuman">J'accepte les <a ref="#exampleModalLong" data-toggle="modal">Conditions et Modalités</a> de La Conciergerie du web</label>
-            </div>     
+            </div>     -->
             <div class="row justify-content-center MgHt">
                 <button type="submit" class="btn btn-TywebButton btn-lg btn-block btn-validation center-block col-6">Souscrire</button>
             </div>  

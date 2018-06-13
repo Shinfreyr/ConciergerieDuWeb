@@ -39,11 +39,11 @@
             <div class="container-fluid">   <!-- debut container ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
                 <div class="row colortop"> <!-- debut row ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
                     <!-- Nos coordonnées et reseaux sociaux  ++++++++++++ -->
-                    <div class="blanc">
-                        <span class="petitemarge" alt="Numéro de téléphone Tyweb Services">
+                    <div class="blanc petitemarge">
+                        <span class="grandemarge" alt="Numéro de téléphone Tyweb Services">
                             06.37.69.34.21
                         </span>
-                        <span class="petitemarge">
+                        <span class="grandemarge">
                             <a href="mailto:contact@tywebservices.fr"  style="color:#ffffff;" alt="Contact Email Tyweb Services">contact@tywebservices.fr</a>
                         </span>
                         <span class="petitemarge">
@@ -93,7 +93,7 @@
                                             <div class="dropdown-divider pasvu" ></div>
                                             <a class="nav-link" href="index.php" title="Offres du Jour">Offres <span class="sr-only"></a>
                                         </li>
-                                        <li class="nav-item dropdown MgHt" style="min-width: 10%;" id="Mncat">
+                                        <li class="nav-item dropdown MgHt" id="Mncat"> <!--  style="min-width: 10%;"+++++++++++++++-->
                                             <div class="dropdown-divider pasvu"></div>
                                             <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Rechercher dans toutes nos catégories">Catégories</a>
                                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -105,10 +105,10 @@
                                                     ?>
                                             </div>
                                         </li>
-                                        <div class=" col-lg-5 col-xl-5 pasmarge MgHt" style="max-width: 35%;" id="Mnrech">
-                                            <form class="form-inline my-2 my-lg-0 taille13" id="search">
-                                                <input class="form-control mr-sm-2 taille13" type="search" placeholder="Recherche par mot clé" aria-label="Search" title="Saisissez les mots clés">
-                                                <button class="btn btn-outline-secondary my-2 my-sm-0 taille13" type="submit"><i class="fa fa-search"></i></button>
+                                        <div class="col-md-4 offset-md-1 col-lg-3 col-xl-4 pasmarge MgHt"  id="Mnrech">
+                                            <form class="form-inline mr-sm-0 taille13" id="search">
+                                                <input class="form-control mr-sm-0 taille12" type="search" placeholder="Recherche par mot clé" aria-label="Search" title="Recherche par mots clés">
+                                                <button class="btn btn-outline-secondary my-0 my-sm-0 taille13" type="submit"><i class="fa fa-search"></i></button>
                                             <!-- <button class="btn btn-outline-secondary my-2 my-sm-0 taille13" type="submit">Recherche</button> -->
                                             </form>
                                         </div>                     
@@ -116,7 +116,7 @@
                                         <div class="dropdown-divider pasvu" ></div>
                                             <a class="nav-link active" href="#contact" title="Contactez-nous">Contact <span class="sr-only">(current)</a>
                                         </li>                       
-                                        <li class="nav-item dropdown MgHt8 "style="min-width: 13%;" id="Mnconne">
+                                        <li class="nav-item dropdown MgHt8pasmarge" id="Mnconne"> <!-- "style="min-width: 13%;"+++-->
                                             <?php
                                                 if(isset($_SESSION['conciergerieDuWebId'])) {
                                               /*      echo '<h3><a class="navbar-brand taille13" href="index.php?action=accountManagement">Bienvenue '.htmlspecialchars($_SESSION['conciergerieDuWebFirstName']).' '.htmlspecialchars($_SESSION['conciergerieDUWebLastName']).'</a></h3>';*/
