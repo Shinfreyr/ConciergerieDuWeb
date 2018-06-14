@@ -3,11 +3,11 @@
 <?php ob_start(); ?>
 
 
-<div class="row parallax justify-content-center" style="background-image: url('src/Public/images/mains.jpg');">
+<div class="row parallax justify-content-center" style="background-image: url('src/Public/images/GLD_876880.jpg');">
     <div class="card-deck col-sm-6 text-justify  text-center MgHtBs blanc borddt" style="background-image: linear-gradient(to right bottom, #1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);">
     <!-- Welcome message +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <div class="alert welcome col-12 text-center" id="up" role="alert">
-            <h1 class="alert-heading blanc MgHtBs">Connection</h1>
+            <h1 class="alert-heading blanc MgHtBs">Connexion</h1>
             <img src="src/Public/images/cartevip.png" class="MgBs" alt="Accès membre VIP la conciergerie du web" id="minivip" alt="Responsive image">
             <div class="dropdown-divider Pttraitb" ></div>
             

@@ -518,7 +518,7 @@ label {
 
  /*marges bas de page+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .margeshautetbas {
-    margin-top:10%;
+    margin-top:5%;
     margin-bottom:10%;
 }
 
@@ -542,21 +542,29 @@ input:invalid {
     border: 2px dashed goldenrod;
 }
 
-input:invalid+span:before {
+/*input:invalid+span:before {
     content: '✖';
     color:red;
     padding-left: 5px;
+ 
+}*/
+
+input:invalid+span:after {
+    content: '✖';
+    color:red;
+    padding-left: 100%;
+ 
 }
 
 input:valid {
     border: 1px solid black;
 }
+
 input:valid+span:after {
     content: '✓';
     color: green;
-    padding-left: 5px;
+    padding-left: 100%;
 }
-
 
 /*le non affichage du logo petit modele++++++++++++++++++++++++++++++++++++++++++*/
 .alogoPt {
@@ -574,15 +582,18 @@ input:valid+span:after {
     font-size:1.000em;
 }
 
-/*debut de mon test ++++++++++++++++++++++++++++++++++++++++++*/
+/*pointilles coordonnees ++++++++++++++++++++++++++++++++++++++++++*/
 
 #coordonnees {
-    border-left: 1px dotted black;
-    border-top: 1px dotted black;
+    border-left: 1px dotted #1c1918;
+    border-top: 1px dotted #1c1918;
 }
-
+#mailtocont{
+    text-decoration: none;
+    color:#1c1918;
+}
 /*bouton personnalise ++++++++++++++++++++++++++++++++++++++++++*/
-
+/* bouton valider ou envoyer ou voir larticle ++++++++++++++++++++++++++++++++++++++++++++*/
 .btn-TywebButton {
     background-color:#8fa5af;
     color:white;
@@ -594,9 +605,9 @@ input:valid+span:after {
     background-color: #0c4c8c;
     color: white;
 }
-
+/* bouton suppression ou annuler ++++++++++++++++++++++++++++++++++++++++++++*/
 .btn-TywebButtonW {
-    background-color:goldenrod;
+    background-color:rgb(245, 191, 56);
     color:white;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
@@ -606,20 +617,42 @@ input:valid+span:after {
     background-color: red;
     color: white;
 }
+/* bouton attention connecter vous ++++++++++++++++++++++++++++++++++++++++++++*/
+.btn-TywebButtonconx {
+    background-color:goldenrod;
+    color:white;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
 
+.btn-TywebButtonconx:hover {
+    background-color: #0c4c8c;
+    color: white;
+}
 .editbutton {
-    font-size:24px;
+    font-size:1.500em;
 }
 
 .vuebutton {
-    font-size:16px;
+    font-size:1em;
 }
 
-.pasvu{
+.pasvu {
     display:none;
 }
 
-/*fin de mon test ++++++++++++++++++++++++++++++++++++++++++*/
+.aligncard {
+    display: flex;
+    flex-wrap: wrap;
+}
+/*debut du test ++++++++++++++++++++++++++++++++++++++++++*/
+.test{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*fin du test ++++++++++++++++++++++++++++++++++++++++++*/
+
+/*fin ++++++++++++++++++++++++++++++++++++++++++*/
 
 
 

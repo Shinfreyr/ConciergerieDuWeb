@@ -28,13 +28,11 @@
 
 <!-- Service Card ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <div class="col-12 justify-content-center">
-        <h1 class="alert-heading blanc MgHtBs"><i class="fa fa fa-quote-left vuebutton"></i>    Nos offres du jour    <i class="fa fa fa fa-quote-right vuebutton"></i></h1>
+        <h1 class="alert-heading blanc MgHtBs">  Nos offres du jour    <i class="fa fa-tags"></i></h1>
     </div>
     <div class="dropdown-divider Pttraitb" ></div>  
     <div class="row justify-content-center">
-
         <div class="card-deck col-sm-12 col-lg-10" >
-
             <?php
                 while ($db1 = $request->fetch()) {
                     echo                
@@ -44,9 +42,9 @@
                                 <h5 class="card-title">'.htmlspecialchars($db1['nomArticle']).'</h5>
                                 <p class="card-text">'.htmlspecialchars($db1['descriptionArticle']).'</p>
                                 <hr>
-                                <p class="card-text">Réduction: '.htmlspecialchars($db1['reductionArticle']).'%</p>
+                                <p class="card-text">Réduction: '.htmlspecialchars($db1['reductionArticle']).'% <i class="fa fa-tag"></i></p>
                                 <p class="card-text">Prix original: '.htmlspecialchars($db1['originalPriceArticle']).'&euro;</p>
-                                <h3>Prix avec réduction: '.htmlspecialchars($db1['reductionPriceArticle']).'&euro;</h3>
+                                <h2>Prix avec réduction: '.htmlspecialchars($db1['reductionPriceArticle']).'&euro; </h2>
                             </div>
                             <div class="card-footer">
                                 <a href="index.php?action=offre&idOffre='.htmlspecialchars($db1['idArticle']).'" class="btn btn-TywebButton btn-lg btn-block">Voir l\'article <i class="fa fa-search vuebutton"></i></a>
@@ -68,9 +66,9 @@
                                 <h5 class="card-title">'.htmlspecialchars($db2['nomArticle']).'</h5>
                                 <p class="card-text">'.htmlspecialchars($db2['descriptionArticle']).'</p>
                                 <hr>
-                                <p class="card-text">Réduction: '.htmlspecialchars($db2['reductionArticle']).'%</p>
+                                <p class="card-text">Réduction: '.htmlspecialchars($db2['reductionArticle']).'% <i class="fa fa-tag"></i> </p>
                                 <p class="card-text">Prix original: '.htmlspecialchars($db2['originalPriceArticle']).'&euro;</p>
-                                <h3>Prix avec réduction: '.htmlspecialchars($db2['reductionPriceArticle']).'&euro;</h3>
+                                <h2>Prix avec réduction: '.htmlspecialchars($db2['reductionPriceArticle']).'&euro; </h2>
                             </div>
                             <div class="card-footer">
                                 <a href="index.php?action=offre&idOffre='.htmlspecialchars($db2['idArticle']).'" class="btn btn-TywebButton btn-lg btn-block">Voir l\'article <i class="fa fa-search vuebutton"></i></a>
@@ -81,12 +79,13 @@
 
             ?>
         </div>
+        <p class="dropdown-divider PttraitbGd blanc MgHtBs"><i class="fa fa-cogs"></i> Pour Rappel, il faut utiliser la connexion avec votre compte pour pouvoir EDITER le(s) bon(s) de réduction</p>
     </div>
 </div>                                                      
 <!-- formulaire de contact et nos coordonnées ++++++++++++++++++++++++++++ -->     
-<div class="row someClasscont justify-content-center parallax MgHt" style="background-image: url('src/Public/images/bateaux.jpg');">       
-    <div class="row margeshautetbas justify-content-center" >
-          <div class="col-sm-10 col-xl-7 someClassgauche">  <!-- bloc de gauche ++++++++++++++++++++++++++++ -->                         
+<div class="row someClasscont justify-content-center parallax MgHt" style="background-image: url('src/Public/images/GLD_8771_80.jpg');">       
+    <div class="col-12 margeshautetbas justify-content-center aligncard" >
+          <div class="col-sm-5 col-xl-4 someClassgauche">  <!-- bloc de gauche ++++++++++++++++++++++++++++ -->                         
                 <div ><!-- tite formulaire de contact ++++++++++++++++++++++++++++ -->   
                       <div class="titleprghp text-center">
                             <span class="blanc"><h5>Comment pouvons-nous vous aider ?</h5></span> 
@@ -98,34 +97,34 @@
                 <!--<form class="form-horizontal" role="form">-->
                       <div class="form-group col">
                             <label for="societe" class="col-sm-2 control-label alignement">Société :</label>
-                                  <div class="col-sm-11">
-                                       <input type="text" class="form-control" placeholder="Ex: Action56" name="societe" id="societe">
-                                  </div>
+                                <div class="col-sm-11">
+                                    <input type="text" class="form-control" placeholder="Ex: Action56" name="societe" id="societe">
+                                </div>
                             <label for="nom" class="col-sm-2 control-label alignement">Nom* :</label>
-                                   <div class="col-sm-11">
-                                      <input type="text" class="form-control" placeholder="Ex: Dupont" name="name" id="name" required>
-                                      <span class=" alignement">Validation de votre saisie</span>
-                                    </div>
+                                <div class="col-sm-11">
+                                    <input type="text" class="form-control" placeholder="Ex: Dupont" name="name" id="name" required>
+                                <span></span>
+                                </div>
                      </div>
-                     <div class="form-group col" >
+                     <div class="form-group col">
                            <label for="prenom" class="col-sm-2 control-label alignement">Prenom* :</label>
-                                 <div class="col-sm-11">
-                                      <input type="text" class="form-control" placeholder="Ex: Anne" name="prenom" id="prenom" required>
-                                      <span class=" alignement">Validation de votre saisie</span>
-                                 </div>
-                     </div>                                  
+                                <div class="col-sm-11">
+                                    <input type="text" class="form-control" placeholder="Ex: Anne" name="prenom" id="prenom" required>
+                                    <span></span>
+                                </div>
+                     </div>                              
                      <div class="form-group col">
                            <label for="email" class="col-sm-2 control-label alignement">Email* :</label>
-                                 <div class="col-sm-11  has-success">
-                                      <input type="email" class="form-control" placeholder="Ex: a.dupont@gmail.com" name="email" id="email" required />
-                                      <span class=" alignement">Validation de votre saisie</span>
-                                 </div>
+                                <div class="col-sm-11 has-success tester">
+                                    <input type="email" class="form-control" placeholder="Ex: a.dupont@gmail.com" name="email" id="email" required />
+                                    <span></span>
+                                </div>
                      </div>
                      <div class="form-group col">
                            <label for="telephone" class="col-sm-2 control-label alignement">T&eacute;l&eacute;phone :</label>
-                                 <div class="col-sm-11">
-                                       <input type="text" class="form-control" placeholder="Ex: 02.97.66.00.00" name="tel" id="tel" size="20" minlength="9" maxlength="14">
-                                 </div>
+                                <div class="col-sm-11">
+                                    <input type="text" class="form-control" placeholder="Ex: 02.97.66.00.00" name="tel" id="tel" size="20" minlength="9" maxlength="14">
+                                </div>
                      </div>
                      <div class="form-group col">
                            <label for="services" class="col-sm-2 control-label alignement">Sélectionnez le thème de votre demandes* :</label>
@@ -154,34 +153,33 @@
                                <input type="text" class="form-control" name="captcha" required />
                          </div>
                     </div>
-                    <div class="form-group col">
+                    <div class="form-group row">
                           <div class="checkbox col-sm-11 alignement Ptpolice Ptpolice">
                                <label  for="RGPD">
                                    <input type="checkbox" name="agree" value="agree" required /> J'accepte les termes et les conditions*
                                </label>
-                   <!-- Button fenêtre aperçu des conditions -->
-                                <button type="button" class="btn btn-outline-secondary my-2 my-sm-0 taille13" data-toggle="modal" data-target="#exampleModalLong">
+                                <!-- Button fenêtre aperçu des conditions /* Bouton qui ouvre une fenêtre modale */ ++++++++++++++++++++-->
+                                <button type="button" class="btn btn-outline-secondary my-2 my-sm-0 taille13" data-toggle="modal" data-target="#feuilconditModalLong">
                             Aperçu des Conditions et modalités
-                                </button><!-- Feuille des conditions -->
-                                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
+                                </button><!-- Feuille des conditions +++++++++++++++++++++-->
+                                <div class="modal fade" id="feuilconditModalLong" tabindex="-1" role="dialog" aria-labelledby="feuilconditModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Conditions et Modalités de TyWeb services La Conciergerie</h5>
+                                            <h5 class="modal-title" id="feuilconditModalLongTitle">Conditions et Modalités de TyWeb services La Conciergerie</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            ...
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary BTN-XS" data-dismiss="modal">Fermer la fenêtre</button>
+                                            <button type="button" class="btn btn-secondary btn-xs" data-dismiss="modal">Fermer la fenêtre</button>
                                         </div>
                                     </div>
                                 </div>
                                 </div>
-                        </div><!-- fin de <div class="checkbox col-sm-11 alignement"> +++++++++++++++++++++++++++++++++++ -->
+                     </div><!-- fin de <div class="checkbox col-sm-11 alignement"> +++++++++++++++++++++++++++++++++++ -->
                     </div> <!-- fin de <div class="form-group col"> +++++++++++++++++++++++++++++++++++ -->
                     <div class="form-group text-center" id="validation_contact">
                         <button name="annuler" id="resetBtn" type="reset" value="reset" class="btn btn-TywebButtonW btn-xs">Annuler</button>
@@ -190,7 +188,7 @@
                  </div> <!-- fin de  <div class="col-lg-12">+++++++++++++++-->   
             </div><!-- fin de <div class="offset-sm-1 col-5 someClassgauche"> bloc de gauche+++++++++++++++++++++++++++++++++++++++ -->
             <!-- <div class="col-1"><br> </div>  bloc de 1 colonne separation ++++++++++++++++++++++++++++ -->   
-            <div class="col-sm-10 col-xl-5 someClassdroite" id="coordonnees"><!-- bloc de droite ++++++++++++++++++++++++++++ -->     
+            <div class="col-sm-4 col-xl-4 someClassdroite" id="coordonnees"><!-- bloc de droite ++++++++++++++++++++++++++++ -->     
                 <div class="col"><!--+++++++++++++++++++++++++++++++++++++debut du formulaire de contact form partie droite-->
                     <div class="titleprghp text-center">
                         <span class="blanc"><h5>Nos coordonnées</h5></span> 
@@ -207,14 +205,12 @@
                         <br>
                         <br>France-Tél : + 33 6 37 69 34 21
                         <br>
-                        <br>contact@tywebservices.fr</h4>
+                        <br> <a href="mailto:contact@tywebservices.fr" alt="Contact Email Tyweb Services" id="mailtocont">contact@tywebservices.fr</a></h4>
                     </div>          
             <!-- la map et coordonnées <form class="form-horizontal" role="form">-->
-                   
-                            <div class="embed-responsive embed-responsive-16by9 MgHtBs">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1342.8371519239618!2d-2.739550191633932!3d47.69074484479758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101fb2ce4316e7%3A0x8f4b25780f647313!2sMairie!5e0!3m2!1sfr!2sfr!4v1528793078819" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>    
-                            </div>
-                
+                    <div class="embed-responsive embed-responsive-16by9 MgHtBs">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1342.8371519239618!2d-2.739550191633932!3d47.69074484479758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101fb2ce4316e7%3A0x8f4b25780f647313!2sMairie!5e0!3m2!1sfr!2sfr!4v1528793078819" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>    
+                    </div>
                 </div><!-- fin de <div class="col"> +++++++++++++++++++++++++++ -->
            </div><!--+++++++++++++++++++++++++++++++++++++ fin du formulaire de contact form partie droite-->       
         </div><!-- <div class="col someClassvannes margeshautetbas" style="background-image: url('src/Public/test.jpg');" >++++++++++++++++++++++++++++ -->  

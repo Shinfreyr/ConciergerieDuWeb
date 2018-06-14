@@ -27,12 +27,12 @@
                                     <h5 class="card-title">'.htmlspecialchars($db1['nomArticle']).'</h5>
                                     <p class="card-text">'.htmlspecialchars($db1['descriptionArticle']).'</p>
                                     <hr>
-                                    <p class="card-text">Réduction: '.htmlspecialchars($db1['reductionArticle']).'%</p>
+                                    <p class="card-text">Réduction: '.htmlspecialchars($db1['reductionArticle']).'% <i class="fa fa-tag"></i></p>
                                     <p class="card-text">Prix original: '.htmlspecialchars($db1['originalPriceArticle']).'&euro;</p>
-                                    <h3>Prix avec réduction: '.htmlspecialchars($db1['reductionPriceArticle']).'&euro;</h3>
+                                    <h2>Prix avec réduction: '.htmlspecialchars($db1['reductionPriceArticle']).'&euro;</h2>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="index.php?action=offre&idOffre='.htmlspecialchars($db1['idArticle']).'" class="btn btn-TywebButton ">Voir l\'article <i class="fa fa-search vuebutton"></i></a>
+                                    <a href="index.php?action=offre&idOffre='.htmlspecialchars($db1['idArticle']).'" class="btn btn-TywebButton btn-lg btn-block">Voir l\'article <i class="fa fa-search vuebutton"></i></a>
                                     <p>*fin de la promotion : '.htmlspecialchars($db1['endDateArticle']).'</p>
                                 </div>
                             </div>';
@@ -51,12 +51,12 @@
                                         <h5 class="card-title">'.htmlspecialchars($db2['nomArticle']).'</h5>
                                         <p class="card-text">'.htmlspecialchars($db2['descriptionArticle']).'</p>
                                         <hr>
-                                        <p class="card-text">Réduction: '.htmlspecialchars($db2['reductionArticle']).'%</p>
+                                        <p class="card-text">Réduction: '.htmlspecialchars($db2['reductionArticle']).'% <i class="fa fa-tag"></i></p>
                                         <p class="card-text">Prix original: '.htmlspecialchars($db2['originalPriceArticle']).'&euro;</p>
-                                        <h3>Prix avec réduction: '.htmlspecialchars($db2['reductionPriceArticle']).'&euro;</h3>
+                                        <h2>Prix avec réduction: '.htmlspecialchars($db2['reductionPriceArticle']).'&euro;</h2>
                                     </div>
                                     <div class="card-footer">
-                                        <a href="index.php?action=offre&idOffre='.htmlspecialchars($db2['idArticle']).'" class="btn btn-TywebButton ">Voir l\'article <i class="fa fa-search vuebutton"></i></a>
+                                        <a href="index.php?action=offre&idOffre='.htmlspecialchars($db2['idArticle']).'" class="btn btn-TywebButton btn-lg btn-block">Voir l\'article <i class="fa fa-search vuebutton"></i></a>
                                         <p>*fin de la promotion : '.htmlspecialchars($db2['endDateArticle']).'</p>
                                     </div>
                                 </div>';

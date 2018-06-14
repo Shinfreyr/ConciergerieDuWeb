@@ -4,7 +4,7 @@
 
 
 
-<div class="row parallax justify-content-center" style="background-image: url('src/Public/images/mains.jpg');">
+<div class="row parallax justify-content-center" style="background-image: url('src/Public/images/GLD_0811_80.jpg');">
     <div class="card-deck col-sm-8 text-center MgHtBs blanc borddtgd" style="background-image: linear-gradient(to right bottom, #1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);">
         
         <!-- Welcome message +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

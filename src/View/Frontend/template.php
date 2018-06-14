@@ -169,22 +169,22 @@
                                     </li>
                                     <div> <!-- pour regrouper les li ++++++++++++++++-->
                                         <li class="nav-item ">
-                                            <a class="nav-link" href="#"><span class="fa fa-pencil"> Société</a>
+                                            <a class="nav-link" href="#"><span class="fa fa-archive"></span> Société</a>
                                         </li>
                                         <li class="nav-item ">
-                                            <a class="nav-link" href="#"><span class="fa fa-pencil"></span> Services</a>
+                                            <a class="nav-link" href="#"><span class="fa fa-group"></span> Services</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"><span class="fa fa-pencil"></span> Conciergerie</a>
+                                            <a class="nav-link" href="#"><span class="fa fa-bell"></span> Conciergerie</a>
                                         </li>
                                         <li class="nav-item ">
-                                            <a class="nav-link" href="#"><span class="fa fa-pencil"></span> Offres</a>
+                                            <a class="nav-link" href="#"><span class="fa fa-tag"></span> Offres</a>
                                         </li>
                                         <li class="nav-item ">
                                             <a class="nav-link" href="#"><span class="fa fa-commenting"></span> Newsroom</a>
                                         </li>
                                         <li class="nav-item  ">
-                                            <a class="nav-link" href="#contact"><span class="fa fa-commenting"> Contact</a>
+                                            <a class="nav-link" href="#contact"><span class="fa fa-commenting-o"> Contact</a>
                                         </li> 
                                     </div>
                                 </ul>

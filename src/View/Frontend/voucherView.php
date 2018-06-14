@@ -2,7 +2,7 @@
 <?php $title = "La Conciergerie du Web, Bon d'achat !"; ?>
 <?php ob_start(); ?>
 
-<div class="card text-center">
+<div class="card text-center justify-content-center col-xs-10">
     <div class="card-header">
         <img class="card-img-top" src="src/Public/images/defautLogo.jpg" alt="Card image cap">
     </div>
