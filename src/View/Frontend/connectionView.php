@@ -3,7 +3,7 @@
 <?php ob_start(); ?>
 
 
-<div class="row parallax justify-content-center" style="background-image: url('src/Public/images/GLD_876880.jpg');">
+<div class="row parallax justify-content-center imgfdconnex">
     <div class="card-deck col-sm-6 text-justify  text-center MgHtBs blanc borddt" style="background-image: linear-gradient(to right bottom, #1c1918, #1c1918, #1c1918, #37669f, #0c4c8c);">
     <!-- Welcome message +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <div class="alert welcome col-12 text-center" id="up" role="alert">

@@ -102,10 +102,12 @@ ul {
 #bienvpol{
     color:goldenrod;
 }
-
+small {
+    color:goldenrod;
+}
 /*taille de l'image arriere plan dans la view indexview+++++++++++++++++++++++++++++*/
 .someClass { 
-    background: url(src/Public/images/mains.jpg) no-repeat center center /*fixed*/; 
+    background: url(../images/mains.jpg) no-repeat center center /*fixed*/; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -118,7 +120,7 @@ ul {
 
 /*taille de l'image arriere plan dans la view indexview+++++++++++++++++++++++++++++*/
 .someClasscont { 
-    background: url(src/Public/images/bateaux.jpg) no-repeat center center /*fixed*/; 
+    background: url(../images/rempartsvannesGLD.jpg) no-repeat center center /*fixed*/; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -509,13 +511,36 @@ label {
     background:#555;
     height: 46px;
     color: fff;
-    font-size: 23px;
+    font-size: 1.438em;
     height: 46px;
     line-height: 40px;
     padding: 0 0 0 20px;
     margin: 20px 0 20px;
 }
+/* fond ecran sous contact+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+#imgfdcont {
+    background-image: url('../images/rempartsvannesGLD.jpg');
+}
 
+/* fond ecran sous introduction+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.imgfdintro{
+    background-image: url('../images/mains.jpg');
+}
+
+/* fond ecran sous connexion+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.imgfdconnex{
+    background-image: url('../images/lavoirvannesGLD.jpg');
+}
+
+/* fond ecran sous modifs compte+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.imgfdmodifscpte{
+    background-image: url('../images/portvannesGLD.jpg');
+}
+
+/* image carte vip+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+.imgcartevip{
+    background-image: url('../cartevip.png');
+}*/
  /*marges bas de page+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .margeshautetbas {
     margin-top:5%;
@@ -524,7 +549,7 @@ label {
 
 .alignement {
     display:inline;
-    font-size:14px;
+    font-size:0.875em;
 }
 
 .someClassgauche, .someClassdroite {

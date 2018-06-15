@@ -5,6 +5,7 @@
 
 <!-- Service Card ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <h1 class="alert-heading blanc MgHtBs">
+Offres pour :
     <?php
         if(isset($_GET['idSeller'])) {
             echo htmlspecialchars($resultSeller['societyNameSeller']);
@@ -12,7 +13,7 @@
         else {
             echo htmlspecialchars($_GET['type']);
         }
-    ?>
+    ?> <i class="fa fa-tag vuebutton"></i>
 </h1>
     <div class="dropdown-divider Pttraitb" ></div> 
         <div class="row justify-content-center">
@@ -21,10 +22,10 @@
                     while ($db1 = $firstRequest->fetch()) {            
                         echo                
                             '<div class="card col-10">
-                            <h1>Article :</h1><h5 class="card-title text-center">'.htmlspecialchars($db1['nomArticle']).'</h5>
+                                <h5 class="card-title text-center">'.htmlspecialchars($db1['nomArticle']).'</h5>
                                 <img class="card-img-top" src="src/Public/images/'.htmlspecialchars($db1['imageArticle']).'" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">'.htmlspecialchars($db1['nomArticle']).'</h5>
+                                    <h2 class="card-title">'.htmlspecialchars($db1['nomArticle']).'</h2>
                                     <p class="card-text">'.htmlspecialchars($db1['descriptionArticle']).'</p>
                                     <hr>
                                     <p class="card-text">Réduction: '.htmlspecialchars($db1['reductionArticle']).'% <i class="fa fa-tag"></i></p>
@@ -45,10 +46,10 @@
                         while ($db2 = $secondRequest->fetch()) {            
                             echo                
                                 '<div class="card col-10">
-                                <h1>Article :</h1><h5 class="card-title text-center">'.htmlspecialchars($db1['nomArticle']).'</h5>
-                                <img class="card-img-top" src="src/Public/images/'.htmlspecialchars($db2['imageArticle']).'" alt="Card image cap">
+                                    <h5 class="card-title text-center">'.htmlspecialchars($db2['nomArticle']).'</h5>
+                                    <img class="card-img-top" src="src/Public/images/'.htmlspecialchars($db2['imageArticle']).'" alt="Card image cap">
                                     <div class="card-body">
-                                        <h5 class="card-title">'.htmlspecialchars($db2['nomArticle']).'</h5>
+                                        <h2 class="card-title">'.htmlspecialchars($db2['nomArticle']).'</h2>
                                         <p class="card-text">'.htmlspecialchars($db2['descriptionArticle']).'</p>
                                         <hr>
                                         <p class="card-text">Réduction: '.htmlspecialchars($db2['reductionArticle']).'% <i class="fa fa-tag"></i></p>
