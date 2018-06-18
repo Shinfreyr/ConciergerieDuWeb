@@ -2,8 +2,6 @@
 <?php $title = "La Conciergerie du Web, Accueil !"; ?>
 <?php ob_start(); ?>
 
-<!-- <script src="src/Public/js/script.js"></script> -->
-
 <!-- Welcome message +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <div class="row" >
     <div class="alert welcome hauteurclass col-12 someClass parallax imgfdintro" id="up" role="alert">
@@ -12,16 +10,16 @@
         <div id="contImgTxt">
             <div class="element col-xl-11 offset-xl-1">
                 <p class="text-justify" >
-                <h2>Facilitateur de vie et d'envies</h2>
-                Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.
+                    <h2>Facilitateur de vie et d'envies</h2>
+                    Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.
                 </p>
             </div>
             <div class="element">
-                <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-fluid img-thumbnail rounded mx-auto d-block" alt="Responsive image">
+                <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-fluid img-thumbnail rounded mx-auto d-block">
             </div>
         </div>
         <div class="element1">
-            <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-fluid img-thumbnail rounded mx-auto d-block" alt="Responsive image">
+            <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-fluid img-thumbnail rounded mx-auto d-block">
         </div>
     </div>
 
@@ -90,16 +88,16 @@
     <div class="col-12 margeshautetbas justify-content-center aligncard" >
          <!-- BLOC GAUCHE +++++++++++++++++++++++-->
         <div class="col-sm-5 col-xl-4 someClassgauche">  <!-- bloc de gauche ++++++++++++++++++++++++++++ -->  
-            <div ><!-- tite formulaire de contact ++++++++++++++++++++++++++++ -->   
+            <div> <!-- tite formulaire de contact ++++++++++++++++++++++++++++ -->   
                 <div class="titleprghp text-center">
                     <span class="blanc"><h5>Comment pouvons-nous vous aider ?</h5></span> 
                 </div>
             </div>
             <!-- debut du formulaire de contact form partie gauche ++++++++++++++++++++++++++++ -->  
             <span class="col">
-                    *Mentions obligatoires
+                *Mentions obligatoires
             </span>
-            <!--<form class="form-horizontal" role="form">-->
+            <form action="#" id="inscriptionForm" method="post">
                 <div class="form-group col">
                     <label for="societe" class="col-sm-2 control-label alignement">Société :</label>
                     <div class="col-sm-11">
@@ -117,31 +115,31 @@
                         <input type="text" class="form-control" placeholder="Ex: Anne" name="prenom" id="prenom" required>
                         <span></span>
                     </div>
-                    </div>                              
+                </div>                              
                 <div class="form-group col">
                     <label for="email" class="col-sm-2 control-label alignement">Email* :</label>
                     <div class="col-sm-11 has-success tester">
                         <input type="email" class="form-control" placeholder="Ex: a.dupont@gmail.com" name="email" id="email" required />
                         <span></span>
                     </div>
-                    </div>
+                </div>
                 <div class="form-group col">
                     <label for="telephone" class="col-sm-2 control-label alignement">T&eacute;l&eacute;phone :</label>
                     <div class="col-sm-11">
                         <input type="text" class="form-control" placeholder="Ex: 02.97.66.00.00" name="tel" id="tel" size="20" minlength="9" maxlength="14">
                     </div>
-                    </div>
+                </div>
                 <div class="form-group col">
                     <label for="services" class="col-sm-2 control-label alignement">Sélectionnez le thème de votre demandes* :</label>
                     <div class="col-sm-11">
-                    <select class="form-control" required />
-                        <option value="" disabled selected>Choix</option>
-                        <option>Services Web</option>
-                        <option>Services Conciergerie</option>
-                        <option>Partenariat</option>
-                        <option>Contactez notre administrateur</option>
-                        <option>Autres</option>
-                    </select>
+                        <select class="form-control" required />
+                            <option value="" disabled selected>Choix</option>
+                            <option>Services Web</option>
+                            <option>Services Conciergerie</option>
+                            <option>Partenariat</option>
+                            <option>Contactez notre administrateur</option>
+                            <option>Autres</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group col">
@@ -160,66 +158,68 @@
                 </div>
                 <div class="form-group row">
                     <div class="checkbox col-sm-11 alignement Ptpolice Ptpolice">
-                        <label  for="RGPD">
+                        <label for="RGPD">
                             <input type="checkbox" name="agree" value="agree" required /> J'accepte les termes et les conditions*
                         </label>
-                        <!-- Button fenêtre aperçu des conditions /* Bouton qui ouvre une fenêtre modale */ ++++++++++++++++++++-->
-                        <button type="button" class="btn btn-outline-secondary my-2 my-sm-0 taille13" data-toggle="modal" data-target="#feuilconditModalLong">
-                        Aperçu des Conditions et modalités
-                        </button><!-- Feuille des conditions +++++++++++++++++++++-->
-                        <div class="modal fade" id="feuilconditModalLong" tabindex="-1" role="dialog" aria-labelledby="feuilconditModalLongTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="feuilconditModalLongTitle">Conditions et Modalités de TyWeb services La Conciergerie</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary btn-xs" data-dismiss="modal">Fermer la fenêtre</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div><!-- fin de div class="checkbox col-sm-11 alignement Ptpolice Ptpolice" +++++++++++++++++++++++++++++++++++ -->
                 </div> <!-- fin de div class="form-group row" +++++++++++++++++++++++++++++++++++ -->
+                <!-- Button fenêtre aperçu des conditions /* Bouton qui ouvre une fenêtre modale */ ++++++++++++++++++++-->
+                <button type="button" class="btn btn-outline-secondary my-2 my-sm-0 taille13" data-toggle="modal" data-target="#feuilconditModalLong">
+                    Aperçu des Conditions et modalités
+                </button><!-- Feuille des conditions +++++++++++++++++++++-->
+                <div class="modal fade" id="feuilconditModalLong" tabindex="-1" role="dialog" aria-labelledby="feuilconditModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="feuilconditModalLongTitle">Conditions et Modalités de TyWeb services La Conciergerie</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary btn-xs" data-dismiss="modal">Fermer la fenêtre</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="form-group text-center" id="validation_contact">
                     <button name="annuler" id="resetBtn" type="reset" value="reset" class="btn btn-TywebButtonW btn-xs">Annuler</button>
                     <button name="envoyer" id="validateBtn" type="submit" value="submit" class="btn btn-TywebButton btn-xs">Envoyez votre demande</button>
                 </div><!-- fin de <div class="form-group"> +++++++++++++++++++++++++++++++++ -->
-            </div><!-- fin de   <div class="col-sm-5 col-xl-4 someClassgauche"> ++++++++++++++++++++++++++++ -->
-            <!-- BLOC DROITE +++++++++++++++++++++++-->
-            <div class="col-sm-4 col-xl-4 someClassdroite" id="coordonnees"><!-- bloc de droite ++++++++++++++++++++++++++++ -->     
-                <div class="col"><!--+++++++++++++++++++++++++++++++++++++debut du formulaire de contact form partie droite-->
-                    <div class="titleprghp text-center"><!-- ENTETE COORDONNEES +++++++++++++++++++++++-->    
+            </form>
+        </div>
+        <!-- BLOC DROITE +++++++++++++++++++++++-->
+        <div class="col-sm-4 col-xl-4 someClassdroite" id="coordonnees"><!-- bloc de droite ++++++++++++++++++++++++++++ -->     
+            <div class="col"><!--+++++++++++++++++++++++++++++++++++++debut du formulaire de contact form partie droite-->
+                <div class="titleprghp text-center"><!-- ENTETE COORDONNEES +++++++++++++++++++++++-->    
                     <span class="blanc"><h5>Nos coordonnées</h5></span> 
-                    </div>
                 </div>
-                <!--<div class="blochp_contact">++++++++++++++++++++++++++-->
-                <div class="col">
-                    <div class="form-group text-center margeshautetbas">
+            </div>
+            <!--<div class="blochp_contact">++++++++++++++++++++++++++-->
+            <div class="col">
+                <div class="form-group text-center margeshautetbas">
                     <br><h1>Tyweb services</h1> 
-                <!-- <br><h4>16 rue victor Schoelcher +++++++++++++++++++++++++++++++-->
+                    <!-- <br><h4>16 rue victor Schoelcher +++++++++++++++++++++++++++++++-->
                     <h4>
-                    <br>BP
-                    <br>56890 Saint avé
-                    <br>
-                    <br>France-Tél : + 33 6 37 69 34 21
-                    <br>
-                    <br> <a href="mailto:contact@tywebservices.fr" alt="Contact Email Tyweb Services" id="mailtocont">contact@tywebservices.fr</a></h4>
-                    </div>          
-            <!-- la map et coordonnées <form class="form-horizontal" role="form">++++++++++++++++++++++++++++++-->
-                    <div class="embed-responsive embed-responsive-16by9 MgHtBs">
+                        <br>BP
+                        <br>56890 Saint avé
+                        <br>
+                        <br>France-Tél : + 33 6 37 69 34 21
+                        <br>
+                        <br> <a href="mailto:contact@tywebservices.fr" alt="Contact Email Tyweb Services" id="mailtocont">contact@tywebservices.fr</a>
+                    </h4>
+                </div>          
+                <!-- la map et coordonnées <form class="form-horizontal" role="form">++++++++++++++++++++++++++++++-->
+                <div class="embed-responsive embed-responsive-16by9 MgHtBs">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1342.8371519239618!2d-2.739550191633932!3d47.69074484479758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101fb2ce4316e7%3A0x8f4b25780f647313!2sMairie!5e0!3m2!1sfr!2sfr!4v1528793078819" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>    
-                    </div>
-                </div><!-- fin de <div class="col"> +++++++++++++++++++++++++++ -->
-            </div> <!-- fin de <div class="col-sm-4 col-xl-4 someClassdroite" id="coordonnees" BLOC DROITE ++++++++++++++++++++++++++++ -->     
-        </div> <!-- fin de <div class="col-sm-5 col-xl-4 someClassgauche"> BLOC GAUCHE ++++++++++++++++++++++++++++ -->  
+                </div>
+            </div><!-- fin de <div class="col"> +++++++++++++++++++++++++++ -->
+        </div> <!-- fin de <div class="col-sm-4 col-xl-4 someClassdroite" id="coordonnees" BLOC DROITE ++++++++++++++++++++++++++++ -->     
     </div><!--  <div class="col-12 margeshautetbas justify-content-center aligncard" > BLOC GAUCHE + DROITE ++++++++++++++++++++++++++++ -->  
 </div><!-- fin de <div class="row"> formulaire de contact et nos coordonnées BLOC IMAGE DE FOND DANS LA ROW +++++++++++++++++++++++-->    
+
 <?php
     $content = ob_get_clean();
     require('template.php');    

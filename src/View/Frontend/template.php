@@ -62,14 +62,15 @@
                             <!-- Navbar avec fond noir brillant avec classe bg-navbar  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
                             <nav class="navbar navbar-expand-lg navbar-light bg-navbar nav-justified header-nav navbarcenter ghost"> <!-- nav-justified  -->
                                 <div id="menumini">
-                                <button class="navbar-toggler bg-light ml-auto p-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon "></span>
-                                <!--   <span>MENU</span> +++++++++++++++++++++++++++++++ -->
-                                </button>
+                                    <button class="navbar-toggler bg-light ml-auto p-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon "></span>
+                                    <!--   <span>MENU</span> +++++++++++++++++++++++++++++++ -->
+                                    </button>
                                 
-                                <!-- affichage petit logo +++++++++++++++++++++++++++++++ -->
+                                    <!-- affichage petit logo +++++++++++++++++++++++++++++++ -->
                                     <a class="navbar-brand noghost alogo" href="index.php" id="lienptlogo">
-                                    <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-flex align-items-end" id="ptlogo"></a>
+                                        <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-flex align-items-end" id="ptlogo"></img>
+                                    </a>
                                 </div>
                                 <!-- navbar ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
                                 <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
@@ -77,13 +78,15 @@
                                         <!-- affichage logo moyen logo +++++++++++++++++++++++++++++++ -->
                                         <div class="alogoPt" id="tt">
                                             <a class="navbar-brand taille13 ghost" href="index.php" id="lienmoylogo">
-                                            <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-block" id="moylogo"></a>
+                                                <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-block" id="moylogo"></img>
+                                            </a>
                                         </div>      
                                         <!-- affichage logo grand logo +++++++++++++++++++++++++++++++ -->
                                         <div class="Imglogo text-center"> 
                                             <div class="dropdown-divider pasvu" ></div>
                                             <a class="navbar-brand taille13 alogo" href="index.php" id="liengdlogo">
-                                            <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-block" id="gdlogo"></a>
+                                                <img src="src/Public/images/logoTywebServices.jpg" alt="Accueil" class="rounded mx-auto d-block" id="gdlogo">
+                                            </a>
                                         </div>
                                         <li class="nav-item MgHt" id="MnSte">
                                             <div class="dropdown-divider pasvu" ></div>
@@ -98,22 +101,22 @@
                                             <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Rechercher dans toutes nos catégories">Catégories</a>
                                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                 <a class="dropdown-item" href="index.php?action=category&type=all&page=1">Toutes </a>
-                                                    <?php
-                                                        while ($db3 = $thirdRequest->fetch()) {
-                                                            echo '<h3><a class="dropdown-item" href="index.php?action=category&type='.htmlspecialchars($db3['nameCategory']).'&page=1">' . htmlspecialchars($db3['nameCategory']) . '</a></h3>';
-                                                        }
-                                                    ?>
+                                                <?php
+                                                    while ($db3 = $thirdRequest->fetch()) {
+                                                        echo '<h3><a class="dropdown-item" href="index.php?action=category&type='.htmlspecialchars($db3['nameCategory']).'&page=1">' . htmlspecialchars($db3['nameCategory']) . '</a></h3>';
+                                                    }
+                                                ?>
                                             </div>
                                         </li>
                                         <div class="col-md-4 offset-md-1 col-lg-3 col-xl-4 pasmarge MgHt"  id="Mnrech">
                                             <form class="form-inline mr-sm-0 taille13" id="search">
-                                                <input class="form-control mr-sm-0 taille12" type="search" placeholder="Recherche par mot clé" aria-label="Search" title="Recherche par mots clés">
+                                                <input class="form-control mr-sm-0 taille12" type="search" placeholder="Recherche par mot clé" aria-label="Search" title="Recherche par mots clés" />
                                                 <button class="btn btn-outline-secondary my-0 my-sm-0 taille13" type="submit"><i class="fa fa-search"></i></button>
                                             <!-- <button class="btn btn-outline-secondary my-2 my-sm-0 taille13" type="submit">Recherche</button> -->
                                             </form>
                                         </div>                     
                                         <li class="nav-item MgHt" id="MnCont">
-                                        <div class="dropdown-divider pasvu" ></div>
+                                            <div class="dropdown-divider pasvu" ></div>
                                             <a class="nav-link active" href="#contact" title="Contactez-nous">Contact <span class="sr-only">(current)</a>
                                         </li>                       
                                         <li class="nav-item dropdown MgHt8pasmarge" id="Mnconne"> <!-- "style="min-width: 13%;"+++-->
@@ -142,8 +145,8 @@
                                                     }
                                                     else {
                                                         echo '
-                                                        <h3><a class="dropdown-item" href="index.php?action=connection">Connexion</a></h3>
-                                                        <h3><a class="dropdown-item" href="index.php?action=inscription">Nouveau Membre? <pre></pre> Commencez ici</a></h3>
+                                                            <h3><a class="dropdown-item" href="index.php?action=connection">Connexion</a></h3>
+                                                            <h3><a class="dropdown-item" href="index.php?action=inscription">Nouveau Membre? <pre></pre> Commencez ici</a></h3>
                                                         ';
                                                     }
                                                 ?>
@@ -152,8 +155,10 @@
                                     </ul>
                                 </div><!-- fin de la navbar grand modele  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->            
                             </nav><!-- fin de la nav menu grand modele +++++++++++-->
-                </div><!-- fin de la row ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-            </div>  <!-- fin du container ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                        </div>
+                    </div> 
+                </div>
+            </div> 
         </header>
         
         <!-- Content View ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -161,61 +166,60 @@
                                
         <!-- Footer ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->      
         <footer class="row align-items-center justify-content-center polygon-footer flexcontainer" id="footer">
-                        <nav class="navbar navbar-expand-lg navbar-light"> <!-- 1ere ligne footer ++++++++++++++++-->
-                            <div class="collapse navbar-collapse text-center navbarcenter navbarfooter clearfix " id="navbarSupportedContent3">
-                                <ul class="nav nav-tabs card-header-tabs col nav-justified">
-                                    <li class="nav-item">
-                                        <a class="nav-link disabled" href="#up"><span class="fa fa-arrow-circle-up"></span></a>
-                                    </li>
-                                    <div> <!-- pour regrouper les li ++++++++++++++++-->
-                                        <li class="nav-item ">
-                                            <a class="nav-link" href="#"><span class="fa fa-archive"></span> Société</a>
-                                        </li>
-                                        <li class="nav-item ">
-                                            <a class="nav-link" href="#"><span class="fa fa-group"></span> Services</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#"><span class="fa fa-bell"></span> Conciergerie</a>
-                                        </li>
-                                        <li class="nav-item ">
-                                            <a class="nav-link" href="#"><span class="fa fa-tag"></span> Offres</a>
-                                        </li>
-                                        <li class="nav-item ">
-                                            <a class="nav-link" href="#"><span class="fa fa-commenting"></span> Newsroom</a>
-                                        </li>
-                                        <li class="nav-item  ">
-                                            <a class="nav-link" href="#contact"><span class="fa fa-commenting-o"> Contact</a>
-                                        </li> 
-                                    </div>
-                                </ul>
-                            </div>
-                        </nav>
-                        <nav class="navbar navbar-expand-lg navbar-light"> <!-- 2eme ligne footer2 ++++++++++++++++-->
-                            <div class="collapse navbar-collapse text-center navbarcenter navbarfooter2  clearfix" id="navbarSupportedContent4">
-                                <ul class="nav nav-tabs card-header-tabs col nav-justified">
-                                    <li class="nav-item col-sm-3"></li>
-                                    <div> <!-- pour regrouper les li ++++++++++++++++-->
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Plan du site</a> 
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Mentions Légales </a>  
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#"> Politique de confidentialité</a>
-                                        </li>
-                                        <li class="nav-item ">
-                                            <a class="nav-link" href="#">C. G. U. </a>
-                                        </li>
-                                    </div>   
-                                </ul>
-                            </div>
-                        </nav>
-                            <span> <!-- 3eme ligne du footer ++++++++++++++++-->
-                                <pre></pre>
-                                <h4 class="taille12">Copyright &copy; 2018  TyWebServices. Tous droits réservés.</h4>
-                            </span>
-                  
+            <nav class="navbar navbar-expand-lg navbar-light"> <!-- 1ere ligne footer ++++++++++++++++-->
+                <div class="collapse navbar-collapse text-center navbarcenter navbarfooter clearfix " id="navbarSupportedContent3">
+                    <ul class="nav nav-tabs card-header-tabs col nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#up"><span class="fa fa-arrow-circle-up"></span></a>
+                        </li>
+                        <div> <!-- pour regrouper les li ++++++++++++++++-->
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#"><span class="fa fa-archive"></span> Société</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#"><span class="fa fa-group"></span> Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span class="fa fa-bell"></span> Conciergerie</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#"><span class="fa fa-tag"></span> Offres</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#"><span class="fa fa-commenting"></span> Newsroom</a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a class="nav-link" href="#contact"><span class="fa fa-commenting-o"> Contact</a>
+                            </li> 
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light"> <!-- 2eme ligne footer2 ++++++++++++++++-->
+                <div class="collapse navbar-collapse text-center navbarcenter navbarfooter2  clearfix" id="navbarSupportedContent4">
+                    <ul class="nav nav-tabs card-header-tabs col nav-justified">
+                        <li class="nav-item col-sm-3"></li>
+                        <div> <!-- pour regrouper les li ++++++++++++++++-->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Plan du site</a> 
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Mentions Légales </a>  
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Politique de confidentialité</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">C. G. U. </a>
+                            </li>
+                        </div>   
+                    </ul>
+                </div>
+            </nav>
+            <span> <!-- 3eme ligne du footer ++++++++++++++++-->
+                <pre></pre>
+                <h4 class="taille12">Copyright &copy; 2018  TyWebServices. Tous droits réservés.</h4>
+            </span>                  
         </footer>  <!-- fin footer class="row polygon-footer ++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
                             
                              
