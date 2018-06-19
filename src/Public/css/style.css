@@ -256,10 +256,6 @@ h1 {
 .borddtgd{
     border-top-right-radius: 15%;
 }
-/* le formualire de recherche sur une seule ligne++++++++++++++++++++++*/
-form {
-    white-space: nowrap;
-}
 
 /*marge de droite pour la recherche++++++++++++++++++++++*/
 .marge {
@@ -440,9 +436,6 @@ navbar {
 /*contact et votre compte décalé à droite ++++++++++++++++++++++*/
 /*systeme de parallax ++++++++++++++++++++++*/
 .parallax {
-    /* The image used */
-    /*background-image: url("img_parallax.jpg");*/
-
     /* Set a specific height */
     height: auto;
 
@@ -517,11 +510,6 @@ label {
     padding: 0 0 0 20px;
     margin: 20px 0 20px;
 }
-/* fond ecran sous contact+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-#imgfdcont {
-    background-image: url('../images/rempartsvannesGLD.jpg');
-}
-
 /* fond ecran sous introduction+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .imgfdintro{
     background-image: url('../images/mains.jpg');
@@ -553,8 +541,7 @@ label {
 }
 
 .someClassgauche, .someClassdroite {
-    background-color: #FFFFE0;
-   opacity:0.87;
+    background-color: rgba(255, 255, 224, 0.87);
 }
 
 .element {
@@ -573,6 +560,9 @@ input:invalid {
     padding-left: 5px;
  
 }*/
+.contactControl{
+    display: flex;
+}
 
 input:invalid+span:after {
     content: '✖';

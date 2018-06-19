@@ -59,9 +59,9 @@
         elseif(isset($_GET['action']) && isset($_GET['db'])) {
 #AllUser    //Inscription Data Base +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             if($_GET['action'] === 'inscription' && $_GET['db'] === 'ok') {
-                if(isset($_POST['enterpriseCode']) && isset($_POST['lastName']) && isset($_POST['firstName']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['passwordComp']) && isset($_POST['birthDay']) && isset($_POST['birthMonth']) && isset($_POST['birthYear'])) {
+                if(isset($_POST['enterpriseCode']) && isset($_POST['lastName']) && isset($_POST['firstName']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['passwordComp']) && isset($_POST['birthDay']) && isset($_POST['birthMonth']) && isset($_POST['birthYear']) && isset($_POST['checkCondition'])) {
                     if(isset($_POST['checkHuman'])) {
-                        if($_POST['enterpriseCode'] !== '' && $_POST['lastName'] !== '' && $_POST['firstName'] !== '' && $_POST['email'] !== '' && $_POST['password'] !== '' && $_POST['passwordComp'] !== '' && $_POST['checkHuman'] !== '' && $_POST['birthDay'] !== '' && $_POST['birthMonth'] !== '' && $_POST['birthYear'] !== '') {
+                        if($_POST['enterpriseCode'] !== '' && $_POST['lastName'] !== '' && $_POST['firstName'] !== '' && $_POST['email'] !== '' && $_POST['password'] !== '' && $_POST['passwordComp'] !== '' && $_POST['checkHuman'] !== '' && $_POST['birthDay'] !== '' && $_POST['birthMonth'] !== '' && $_POST['birthYear'] !== '' && $_POST['checkCondition'] !== '') {
                             if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {  
                                 if($_POST['password'] === $_POST['passwordComp']) {
                                     $uppercase = preg_match('@[A-Z]@', $_POST['password']);
