@@ -240,7 +240,29 @@
 #UserCo     //Account Management View +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             elseif($_GET['action'] === 'accountManagement') {
                 $userConnectController->accountManagement();
-            }       
+            } 
+#AllUser    //Contact Mail To +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            elseif($_GET['action'] === 'mail') {
+                if(isset($_POST['societe']) && isset($_POST['name']) && isset($_POST['prenom']) && isset($_POST['email']) && isset($_POST['tel']) && isset($_POST['services']) && isset($_POST['message']) && isset($_POST['captcha']) && isset($_POST['agree'])) {
+                    if($_POST['name'] != '' && $_POST['prenom'] != '' && $_POST['email'] != '' && $_POST['services'] != '' && $_POST['message'] != '' && $_POST['captcha'] != '' && $_POST['agree'] != '') {
+                        if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+                            $allUserController->contactMailTo();
+                        }
+                        //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                        else {
+                            throw new Exception('Email non valide');
+                        }
+                    }
+                    //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    else {
+                        throw new Exception('Champ manquant'); 
+                    }
+                }
+                //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                else {
+                    throw new Exception('Variable inattendu');    
+                }   
+            }
             //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             else {
                 throw new Exception('Variable inattendu');    

@@ -182,7 +182,7 @@
                     <span class="col">
                         *Mentions obligatoires
                     </span>
-                    <form action="#" id="inscriptionForm" method="post">
+                    <form action="index.php?action=mail" id="contactForm" method="post">
                         <div class="form-group col">
                             <label for="societe" class="col-sm-2 control-label alignement">Société :</label>
                             <div class="col-sm-11">
@@ -217,7 +217,7 @@
                         <div class="form-group col">
                             <label for="services" class="col-sm-2 control-label alignement">Sélectionnez le thème de votre demandes* :</label>
                             <div class="col-sm-11">
-                                <select class="form-control" required />
+                                <select class="form-control" name="services" id="services" required />
                                     <option value="" disabled selected>Choix</option>
                                     <option>Services Web</option>
                                     <option>Services Conciergerie</option>

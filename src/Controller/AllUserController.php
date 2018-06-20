@@ -236,6 +236,66 @@
                     $allUserController->connection();
                 }
             }
-        }        
+        }
+        
+        //Contact Mail to ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function contactMailTo() {
+            $societe = htmlspecialchars($_POST['societe']);
+            $name = htmlspecialchars($_POST['name']);
+            $prenom = htmlspecialchars($_POST['prenom']);
+            $email = htmlspecialchars($_POST['email']);
+            $tel = htmlspecialchars($_POST['tel']);
+            $services = htmlspecialchars($_POST['services']);
+            $message = htmlspecialchars($_POST['message']);
+
+            // Destinataires
+            $to  = 'fh.lamodiere@gmail.com';
+
+            // Sujet
+            $subject = $services. ' /  ' .$name. ' ' .$prenom;
+            
+            
+
+            // message
+            $messages = '
+            <html>
+                <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <title>'.$services. ' /  ' .$name. ' ' .$prenom.'</title>
+                </head>
+                <body>
+                    <p>
+                        Prise de contact de : '.$name. ' ' .$prenom. '<br /> 
+                        Societé : '.$societe.'<br />
+                        Email : '.$email.'<br />
+                        Tel : ' .$tel. '<br />
+                        <hr>
+                        Sujet : '.$services.'<br />
+                        <hr>
+                        Message : <br />
+                        <br />
+                        '.$message.'
+                        <br />
+                        <br />
+                        <hr>
+                        Attention pour répondre à ce mail cliquez <a href="mailto:'.$email.'"> Ici </a>
+                    </p>
+                </body>
+            </html>
+            ';
+
+            // Pour envoyer un mail HTML, l'en-tête Content-type doit être défini
+            $headers ='From: '.$email." "; 
+            $headers .='Reply-To: '.$email." ";
+            $headers  = 'MIME-Version: 1.0' . "\r\n";
+            $headers .= 'Content-type: text/html; charset="utf-8"' . "\r\n";
+
+            // Envoi
+            mail($to, $subject, $messages, $headers);
+
+            echo '<h3 class="validation">Validation : Votre message est envoyé avec succès ! </h3>';
+            $allUserController= new \Project\Controller\AllUserController();
+            $allUserController->index();
+        }
 
     }
