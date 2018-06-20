@@ -6,20 +6,25 @@
 <div class="row" >
     <div class="alert welcome hauteurclass col-12 someClass parallax imgfdintro" id="up" role="alert">
         <h1 class=" MgHtBs">LA CONCIERGERIE DU WEB</h1>
-        <div class="dropdown-divider Pttrait" ></div>
+        <div class="dropdown-divider Pttrait" >
+        </div>
         <div id="contImgTxt">
-            <div class="element col-xl-11 offset-xl-1">
+            <div class="element col-xl-11 offset-xl-1 fdcolorbgind">
                 <p class="text-justify" >
-                    <h2>Facilitateur de vie et d'envies</h2>
+                    <h2>Facilitateur de vie et d'envies</h2> <br />
                     Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.
                 </p>
             </div>
             <div class="element">
+                <a href="#">
                 <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-fluid img-thumbnail rounded mx-auto d-block">
+                </a>
             </div>
         </div>
         <div class="element1">
+            <a href="#">
             <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-fluid img-thumbnail rounded mx-auto d-block">
+            </a>
         </div>
     </div>
 
@@ -27,7 +32,8 @@
     <div class="col-12 justify-content-center">
         <h1 class="alert-heading blanc MgHtBs">  Nos offres du jour    <i class="fa fa-tags"></i></h1>
     </div>
-    <div class="dropdown-divider Pttraitb" ></div>  
+    <div class="dropdown-divider Pttraitb" >
+    </div>  
     <div class="row justify-content-center">
         <div class="card-deck col-sm-12 col-lg-10" >
             <?php
@@ -79,8 +85,6 @@
         <p class="dropdown-divider PttraitbGd blanc MgHtBs"><i class="fa fa-cogs"></i> Pour Rappel, il faut utiliser la connexion avec votre compte pour pouvoir EDITER le(s) bon(s) de réduction</p>
     </div><!-- fin des visues des offres ++++++++++++++++++++++++++++ -->    
 </div>  <!-- fin de <div class="row" > ++++++++++++++++++++++++++++ -->     
-    
-
 
 <?php
     $content = ob_get_clean();
