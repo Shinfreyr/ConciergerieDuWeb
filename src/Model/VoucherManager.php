@@ -29,7 +29,7 @@
             // Data Base Connection
             $db=$this->dbConnect();
             // Voucher recuperation 
-            $request = $db->prepare('SELECT * FROM vouchers WHERE idAccount=? ORDER BY dateEditionVoucher DESC');
+            $request = $db->prepare('SELECT * FROM vouchers INNER JOIN articles ON vouchers.idArticle = articles.idArticle WHERE vouchers.idAccount=? ORDER BY vouchers.dateEditionVoucher DESC');
             $request -> execute(array($idAccount));
 
             return $request;
