@@ -30,6 +30,7 @@ body {
     background-color: #1c1918;
     color:#1c1918;
     font-family: "Roboto", sans-serif;
+   /* font-family: Gotham A, Gotham B, sans-serif;*/      
     height:auto;
     margin:0; 
     padding:0; 
@@ -55,6 +56,11 @@ body {
 .couleursousmenu {
     background-color: #1c1918;
     width: 100%;
+}
+
+/* couleur de fond sous titre indexview ++++++++++++++++++++++++++++++*/
+.fdcolorbgind {
+    background-color:rgba(255, 255, 255, 0.5);
 }
 
 /*couleur de police foncee++++++++++++++++++++++*/
@@ -105,6 +111,7 @@ ul {
 small {
     color:goldenrod;
 }
+
 /*taille de l'image arriere plan dans la view indexview+++++++++++++++++++++++++++++*/
 .someClass { 
     background: url(../images/mains.jpg) no-repeat center center /*fixed*/; 
@@ -202,6 +209,7 @@ nav ul li a {
 h1 {
     text-align: center;
     font-size: 1.875em;
+    text-transform: uppercase;
 }
 
 /* petit trait souos titre +++++++++++++++++++++++++++++++++++++++++++*/
@@ -477,9 +485,19 @@ navbar {
 
 .element1 {
     display:none;
+    overflow: hidden;
 }
-
-/*effets sur la carte vip++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* effet zoom sur image vip+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.zoom div .element1, .element, img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom div .element1, .element:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
 
 /*alignement des cards +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*formulaire de contact +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -660,6 +678,32 @@ input:valid+span:after {
     display: flex;
     flex-wrap: wrap;
 }
+
+
+/*page inscription ++++++++++++++++++++++++++++++++++++++++++*/
+/*validation des champs ++++++++++++++++++++++++++++++++++++++++++*/
+.error {
+    color:black;
+    background-color:red;
+    font-weight: bold;
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+    align-content: center;
+    font-size: 1.375em;
+}
+
+.validation {
+    color:black;
+    background-color: green;
+    font-weight: bold;
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+    align-content: center;
+    font-size: 1.375em;
+}
+
 /*debut du test ++++++++++++++++++++++++++++++++++++++++++*/
 .test{
     display: flex;
@@ -678,12 +722,12 @@ input:valid+span:after {
 body ++++++++++++++++++++++++++ */
 @media (min-width: 1046px) {
 body {
-        background-color: #1c1918;
-        font-family: "Roboto", sans-serif;
-        height:auto;
-        font-size: 1em;
-        margin:0;
-        margin:0;
+    background-color: #1c1918;
+    font-family: "Roboto", sans-serif;
+    height:auto;
+    font-size: 1em;
+    margin:0;
+    margin:0;
 }
 
 .row {
@@ -740,12 +784,12 @@ h3 {
 /*affichage ecran @media (min-width: 992px) and (max-width: 1046px)+++++++++++++++++++++++++++++ */
 @media (min-width: 992px) and (max-width: 1046px) {
 body {
-        background-color: #1c1918;
-        font-family: "Roboto", sans-serif;
-        height:auto;
-        font-size: 0.938em;
-        margin:0;
-        margin:0;
+    background-color: #1c1918;
+    font-family: "Roboto", sans-serif;
+    height:auto;
+    font-size: 0.938em;
+    margin:0;
+    margin:0;
 }
 
 .row {
@@ -1190,12 +1234,12 @@ a:hover {
 
 @media screen and (max-width:768px){
 body {
-        background-color: #1c1918;
-        font-family: "Roboto", sans-serif;
-        height:auto;
-        font-size: 1.063em;
-        margin:0; 
-        padding:0; 
+    background-color: #1c1918;
+    font-family: "Roboto", sans-serif;
+    height:auto;
+    font-size: 1.063em;
+    margin:0; 
+    padding:0; 
 }
 
 .row {

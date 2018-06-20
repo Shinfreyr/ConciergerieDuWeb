@@ -16,11 +16,15 @@
                 <br /><i class="fa fa-cogs"></i> Attention ! Vous devez être en possession d'un code Entreprise pour vous inscrire.</h3></p>
             </div>
             <div class="element">
+                <a href="#">
                 <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-thumbnail rounded mx-auto d-block" alt="Carte VIP membre Conciergerie du web">
+                </a>
             </div>     
         </div>
     <div class="element1">
+        <a href="#">
         <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-thumbnail rounded mx-auto d-block" alt="Carte VIP membre Conciergerie du web">
+        </a>
     </div>     
 </div>
 <!-- Inscription Forms ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -77,6 +81,17 @@
             </div>  
         </form>
     </div>
+<!--
+    <div class="col-sm-10 col-12 text-justify fdcolorbgind">
+        <p class="text-justify" >
+            <h2>Infos </h2> <br />
+            Lors de votre inscription un message en haut de votre écran apparait, voici des infos concernant le message :
+            <span>Message <strong>"Erreur : Variable inattendu"</h3>"</strong> : signifie qu'il manque une information lors de votre saisie</span>
+            <br />
+            <span>Message <strong>"Erreur : "</h3>"</strong> : signifie que</span>
+            <br />
+        </p>
+    </div> ++++++++++++++++-->
 </div>
 <?php
     $content = ob_get_clean();
