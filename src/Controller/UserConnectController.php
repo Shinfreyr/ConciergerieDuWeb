@@ -171,6 +171,34 @@
 
             require('src/View/frontend/voucherDL.php');
         }
+
+        //All Account Voucher View ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function allAccountVoucher() {
+            $idAccount = htmlspecialchars($_SESSION['conciergerieDuWebId']);
+            $date = date("Y-m-d");
+
+            $categoryManager = new \Project\Model\CategoryManager();
+            $thirdRequest = $categoryManager->categoryRequest();
+
+            $voucherManager = new \Project\Model\VoucherManager();
+            $request = $voucherManager->allVoucher($idAccount);
+
+            while ($db1 = $request->fetch()) {
+                //Destroy Voucher None-Validate 
+                if ($db1['dateVoucher'] < $date) {
+                    $idVoucher = htmlspecialchars($db1['idVoucher']);
+
+                    $voucherManager = new \Project\Model\VoucherManager();
+                    $voucherManager->supressVoucher($idVoucher);
+                }
+            }
+
+            $voucherManager = new \Project\Model\VoucherManager();
+            $request = $voucherManager->allVoucher($idAccount);
+
+            require('src/View/frontend/allAccountVoucherView.php');
+        }
+
         //Deconnection Session ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function deconnectionSession() {
             session_destroy();

@@ -257,6 +257,11 @@ h1 {
     border-top-right-radius: 15%;
 }
 
+/*Cartes des bons de réductions++++++++++++++++++++++++++*/
+.voucherCard {
+    margin:10px !important;
+}
+
 /*marge de droite pour la recherche++++++++++++++++++++++*/
 .marge {
     padding-right:40px;

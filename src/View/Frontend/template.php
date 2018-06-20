@@ -142,6 +142,7 @@
                                                 <?php    
                                                     if(isset($_SESSION['conciergerieDuWebId'])) {
                                                         echo '<h3><a class="dropdown-item" href="index.php?action=accountManagement">Modifier le compte</a></h3>';
+                                                        echo '<h3><a class="dropdown-item" href="index.php?action=allAccountVoucher">Mes bon de réduction</a></h3>';
                                                         echo '<hr>';
                                                         echo '<h3><a class="dropdown-item" href="index.php?action=deconnection&session=ok">Déconnexion</a></h3>';
                                                     }
