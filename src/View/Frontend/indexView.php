@@ -17,13 +17,13 @@
             </div>
             <div class="element">
                 <a href="#">
-                <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-fluid img-thumbnail rounded mx-auto d-block">
+                    <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-fluid img-thumbnail rounded mx-auto d-block">
                 </a>
             </div>
         </div>
         <div class="element1">
             <a href="#">
-            <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-fluid img-thumbnail rounded mx-auto d-block">
+                <img src="src/Public/images/cartevip.png" alt="Accès membre VIP la conciergerie du web" class="img-fluid img-thumbnail rounded mx-auto d-block">
             </a>
         </div>
     </div>
