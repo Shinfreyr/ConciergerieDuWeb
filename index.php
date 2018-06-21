@@ -227,6 +227,17 @@
                 throw new Exception('Variable inattendu');    
             }          
         }
+        //Control GET Action & idVoucher ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        elseif(isset($_GET['action']) && isset($_GET['idVoucher'])) {
+#UserCo     //Supress Target Voucher ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            if($_GET['action'] === 'supressVoucher' && $_GET['idVoucher'] !== '') {
+                $userConnectController->supressTargetVoucher();
+            }
+            //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            else {
+                throw new Exception('Variable inattendu');    
+            }  
+        }
         //Control GET Action ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         elseif(isset($_GET['action'])) {
 #AllUser    //Inscription View ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++            

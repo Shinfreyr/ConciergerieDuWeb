@@ -270,6 +270,23 @@ h1 {
     margin:10px !important;
 }
 
+.targetVoucher{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.targetVoucher h4 {
+    width: 60%;
+}
+
+.imgAllVoucher {
+    width:20em;
+}
+
+.targetVoucher p,.targetVoucher hr,.targetVoucher article {
+    width: 100%;
+}
+
 /*marge de droite pour la recherche++++++++++++++++++++++*/
 .marge {
     padding-right:40px;

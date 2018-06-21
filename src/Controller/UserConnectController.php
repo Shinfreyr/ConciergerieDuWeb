@@ -199,6 +199,17 @@
             require('src/View/frontend/allAccountVoucherView.php');
         }
 
+        //Supress Target Voucher ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function supressTargetVoucher() {
+            $idVoucher = htmlspecialchars($_GET['idVoucher']);
+
+            $voucherManager = new \Project\Model\VoucherManager();
+            $voucherManager->supressVoucher($idVoucher);
+
+            $userConnectController = new \Project\Controller\UserConnectController();
+            $userConnectController->allAccountVoucher();
+        }
+
         //Deconnection Session ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function deconnectionSession() {
             session_destroy();

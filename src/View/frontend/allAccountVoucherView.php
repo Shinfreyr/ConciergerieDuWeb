@@ -9,14 +9,17 @@
                 while ($db1 = $request->fetch()) {
                     echo '
                         <div class="card border-primary voucherCard">
-                            <div class="card-body">
+                            <div class="card-body targetVoucher">
                                 <h4 class="card-title">'.htmlspecialchars($db1['nomArticle']).'</h4>
-                                <p class="card-text">'
-                                    .htmlspecialchars($db1['reductionPriceArticle']).'&euro;
+                                <img class="imgAllVoucher" src="src/Public/images/'.htmlspecialchars($db1['imageArticle']).'" alt="Image de l\'article">
+                                <p class="card-text">
+                                    Prix avec Réduction: '.htmlspecialchars($db1['reductionPriceArticle']).'&euro;
                                     <hr>
-                                    Date de fin de validité : '.htmlspecialchars($db1['dateVoucher']).
-                                    '<a href="index.php?action=supressVoucher&idVoucher='.htmlspecialchars($db1['idVoucher']).'" class="btn btn-danger float-right voucher">Supprimer</a>
-                                    <a href="index.php?action=voucher&idArticle='.htmlspecialchars($db1['idArticle']).'&endDate='.htmlspecialchars($db1['endDateArticle']).'" class="btn btn-success float-right voucher">Voir le Bon</a>
+                                    <article>
+                                        Date de fin de validité : '.htmlspecialchars($db1['dateVoucher']).
+                                        '<a href="index.php?action=supressVoucher&idVoucher='.htmlspecialchars($db1['idVoucher']).'" class="btn btn-danger float-right voucher">Supprimer</a>
+                                        <a href="index.php?action=voucher&idArticle='.htmlspecialchars($db1['idArticle']).'&endDate='.htmlspecialchars($db1['endDateArticle']).'" class="btn btn-success float-right voucher">Voir le Bon</a>
+                                    </article>
                                 </p>                
                             </div>
                         </div>
