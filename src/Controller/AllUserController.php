@@ -115,6 +115,14 @@
             require('src/View/frontend/articleTargetView.php');
         }
 
+        //Help VIP View +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function helpVIP() {
+            $categoryManager = new \Project\Model\CategoryManager();
+            $thirdRequest = $categoryManager->categoryRequest();
+
+            require('src/View/frontend/helpVipView.php');
+        }
+
         //Inscription Data Base +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function inscriptionDb() {
             $enterpriseCode = htmlspecialchars($_POST['enterpriseCode']);
