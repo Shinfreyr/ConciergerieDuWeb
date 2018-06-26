@@ -238,7 +238,7 @@
                         <div class="form-group col">
                             <label class="Ptpolice">Confirmez nous que vous n'êtes pas un robot svp *</label>
                             <div class="col-sm-4">
-                                <label class="col-sm-3 control-label" id="captchaOperation">*</label>
+                                <label class="col-sm-3 control-label" id="captchaOperation">Ecrivez le mot "oui"</label>
                                 <input type="text" class="form-control" name="captcha" required />
                             </div>
                         </div>
