@@ -2,7 +2,6 @@ $(document).ready(function() {
     function randomNumber(min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min);
     };
-    $('#captchaOperation').html([randomNumber(1, 10), '+', randomNumber(1, 10), '='].join(' '));
 
     $('#defaultForm').formValidation({
         message: 'This value is not valid',
@@ -62,12 +61,8 @@ $(document).ready(function() {
             },
             captcha: {
                 validators: {
-                    callback: {
-                        message: 'Wrong answer',
-                        callback: function(value, validator) {
-                            var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
-                            return value == sum;
-                        }
+                    notEmpty: {
+                        message: 'Vous devez choisir un service svp'
                     }
                 }
             },

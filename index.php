@@ -260,12 +260,19 @@
             elseif($_GET['action'] === 'mail') {
                 if(isset($_POST['societe']) && isset($_POST['name']) && isset($_POST['prenom']) && isset($_POST['email']) && isset($_POST['tel']) && isset($_POST['services']) && isset($_POST['message']) && isset($_POST['captcha']) && isset($_POST['agree'])) {
                     if($_POST['name'] != '' && $_POST['prenom'] != '' && $_POST['email'] != '' && $_POST['services'] != '' && $_POST['message'] != '' && $_POST['captcha'] != '' && $_POST['agree'] != '') {
-                        if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-                            $allUserController->contactMailTo();
+                        $reponse = preg_match('@oui@i', $_POST['captcha']);
+                        if($reponse) {
+                            if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+                                $allUserController->contactMailTo();
+                            }
+                            //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                            else {
+                                throw new Exception('Email non valide');
+                            }
                         }
                         //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                         else {
-                            throw new Exception('Email non valide');
+                            throw new Exception('Capcha non valide');
                         }
                     }
                     //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -278,12 +285,15 @@
                     throw new Exception('Variable inattendu');    
                 }   
             }
+#AllUser //Help VIP +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            elseif($_GET['action'] == 'helpVIP') {
+                $allUserController->helpVip();
+            }
             //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             else {
                 throw new Exception('Variable inattendu');    
             }
         }
-
         else {
 #AllUser    //Index View ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++        
             $allUserController->index();
