@@ -60,16 +60,34 @@ body {
 
 /* couleur de fond sous titre indexview ++++++++++++++++++++++++++++++*/
 .fdcolorbgind {
-    background-color:rgba(255, 255, 255, 0.5);
+   /* background-color:rgba(255, 255, 255, 0.5); */
+    background-color: #1c1918;
+    opacity: 0.84;
+    color:#ffffe0; 
+    font-family: Gotham A, Gotham B, sans-serif;
 }
 
 /*couleur de police foncee++++++++++++++++++++++*/
 .colorfontD {
     color:#1c1918;
+    font-size: 3.125em;
+    font-weight: 800;
+    vertical-align: baseline;
+    font-family: 'Comfortaa', cursive;
 }
+.shadowfd {
+    padding: 26px;
+    border: 1px solid #1c1918;
+    background: #1c1918;
+    color: #ffffe0;
+    box-shadow: 0 0 0 16px #1c1918 inset,
+                0 0 0 17px #DAD4D4 inset;
+}
+/* fond du titre +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .colorbgrdtitre{
     background-color: #ffffe0;
     text-align: center;
+    font-size: 1.875em;
 }
 /*couleur de texte blanc+++++++++++++++++++++++++++++++++++++++++++++++*/
 .blanc {
@@ -216,7 +234,7 @@ h1 {
 .Pttrait {
     width:30%;
     border-color:#000000;
-    border-top-width:1px;
+    border-top-width:3px;
     margin-left: auto;
     margin-right: auto;
     margin-top:0;
@@ -228,7 +246,7 @@ h1 {
 .Pttraitb {
     width:50%;
     border-color:#fff;
-    border-top-width:1px;
+    border-top-width:2px;
     margin-left: auto;
     margin-right: auto;
     margin-top:0;
