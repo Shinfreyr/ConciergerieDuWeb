@@ -306,4 +306,17 @@
             $allUserController->index();
         }
 
+        //Search Bar +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function search() {
+            $search = htmlspecialchars($_POST['search']);
+
+            $categoryManager = new \Project\Model\CategoryManager();
+            $thirdRequest = $categoryManager->categoryRequest();
+
+            $articleManager = new \Project\Model\ArticleManager();
+            $request = $articleManager->searchBd($search);
+
+            require('src/View/frontend/searchView.php');
+        }
+
     }

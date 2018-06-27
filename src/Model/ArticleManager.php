@@ -149,12 +149,23 @@
         }
 
         //Article Voucher Second Request ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        Function secondArticleVoucherRequest($idArticle,$codeVoucher) {
+        function secondArticleVoucherRequest($idArticle,$codeVoucher) {
             // Data Base Connection
             $db=$this->dbConnect();
             // Article recuperation 
             $request = $db->prepare('SELECT * FROM articles INNER JOIN vouchers ON articles.idArticle=vouchers.idArticle WHERE articles.idArticle=? AND vouchers.codeVoucher=?');
             $request -> execute(array($idArticle,$codeVoucher));
+
+            return $request;
+        }
+
+        //Article Search Request ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function searchBd($search) {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article recuperation 
+            $request = $db->prepare('SELECT * FROM articles WHERE nomArticle LIKE ? OR descriptionArticle LIKE ?');
+            $request -> execute(array('%'.$search.'%','%'.$search.'%'));
 
             return $request;
         }

@@ -113,9 +113,9 @@
                                             </div>
                                         </li>
                                         <div class="col-md-4 offset-md-1 col-lg-3 col-xl-4 pasmarge MgHt"  id="Mnrech">
-                                            <form class="form-inline mr-sm-0 taille13" id="search">
-                                                <input class="form-control mr-sm-0 taille12" type="search" placeholder="Recherche par mot clé" aria-label="Search" title="Recherche par mots clés" />
-                                                <button class="btn btn-outline-secondary my-0 my-sm-0 taille13" type="submit"><i class="fa fa-search"></i></button>
+                                            <form action="index.php?action=search" method="post" class="form-inline mr-sm-0 taille13" id="search">
+                                                <input class="form-control mr-sm-0 taille12" type="search" placeholder="Recherche par mot clé" name="search" aria-label="Search" title="Recherche par mots clés" />
+                                                <button name="envoyer" id="validateBtn" type="submit" value="submit" class="btn btn-outline-secondary my-0 my-sm-0 taille13"><i class="fa fa-search"></i></button>
                                             <!-- <button class="btn btn-outline-secondary my-2 my-sm-0 taille13" type="submit">Recherche</button> -->
                                             </form>
                                         </div>                     
