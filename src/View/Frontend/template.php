@@ -92,15 +92,15 @@
                                         </div>
                                         <li class="nav-item MgHt" id="MnSte">
                                             <div class="dropdown-divider pasvu" ></div>
-                                            <a class="nav-link active" href="#" title="Qui sommes nous?">Société <span class="sr-only">(current)</a>
+                                            <a class="nav-link active" href="#" title="Qui sommes nous?">SOCIETE <span class="sr-only">(current)</a>
                                         </li>
                                         <li class="nav-item active MgHt" id="Mnoffre">
                                             <div class="dropdown-divider pasvu" ></div>
-                                            <a class="nav-link" href="index.php" title="Offres du Jour">Offres <span class="sr-only"></a>
+                                            <a class="nav-link" href="index.php" title="Offres du Jour">OFFRES <span class="sr-only"></a>
                                         </li>
                                         <li class="nav-item dropdown MgHt" id="Mncat"> <!--  style="min-width: 10%;"+++++++++++++++-->
                                             <div class="dropdown-divider pasvu"></div>
-                                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Rechercher dans toutes nos catégories">Catégories</a>
+                                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Rechercher dans toutes nos catégories">CATEGORIES</a>
                                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                 <h3>
                                                     <a class="dropdown-item" href="index.php?action=category&type=all&page=1">Toutes </a>
@@ -121,7 +121,7 @@
                                         </div>                     
                                         <li class="nav-item MgHt" id="MnCont">
                                             <div class="dropdown-divider pasvu" ></div>
-                                            <a class="nav-link active" href="#contact" title="Contactez-nous">Contact <span class="sr-only">(current)</a>
+                                            <a class="nav-link active" href="#contact" title="Contactez-nous">CONTACT <span class="sr-only">(current)</a>
                                         </li>                       
                                         <li class="nav-item dropdown MgHt8pasmarge" id="Mnconne"> <!-- "style="min-width: 13%;"+++-->
                                             <?php
@@ -133,10 +133,10 @@
                                             <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <?php
                                                     if(isset($_SESSION['conciergerieDuWebId'])) {
-                                                        echo 'Votre Compte';
+                                                        echo 'VOTRE COMPTE';
                                                     }
                                                     else {
-                                                        echo '<h3>Bonjour, Identifiez-vous <pre></pre></h3> <h4> Votre Compte </h4>';
+                                                        echo '<h3>Bonjour, Identifiez-vous <pre></pre></h3> <h4> VOTRE COMPTE </h4>';
                                                     }
                                                 ?>
                                             </a>
@@ -237,42 +237,45 @@
                             </div>
                             <div class="help-block with-errors"></div>
                         </div>
-                        <div class="form-group col">
-                            <label class="Ptpolice">Confirmez nous que vous n'êtes pas un robot svp *</label>
-                            <div class="col-sm-4">
+                        <div class="form-group row cadrecont">
+                            <div class="col-sm-6">
+                                <label>Confirmez nous que vous n'êtes pas un robot svp :</label>
+                            </div>
+                            <div class="col-sm-6">
                                 <label class="col-sm-3 control-label" id="captchaOperation">Ecrivez le mot "oui"</label>
                                 <input type="text" class="form-control" name="captcha" required />
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <div class="checkbox col-sm-11 alignement Ptpolice Ptpolice">
+                        <div class="form-group row cadrecont">
+                            <div class="checkbox col-sm-11 alignement">
                                 <label for="RGPD">
-                                    <input type="checkbox" name="agree" value="agree" required /> J'accepte les termes et les conditions*
+                                    <input type="checkbox" name="agree" value="agree" required /> J'accepte les termes et conditions
                                 </label>
-                            </div><!-- fin de div class="checkbox col-sm-11 alignement Ptpolice Ptpolice" +++++++++++++++++++++++++++++++++++ -->
-                        </div> <!-- fin de div class="form-group row" +++++++++++++++++++++++++++++++++++ -->
-                        <!-- Button fenêtre aperçu des conditions /* Bouton qui ouvre une fenêtre modale */ ++++++++++++++++++++-->
-                        <button type="button" class="btn btn-outline-secondary my-2 my-sm-0 taille13" data-toggle="modal" data-target="#feuilconditModalLong">
-                            Aperçu des Conditions et modalités
-                        </button><!-- Feuille des conditions +++++++++++++++++++++-->
-                        <div class="modal fade" id="feuilconditModalLong" tabindex="-1" role="dialog" aria-labelledby="feuilconditModalLongTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="feuilconditModalLongTitle">Conditions et Modalités</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem quaerat ipsa pariatur aperiam ab laboriosam et numquam minima nulla, nihil molestiae, nisi dolorem modi reiciendis quas voluptate, neque laborum debitis!
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary btn-xs" data-dismiss="modal">Fermer la fenêtre</button>
+                            <!-- Button fenêtre aperçu des conditions /* Bouton qui ouvre une fenêtre modale */ ++++++++++++++++++++-->
+                            <button type="button" class="btn btn-outline-secondary my-2 my-sm-0 Ptpolice" data-toggle="modal" data-target="#feuilconditModalLong">
+                                Aperçu des conditions
+                            </button><!-- Feuille des conditions +++++++++++++++++++++-->
+                            <div class="modal fade" id="feuilconditModalLong" tabindex="-1" role="dialog" aria-labelledby="feuilconditModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="feuilconditModalLongTitle">Conditions et Modalités</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem quaerat ipsa pariatur aperiam ab laboriosam et numquam minima nulla, nihil molestiae, nisi dolorem modi reiciendis quas voluptate, neque laborum debitis!
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary btn-xs" data-dismiss="modal">Fermer la fenêtre</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> <!-- fin de div class="form-group row" +++++++++++++++++++++++++++++++++++ -->
+                        </div><!-- fin de div class="checkbox col-sm-11 alignement Ptpolice Ptpolice" +++++++++++++++++++++++++++++++++++ -->
+                           
                         <div class="form-group text-center" id="validation_contact">
                             <button name="annuler" id="resetBtn" type="reset" value="reset" class="btn btn-TywebButtonW btn-xs">Annuler</button>
                             <button name="envoyer" id="validateBtn" type="submit" value="submit" class="btn btn-TywebButton btn-xs">Envoyez votre demande</button>

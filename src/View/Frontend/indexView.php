@@ -5,9 +5,11 @@
 <!-- Welcome message +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <div class="row" >
     <div class="alert welcome hauteurclass col-12 someClass parallax imgfdintro" id="up" role="alert">
-        <h1 class="MgHtBs colorfontD">LA CONCIERGERIE DU WEB</h1>
-        <div class="dropdown-divider Pttrait" >
-        </div>
+        <span>
+            <h1 class="MgHtBs colorfontD">LA CONCIERGERIE DU WEB</h1>
+            <div class="dropdown-divider Pttrait" >
+            </div>
+        </span>
         <div id="contImgTxt">
             <div class="element col-xl-11 offset-xl-1 shadowfd">
                 <p class="text-justify">
