@@ -6,7 +6,7 @@
     <div class="card-header">
         <img class="card-img-top" src="src/Public/images/defautLogo.jpg" alt="Card image cap">
     </div>
-    <div class="card-body">
+    <div class="card-body cadrecardcnt">
         <h5 class="card-title">Carte VIP</h5>
         <h6>La conciergerie du Web</h6>
         <p class="card-text"><?= htmlspecialchars($result['societyNameSeller']) ?></p>

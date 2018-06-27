@@ -10,10 +10,13 @@
     <h1 class=" MgHtBs">Inscription à la Conciergerie du WEB</h1>
     <div class="dropdown-divider Pttraitb" ></div>
         <div id="contImgTxt">
-            <div class="element col-xl-11 offset-xl-1">
+            <div class="element col-xl-11 offset-xl-1 shadowfd ">
+            <blockquote class="fdcolorbgind">
+                    <h2>Informations Inscription</h2> <br />
                 <p class="mb-0"><h4>Dans le cadre de la nouvelle Réglementation Générale sur la Protection des Données, nous vous informons que toutes vos informations enregistrées sur notre site, resteront confidentielles et pouront être supprimées à tout moment par vos soins. </h4></p>
                 <p class="mb-0">Modalité d'inscription:<br /> Vous devez vous munir de..............Et quia Montius inter dilancinantium manus spiritum efflaturus Epigonum et Eusebium nec professionem nec dignitatem ostendens aliquotiens increpabat, qui sint hi magna quaerebatur industria, et nequid intepesceret, Epigonus e Lycia philosophus ducitur et Eusebius ab Emissa Pittacas cognomento, concitatus orator, cum quaestor non hos sed tribunos fabricarum insimulasset promittentes armorum si novas res agitari conperissent.<br />Et quia Montius inter dilancinantium manus spiritum efflaturus Epigonum et Eusebium nec professionem nec dignitatem ostendens aliquotiens increpabat, qui sint hi magna quaerebatur industria, et nequid intepesceret, Epigonus e Lycia philosophus ducitur et Eusebius ab Emissa Pittacas cognomento, concitatus orator, cum quaestor non hos sed tribunos fabricarum insimulasset promittentes armorum si novas res agitari conperissent.<h3>
                 <br /><i class="fa fa-cogs"></i> Attention ! Vous devez être en possession d'un code Entreprise pour vous inscrire.</h3></p>
+            </blockquote>
             </div>
             <div class="element">
                 <a href="#">

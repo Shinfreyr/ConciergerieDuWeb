@@ -80,7 +80,7 @@ body {
 /*couleur de police foncee++++++++++++++++++++++*/
 .colorfontD {
     font-size: 3.125em;
-    font-weight: 800;
+    font-weight: 500;
     font-family: 'Comfortaa', cursive;
     text-shadow:  0 0 0.2em #DAD4D4;
     background-color: rgba(0,0,0,0.90);
@@ -91,6 +91,28 @@ body {
     margin: 60px;
     border: 1px solid #1c1918;
 }
+.colorfontA {
+    color: #ffffe0;
+    padding: 0px;
+    margin: 0px;
+    text-shadow: none;
+}
+.ptpolh1{
+    font-size: 0.875em;
+}
+dd{
+    font-size: 0.875em;
+    font-family: Gotham A, Gotham B, sans-serif;
+    text-align: justify;
+}
+.taillegd{
+   font-size: 1.975em;
+   font-family: Gotham A, Gotham B, sans-serif;
+}
+.taillemoy{
+    font-size: 1em;
+    font-family: Gotham A, Gotham B, sans-serif;
+ }
 .shadowfd {
     padding: 26px;
     border: 1px solid #1c1918;

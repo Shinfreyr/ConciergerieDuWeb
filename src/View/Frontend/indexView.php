@@ -13,10 +13,12 @@
         <div id="contImgTxt">
             <div class="element col-xl-11 offset-xl-1 shadowfd">
                 <p class="text-justify">
-                <blockquote class="fdcolorbgind">
-                    <h2>Facilitateur de vie et d'envies</h2> <br />
-                    Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. 
+                <blockquote class="fdcolorbgind blockquote">
+                <dl class="colorfontA display-8">
+                    <dt class="taillegd">Facilitateur de vie et d'envies</dt> <br />
+                    <dd class="taillemoy">Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. 
                     <br /><br />Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.Novitates autem si spem adferunt, ut tamquam in herbis non fallacibus fructus appareat, non sunt illae quidem repudiandae, vetustas tamen suo loco conservanda; maxima est enim vis vetustatis et consuetudinis. <br /> Quin in ipso equo, cuius modo feci mentionem, si nulla res impediat, nemo est, quin eo, quo consuevit, libentius utatur quam intractato et novo. Nec vero in hoc quod est animal, sed in iis etiam quae sunt inanima, consuetudo valet, cum locis ipsis delectemur, montuosis etiam et silvestribus, in quibus diutius commorati sumus.
+                    </dd>
                 </blockquote>
                 </p>
             </div>
@@ -56,7 +58,7 @@
                             </div>
                             <div class="card-footer">
                                 <a href="index.php?action=offre&idOffre='.htmlspecialchars($db1['idArticle']).'" class="btn btn-TywebButton btn-lg btn-block">Voir l\'article <i class="fa fa-search vuebutton"></i></a>
-                                <p>*fin de la promotion : '.htmlspecialchars($db1['endDateArticle']).'</p>
+                                <p class="text-danger MgHt">*fin de la promotion : '.htmlspecialchars($db1['endDateArticle']).'</p>
                             </div>
                         </div>';
                 }
@@ -80,7 +82,7 @@
                             </div>
                             <div class="card-footer">
                                 <a href="index.php?action=offre&idOffre='.htmlspecialchars($db2['idArticle']).'" class="btn btn-TywebButton btn-lg btn-block">Voir l\'article <i class="fa fa-search vuebutton"></i></a>
-                                <p>*fin de la promotion : '.htmlspecialchars($db2['endDateArticle']).'</p>
+                                <p class="text-danger MgHt">*fin de la promotion : '.htmlspecialchars($db2['endDateArticle']).'</p>
                             </div>
                         </div>';
                 }
