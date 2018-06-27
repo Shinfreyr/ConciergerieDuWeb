@@ -6,8 +6,8 @@
 <?php
     while($db1=$request->fetch()) {
         echo '
-            <div class="card col-10">
-                <div class="card-body">
+            <div class="card col-10 cadrecard">
+                <div class="card-body cadrecardcnt">
                     <h2 class="card-title">'.htmlspecialchars($db1['nomArticle']).'</h2>
                     <p class="card-text">'.htmlspecialchars($db1['descriptionArticle']).'</p>
                     <hr>
@@ -18,7 +18,7 @@
                 </div>
                 <div class="card-footer">
                     <a href="index.php?action=offre&idOffre='.htmlspecialchars($db1['idArticle']).'" class="btn btn-TywebButton btn-lg btn-block">Voir l\'article <i class="fa fa-search vuebutton"></i></a>
-                    <p>*fin de la promotion : '.htmlspecialchars($db1['endDateArticle']).'</p>
+                    <p class="text-danger">*fin de la promotion : '.htmlspecialchars($db1['endDateArticle']).'</p>
                 </div>
             </div>
         ';

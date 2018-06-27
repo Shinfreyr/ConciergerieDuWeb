@@ -218,7 +218,7 @@
                             </div>
                         </div>
                         <div class="form-group col">
-                            <label for="services" class="col-sm-2 control-label alignement">Sélectionnez le thème de votre demande :</label>
+                            <label for="services" class="col-sm-2 control-label alignement">Sélectionnez le thème de votre demande</label>
                             <div class="col-sm-11">
                                 <select class="form-control" name="services" id="services" required />
                                     <option value="" disabled selected>Choix</option>
@@ -239,22 +239,25 @@
                         </div>
                         <div class="form-group row cadrecont">
                             <div class="col-sm-6">
-                                <label>Confirmez nous que vous n'êtes pas un robot svp :</label>
+                                <label>Confirmez nous que vous n'êtes pas un robot svp </label>
                             </div>
                             <div class="col-sm-6">
-                                <label class="col-sm-3 control-label" id="captchaOperation">Ecrivez le mot "oui"</label>
+                                <label class="control-label" id="captchaOperation">Ecrivez le mot "oui"</label>
                                 <input type="text" class="form-control" name="captcha" required />
                             </div>
                         </div>
                         <div class="form-group row cadrecont">
-                            <div class="checkbox col-sm-11 alignement">
+                           <div class="col-sm-6">
                                 <label for="RGPD">
                                     <input type="checkbox" name="agree" value="agree" required /> J'accepte les termes et conditions
                                 </label>
+                            </div>
+                            <div class="col-sm-6">
                             <!-- Button fenêtre aperçu des conditions /* Bouton qui ouvre une fenêtre modale */ ++++++++++++++++++++-->
-                            <button type="button" class="btn btn-outline-secondary my-2 my-sm-0 Ptpolice" data-toggle="modal" data-target="#feuilconditModalLong">
+                            <button type="button" class="btn btn-outline-secondary Ptpolice" data-toggle="modal" data-target="#feuilconditModalLong">
                                 Aperçu des conditions
                             </button><!-- Feuille des conditions +++++++++++++++++++++-->
+                            </div>
                             <div class="modal fade" id="feuilconditModalLong" tabindex="-1" role="dialog" aria-labelledby="feuilconditModalLongTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
@@ -273,9 +276,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> <!-- fin de div class="form-group row" +++++++++++++++++++++++++++++++++++ -->
-                        </div><!-- fin de div class="checkbox col-sm-11 alignement Ptpolice Ptpolice" +++++++++++++++++++++++++++++++++++ -->
-                           
+                        </div><!-- fin de div class="checkbox col-sm-11 alignement Ptpolice Ptpolice" +++++++++++++++++++++++++++++++++++ -->  
                         <div class="form-group text-center" id="validation_contact">
                             <button name="annuler" id="resetBtn" type="reset" value="reset" class="btn btn-TywebButtonW btn-xs">Annuler</button>
                             <button name="envoyer" id="validateBtn" type="submit" value="submit" class="btn btn-TywebButton btn-xs">Envoyez votre demande</button>
@@ -323,22 +324,22 @@
                         </li>
                         <div> <!-- pour regrouper les li ++++++++++++++++-->
                             <li class="nav-item ">
-                                <a class="nav-link" href="#"><span class="fa fa-archive"></span> Société</a>
+                                <a class="nav-link" href="#"><span class="fa fa-archive"></span> SOCIETE</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#"><span class="fa fa-group"></span> Services</a>
+                                <a class="nav-link" href="#"><span class="fa fa-group"></span> SERVICES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><span class="fa fa-bell"></span> Conciergerie</a>
+                                <a class="nav-link" href="#"><span class="fa fa-bell"></span> CONCIERGERIE</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#"><span class="fa fa-tag"></span> Offres</a>
+                                <a class="nav-link" href="#"><span class="fa fa-tag"></span> OFFRES</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="#"><span class="fa fa-commenting"></span> Newsroom</a>
+                                <a class="nav-link" href="#"><span class="fa fa-commenting"></span> NEWSROOM</a>
                             </li>
                             <li class="nav-item  ">
-                                <a class="nav-link" href="#contact"><span class="fa fa-commenting-o"> Contact</a>
+                                <a class="nav-link" href="#contact"><span class="fa fa-commenting-o"> CONTACT</a>
                             </li> 
                         </div>
                     </ul>

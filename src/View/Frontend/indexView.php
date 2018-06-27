@@ -56,7 +56,7 @@
                             </div>
                             <div class="card-footer">
                                 <a href="index.php?action=offre&idOffre='.htmlspecialchars($db1['idArticle']).'" class="btn btn-TywebButton btn-lg btn-block">Voir l\'article <i class="fa fa-search vuebutton"></i></a>
-                                <p>*fin de la promotion : '.htmlspecialchars($db1['endDateArticle']).'</p>
+                                <p class="text-danger MgHt">*fin de la promotion : '.htmlspecialchars($db1['endDateArticle']).'</p>
                             </div>
                         </div>';
                 }
@@ -80,7 +80,7 @@
                             </div>
                             <div class="card-footer">
                                 <a href="index.php?action=offre&idOffre='.htmlspecialchars($db2['idArticle']).'" class="btn btn-TywebButton btn-lg btn-block">Voir l\'article <i class="fa fa-search vuebutton"></i></a>
-                                <p>*fin de la promotion : '.htmlspecialchars($db2['endDateArticle']).'</p>
+                                <p class="text-danger MgHt">*fin de la promotion : '.htmlspecialchars($db2['endDateArticle']).'</p>
                             </div>
                         </div>';
                 }

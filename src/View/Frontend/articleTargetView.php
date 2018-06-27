@@ -27,7 +27,7 @@
                             echo '<a class="btn btn-TywebButtonconx btn-lg btn-block pasmarge" href="#" role="button">Connectez-vous <br /> pour générer votre bon   <i class="fa fa-user-times vuebutton"></i></a>';
                         }        
                     ?>
-                    <p>*fin de la promotion : <?= htmlspecialchars($result['endDateArticle']) ?></p>
+                    <p class="text-danger MgHt">*fin de la promotion : <?= htmlspecialchars($result['endDateArticle']) ?></p>
                 </div>
             </div>                
 <!-- Jumbotron Seller +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<i class="fa fa fa-quote-left vuebutton"></i><i class="fa fa fa fa-quote-right vuebutton"></i> -->

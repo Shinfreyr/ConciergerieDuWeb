@@ -91,6 +91,18 @@ body {
     margin: 60px;
     border: 1px solid #1c1918;
 }
+.colorfontA {
+    color: #ffffe0;
+    padding: 0px;
+    margin: 0px;
+    text-shadow: none;
+}
+.ptpolh1{
+    font-size: 0.875em;
+}
+dd{
+    font-size: 0.875em;
+}
 .shadowfd {
     padding: 26px;
     border: 1px solid #1c1918;
