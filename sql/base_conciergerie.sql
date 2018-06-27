@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  mer. 13 juin 2018 à 16:01
+-- Généré le :  mer. 27 juin 2018 à 11:21
 -- Version du serveur :  10.1.32-MariaDB
 -- Version de PHP :  7.2.5
 
@@ -45,9 +45,11 @@ CREATE TABLE `accounts` (
 --
 
 INSERT INTO `accounts` (`idAccount`, `passwordAccount`, `dateAccount`, `avatarAccount`, `statusAccount`, `lastNameAccount`, `firstNameAccount`, `mailAccount`, `birthdayAccount`) VALUES
-(13, '$2y$10$pdmhIj4bDtiLX5NT9PCKfOQMiKYZcG77T4z9ASuyhOwBDzOSNBv6a', '2018-05-03', 'defautUser.jpg', 'User', 'Test', 'Test', 'test@test.test', '1983-12-12'),
+(13, '$2y$10$pdmhIj4bDtiLX5NT9PCKfOQMiKYZcG77T4z9ASuyhOwBDzOSNBv6a', '2018-05-03', 'defautUser.jpg', 'AdminSU', 'Test', 'Test', 'test@test.test', '1983-12-12'),
 (14, '$2y$10$lRGPctmiSLzM9T88jc0KheT2.OmNBKijUgjCBug..wWYuzymeUd/i', '2018-05-04', 'defautUser.jpg', 'User', 'Nom', 'Jean', 'truc@truc.fr', '1983-12-12'),
-(15, '$2y$10$pdmhIj4bDtiLX5NT9PCKfOQMiKYZcG77T4z9ASuyhOwBDzOSNBv6a', '2018-05-11', 'defautUser.jpg', 'User', 'Vendeur', 'Test', 'vendeur@test.test', '1983-12-12');
+(15, '$2y$10$pdmhIj4bDtiLX5NT9PCKfOQMiKYZcG77T4z9ASuyhOwBDzOSNBv6a', '2018-05-11', 'defautUser.jpg', 'User', 'Vendeur', 'Test', 'vendeur@test.test', '1983-12-12'),
+(16, '$2y$10$yq9nrsQs/ju96ovQRvu/BO6aYW31UoPst3r0kciJmxV6MuDD.FzyG', '2018-06-13', 'defautUser.jpg', 'User', 'LAMODIERE', 'François-Hugues', 'fh.lamodiere@gmail.com', '1983-04-20'),
+(17, '$2y$10$G021qCDK6DxtthfUirtuiOkUmL7WTqIIYa.oUjDLmfnW9tPpLPEGS', '2018-06-19', 'defautUser.jpg', 'User', 'Herve', 'Anne-Claire', 'test@anneclaire.fr', '1982-05-29');
 
 -- --------------------------------------------------------
 
@@ -157,7 +159,9 @@ CREATE TABLE `linked` (
 
 INSERT INTO `linked` (`idAccount`, `idEnterprise`) VALUES
 (13, 1),
-(14, 1);
+(14, 1),
+(16, 1),
+(17, 1);
 
 -- --------------------------------------------------------
 
@@ -207,8 +211,6 @@ CREATE TABLE `vouchers` (
 --
 
 INSERT INTO `vouchers` (`idVoucher`, `codeVoucher`, `dateEditionVoucher`, `dateVoucher`, `idArticle`, `idAccount`) VALUES
-(1, '$2y$10$6t7JNyZv1yltxbZiMrThwe3TESB7Gdy/.TVBh8ggAFDsXZAUgLmrS', '0000-00-00 00:00:00', '2019-06-19', 8, 13),
-(2, '$2y$10$byfJiDMhhTjS9jSV2p83Dem..NhCfd5EFAUbRlRFgO5wmr5u8Z3n2', '0000-00-00 00:00:00', '2019-06-19', 8, 13),
 (3, '$2y$10$cC5eHZjdakWxizsFer7eZutfn98aZsd6ThBhkw6pIseWa1oclbOP2', '0000-00-00 00:00:00', '2019-06-19', 8, 13),
 (4, '$2y$10$mTOdjaZb4QJ0ozWMECl.kevEvXXgEjYeagVgr1ZkOeaqfLx2w9G82', '2018-05-23 00:00:00', '2019-06-19', 8, 13),
 (5, '$2y$10$L7mvB51kjxGeOHoOekx53OH8BsVrSP6KJB7Lsv9Xv8H4PzzUQA1Mq', '2018-05-23 00:00:00', '2019-06-19', 8, 13),
@@ -318,7 +320,10 @@ INSERT INTO `vouchers` (`idVoucher`, `codeVoucher`, `dateEditionVoucher`, `dateV
 (109, '$2y$10$N4YAmcgikLCDWzdeGhFVW.3oIyTizaQwhsUCvZ0aElYTY6Tx9.KIi', '2018-06-13 15:33:08', '2019-06-19', 8, 13),
 (110, '$2y$10$qlXt8VrjaY9nrSs7dAvtT.GPO6fbzZYWjzRQZRi6igkXAvt45ibJi', '2018-06-13 15:34:50', '2019-06-19', 8, 13),
 (111, '$2y$10$GZdES9d4RiC/SaEez0IMt.jeaBKDZSU1kkg6tZZ9saOPrxhlW3wOG', '2018-06-13 15:35:37', '2019-06-19', 8, 13),
-(112, '$2y$10$Xe6NeM3ePYoJY0hLuABaaOI3ZjUreeYqzrg51cVYsCL3P8pxVbRFO', '2018-06-13 15:42:34', '2018-09-11', 5, 13);
+(113, '$2y$10$ugGFUFCwUit/n59e6PseJ.flSnfOzNlvIVgBT08LWesFOFzK1CILC', '2018-06-19 11:54:29', '2019-06-19', 8, 13),
+(114, '$2y$10$88NrMEkCnmk83Grla2QQrOSghg.nhC.kL.qM2YS25BNYa6gvC3Owe', '2018-06-20 15:25:14', '2019-06-19', 8, 13),
+(115, '$2y$10$XpLqfX.y4NrD93zk94zE8OZzDl4NTqdRZVSFQnooOybAteOomCEPW', '2018-06-20 15:52:02', '2019-06-19', 8, 13),
+(116, '$2y$10$zDpgQZesmqdP6GtsZrNcvu0iDZ3BHKMlUEgime5N4./QywHQiHed6', '2018-06-26 09:08:42', '2019-06-19', 8, 13);
 
 --
 -- Index pour les tables déchargées
@@ -380,7 +385,7 @@ ALTER TABLE `vouchers`
 -- AUTO_INCREMENT pour la table `accounts`
 --
 ALTER TABLE `accounts`
-  MODIFY `idAccount` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `idAccount` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT pour la table `articles`
@@ -410,7 +415,7 @@ ALTER TABLE `sellers`
 -- AUTO_INCREMENT pour la table `vouchers`
 --
 ALTER TABLE `vouchers`
-  MODIFY `idVoucher` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
+  MODIFY `idVoucher` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
 
 --
 -- Contraintes pour les tables déchargées

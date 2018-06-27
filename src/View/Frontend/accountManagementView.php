@@ -17,6 +17,9 @@
             <i class="fa fa-cogs"></i>  Attention en cas de demande de supression de compte, il sera nécessaire d'en créer un nouveau !</p>
             <hr>
 
+            <!-- Panel Admin Access ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
         <!-- Account info ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
     
             <div class="card-header colorbgrdtitre">
@@ -68,9 +71,16 @@
                 </div>
                 
                 <!-- Button trigger modal +++++++++++++++++++++++++++++++++ -->
-                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
-                    Supprimer le compte
-                </button>
+                <?php 
+                    if($_SESSION['conciergerieDuWebStatus'] != 'Admin' && $_SESSION['conciergerieDuWebStatus'] != 'AdminSU') {
+                        echo '
+                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+                                Supprimer le compte
+                            </button>
+                        ';
+                    } 
+                ?>
+                    
 
                 <!-- Modal  +++++++++++++++++++++++++++++++++ -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
