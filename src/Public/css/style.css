@@ -79,11 +79,17 @@ body {
 
 /*couleur de police foncee++++++++++++++++++++++*/
 .colorfontD {
-    color:#1c1918;
     font-size: 3.125em;
     font-weight: 800;
-    vertical-align: baseline;
     font-family: 'Comfortaa', cursive;
+    text-shadow:  0 0 0.2em #DAD4D4;
+    background-color: rgba(0,0,0,0.90);
+    color: #ffffe0;
+    box-shadow: 0 0 0 16px #1c1918 inset,
+                0 0 0 17px #DAD4D4 inset;
+    padding: 60px;
+    margin: 60px;
+    border: 1px solid #1c1918;
 }
 .shadowfd {
     padding: 26px;
@@ -536,6 +542,11 @@ navbar {
 .element1 {
     display:none;
     overflow: hidden;
+}
+
+.cadrecont{ 
+    border: 1px dotted black;
+    padding:5px;
 }
 /* effet zoom sur image vip+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .zoom div .element1, .element, img {
@@ -1448,4 +1459,10 @@ a:hover {
     order:2;
 }
 
+/*couleur de police foncee++++++++++++++++++++++*/
+.colorfontD {
+    font-size: 1.125em;
+    padding: 60px;
+    margin: 6px;
+}
 }/* fin de  @media screen and (max-width:768px)+++++++++++++++++++++++++++++*/
