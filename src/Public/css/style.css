@@ -514,6 +514,16 @@ navbar {
 .card {
     margin :10%;  
 }
+
+/*encadrement des card ++++++++++++++++++++++*/
+.cadrecard {
+    padding: 26px;
+    border: 1px solid #DAD4D4;
+    background: #ffff;
+    color: #1c1918e0;
+    box-shadow: 0 0 0 5px #DAD4D4 inset,
+                0 0 0 5px #DAD4D4 inset;
+}
  /* indexview +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
  /*intro indexview haut de page +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
  .MgHtBs {
@@ -588,6 +598,12 @@ label {
     line-height: 40px;
     padding: 0 0 0 20px;
     margin: 20px 0 20px;
+}
+.cadrecardcnt {
+    padding: 26px;
+    border: 1px solid #DAD4D4;
+    box-shadow: 0 0 0 5px #ffff inset,
+                0 0 0 5px #ffff inset;
 }
 /* fond ecran sous introduction+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .imgfdintro{
@@ -676,12 +692,13 @@ input:valid+span:after {
     font-size:1.000em;
 }
 
-/*pointilles coordonnees ++++++++++++++++++++++++++++++++++++++++++*/
+/*pointilles coordonnees ++++++++++++++++++++++++++++++++++++++++++
 
 #coordonnees {
     border-left: 1px dotted #1c1918;
     border-top: 1px dotted #1c1918;
-}
+}*/
+
 #mailtocont{
     text-decoration: none;
     color:#1c1918;
@@ -831,11 +848,11 @@ h3 {
 .ghost {
     display:block;
 }
-
+/*
 #coordonnees {
     border-left: 1px dotted black;
     border-top: 1px dotted black;
-}
+}*/
 }/* fin de @media (min-width: 1046px) and (max-width: 1300px)+++++++++++++++++++++++++++++*/
 
 
@@ -928,11 +945,11 @@ h4{
 h3{
     font-size:0.929em;
 }
-  
+/*
 #coordonnees {
     border-left: 1px dotted black;
     border-top: 1px dotted black;
-}
+}*/
 
 /*contact +++++++++++++++++++++++*/
 #MnCont {
@@ -1062,10 +1079,10 @@ h3 {
     order: 2;
     flex: 1;
 }
-#coordonnees {
+/*#coordonnees {
     border-left: 1px dotted black;
     border-top: 1px dotted black;
-}
+}*/
 
 /*affichage menu ++++++++++++++++++++++++++++++++++++*/
 /*navbar flex ++++++++++++++++++++++++++++*/

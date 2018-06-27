@@ -21,7 +21,7 @@ Offres pour :
                 <?php
                     while ($db1 = $firstRequest->fetch()) {            
                         echo                
-                            '<div class="card col-10">
+                            '<div class="card col-10 cadrecard">
                                 <h5 class="card-title text-center">'.htmlspecialchars($db1['nomArticle']).'</h5>
                                 <img class="card-img-top" src="src/Public/images/'.htmlspecialchars($db1['imageArticle']).'" alt="Card image cap">
                                 <div class="card-body">
@@ -45,7 +45,7 @@ Offres pour :
                         <?php
                         while ($db2 = $secondRequest->fetch()) {            
                             echo                
-                                '<div class="card col-10">
+                                '<div class="card col-10 cadrecard">
                                     <h5 class="card-title text-center">'.htmlspecialchars($db2['nomArticle']).'</h5>
                                     <img class="card-img-top" src="src/Public/images/'.htmlspecialchars($db2['imageArticle']).'" alt="Card image cap">
                                     <div class="card-body">

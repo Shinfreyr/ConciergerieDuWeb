@@ -44,7 +44,7 @@
             <?php
                 while ($db1 = $request->fetch()) {
                     echo                
-                        '<div class="card col-10">
+                        '<div class="card col-10 cadrecard">
                             <img class="card-img-top" src="src/Public/images/'.htmlspecialchars($db1['imageArticle']).'" alt="Card image cap">
                             <div class="card-body">
                                 <h2 class="card-title">'.htmlspecialchars($db1['nomArticle']).'</h2>
@@ -68,7 +68,7 @@
             <?php
                 while ($db2 = $secondRequest->fetch()) {
                     echo                
-                        '<div class="card col-10">
+                        '<div class="card col-10 cadrecard">
                             <img class="card-img-top" src="src/Public/images/'.htmlspecialchars($db2['imageArticle']).'" alt="Card image cap">
                             <div class="card-body">
                                 <h2 class="card-title">'.htmlspecialchars($db2['nomArticle']).'</h2>

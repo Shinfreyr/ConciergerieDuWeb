@@ -175,7 +175,7 @@
             <!-- BLOC GAUCHE + DROITE +++++++++++++++++++++++-->   
             <div class="col-12 margeshautetbas justify-content-center aligncard" >
                 <!-- BLOC GAUCHE +++++++++++++++++++++++-->
-                <div class="col-sm-5 col-xl-4 someClassgauche">  <!-- bloc de gauche ++++++++++++++++++++++++++++ -->  
+                <div class="col-sm-5 col-xl-4 someClassgauche cadrecardcnt">  <!-- bloc de gauche ++++++++++++++++++++++++++++ -->  
                     <div> <!-- tite formulaire de contact ++++++++++++++++++++++++++++ -->   
                         <div class="titleprghp text-center">
                             <span class="blanc"><h5>Comment pouvons-nous vous aider ?</h5></span> 
@@ -218,7 +218,7 @@
                             </div>
                         </div>
                         <div class="form-group col">
-                            <label for="services" class="col-sm-2 control-label alignement">Sélectionnez le thème de votre demandes* :</label>
+                            <label for="services" class="col-sm-2 control-label alignement">Sélectionnez le thème de votre demande :</label>
                             <div class="col-sm-11">
                                 <select class="form-control" name="services" id="services" required />
                                     <option value="" disabled selected>Choix</option>
@@ -283,7 +283,7 @@
                     </form>
                 </div>
                 <!-- BLOC DROITE +++++++++++++++++++++++-->
-                <div class="col-sm-4 col-xl-4 someClassdroite" id="coordonnees"><!-- bloc de droite ++++++++++++++++++++++++++++ -->     
+                <div class="col-sm-4 col-xl-4 someClassdroite cadrecardcnt" id="coordonnees"><!-- bloc de droite ++++++++++++++++++++++++++++ -->     
                     <div class="col"><!--+++++++++++++++++++++++++++++++++++++debut du formulaire de contact form partie droite-->
                         <div class="titleprghp text-center"><!-- ENTETE COORDONNEES +++++++++++++++++++++++-->    
                             <span class="blanc"><h5>Nos coordonnées</h5></span> 
