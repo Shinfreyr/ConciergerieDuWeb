@@ -16,9 +16,12 @@
             <p class="mb-0">Modifiez et vérifiez vos informations enregistrer ! <br />
             <i class="fa fa-cogs"></i>  Attention en cas de demande de supression de compte, il sera nécessaire d'en créer un nouveau !</p>
             <hr>
-
-            <!-- Panel Admin Access ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-
+            <!-- Panel Admin Access+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <?php
+                if($_SESSION['conciergerieDuWebStatus'] === 'Admin' || $_SESSION['conciergerieDuWebStatus'] === 'AdminSU') {
+                    echo '<a class="btn btn-info col-12" href="index.php?action=backendAdmin" role="button"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Panel Administrateur</a>';
+                }
+            ?>
 
         <!-- Account info ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
     

@@ -10,6 +10,7 @@
     try {
         $allUserController = new \Project\Controller\AllUserController();
         $userConnectController = new \Project\Controller\UserConnectController();
+        $adminController = new \Project\Controller\AdminController();
         
         //Control GET action, GET Type and GET page 
         if(isset($_GET['action']) && isset($_GET['type']) && isset($_GET['page'])) {
@@ -305,6 +306,22 @@
                     throw new Exception('Variable inattendu');    
                 }                
             }
+#BackAdmin  //Admin Panel View ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            elseif($_GET['action'] === 'backendAdmin') {
+                if(isset($_SESSION['conciergerieDuWebStatus'])) {
+                    if($_SESSION['conciergerieDuWebStatus'] === 'Admin' || $_SESSION['conciergerieDuWebStatus'] === 'AdminSU') {
+                        $adminController->backendAdmin();
+                    }
+                    //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    else {
+                        throw new Exception('Variable inattendu'); 
+                    }  
+                }
+                //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                else {
+                    throw new Exception('Variable inattendu');    
+                }  
+            }            
             //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             else {
                 throw new Exception('Variable inattendu');    
