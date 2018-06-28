@@ -32,7 +32,7 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
         <h2 class="display-3">Comptes Utilisateurs Actifs</h2>
-        <p class="lead">756211</p>
+        <p class="lead"><?=htmlspecialchars($result2[0])?></p>
         <hr class="my-2">
         <p>Plus d'infos</p>
         <p class="lead">
@@ -45,7 +45,7 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
         <h2 class="display-3">Comptes Vendeurs Actifs</h2>
-        <p class="lead">102</p>
+        <p class="lead"><?=htmlspecialchars($result3[0])?></p>
         <hr class="my-2">
         <p>Plus d'infos</p>
         <p class="lead">
@@ -58,7 +58,7 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
         <h2 class="display-3">Comptes Entreprises Actives</h2>
-        <p class="lead">14702</p>
+        <p class="lead"><?=htmlspecialchars($result4[0])?></p>
         <hr class="my-2">
         <p>Plus d'infos</p>
         <p class="lead">

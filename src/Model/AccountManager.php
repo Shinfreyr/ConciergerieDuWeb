@@ -128,4 +128,15 @@
             $request = $db->prepare('DELETE FROM accounts WHERE idAccount = ?');
             $request -> execute(array($idAccount));
         }
+
+        //Account User Count ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function accountUserCount() {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Account recuperation 
+            $request = $db->prepare('SELECT COUNT(*) FROM accounts WHERE statusAccount=?');
+            $request -> execute(array("User"));
+
+            return $request;
+        }
     }

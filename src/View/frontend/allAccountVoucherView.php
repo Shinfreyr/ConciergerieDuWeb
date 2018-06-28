@@ -4,9 +4,8 @@
 
     <!-- Voucher List ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <span>
-            <h1 class="MgHtBs colorfontD">MES BONS DE REDUCTION</h1>
-            <div class="dropdown-divider Pttrait" >
-            </div>
+        <h1 class="MgHtBs colorfontD">MES BONS DE REDUCTION</h1>
+        <div class="dropdown-divider Pttrait" ></div>
     </span>
    
     <div class="card content justify-content-center">
@@ -23,7 +22,7 @@
                                     <hr>
                                     <article class="text-danger">
                                         Date de fin de validité : '.htmlspecialchars($db1['dateVoucher']).
-                                        ' <a href="index.php?action=voucher&idArticle='.htmlspecialchars($db1['idArticle']).'&endDate='.htmlspecialchars($db1['endDateArticle']).'" class="btn btn-TywebButton float-right voucher margebtn">Télécharger <i class="fa fa-search vuebutton"></i></a>
+                                        ' <a href="index.php?action=dlVoucher&idArticle='.htmlspecialchars($db1['idArticle']).'&codeVoucher='.htmlspecialchars($db1['codeVoucher']).'" class="btn btn-TywebButton float-right voucher margebtn">Télécharger <i class="fa fa-search vuebutton"></i></a>
                                           <a href="index.php?action=supressVoucher&idVoucher='.htmlspecialchars($db1['idVoucher']).'" class="btn btn-danger float-right voucher margebtn">Supprimer</a>
                                     </article>
                                 </p>                

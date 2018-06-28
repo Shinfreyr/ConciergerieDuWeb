@@ -14,4 +14,14 @@
             
             return $request;
         } 
+
+        //Seller Count +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function enterpriseCount() {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Enterprise recuperation 
+            $request = $db->query('SELECT COUNT(*) FROM enterprises');
+
+            return $request;
+        }
     }
