@@ -128,7 +128,10 @@ dd{
     box-shadow: 0 0 0 16px #ffffe0 inset,
                 0 0 0 17px #DAD4D4 inset;
 }
-
+.alignimgdroite{
+   /* justify-content: flex-end; */
+   justify-content: center;
+}
 /* fond du titre +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .colorbgrdtitre{
     background-color: #ffffe0;
