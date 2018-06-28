@@ -11,25 +11,45 @@
    
     <body>
         <header>
-            <nav class="navbar navbar-expand-sm|md|lg|-xl navbar-light bg-light">
-                <a class="navbar-brand" href="index.php">Navbar</a>
-                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <!-- NavBar +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.php">Retour Conciergerie</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.php?action=backendAdmin">Accueil <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">
+                                <?php
+                                    if($result[0] != '0') {
+                                        echo '<span class="badge badge-info">New</span>';
+                                    }                                    
+                                ?>
+                                Article en attente de validation
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Article mis en avant</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">Action 1</a>
-                                <a class="dropdown-item" href="#">Action 2</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Management
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Articles</a>
+                                <a class="dropdown-item" href="#">Comptes Utilisateur/Admin</a>
+                                <a class="dropdown-item" href="#">Comptes Vendeurs</a>
+                                <a class="dropdown-item" href="#">Comptes Entrepises</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Inscrire un nouvel article</a>
+                                <a class="dropdown-item" href="#">Inscrire un nouvel admin</a>
+                                <a class="dropdown-item" href="#">Inscrire un nouveau vendeur</a>
+                                <a class="dropdown-item" href="#">Inscrire une nouvelle entreprise</a>
                             </div>
                         </li>
                     </ul>

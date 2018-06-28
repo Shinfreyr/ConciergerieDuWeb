@@ -44,4 +44,15 @@
             $request -> execute(array($idVoucher));
         }
 
+        //Voucher Count ++++++++++++++++++++++++++++++++++++++++++++++++
+        function voucherCount() {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Voucher recuperation 
+            $request = $db->query('SELECT COUNT(*) FROM vouchers');
+
+            return $request;
+        }
+
+
     }

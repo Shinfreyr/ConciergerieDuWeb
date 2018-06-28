@@ -170,4 +170,15 @@
             return $request;
         }
 
+        //Article Rough Count ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function articleRoughCount() {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article recuperation 
+            $request = $db->prepare('SELECT COUNT(*) FROM articles WHERE articles.statutArticle=?');
+            $request -> execute(array("rough"));
+
+            return $request;
+        }
+
     }
