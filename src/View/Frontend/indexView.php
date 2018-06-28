@@ -39,10 +39,10 @@
     <div class="col-12 justify-content-center">
         <h1 class="alert-heading blanc MgHtBs">  Nos offres du jour    <i class="fa fa-tags"></i></h1>
     </div>
-    <div class="dropdown-divider Pttraitb" >
+    <div class="dropdown-divider Pttraitb">
     </div>  
     <div class="row justify-content-center">
-        <div class="card-deck col-sm-12 col-lg-10" >
+        <div class="card-deck col-sm-12 col-lg-10">
             <?php
                 while ($db1 = $request->fetch()) {
                     echo                

@@ -121,6 +121,14 @@ dd{
     box-shadow: 0 0 0 16px #1c1918 inset,
                 0 0 0 17px #DAD4D4 inset;
 }
+.shadowfdbreduc {
+    padding: 26px;
+    border: 1px solid #1c1918;
+    color: #1c1918;
+    box-shadow: 0 0 0 16px #ffffe0 inset,
+                0 0 0 17px #DAD4D4 inset;
+}
+
 /* fond du titre +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .colorbgrdtitre{
     background-color: #ffffe0;
@@ -325,7 +333,9 @@ h1 {
 .voucherCard {
     margin:10px !important;
 }
-
+.margebtn {
+    margin:15px;
+}
 .targetVoucher{
     display: flex;
     flex-wrap: wrap;
