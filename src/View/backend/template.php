@@ -8,7 +8,8 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Style CSS -->
-        <link href="src/Public/css/styleAdmin.css" rel="stylesheet" />  
+        <link href="src/Public/css/styleAdmin.css" rel="stylesheet" /> 
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     </head>
    
     <body>
@@ -52,6 +53,8 @@
                                 <a class="dropdown-item" href="#">Inscrire un nouvel admin</a>
                                 <a class="dropdown-item" href="#">Inscrire un nouveau vendeur</a>
                                 <a class="dropdown-item" href="#">Inscrire une nouvelle entreprise</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Créer une nouvelle catégorie</a>
                             </div>
                         </li>
                     </ul>
@@ -68,3 +71,4 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
+

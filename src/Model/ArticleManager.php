@@ -186,7 +186,7 @@
             // Data Base Connection
             $db=$this->dbConnect();
             // Article recuperation 
-            $request = $db->prepare('SELECT * FROM articles WHERE statutArticle=?');
+            $request = $db->prepare('SELECT * FROM articles INNER JOIN sellers ON articles.idSeller=sellers.idSeller WHERE articles.statutArticle=?');
             $request -> execute(array("rough"));
 
             return $request;
