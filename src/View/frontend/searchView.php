@@ -10,7 +10,7 @@
 <?php
     while($db1=$request->fetch()) {
         echo '
-            <div class="card col-10 cadrecard">
+            <div class="card col-10 cadrecard mx-auto">
                 <div class="card-body cadrecardcnt">
                     <h2 class="card-title">'.htmlspecialchars($db1['nomArticle']).'</h2>
                     <p class="card-text">'.htmlspecialchars($db1['descriptionArticle']).'</p>
