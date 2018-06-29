@@ -3,6 +3,10 @@
 <?php ob_start(); ?>
 
 <!-- Resultat recherche +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<span>
+        <h1 class="MgHtBs blanc"><i class="fa fa-search vuebutton"></i> Résultat de votre recherche...</h1>
+        <div class="dropdown-divider Pttraitb" ></div>
+    </span>
 <?php
     while($db1=$request->fetch()) {
         echo '

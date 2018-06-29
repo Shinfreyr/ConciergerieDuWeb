@@ -4,7 +4,7 @@
 
 
 <!-- Service Card ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-<h1 class="alert-heading blanc MgHtBs">
+<h1 class="alert-heading blanc MgHtBs ">
 Offres pour :
     <?php
         if(isset($_GET['idSeller'])) {

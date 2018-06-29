@@ -15,24 +15,30 @@
                 <!-- Required meta tags -->
                 <meta charset="utf-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-                
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             </head>
             <body>
                 <header>
-                    <img src="src/Public/images/defautLogo.jpg" alt="Card image cap">
-                </header>
-                <h5>Carte VIP</h5>
-                <h6>La Conciergerie du Web</h6>
-                <h6>'.htmlspecialchars($result['societyNameSeller']).'</h6>
-                <hr>
-                <h5>'.htmlspecialchars($_SESSION['conciergerieDUWebLastName']).' '.htmlspecialchars($_SESSION['conciergerieDuWebFirstName']).'</h5>
-                <h6>'.htmlspecialchars($result['nomArticle']).'</h6>
-                <p>Prix Client= '.htmlspecialchars($result['reductionPriceArticle']).'&euro; (prix original '.htmlspecialchars($result['originalPriceArticle']).'&euro;)</p>
-                <p>Validité jusqu\'au : '.htmlspecialchars($result['endDateArticle']).'</p>
-                <hr>
-                <p>N° de Bon : '.htmlspecialchars($codeVoucher).'</p>
-
+                    <figure style="text-align:center">
+                        <img src="src/Public/images/logoTywebServices.jpg" " alt="Card image cap">
+                    </figure>
+                </header>   <h2 class="MgHtBs blanc">CARTE VIP</h2>
+                <i class="fa fa-scissors"></i>
+                <div style="border: 4px dashed #1c1918; text-align:center">
+                        <span>
+                        <h1>La Conciergerie du Web</h1>
+                        <hr>
+                        <h3>Nom Entreprise : '.htmlspecialchars($result['societyNameSeller']).'</h5>
+                        </span>
+                        <h3>Nom Prénom : '.htmlspecialchars($_SESSION['conciergerieDUWebLastName']).' '.htmlspecialchars($_SESSION['conciergerieDuWebFirstName']).'</h3>
+                        <hr>
+                        <h2>Nom de l\'enseigne</h2>
+                        <h3>'.htmlspecialchars($result['nomArticle']).'</h3>
+                        <p> Prix Client= '.htmlspecialchars($result['reductionPriceArticle']).'&euro; (prix original '.htmlspecialchars($result['originalPriceArticle']).'&euro;<i class="fa fa-tag vuebutton"></i>) </p>
+                        <p>Validité jusqu\'au : '.htmlspecialchars($result['endDateArticle']).' </p>
+                        <hr>
+                        <p><h3>N° de Bon : '.htmlspecialchars($codeVoucher).'</h3></p>
+                </div>
             </body>
         </html>
     ');
