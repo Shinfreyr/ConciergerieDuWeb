@@ -2,17 +2,17 @@
 <?php $title = "La Conciergerie du Web, Bon d'achat !"; ?>
 <?php ob_start(); ?>
 
-<div class="card text-center justify-content-center col-xs-10">
+<div class="card text-center justify-content-center col-xs-8">
     <div class="card-header">
-        <img class="card-img-top" src="src/Public/images/defautLogo.jpg" alt="Card image cap">
+        <img class="card-img-top mx-auto" src="src/Public/images/logoTywebServices.jpg" alt="Card image cap">
     </div>
-    <div class="card-body cadrecardcnt">
-        <h5 class="card-title">Carte VIP</h5>
-        <h6>La conciergerie du Web</h6>
-        <p class="card-text"><?= htmlspecialchars($result['societyNameSeller']) ?></p>
+    <div class="card-body cadrecardcnt mx-auto">
+        <h2 class="card-title">- Carte VIP -</h2>
+        <h1>La conciergerie du Web</h1>
+        <p class="card-text"><h2><?= htmlspecialchars($result['societyNameSeller']) ?></h2></p>
         <hr>
         <h5><?= htmlspecialchars($_SESSION['conciergerieDuWebFirstName']).' '.htmlspecialchars($_SESSION['conciergerieDUWebLastName']) ?></h5>
-        <h6><?= htmlspecialchars($secondResult['nomArticle']) ?></h6>
+        <h2><?= htmlspecialchars($secondResult['nomArticle']) ?></h2>
         <p>Prix Client= <?= htmlspecialchars($secondResult['reductionPriceArticle']) ?> &euro; (prix original <?= htmlspecialchars($secondResult['originalPriceArticle']) ?>&euro;)</p>
         <p>Validité jusqu'au : <?= htmlspecialchars($secondResult['endDateArticle']) ?></p>
         
