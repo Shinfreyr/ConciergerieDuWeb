@@ -29,4 +29,16 @@
             
             require('src/View/backend/adminPanelView.php');
         }
+
+        //Validation Article View +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function adminValidationArticle() {
+            $articleManager = new \Project\Model\ArticleManager();
+            $request = $articleManager->articleRoughCount();
+            $result = $request->fetch();
+
+            $articleManager = new \Project\Model\ArticleMAnager();
+            $request = $articleManager->articleRoughRequest();
+
+            require('src/View/backend/validationArticleView.php');
+        }
     }

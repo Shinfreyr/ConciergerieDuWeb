@@ -321,7 +321,23 @@
                 else {
                     throw new Exception('Variable inattendu');    
                 }  
-            }            
+            }
+#BackAdmin  //Validation Article View +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            elseif($_GET['action'] === 'adminValidationArticle') {
+                if(isset($_SESSION['conciergerieDuWebStatus'])) {
+                    if($_SESSION['conciergerieDuWebStatus'] === 'Admin' || $_SESSION['conciergerieDuWebStatus'] === 'AdminSU') {
+                        $adminController->adminValidationArticle();
+                    }
+                    //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    else {
+                        throw new Exception('Variable inattendu'); 
+                    }  
+                }
+                //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                else {
+                    throw new Exception('Variable inattendu');    
+                }  
+            }         
             //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             else {
                 throw new Exception('Variable inattendu');    

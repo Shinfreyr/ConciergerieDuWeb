@@ -7,6 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Style CSS -->
+        <link href="src/Public/css/styleAdmin.css" rel="stylesheet" />  
     </head>
    
     <body>
@@ -24,7 +26,7 @@
                             <a class="nav-link" href="index.php?action=backendAdmin">Accueil <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="index.php?action=adminValidationArticle">
                                 <?php
                                     if($result[0] != '0') {
                                         echo '<span class="badge badge-info">New</span>';

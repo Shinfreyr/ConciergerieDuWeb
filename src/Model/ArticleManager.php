@@ -175,10 +175,20 @@
             // Data Base Connection
             $db=$this->dbConnect();
             // Article recuperation 
-            $request = $db->prepare('SELECT COUNT(*) FROM articles WHERE articles.statutArticle=?');
+            $request = $db->prepare('SELECT COUNT(*) FROM articles WHERE statutArticle=?');
             $request -> execute(array("rough"));
 
             return $request;
         }
 
+        //Article Rough Validation ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function articleRoughRequest() {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article recuperation 
+            $request = $db->prepare('SELECT * FROM articles WHERE statutArticle=?');
+            $request -> execute(array("rough"));
+
+            return $request;
+        }
     }
