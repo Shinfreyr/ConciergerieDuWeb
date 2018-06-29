@@ -129,10 +129,11 @@ dd{
                 0 0 0 5px #DAD4D4 inset;
     margin:25px;
 }
-.alignimgdroite{
+.alignimgdroite {
    /* justify-content: flex-end; */
    justify-content: center;
 }
+
 /* fond du titre +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .colorbgrdtitre{
     background-color: #ffffe0;
@@ -548,7 +549,7 @@ navbar {
 
  /*marge entres les card ++++++++++++++++++++++*/
 .card {
-    margin :10%;  
+    margin :30px;  
 }
 
 /*encadrement des card ++++++++++++++++++++++*/
