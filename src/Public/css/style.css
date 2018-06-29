@@ -110,7 +110,7 @@ dd{
    font-family: Gotham A, Gotham B, sans-serif;
 }
 .taillemoy{
-    font-size: 1em;
+    font-size: 0.938em;
     font-family: Gotham A, Gotham B, sans-serif;
  }
 .shadowfd {
@@ -123,10 +123,11 @@ dd{
 }
 .shadowfdbreduc {
     padding: 26px;
-    border: 1px solid #1c1918;
+    border: 1px solid #DAD4D4;
     color: #1c1918;
-    box-shadow: 0 0 0 16px #ffffe0 inset,
-                0 0 0 17px #DAD4D4 inset;
+    box-shadow: 0 0 0 6px #8fa5af inset,
+                0 0 0 5px #DAD4D4 inset;
+    margin:25px;
 }
 .alignimgdroite{
    /* justify-content: flex-end; */
@@ -556,7 +557,7 @@ navbar {
     border: 1px solid #DAD4D4;
     background: #ffff;
     color: #1c1918e0;
-    box-shadow: 0 0 0 5px #DAD4D4 inset,
+    box-shadow: 0 0 0 5px #8fa5af inset,
                 0 0 0 5px #DAD4D4 inset;
 }
  /* indexview +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -1516,5 +1517,12 @@ a:hover {
     font-size: 1.125em;
     padding: 60px;
     margin: 6px;
+}
+
+.taillegd{
+    font-size: 1.125em;
+}
+.colorfontA {
+    font-size: 0.938em;
 }
 }/* fin de  @media screen and (max-width:768px)+++++++++++++++++++++++++++++*/
