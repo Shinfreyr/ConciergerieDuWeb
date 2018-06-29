@@ -672,6 +672,7 @@ label {
 .imgcartevip{
     background-image: url('../cartevip.png');
 }*/
+
  /*marges bas de page+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .margeshautetbas {
     margin-top:5%;
@@ -946,6 +947,12 @@ body {
     display:block;
     height:80px;
     width:80px;
+}
+/*logo pour le bon de reduction ++++++++++++++++++++++++++++*/
+.card-img-top {
+    width: 300px;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
 }
 
 /*affichage du menu petit modele petit toggle++++++++++++++++++++++++++++++++++++++++++*/

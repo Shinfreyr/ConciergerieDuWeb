@@ -20,7 +20,7 @@
             <body>
                 <header>
                     <figure style="text-align:center">
-                        <img src="src/Public/images/logoTywebServices.jpg" " alt="Card image cap">
+                        <img src="src/Public/images/logoTywebServices.jpg" alt="Card image cap">
                     </figure>
                 </header>   <h2 class="MgHtBs blanc">CARTE VIP</h2>
                 <i class="fa fa-scissors"></i>
