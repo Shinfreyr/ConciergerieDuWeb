@@ -10,7 +10,7 @@
         <hr class="my-2">
         <p>Plus d'infos</p>
         <p class="lead">
-            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Gestion Articles Validations</a>
+            <a class="btn btn-primary btn-lg" href="index.php?action=adminValidationArticle" role="button">Gestion Articles Validations</a>
         </p>
     </div>
 </div>
