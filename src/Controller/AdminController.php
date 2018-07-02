@@ -41,4 +41,19 @@
 
             require('src/View/backend/validationArticleView.php');
         }
+
+        //Validation Article Target View +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function adminValidationTargetArticle() {
+            $idArticle = htmlspecialchars($_GET['idOffre']);
+
+            $categoryManager = new \Project\Model\CategoryManager();
+            $thirdRequest = $categoryManager->categoryRequest();
+
+            $articleManager = new \Project\Model\ArticleManager();
+            $request = $articleManager->articleTargetRequest($idArticle);
+
+            $result = $request->fetch();
+
+            require('src/View/backend/validationArticleTargetView.php');
+        }
     }

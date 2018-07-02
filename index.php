@@ -223,6 +223,22 @@
             if($_GET['action'] === 'offre' && $_GET['idOffre'] !== '') {
                 $allUserController->articleTarget();
             }
+#BackAdmin  //Validation Article Target View ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            elseif($_GET['action'] === 'adminArticleView' && $_GET['idOffre'] != '') {
+                if(isset($_SESSION['conciergerieDuWebStatus'])) {
+                    if($_SESSION['conciergerieDuWebStatus'] === 'Admin' || $_SESSION['conciergerieDuWebStatus'] === 'AdminSU') {
+                        $adminController->adminValidationTargetArticle();
+                    }
+                    //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    else {
+                        throw new Exception('Variable inattendu'); 
+                    }
+                }
+                //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                else {
+                    throw new Exception('Variable inattendu');    
+                } 
+            }          
             //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             else {
                 throw new Exception('Variable inattendu');    
