@@ -255,6 +255,57 @@
                 throw new Exception('Variable inattendu');    
             }  
         }
+        //Control GET Action & idArticle ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        elseif(isset($_GET['action']) && isset($_GET['idArticle'])) {
+#BackAdmin  //Change Article Name +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            if($_GET['action'] === 'nameArticleAdmin' && $_GET['idArticle'] != '') {
+                if(isset($_SESSION['conciergerieDuWebStatus'])) {
+                    if($_SESSION['conciergerieDuWebStatus'] === 'Admin' || $_SESSION['conciergerieDuWebStatus'] === 'AdminSU') {
+                        if(isset($_POST['nameArticleAdmin'])) {
+                            if($_POST['nameArticleAdmin'] != '') {
+                                $adminController->nameArticleAdmin();
+                            }
+                            //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                            else {
+                                throw new Exception('Champs manquants');    
+                            }
+                        }
+                        //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                        else {
+                            throw new Exception('Variable inattendu'); 
+                        }      
+                    }
+                    //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    else {
+                        throw new Exception('Variable inattendu'); 
+                    }  
+                }
+                //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                else {
+                    throw new Exception('Variable inattendu');    
+                }  
+            }
+#BackAdmin  //Change Article Image ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            if($_GET['action'] === 'uploadImageArticle' && $_GET['idArticle'] != '') {
+                if(isset($_SESSION['conciergerieDuWebStatus'])) {
+                    if($_SESSION['conciergerieDuWebStatus'] === 'Admin' || $_SESSION['conciergerieDuWebStatus'] === 'AdminSU') {
+                        $adminController->uploadImageArticle();
+                    }
+                    //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    else {
+                        throw new Exception('Variable inattendu'); 
+                    }  
+                }
+                //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                else {
+                    throw new Exception('Variable inattendu');    
+                } 
+            }
+            //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            else {
+                throw new Exception('Variable inattendu');    
+            }  
+        }       
         //Control GET Action ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         elseif(isset($_GET['action'])) {
 #AllUser    //Inscription View ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++            
@@ -353,7 +404,7 @@
                 else {
                     throw new Exception('Variable inattendu');    
                 }  
-            }         
+            }                     
             //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             else {
                 throw new Exception('Variable inattendu');    

@@ -181,7 +181,7 @@
             return $request;
         }
 
-        //Article Rough Validation ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        //Article Rough Validation Request +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function articleRoughRequest() {
             // Data Base Connection
             $db=$this->dbConnect();
@@ -190,5 +190,23 @@
             $request -> execute(array("rough"));
 
             return $request;
+        }
+
+        //Article Name Rough Modifiaction ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function nameArticleAdminDb($nameArticle,$idArticle) {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article modification 
+            $request = $db->prepare('UPDATE articles SET nomArticle = ? WHERE idArticle = ?');
+            $request -> execute(array($nameArticle,$idArticle));
+        }
+
+        //Article Image Rough Modification ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function updateArticleImage($nameImage,$id) {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article modification 
+            $request = $db->prepare('UPDATE articles SET imageArticle = ? WHERE idArticle = ?');
+            $request -> execute(array($nameImage,$id));
         }
     }

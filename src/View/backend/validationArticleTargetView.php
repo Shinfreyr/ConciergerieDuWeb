@@ -11,33 +11,51 @@
     <div class="col-12 margeshautetbas justify-content-center aligncard">
         <div class="col-12 justify-content-center"> <!-- bloc de gauche ++++++++++++++++++++++++++++ --> 
             <div class="jumbotron cadrecard">
+                <!-- Name Article ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
                 <h1 class="display-5"><?= htmlspecialchars($result['nomArticle']) ?></h1>
 
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#nomArticleModification" aria-expanded="false" aria-controls="nomArticleExample">
+                <button class="btn btn-primary col-12" type="button" data-toggle="collapse" data-target="#nomArticleModification" aria-expanded="false" aria-controls="nomArticleExample">
                     Modifier nom de l'article
                 </button>
                 <div class="collapse" id="nomArticleModification">
                     <div class="card card-body">
-                        nom article
+                        <form action="index.php?action=nameArticleAdmin&idArticle=<?= htmlspecialchars($result['idArticle']) ?>" id="nameArticleForm" method="post">
+                            <div class="form-group">
+                                <label for="nameArticleAdmin">Modifier le nom de l'article</label>
+                                <textarea class="form-control" name="nameArticleAdmin" id="nameArticleAdmin" rows="3"><?= htmlspecialchars($result['nomArticle']) ?></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info">Envoyer</button>
+                        </form>
                     </div>
                 </div>
-
-                <img class="card-img-top" src="src/Public/images/<?= htmlspecialchars($result['imageArticle']) ?>" alt="Card image cap">
+                
+                <!-- Image Article +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+                <img class="card-img-top btnArticleAdmin" src="src/Public/images/<?= htmlspecialchars($result['imageArticle']) ?>" alt="Card image cap">
 
                 
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#imageModification" aria-expanded="false" aria-controls="nomArticleExample">
+                <button class="btn btn-primary col-12" type="button" data-toggle="collapse" data-target="#imageModification" aria-expanded="false" aria-controls="nomArticleExample">
                     Modifier l'image
                 </button>
                 <div class="collapse" id="imageModification">
                     <div class="card card-body">
-                        image
+                        <form enctype="multipart/form-data" action="index.php?action=uploadImageArticle&idArticle=<?= htmlspecialchars($result['idArticle']) ?>" method="post" class="col-12">
+                            <fieldset>
+                                <legend><h2>Image de L'article: <span class="infoImage"> (800x800 pixel & 1Mo maximum) </span></h2></legend>
+                                <p>
+                                    <label for="uploadFile" title="Recherchez le fichier à uploader !">Envoyer le fichier :</label>
+                                    <input type="hidden" name="MAX_FILE_SIZE" value="<?php echo MAX_SIZE; ?>" />
+                                    <input name="file" type="file" id="uploadFile" />
+                                    <input type="submit" class="btn btn-info" name="submit" value="Uploader" />
+                                </p>
+                            </fieldset>
+                        </form>
                     </div>
                 </div>
 
-                <h2 class="display-5"><?= htmlspecialchars($result['nomArticle']) ?></h2>
+                <h2 class="display-5 btnArticleAdmin"><?= htmlspecialchars($result['nomArticle']) ?></h2>
                 <p class="lead"><?= htmlspecialchars($result['descriptionArticle']) ?></p>
 
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#contentModification" aria-expanded="false" aria-controls="nomArticleExample">
+                <button class="btn btn-primary col-12" type="button" data-toggle="collapse" data-target="#contentModification" aria-expanded="false" aria-controls="nomArticleExample">
                     Modifier le contenu de l'annonce
                 </button>
                 <div class="collapse" id="contentModification">
@@ -47,9 +65,9 @@
                 </div>
 
                 <hr class="my-4">
-                <p class="card-text"><?= htmlspecialchars($result['reductionArticle']) ?>% <i class="fa fa-tag"></i></p>
+                <p class="card-text btnArticleAdmin"><?= htmlspecialchars($result['reductionArticle']) ?>% <i class="fa fa-tag"></i></p>
 
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reductionModification" aria-expanded="false" aria-controls="nomArticleExample">
+                <button class="btn btn-primary col-12" type="button" data-toggle="collapse" data-target="#reductionModification" aria-expanded="false" aria-controls="nomArticleExample">
                     Modifier le pourcentage de la réduction
                 </button>
                 <div class="collapse" id="reductionModification">
@@ -58,9 +76,9 @@
                     </div>
                 </div>
 
-                <p class="card-text">Prix original: <?= htmlspecialchars($result['originalPriceArticle']) ?>&euro;</p>
+                <p class="card-text btnArticleAdmin">Prix original: <?= htmlspecialchars($result['originalPriceArticle']) ?>&euro;</p>
 
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#originalPriceModification" aria-expanded="false" aria-controls="nomArticleExample">
+                <button class="btn btn-primary col-12" type="button" data-toggle="collapse" data-target="#originalPriceModification" aria-expanded="false" aria-controls="nomArticleExample">
                     Modifier le prix original
                 </button>
                 <div class="collapse" id="originalPriceModification">
@@ -69,9 +87,9 @@
                     </div>
                 </div>
 
-                <h2>Prix avec réduction: <?= htmlspecialchars($result['reductionPriceArticle']) ?>&euro;</h2>
+                <h2 class="btnArticleAdmin">Prix avec réduction: <?= htmlspecialchars($result['reductionPriceArticle']) ?>&euro;</h2>
                 
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#priceReductionModification" aria-expanded="false" aria-controls="nomArticleExample">
+                <button class="btn btn-primary col-12" type="button" data-toggle="collapse" data-target="#priceReductionModification" aria-expanded="false" aria-controls="nomArticleExample">
                     Modifier le prix avec réduction
                 </button>
                 <div class="collapse" id="priceReductionModification">
@@ -80,9 +98,9 @@
                     </div>
                 </div>
 
-                <p class="text-danger MgHt">*fin de la promotion : <?= htmlspecialchars($result['endDateArticle']) ?></p>
+                <p class="text-danger MgHt btnArticleAdmin">*fin de la promotion : <?= htmlspecialchars($result['endDateArticle']) ?></p>
                 
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#endDateModification" aria-expanded="false" aria-controls="nomArticleExample">
+                <button class="btn btn-primary col-12" type="button" data-toggle="collapse" data-target="#endDateModification" aria-expanded="false" aria-controls="nomArticleExample">
                     Modifier la date de fin de promotion
                 </button>
                 <div class="collapse" id="endDateModification">
