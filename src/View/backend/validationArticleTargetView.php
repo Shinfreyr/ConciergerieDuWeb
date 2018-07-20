@@ -60,7 +60,13 @@
                 </button>
                 <div class="collapse" id="contentModification">
                     <div class="card card-body">
-                        contenu
+                        <form action="index.php?action=contentArticleAdmin&idArticle=<?= htmlspecialchars($result['idArticle']) ?>" id="contentArticleForm" method="post">
+                            <div class="form-group">
+                                <label for="contentArticleAdmin">Modifier le contenu de l'annonce</label>
+                                <textarea class="form-control" name="contentArticleAdmin" id="contentArticleAdmin" rows="3"><?= htmlspecialchars($result['descriptionArticle']) ?></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info">Envoyer</button>
+                        </form>
                     </div>
                 </div>
 
@@ -72,7 +78,13 @@
                 </button>
                 <div class="collapse" id="reductionModification">
                     <div class="card card-body">
-                        réduction
+                        <form action="index.php?action=reductionArticleAdmin&idArticle=<?= htmlspecialchars($result['idArticle']) ?>" id="reductionArticleForm" method="post">
+                            <div class="form-group">
+                                <label for="reductionArticleAdmin">Modifier le pourcentage de réduction de l'article</label>
+                                <textarea class="form-control" name="reductionArticleAdmin" id="reductionArticleAdmin" rows="3"><?= htmlspecialchars($result['reductionArticle']) ?></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info">Envoyer</button>
+                        </form>
                     </div>
                 </div>
 
@@ -83,7 +95,13 @@
                 </button>
                 <div class="collapse" id="originalPriceModification">
                     <div class="card card-body">
-                        prix original
+                        <form action="index.php?action=originalPriceArticleAdmin&idArticle=<?= htmlspecialchars($result['idArticle']) ?>" id="originalPriceArticleForm" method="post">
+                            <div class="form-group">
+                                <label for="originalPriceArticleAdmin">Modifier le prix original de l'article</label>
+                                <textarea class="form-control" name="originalPriceArticleAdmin" id="originalPriceArticleAdmin" rows="3"><?= htmlspecialchars($result['originalPriceArticle']) ?></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info">Envoyer</button>
+                        </form>
                     </div>
                 </div>
 

@@ -161,4 +161,41 @@
             $adminController->adminValidationArticle();           
         
         }
+
+        //Modification Content Article +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function contentArticleAdmin() {
+            $idArticle = htmlspecialchars($_GET['idArticle']);
+            $contentArticle = htmlspecialchars($_POST['contentArticleAdmin']);
+            
+            $articleManager = new \Project\Model\ArticleManager();
+            $articleManager->contentArticleAdminDb($contentArticle,$idArticle);
+
+            $adminController = new \Project\Controller\AdminController();
+            $adminController->adminValidationArticle();
+        }
+
+        //Modification Reduction Article ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function reductionArticleAdmin() {
+            $idArticle = htmlspecialchars($_GET['idArticle']);
+            $reductionArticle = htmlspecialchars($_POST['reductionArticleAdmin']);
+
+            $articleManager = new \Project\Model\ArticleManager();
+            $articleManager->reductionArticleAdminDb($reductionArticle,$idArticle);
+
+            $adminController = new \Project\Controller\AdminController();
+            $adminController->adminValidationArticle();
+        }
+
+        //Modification Original Price +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function originalPriceArticleAdmin() {
+            $idArticle = htmlspecialchars($_GET['idArticle']);
+            $originalPriceArticle = htmlspecialchars($_POST['originalPriceArticleAdmin']);
+
+            $articleManager = new \Project\Model\ArticleManager();
+            $articleManager->originalPriceArticleAdminDb($originalPriceArticle,$idArticle);
+
+            $adminController = new \Project\Controller\AdminController();
+            $adminController->adminValidationArticle();
+
+        }
     }
