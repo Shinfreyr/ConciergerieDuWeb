@@ -55,6 +55,7 @@
                                 <a class="dropdown-item" href="#">Inscrire une nouvelle entreprise</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Créer une nouvelle catégorie</a>
+                                <a class="dropdown-item" href="#">Supprimer une catégorie</a>
                             </div>
                         </li>
                     </ul>

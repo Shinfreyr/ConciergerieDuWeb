@@ -112,7 +112,13 @@
                 </button>
                 <div class="collapse" id="priceReductionModification">
                     <div class="card card-body">
-                        prix avec réduction
+                        <form action="index.php?action=priceWithReductionArticleAdmin&idArticle=<?= htmlspecialchars($result['idArticle']) ?>" id="riceWithReductionArticleForm" method="post">
+                            <div class="form-group">
+                                <label for="priceWithReductionArticleAdmin">Modifier le prix avec réduction</label>
+                                <textarea class="form-control" name="priceWithReductionArticleAdmin" id="priceWithReductionArticleAdmin" rows="3"><?= htmlspecialchars($result['reductionPriceArticle']) ?></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info">Envoyer</button>
+                        </form>
                     </div>
                 </div>
 
@@ -123,7 +129,34 @@
                 </button>
                 <div class="collapse" id="endDateModification">
                     <div class="card card-body">
-                        date de fin de promotion
+                        <form action="index.php?action=endDateArticleAdmin&idArticle=<?= htmlspecialchars($result['idArticle']) ?>" id="endDateArticleAdminForm" method="post">
+                            <div class="form-group">
+                                <label for="endDateArticleAdmin">Modifier le prix avec réduction (aaaa-mm-jj)</label>
+                                <textarea class="form-control" name="endDateArticleAdmin" id="endDateArticleAdmin" rows="3"><?= htmlspecialchars($result['endDateArticle']) ?></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+
+                <button class="btn btn-info col-12 validationArticle" type="button" data-toggle="collapse" data-target="#validationArticle" aria-expanded="false" aria-controls="nomArticleExample">
+                    Valider la publication de l'article
+                </button>
+                <div class="collapse" id="validationArticle">
+                    <div class="card card-body">
+                        <form action="index.php?action=validationArticleAdmin&idArticle=<?= htmlspecialchars($result['idArticle']) ?>" id="validationArticleAdminForm" method="post">
+                            <div class="form-group">
+                                <label for="validationArticleAdmin">Choisissez une catégorie</label>
+                                <select class="form-control" name="validationArticleAdmin" id="validationArticleAdmin">
+                                    <?php
+                                        while ($db1 = $requestCategory->fetch()) {
+                                            echo '<option>'. htmlspecialchars($db1['nameCategory']) .'</option>';
+                                        }
+                                    ?>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-info">Envoyer</button>
+                        </form>
                     </div>
                 </div>
 

@@ -384,7 +384,91 @@
                 else {
                     throw new Exception('Variable inattendu');    
                 }
-            }           
+            } 
+#BackAdmin  //Change Price with Reduction +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            elseif($_GET['action'] === 'priceWithReductionArticleAdmin' && $_GET['idArticle'] != '') {
+                if(isset($_SESSION['conciergerieDuWebStatus'])) {
+                    if($_SESSION['conciergerieDuWebStatus'] === 'Admin' || $_SESSION['conciergerieDuWebStatus'] === 'AdminSU') {
+                        if(isset($_POST['priceWithReductionArticleAdmin'])) {
+                            if($_POST['priceWithReductionArticleAdmin'] != '') {
+                                $adminController->priceWithReductionArticleAdmin();
+                            }
+                            //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                            else {
+                                throw new Exception('Champs manquants');    
+                            }
+                        }
+                        //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                        else {
+                            throw new Exception('Variable inattendu'); 
+                        }      
+                    }
+                    //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    else {
+                        throw new Exception('Variable inattendu'); 
+                    }  
+                }
+                //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                else {
+                    throw new Exception('Variable inattendu');    
+                }
+            }
+#BackAdmin  //Change End Promotion Date +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            elseif($_GET['action'] === 'endDateArticleAdmin' && $_GET['idArticle'] != '') {
+                if(isset($_SESSION['conciergerieDuWebStatus'])) {
+                    if($_SESSION['conciergerieDuWebStatus'] === 'Admin' || $_SESSION['conciergerieDuWebStatus'] === 'AdminSU') {
+                        if(isset($_POST['endDateArticleAdmin'])) {
+                            if($_POST['endDateArticleAdmin'] != '') {
+                                $adminController->endDateArticleAdmin();
+                            }
+                            //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                            else {
+                                throw new Exception('Champs manquants');    
+                            }
+                        }
+                        //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                        else {
+                            throw new Exception('Variable inattendu'); 
+                        }      
+                    }
+                    //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    else {
+                        throw new Exception('Variable inattendu'); 
+                    }  
+                }
+                //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                else {
+                    throw new Exception('Variable inattendu');    
+                }
+            }  
+#BackAdmin  //Validation Article ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            elseif($_GET['action'] === 'validationArticleAdmin' && $_GET['idArticle'] != '') {
+                if(isset($_SESSION['conciergerieDuWebStatus'])) {
+                    if($_SESSION['conciergerieDuWebStatus'] === 'Admin' || $_SESSION['conciergerieDuWebStatus'] === 'AdminSU') {
+                        if(isset($_POST['validationArticleAdmin'])) {
+                            if($_POST['validationArticleAdmin'] != '') {
+                                $adminController->validationArticleAdmin();
+                            }
+                            //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                            else {
+                                throw new Exception('Champs manquants');    
+                            }
+                        }
+                        //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                        else {
+                            throw new Exception('Variable inattendu'); 
+                        }      
+                    }
+                    //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    else {
+                        throw new Exception('Variable inattendu'); 
+                    }  
+                }
+                //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                else {
+                    throw new Exception('Variable inattendu');    
+                }
+            }                    
             //Error +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             else {
                 throw new Exception('Variable inattendu');    

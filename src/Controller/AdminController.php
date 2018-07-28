@@ -54,6 +54,9 @@
 
             $result = $request->fetch();
 
+            $categoryManager = new \Project\Model\CategoryManager();
+            $requestCategory = $categoryManager->categoryRequest();
+
             require('src/View/backend/validationArticleTargetView.php');
         }
 
@@ -197,5 +200,48 @@
             $adminController = new \Project\Controller\AdminController();
             $adminController->adminValidationArticle();
 
+        }
+
+        //Modification Price with Reduction +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function priceWithReductionArticleAdmin() {
+            $idArticle = htmlspecialchars($_GET['idArticle']);
+            $priceWithReductionArticle = htmlspecialchars($_POST['priceWithReductionArticleAdmin']);
+
+            $articleManager = new \Project\Model\ArticleManager();
+            $articleManager->priceWithReductionArticleAdminDb($priceWithReductionArticle,$idArticle);
+            
+            $adminController = new \Project\Controller\AdminController();
+            $adminController->adminValidationArticle();
+        }
+
+        //Modification End Promotion Date +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function endDateArticleAdmin() {
+            $idArticle = htmlspecialchars($_GET['idArticle']);
+            $endDateArticle = htmlspecialchars($_POST['endDateArticleAdmin']);
+
+            $articleManager = new \Project\Model\ArticleManager();
+            $articleManager->endDateArticleAdminDb($endDateArticle,$idArticle);
+
+            $adminController = new \Project\Controller\AdminController();
+            $adminController->adminValidationArticle();
+        }
+
+        //Validation Article ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function validationArticleAdmin() {
+            $idArticle = htmlspecialchars($_GET['idArticle']);
+            $categoryArticle = htmlspecialchars($_POST['validationArticleAdmin']);
+            
+            $categoryManager = new \Project\Model\CategoryManager();
+            $request = $categoryManager->selectCategoryId($categoryArticle);
+
+            $result = $request->fetch();
+
+            $idCategory = htmlspecialchars($result['idCategory']);
+
+            $articleManager = new \Project\Model\ArticleManager();
+            $articleManager->validationArticleAdminDb($idArticle,$idCategory);
+            
+            $adminController = new \Project\Controller\AdminController();
+            $adminController->adminValidationArticle();
         }
     }

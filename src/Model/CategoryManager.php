@@ -13,4 +13,15 @@
 
             return $thirdRequest;
         }
+
+        //Id Category Request ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function selectCategoryId($categoryArticle) {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Category recuperation 
+            $request = $db->prepare('SELECT idCategory FROM categories WHERE nameCategory=? ');
+            $request -> execute(array($categoryArticle));
+
+            return $request;
+        }
     }

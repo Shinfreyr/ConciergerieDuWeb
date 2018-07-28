@@ -236,4 +236,31 @@
             $request = $db->prepare('UPDATE articles SET originalPriceArticle = ? WHERE idArticle = ?');
             $request -> execute(array($originalPriceArticle,$idArticle));
         }
+
+        //Article Price with Reduction Rough Modification +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function priceWithReductionArticleAdminDb($priceWithReductionArticle,$idArticle) {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article modification 
+            $request = $db->prepare('UPDATE articles SET reductionPriceArticle = ? WHERE idArticle = ?');
+            $request -> execute(array($priceWithReductionArticle,$idArticle));
+        }
+
+        //Article End Date Rough Modification ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function endDateArticleAdminDb($endDateArticle,$idArticle) {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article modification 
+            $request = $db->prepare('UPDATE articles SET endDateArticle = ? WHERE idArticle = ?');
+            $request -> execute(array($endDateArticle,$idArticle));
+        }
+
+        //Article Validation +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function validationArticleAdminDb($idArticle,$idCategory) {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article modification 
+            $request = $db->prepare('UPDATE articles SET statutArticle = ?, idCategory = ? WHERE idArticle = ?');
+            $request -> execute(array('publish',$idCategory,$idArticle));
+        }
     }
