@@ -263,4 +263,26 @@
             $request = $db->prepare('UPDATE articles SET statutArticle = ?, idCategory = ? WHERE idArticle = ?');
             $request -> execute(array('publish',$idCategory,$idArticle));
         }
+
+        //Light Article Admin ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function lightArticleRequest() {
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article recuperation 
+            $request = $db->prepare('SELECT nomArticle FROM articles WHERE statutArticle=? ORDER BY idArticle DESC');
+            $request -> execute(array("light"));
+
+            return $request;
+        }
+
+        //Other Article for Light +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function otherArticleRequest() {    
+            // Data Base Connection
+            $db=$this->dbConnect();
+            // Article recuperation 
+            $request = $db->prepare('SELECT nomArticle FROM articles WHERE statutArticle=? ORDER BY idArticle DESC');
+            $request -> execute(array("publish"));
+
+            return $request;
+        }
     }

@@ -60,6 +60,25 @@
             require('src/View/backend/validationArticleTargetView.php');
         }
 
+        //Light Article View +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function adminLightArticle() {
+            $articleManager = new \Project\Model\ArticleManager();
+            $request = $articleManager->articleRoughCount();
+            $result = $request->fetch();
+            
+            $articleManager = new \Project\Model\ArticleManager();
+            $request = $articleManager->lightArticleRequest();
+
+            $articleManager = new \Project\Model\ArticleManager();
+            $request2 = $articleManager->otherArticleRequest();
+            
+            while ($db2 = $request2->fetch()) {
+                $valueArticle[] = htmlspecialchars($db2['nomArticle']);
+            }
+
+            require('src/View/backend/lightArticleView.php');
+        }
+
         //Modification Article Name ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function nameArticleAdmin() {
             $idArticle = htmlspecialchars($_GET['idArticle']);
